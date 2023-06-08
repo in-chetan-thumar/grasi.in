@@ -1,0 +1,10 @@
+@extends('layouts.master')
+@section('title') @lang('translation.dashboards')  @endsection
+@section('content')
+    @component('components.breadcrumb',["lists"=>['Dashboard' =>'']])
+        @slot('title')  @lang('translation.dashboards')  @endslot
+    @endcomponent
+@endsection
+@section('script')
+    <script src="{{ URL::asset('/assets/js/app.min.js') }}"></script>
+@endsection
