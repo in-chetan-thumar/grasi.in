@@ -182,15 +182,15 @@
     "/assets/images/verification-img.png": "/assets/images/verification-img.png",
     "/assets/images/widget-img.png": "/assets/images/widget-img.png",
     "/assets/js/app.js": "/assets/js/app.js",
+    "/assets/js/app.min.js": "/assets/js/app.min.js",
     "/assets/js/layout.js": "/assets/js/layout.js",
     "/assets/js/pages/plugins/jsonfull-emoji-list.json": "/assets/js/pages/plugins/jsonfull-emoji-list.json",
     "/assets/js/pages/plugins/lord-icon-2.1.0.js": "/assets/js/pages/plugins/lord-icon-2.1.0.js",
     "/assets/js/pages/two-step-verification.init.js": "/assets/js/pages/two-step-verification.init.js",
     "/assets/js/plugins.js": "/assets/js/plugins.js",
+    "/assets/js/plugins.min.js": "/assets/js/plugins.min.js",
     "/assets/css/bootstrap.min.css": "/assets/css/bootstrap.min.css",
     "/assets/css/icons.min.css": "/assets/css/icons.min.css",
     "/assets/css/app.min.css": "/assets/css/app.min.css",
-    "/assets/css/custom.min.css": "/assets/css/custom.min.css",
-    "/assets/js/plugins.min.js": "/assets/js/plugins.min.js",
-    "/assets/js/app.min.js": "/assets/js/app.min.js"
+    "/assets/css/custom.min.css": "/assets/css/custom.min.css"
 }
