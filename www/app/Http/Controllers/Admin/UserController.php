@@ -84,7 +84,7 @@ class UserController extends Controller
                 $params['password'] = $password;
                 $params['role_name'] = $user->getRoleNames()->first();
 
-                Mail::send(new UserCreateNotification($params));
+//                Mail::send(new UserCreateNotification($params));
 
                 $data['error'] = false;
                 $data['message'] = 'User create successfully.';
@@ -195,7 +195,7 @@ class UserController extends Controller
 
                 $user->delete();
                 toastr()->success($user->name . ' deleted successfully..!');
-                return redirect()->route('user.index');
+                return redirect()->route('usermanagements.index');
             } else {
                 toastr()->error('User not found.!');
             }
@@ -210,7 +210,7 @@ class UserController extends Controller
         try {
             $user = resolve('user-repo')->changeStatus($id);
             toastr()->success('Status changed successfully..!');
-            return redirect()->route('user.index');
+            return redirect()->route('usermanagements.index');
         } catch (\Exception $e) {
             toastr()->error($e->getMessage());
             return redirect()->back();

@@ -5,6 +5,7 @@
         <th>Name</th>
         <th>Email</th>
         <th>Role</th>
+        <th>Status</th>
         <th>Created at</th>
         <th>Action</th>
     </tr>
@@ -15,6 +16,13 @@
             <td>{{ $row->name }}</td>
             <td>{{ $row->email }}</td>
             <td>{{ $row->getRoleNames()->first()  }}</td>
+            <td>
+                @if($row->is_account_locked == 'Y')
+                    <span class="badge bg-success">Active</span>
+                @else
+                    <span class="badge bg-danger">Inactive</span>
+                @endif
+            </td>
             <td>{{ $row->created_at_formatted }}</td>
             <td>
 
@@ -22,7 +30,7 @@
                     <button id="btnGroupVerticalDrop1" type="button"
                             class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="true">
-                        Action <i class="mdi mdi-chevron-down"></i>
+                        Action
                     </button>
                     <div class="dropdown-menu">
                         @can('usermanagements.edit')
@@ -30,7 +38,7 @@
                                href="{{route('usermanagements.edit',$row->id)}}">Edit</a>
                         @endcan
 
-                        @if($row->is_active == 'Y')
+                        @if($row->is_account_locked == 'Y')
                             <a class="dropdown-item" href="{{ route('usermanagements.status',$row->id) }}">Inactive</a>
                         @else
                             <a class="dropdown-item" href="{{ route('usermanagements.status',$row->id) }}">Active</a>

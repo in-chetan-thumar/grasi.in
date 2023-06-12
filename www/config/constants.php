@@ -5,7 +5,7 @@ return [
     'USER_PASSWORD_LOGIN' => false,
     'APP_NAME' => env('APP_NAME', ''),
     'CC_EMAILS' => [],
-    'PER_PAGE' => 3,
+    'PER_PAGE' => 10,
     'SUPER_ADMIN' => 'Super Admin',
     // FILE UPLOAD PATH
     'USER_DOC_PATH' => 'public' . DIRECTORY_SEPARATOR,

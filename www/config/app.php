@@ -162,6 +162,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
+        \App\Providers\RepositoryServiceProvider::class,
+        Yoeunes\Toastr\ToastrServiceProvider::class,
         /*
          * Package Service Providers...
          */

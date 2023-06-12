@@ -6,7 +6,7 @@
 @endsection
 @section('content')
 
-    @component('components.breadcrumb',['li_1'=>['Dashboard'=>route('root'),'Role list'=>route('roles.index')]])
+    @component('components.breadcrumb',['lists'=>['Dashboard'=>route('root'),'Role list'=>route('roles.index')]])
         @slot('title') Edit Role  @endslot
     @endcomponent
 
