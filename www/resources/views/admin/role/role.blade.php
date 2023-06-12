@@ -6,7 +6,7 @@
 @endsection
 @section('content')
 
-    @component('components.breadcrumb',['li_1'=>['Dashboard'=>route('root')]])
+    @component('components.breadcrumb',['lists'=>['Dashboard'=>route('root')]])
         @slot('title') Role  @endslot
     @endcomponent
 
@@ -42,7 +42,7 @@
                                         <button id="btnGroupVerticalDrop1" type="button"
                                                 class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
                                                 aria-haspopup="true" aria-expanded="true">
-                                            Action <i class="mdi mdi-chevron-down"></i>
+                                            Action</i>
                                         </button>
                                         <div class="dropdown-menu">
                                             @can('roles.edit')

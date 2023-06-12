@@ -9,7 +9,7 @@ return [
         'STAGING' => ['TO'=>['rabi.mohanty1@mailinator.com'],'CC'=>[]],
         'DEVELOPMENT'=>['TO'=>['rabi.mohanty1@mailinator.com'],'CC'=>[]],
     ],
-    'PER_PAGE' => 3,
+    'PER_PAGE' => 10,
     'SUPER_ADMIN' => 'Super Admin',
     // FILE UPLOAD PATH
     'USER_DOC_PATH' => 'public' . DIRECTORY_SEPARATOR,

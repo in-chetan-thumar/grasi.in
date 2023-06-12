@@ -72,8 +72,6 @@
     $('#user-form').on('submit', function (e) {
         e.preventDefault();
         var formData = new FormData($('#user-form')[0]);
-        var page = $('.page-number').val()
-        formData.append('page', page);
         var url = $(this).attr('action');
         var method = $(this).attr('method');
 

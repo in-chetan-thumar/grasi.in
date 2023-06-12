@@ -7,7 +7,7 @@
 @endsection
 @section('content')
 
-    @component('components.breadcrumb',['li_1'=>['Dashboard'=>route('root')]])
+    @component('components.breadcrumb',['lists'=>['Dashboard'=>route('root')]])
         @slot('title') User list  @endslot
     @endcomponent
 
@@ -18,7 +18,7 @@
                     <div class="float-end">
                         @can('usermanagements.create')
                         <a href="{{route('usermanagements.create')}}" onclick="showSaveModel(event)" class="btn btn-primary"><i
-                                class="mdi mdi-account-plus"></i>&nbsp;Add User</a>
+                                class="mdi mdi-plus"></i>&nbsp;Add User</a>
                         @endcan
                     </div>
                     <div class="float-start">
@@ -28,10 +28,6 @@
                         </div>
                         <div class="form-group">
                             {!! Form::select('role',$roles,request()->query('role'),['class'=>'form-control zone','placeholder'=>'Select role']) !!}
-                        </div>
-                        <div class="form-group">
-                            @component('components.date-picker-component')
-                            @endcomponent
                         </div>
                         <button type="submit" name="type" value="submit" class="btn btn-primary waves-effect waves-light">
                             Submit
@@ -57,11 +53,4 @@
 @section('script-bottom')
     <script type="text/javascript" src="{{ asset('assets/vendor/jsvalidation/js/jsvalidation.js')}}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/user.js')}}"></script>
-    <script type="text/javascript">
-        $('.show_confirm').click(function (e) {
-            if (!confirm('Are you sure you want to delete this?')) {
-                e.preventDefault();
-            }
-        });
-    </script>
 @endsection
