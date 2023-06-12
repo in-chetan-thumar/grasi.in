@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('admin.layouts.master')
 @section('title') @lang('translation.dashboards')  @endsection
 @section('content')
     @component('components.breadcrumb',["lists"=>['Dashboard' =>'']])

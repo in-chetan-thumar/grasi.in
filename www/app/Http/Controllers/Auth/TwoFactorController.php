@@ -16,7 +16,7 @@ class TwoFactorController extends Controller
         if(empty(auth()->user()->email) AND empty(auth()->user()->two_factor_code)){
             abort(404);
         }
-        return view('auth.two_factor');
+        return view('admin.auth.two_factor');
     }
 
     public function store(Request $request)
