@@ -1107,7 +1107,6 @@
 			x.addEventListener("change", function () {
 				document.documentElement.setAttribute(ele, x.value);
 				sessionStorage.setItem(ele, x.value);
-				initLanguage();
 
 				if (ele == "data-layout-width" && x.value == "boxed") {
 					document.documentElement.setAttribute("data-sidebar-size", "sm-hover");

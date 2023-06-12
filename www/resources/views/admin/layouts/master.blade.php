@@ -40,7 +40,5 @@
 @include('admin.layouts.customizer')
 <!-- JAVASCRIPT -->
 @include('admin.layouts.vendor-scripts')
-@toastr_js
-@toastr_render
 </body>
 </html>
