@@ -305,9 +305,16 @@
                             <td class="body" width="100%" cellpadding="0" cellspacing="0">
                                 <table align="center" width="80%" cellpadding="0" cellspacing="0"
                                     role="presentation">
-                                    
+                                    <tr>
+                                        <td class="content-cell" style="background-color: white;">
+                                            
+                                            <?php echo '
+                                                    Actual Email notification recipients: <br>
+                                                    Email Notification - To: '.$TO.' <br>
+                                                    Email Notification - CC: '.$CC.'<br>'; ?>
+                                        </td>
+                                    </tr>
                                 </table>
-                                <br><br>
                             </td>
                         </tr>
                     </table>
@@ -338,7 +345,6 @@
                                     </td>
                                 </tr>
                             </table>
-                            <br><br>
                         </td>
                     </tr>
                 </table>

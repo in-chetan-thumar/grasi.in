@@ -5,33 +5,31 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 use Spatie\MailTemplates\TemplateMailable;
 
-class TempleteCreateNotification extends TemplateMailable
+class TempleteCreateNotification extends TemplateMailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
-    public  $PRACTICE_NAME, $USER, $EVENT, $DASHBOARD, $CC, $TO;
+    public  $PRACTICE_NAME, $USER, $EVENT, $DASHBOARD, $CC, $TO, $params ;
 
     /**
      * Create a new message instance.
      */
     public function __construct($params)
     {
+        $this->params = $params ;
         $this->PRACTICE_NAME = config('constants.APP_NAME');
         $this->USER = $params['email'];
     }
 
     public function getHtmlLayout(): string
     {
-        return view('email.email_layout')->render();
-        // return view('email.email_layout')->with([
-        //     'TO' => implode(', ', $to),
-        //     'CC' => implode(', ', $cc),
-        // ])->render();
+        return view('email.email_layout')->with([
+            'TO' => $this->params['email'],
+            'CC' => implode(', ', $this->params['cc'] ?? ''),
+        ])->render();
     }
 
     /**
@@ -43,11 +41,10 @@ class TempleteCreateNotification extends TemplateMailable
     public function build()
     {
 
-
         $to = $cc = $bcc =[];
 
-        $to = ['rabi1234@mailinator.com'];
-        $cc = ['rabi1235@mailinator.com'];
+        $to = $this->params['to'] ?? [];
+        $cc = $this->params['cc'] ?? [];
         $bcc = ['rabi1236@mailinator.com'];
 
         //Override to & cc variables for staging and local environment.
@@ -57,6 +54,7 @@ class TempleteCreateNotification extends TemplateMailable
         }
 
         $email = $this->to($to)->cc($cc)->from(config('mail.from.address'));
+
         return $email;
     }
 }

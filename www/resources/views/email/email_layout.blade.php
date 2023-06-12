@@ -305,49 +305,20 @@
                             <td class="body" width="100%" cellpadding="0" cellspacing="0">
                                 <table align="center" width="80%" cellpadding="0" cellspacing="0"
                                     role="presentation">
-                                    {{-- <tr>
+                                    <tr>
                                         <td class="content-cell" style="background-color: white;">
-                                            <?php echo '{{{ to }}}'; ?>
                                             
                                             <?php echo '
                                                     Actual Email notification recipients: <br>
-                                                    Email Notification - To: {{$to}} <br>
-                                                    Email Notification - CC: {{{CC}}}<br>'; ?>
-                                        </td> 
-                                    </tr> --}}
+                                                    Email Notification - To: '.$TO.' <br>
+                                                    Email Notification - CC: '.$CC.'<br>'; ?>
+                                        </td>
+                                    </tr>
                                 </table>
-                                <br><br>
                             </td>
                         </tr>
                     </table>
                     @endif
-
-                    <tr>
-                        <td class="body" width="100%" cellpadding="0" cellspacing="0">
-                            <table align="center" width="80%" cellpadding="0" cellspacing="0" role="presentation">
-                                <tr>
-                                    <td class="" width="100%">
-
-                                        <div class="nhsuk-footer" id="nhsuk-footer">
-                                            <div class="nhsuk-width-container">
-                                                <center>
-                                                    <p class="nhsuk-footer__copyright">Powered by
-                                                        {!! config('constants.DEVELOPED_BY') !!}
-                                                        version {{ config('constants.APP_VERSION') }}
-                                                        <a class="nhsuk-footer__list-item-link" target="_blank"
-                                                            href="https://caprihealthcare.co.uk/"
-                                                            alt="{{ config('constants.APP_NAME') }}">
-                                                        </a>
-                                                    </p>
-                                                </center>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                            <br><br>
-                        </td>
-                    </tr>
                 </table>
             </td>
         </tr>
