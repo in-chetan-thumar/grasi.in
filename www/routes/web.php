@@ -24,7 +24,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'root'])->name('roo
 
 
 
-middleware = ['auth','throttle:120,1'];
+$middleware = ['auth','throttle:120,1'];
 
 if(config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')){
     array_push($middleware,'twofactor');
