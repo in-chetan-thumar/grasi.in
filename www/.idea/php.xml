@@ -113,6 +113,13 @@
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/psr/http-client" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/proengsoft/laravel-jsvalidation" />
+      <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-database-mail-templates" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/php-flasher/flasher-laravel" />
+      <path value="$PROJECT_DIR$/vendor/php-flasher/flasher" />
+      <path value="$PROJECT_DIR$/vendor/mustache/mustache" />
     </include_path>
   </component>
   <component name="PhpUnit">

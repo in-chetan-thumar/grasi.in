@@ -1107,7 +1107,6 @@
 			x.addEventListener("change", function () {
 				document.documentElement.setAttribute(ele, x.value);
 				sessionStorage.setItem(ele, x.value);
-				initLanguage();
 
 				if (ele == "data-layout-width" && x.value == "boxed") {
 					document.documentElement.setAttribute("data-sidebar-size", "sm-hover");
@@ -1129,7 +1128,6 @@
 							document.getElementById("sidebarimg-none").click();
 						}
 						hideShowLayoutOptions("horizontal");
-						feather.replace();
 					} else if (x.value == "twocolumn") {
 						hideShowLayoutOptions("twocolumn");
 						document.documentElement.setAttribute("data-layout-width", "fluid");
@@ -1137,7 +1135,6 @@
 						twoColumnMenuGenerate();
 						initTwoColumnActiveMenu();
 						isCollapseMenu();
-						feather.replace();
 					}
 				}
 

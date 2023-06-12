@@ -48,8 +48,8 @@
                                 'class' => 'col-md-12',
                                 'enctype' => 'multipart/form-data',
                             ]) !!}
-                            <input type="hidden" name="id" value="{{ $emailtemplate->id }}" id="email_template_id">
-                            <input type="hidden" name="template_type" value="{{ $emailtemplate->template_type }}">
+                            <input type="hidden" name="id" value="{{ !empty($emailtemplates) ? $emailtemplate->id:'' }}" id="email_template_id">
+                            <input type="hidden" name="template_type" value="{{ !empty($emailtemplates) ? $emailtemplate->template_type:'' }}">
                             {{-- @endcan --}}
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="mb-3">
@@ -179,7 +179,6 @@
         $(".btn-create").on('click', function(e) {
             $('#email_template_id, #subject, #mailable, #template_code, #template_name').val('')
             CKEDITOR.instances.email_template_content.setData('');
-            alert('sddsgjhdj');
         });
     </script>
 @endsection
