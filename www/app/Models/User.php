@@ -22,6 +22,21 @@ class User extends Authenticatable
         'email',
         'password',
         'avatar',
+        'mobile',
+        'two_factor_code',
+        'two_factor_expires_at',
+        'is_account_locked',
+        'logins',
+        'last_login_ip',
+        'last_login_at',
+        'account_locked_at',
+        'login_attempt',
+        'created_at',
+        'created_by',
+        'updated_at',
+        'updated_by',
+        'deleted_at',
+        'deleted_by',
     ];
 
     /**
@@ -42,4 +57,20 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function generateTwoFactorCode()
+    {
+        $this->timestamps = false;
+        $this->two_factor_code = rand(100000, 999999);
+        $this->two_factor_expires_at = now()->addMinutes(10);
+        $this->save();
+    }
+    public function resetTwoFactorCode()
+    {
+        $this->timestamps = false;
+        $this->two_factor_code = null;
+        $this->two_factor_expires_at = null;
+        $this->login_attempt = 0;
+        $this->save();
+    }
 }
