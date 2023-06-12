@@ -1,10 +1,14 @@
 <?php
 return [
-    'EMAIL_OTP_LOGIN' => false,
-    'MOBILE_OTP_LOGIN' => true,
+    'EMAIL_OTP_LOGIN' => true,
+    'MOBILE_OTP_LOGIN' => false,
     'USER_PASSWORD_LOGIN' => false,
     'APP_NAME' => env('APP_NAME', ''),
-    'CC_EMAILS' => [],
+    //Emails
+    'EMAIL'=>[
+        'STAGING' => ['TO'=>['rabi.mohanty1@mailinator.com'],'CC'=>[]],
+        'DEVELOPMENT'=>['TO'=>['rabi.mohanty1@mailinator.com'],'CC'=>[]],
+    ],
     'PER_PAGE' => 3,
     'SUPER_ADMIN' => 'Super Admin',
     // FILE UPLOAD PATH

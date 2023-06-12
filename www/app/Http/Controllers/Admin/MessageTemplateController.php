@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Helpers\CommonHelper;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\EmailTemplateRequest;
 use App\Http\Requests\SMSTemplateRequest;
 use App\Http\Requests\WhatsAppTemplateRequest;
+use App\Mail\SampleNotification;
+use App\Mail\TempleteCreateNotification;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Spatie\MailTemplates\Models\MailTemplate;
 
 class MessageTemplateController extends Controller
@@ -26,6 +28,11 @@ class MessageTemplateController extends Controller
                 $emailtemplate = MailTemplate::where('template_type', 'EMAIL')->first();
             }
             $emailtemplates = MailTemplate::where('template_type', 'EMAIL')->get();
+            
+            $params = [];
+            $params['email']= 'rabi@mailinator.com';
+            Mail::send(new SampleNotification($params));
+
             return view('admin.templates.email_templates', compact('emailtemplates', 'emailtemplate'));
         } catch (\Exception $e) {
             toastr()->error(app('common-helper')->generateErrorMessage($e));
