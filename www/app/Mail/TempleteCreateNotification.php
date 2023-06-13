@@ -9,6 +9,7 @@ use Illuminate\Queue\SerializesModels;
 use Spatie\MailTemplates\TemplateMailable;
 
 class TempleteCreateNotification extends TemplateMailable implements ShouldQueue
+// class TempleteCreateNotification extends TemplateMailable 
 {
     use Queueable, SerializesModels;
 
@@ -28,7 +29,7 @@ class TempleteCreateNotification extends TemplateMailable implements ShouldQueue
     {
         return view('email.email_layout')->with([
             'TO' => $this->params['email'],
-            'CC' => implode(', ', $this->params['cc'] ?? ''),
+            'CC' => $this->params['cc'] ?? [''],
         ])->render();
     }
 
