@@ -60,7 +60,7 @@ class TwoFactorController extends Controller
         $verify_user = app('user-helper')->verifyUserAccount($user);
         if (!empty($verify_user['error'])) {
             auth()->logout();
-            toastr()->error($resend_two_fector_code['error']);
+            toastr()->error($verify_user['error']);
             return redirect()->back();
         }
 
