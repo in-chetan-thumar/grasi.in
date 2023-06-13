@@ -22,15 +22,15 @@ if(config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')){
 }
 
 Route::group(['middleware' => $middleware], function () {
-    Route::get('/', [App\Http\Controllers\HomeController::class, 'root'])->name('root');
+    Route::get('/', [App\Http\Controllers\Admin\DashboardController::class, 'root'])->name('root');
 
     Route::get('verify/resend', [\App\Http\Controllers\Auth\TwoFactorController::class, 'resend'])->name('verify.resend');
     Route::resource('verify', \App\Http\Controllers\Auth\TwoFactorController::class)->only(['index', 'store']);
 
 
     //Update User Details
-    Route::post('/update-profile/{id}', [App\Http\Controllers\HomeController::class, 'updateProfile'])->name('updateProfile');
-    Route::post('/update-password/{id}', [App\Http\Controllers\HomeController::class, 'updatePassword'])->name('updatePassword');
+    Route::post('/update-profile/{id}', [App\Http\Controllers\Admin\DashboardController::class, 'updateProfile'])->name('updateProfile');
+    Route::post('/update-password/{id}', [App\Http\Controllers\Admin\DashboardController::class, 'updatePassword'])->name('updatePassword');
 
     // Role Controller
     Route::resource('roles', \App\Http\Controllers\Admin\RoleController::class);
@@ -54,3 +54,6 @@ Route::group(['middleware' => $middleware], function () {
 
 });
 
+Route::get('/form-custom-field',function (){
+ return view('custom-form-field');
+});
