@@ -63,9 +63,9 @@
                                                    class="form-control @error('username') is-invalid @enderror"
                                                    value="{{ old('username') }}" id="username" name="username" placeholder="Enter {{strtolower($label)}}">
                                             @error('username')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
                                             @enderror
                                         </div>
 
