@@ -22,7 +22,7 @@ class TwoFactor
         {
             if($user->two_factor_expires_at < now())
             {
-                $user->resetTwoFactorCode();
+                app('user-helper')->resetTwoFactorCode($user);
                 auth()->logout();
 
                 return redirect()->route('login')

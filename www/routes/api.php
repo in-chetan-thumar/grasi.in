@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\V1\LoginController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('V1')->middleware(['throttle:60,1'])->group(function () {
+
+    Route::post('/login', [LoginController::class, 'login'])->name('login.api');
+    Route::post('/login/resend-otp', [LoginController::class, 'resendOTP'])->name('login.resend.otp.api');
+    Route::post('/login/verify-otp', [LoginController::class, 'verifyOTP'])->name('login.verify.otp.api');
+
 });

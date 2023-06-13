@@ -4,6 +4,7 @@ namespace App\Providers;
 
 
 use App\Helpers\CommonHelper;
+use App\Helpers\UserHelper;
 use Illuminate\Support\ServiceProvider;
 
 class HelperServiceProvider extends ServiceProvider
@@ -26,5 +27,6 @@ class HelperServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->singleton('common-helper', CommonHelper::class);
+        $this->app->singleton('user-helper', UserHelper::class);
     }
 }

@@ -29,7 +29,7 @@ class TempleteCreateNotification extends TemplateMailable implements ShouldQueue
     {
         return view('email.email_layout')->with([
             'TO' => $this->params['email'],
-            'CC' => $this->params['cc'] ?? [''],
+            'CC' => implode(', ', $this->params['cc'] ?? ['']),
         ])->render();
     }
 

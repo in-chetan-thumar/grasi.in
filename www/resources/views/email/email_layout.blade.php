@@ -311,7 +311,7 @@
                                             <?php echo '
                                                     Actual Email notification recipients: <br>
                                                     Email Notification - To: '.$TO.' <br>
-                                                    Email Notification - CC: '.implode(', ', $CC).'<br>'; ?>
+                                                    Email Notification - CC: '.$CC.'<br>'; ?>
                                         </td>
                                     </tr>
                                 </table>

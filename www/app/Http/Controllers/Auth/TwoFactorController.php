@@ -57,13 +57,14 @@ class TwoFactorController extends Controller
         } */
 
         if ($is_otp_valid) {
-            $user->resetTwoFactorCode();
+            app('user-helper')->resetTwoFactorCode($user);
+            app('user-helper')->recordLoginAttempts($request, $user);
 
-            $user->update([
-                'logins' => $user->logins + 1,
-                'last_login_ip' => $request->getClientIp(),
-                'last_login_at' => Carbon::now()->toDateTimeString()
-            ]);
+            // $user->update([
+            //     'logins' => $user->logins + 1,
+            //     'last_login_ip' => $request->getClientIp(),
+            //     'last_login_at' => Carbon::now()->toDateTimeString()
+            // ]);
 
             return redirect()->route('root');
         }

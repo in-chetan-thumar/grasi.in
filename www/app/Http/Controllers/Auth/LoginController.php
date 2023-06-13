@@ -101,31 +101,41 @@ class LoginController extends Controller
 
     protected function authenticated(Request $request, $user)
     {
-        if ($user->is_account_locked == 'Y') {
-            auth()->logout();
-            $errors = new MessageBag(['username' => ['You account is deactivate, Please contact to administrator.']]); // if Auth::attempt fails (wrong credentials) create a new message bag instance.
+        $verify_user = app('user-helper')->verifyUserAccount($user);
 
+        if (!empty($verify_user['error'])) {
+            auth()->logout();
+            $errors = new MessageBag(['username' => [$verify_user['error']]]); // if Auth::attempt fails (wrong credentials) create a new message bag instance.
             return redirect()->back()->withErrors($errors); // redirect back to the login page, using ->withErrors($errors) you send the error created above
         }
+        
+        // if ($user->is_account_locked == 'Y') {
+        //     auth()->logout();
+        //     $errors = new MessageBag(['username' => ['You account is deactivate, Please contact to administrator.']]); // if Auth::attempt fails (wrong credentials) create a new message bag instance.
 
-        if ($user->is_account_locked == 'Y' and $user->account_release_time_formatted > Carbon::now()->format('d-m-Y H:i')) {
-            auth()->logout();
-            $error = 'Your account has been blocked till ' . $user->account_release_time_formatted;
-            return view('admin.auth.login', compact('error'));
-        }
+        //     return redirect()->back()->withErrors($errors); // redirect back to the login page, using ->withErrors($errors) you send the error created above
+        // }
 
-        $user->update([
-            'logins' => $user->logins + 1,
-            'last_login_ip' => $request->getClientIp(),
-            'last_login_at' => Carbon::now()->toDateTimeString(),
-            'mobile_login_attempt' => 0,
-            'is_account_locked' => 'N',
-            'login_attempt' => 0,
-            'account_locked_at' => null,
-        ]);
+        // if ($user->is_account_locked == 'Y' and $user->account_release_time_formatted > Carbon::now()->format('d-m-Y H:i')) {
+        //     auth()->logout();
+        //     $error = 'Your account has been blocked till ' . $user->account_release_time_formatted;
+        //     return view('admin.auth.login', compact('error'));
+        // }
+
+        // $user->update([
+        //     'logins' => $user->logins + 1,
+        //     'last_login_ip' => $request->getClientIp(),
+        //     'last_login_at' => Carbon::now()->toDateTimeString(),
+        //     'mobile_login_attempt' => 0,
+        //     'is_account_locked' => 'N',
+        //     'login_attempt' => 0,
+        //     'account_locked_at' => null,
+        // ]);
+
+        app('user-helper')->recordLoginAttempts($request, $user);
 
         if (config('constants.EMAIL_OTP_LOGIN') || config('constants.MOBILE_OTP_LOGIN')) {
-            $user->generateTwoFactorCode();
+            app('user-helper')->generateTwoFactorCode($user);
         }
     }
 }
