@@ -26,77 +26,53 @@ class TwoFactorController extends Controller
         ]);
 
         $user = auth()->user();
+        $two_factor_code = $request->input('two_factor_code', '');
 
-        $attempt = $user->login_attempt ;
-        if ($attempt < 5 and $user->is_account_locked == 'N') {
-            $user->update([
-                'login_attempt' => $attempt + 1,
-            ]);
-        } else {
-            $user->update([
-                'is_account_locked' => 'Y',
-                'account_locked_at' => Carbon::now()->toDateTimeString(),
-            ]);
+        $verify_user = app('user-helper')->verifyUserAccount($user);
+        if (!empty($verify_user['error'])) {
             auth()->logout();
-            $error = 'Your account has been locked. Please try after sometimes.';
-            return redirect('/login')
-                ->withErrors(['username' =>$error]);
+            $errors = new MessageBag(['username' => [$verify_user['error']]]); // if Auth::attempt fails (wrong credentials) create a new message bag instance.
+            return redirect()->back()->withErrors($errors); // redirect back to the login page, using ->withErrors($errors) you send the error created above
         }
 
-        $is_otp_valid = FALSE;
-
-        if ($request->input('two_factor_code') == $user->two_factor_code){
-            $is_otp_valid = TRUE;
-        }
-        if (env('APP_ENV') != 'Production' AND $request->input('two_factor_code') == '111111') {
-            $is_otp_valid = TRUE;
+        $verify_two_factor_code_status = app('user-helper')->verifyTwoFactorCode($user, $two_factor_code);
+        if(!empty($verify_two_factor_code_status['error'])){
+            auth()->logout();
+            return redirect()->back()->withErrors(['username' => $verify_two_factor_code_status['error']]);
         }
 
-		/* if ($request->input('two_factor_code') == '111111') {
-            $is_otp_valid = TRUE;
-        } */
-
-        if ($is_otp_valid) {
+        if ($verify_two_factor_code_status['is_otp_valid']) {
             app('user-helper')->resetTwoFactorCode($user);
             app('user-helper')->recordLoginAttempts($request, $user);
-
-            // $user->update([
-            //     'logins' => $user->logins + 1,
-            //     'last_login_ip' => $request->getClientIp(),
-            //     'last_login_at' => Carbon::now()->toDateTimeString()
-            // ]);
 
             return redirect()->route('root');
         }
 
         return redirect()->back()
             ->withErrors(['two_factor_code' =>
-                'The two factor code you have entered does not match']);
+                'The OTP you have entered does not match']);
     }
 
     public function resend()
     {
         $user = auth()->user();
-        if ($user->is_account_locked == 'N') {
-            $attempt = $user->login_attempt ;
-            if ($attempt < 5 and $user->is_account_locked == 'N') {
-                $user->generateTwoFactorCode();
-                $user->update([
-                    'login_attempt' => $attempt + 1,
-                ]);
-                $error_message = 'The two factor code has been sent again';
-            } else {
-                $user->update([
-                    'is_account_locked' => 'Y',
-                    'account_locked_at' => Carbon::now()->toDateTimeString(),
-                ]);
-                $error = 'Your account has been blocked till ' . $user->account_release_time_formatted;
-            return view('admin.auth.login', compact('error'));
-            }
+
+        $verify_user = app('user-helper')->verifyUserAccount($user);
+        if (!empty($verify_user['error'])) {
+            auth()->logout();
+            toastr()->error($resend_two_fector_code['error']);
+            return redirect()->back();
         }
 
-        $errors = new MessageBag(['two_factor_code' => [$error_message]]); // if Auth::attempt fails
+        $resend_two_fector_code = app('user-helper')->resendTwoFectorCode($user);
+        if (!empty($resend_two_fector_code['error'])) {
+            auth()->logout();
+            toastr()->error($resend_two_fector_code['error']);
+            return redirect()->back();
 
-        return redirect()->back()->withErrors($errors);
+        }
+
+        toastr()->success($resend_two_fector_code['message']);
+        return redirect()->back();
     }
 }

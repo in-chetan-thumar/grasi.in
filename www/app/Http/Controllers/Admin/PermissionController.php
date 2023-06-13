@@ -7,7 +7,7 @@ use App\Http\Requests\ChangePasswordRequest;
 use App\Http\Requests\PermissionRequest;
 use App\Http\Requests\UserRequest;
 use App\Mail\UserCreateNotification;
-use App\Models\Role;
+
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
