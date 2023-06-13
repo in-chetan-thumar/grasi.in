@@ -27,6 +27,8 @@ class User extends Authenticatable
         'mobile',
         'two_factor_code',
         'two_factor_expires_at',
+        'two_factor_code_resend',
+        'two_factor_code_resend_attempt',
         'is_account_locked',
         'logins',
         'last_login_ip',

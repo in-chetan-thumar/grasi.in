@@ -56,17 +56,7 @@
                                     <form action="{{ route('login') }}" method="POST">
                                         @csrf
                                         <div class="mb-3">
-                                            <label for="username" class="form-label">
-                                                {{$label}}
-                                            </label>
-                                            <input type="text"
-                                                   class="form-control @error('username') is-invalid @enderror"
-                                                   value="{{ old('username') }}" id="username" name="username" placeholder="Enter {{strtolower($label)}}">
-                                            @error('username')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
+                                            {{ Form::bsText($label,'username',old('username'),'',['class'=>'','placeholder' => "Enter ".strtolower($label)],[],true) }}
                                         </div>
 
                                         @if(config('constants.USER_PASSWORD_LOGIN'))

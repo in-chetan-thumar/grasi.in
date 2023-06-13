@@ -70,8 +70,10 @@ class UserHelper
         $is_otp_valid = FALSE;
         if ($two_factor_code == $user->two_factor_code){
             $is_otp_valid = TRUE;
+            $response['is_otp_valid'] = $is_otp_valid;
         } elseif (env('APP_ENV') != 'Production' AND $two_factor_code == '111111') {
             $is_otp_valid = TRUE;
+            $response['is_otp_valid'] = $is_otp_valid;
         } else {
             $response['error'] = 'Entered OTP is invalid';
             $response['is_otp_valid'] = $is_otp_valid;

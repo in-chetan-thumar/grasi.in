@@ -2,4 +2,4 @@
 @error($name)
 <span class="invalid-feedback" style="display: inline;">{{$message}}</span>
 @enderror
-{{ Form::textarea($name, $value,array_merge_recursive(['class' => 'form-control'],$attributes)) }}
+{{ Form::textarea($name, $value,array_merge_recursive(['class' => $errors->has($name)?'form-control is-invalid':'form-control'],$attributes)) }}

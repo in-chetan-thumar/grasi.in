@@ -69,18 +69,7 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="mb-3">
-
-                                                    <input type="text"
-                                                           oninput="this.value=this.value.replace(/[^0-9]/g,'');"
-                                                           maxlength="6" name="two_factor_code"
-                                                           class="form-control @error('two_factor_code') is-invalid @enderror"
-                                                           placeholder="Enter 6 digits otp ">
-
-                                                    @error('two_factor_code')
-                                                    <span class="invalid-feedback" role="alert">
-                                                                        <strong>{{ $message }}</strong>
-                                                                    </span>
-                                                    @enderror
+                                                    {{ Form::bsText('','two_factor_code',old('username'),'',['class'=>' only-number-allow','maxlength'=>"6",'placeholder' => "Enter 6 digits otp"],[],true) }}
                                                 </div>
                                             </div>
 

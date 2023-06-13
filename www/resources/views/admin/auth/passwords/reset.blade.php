@@ -55,13 +55,7 @@
                                         @csrf
                                         <input type="hidden" name="token" value="{{ $token }}">
                                         <div class="mb-3">
-                                            <label for="useremail" class="form-label">Email</label>
-                                            <input type="email" class="form-control @error('email') is-invalid @enderror" id="useremail" name="email" placeholder="Enter email" value="{{ $email ?? old('email') }}" id="email">
-                                            @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                            @enderror
+                                            {{ Form::bsEmail('Email','email',$email ?? old('email'),'',['class'=>'','placeholder'=>"Enter email"],[],false) }}
                                         </div>
 
                                         <div class="mb-3">
