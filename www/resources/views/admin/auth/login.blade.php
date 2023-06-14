@@ -72,9 +72,9 @@
                                                     <input type="password"
                                                            class="form-control pe-5 @error('password') is-invalid @enderror"
                                                            name="password" placeholder="Enter password"
-                                                           id="password-input" value="12345678">
+                                                           id="password-input" value="">
                                                     <button
-                                                        class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
+                                                        class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon"
                                                         type="button" id="password-addon"><i
                                                             class="ri-eye-fill align-middle"></i></button>
                                                     @error('password')
@@ -142,8 +142,5 @@
     </div>
 @endsection
 @section('script')
-    <script src="{{ URL::asset('assets/libs/particles.js/particles.js.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/pages/particles.app.js') }}"></script>
     <script src="{{ URL::asset('assets/js/pages/password-addon.init.js') }}"></script>
-
 @endsection
