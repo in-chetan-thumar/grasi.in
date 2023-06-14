@@ -17,8 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('V1')->middleware(['throttle:60,1'])->group(function () {
 
-    Route::post('/login', [LoginController::class, 'login'])->name('login.api');
-    Route::post('/login/resend-otp', [LoginController::class, 'resendOTP'])->name('login.resend.otp.api');
-    Route::post('/login/verify-otp', [LoginController::class, 'verifyOTP'])->name('login.verify.otp.api');
+    Route::post('/login-with-username-password', [LoginController::class, 'loginWithUsernamePassword'])->name('login.with.username.password.api');
+    Route::post('/login-with-mobile-number', [LoginController::class, 'loginWithMobileNumber'])->name('login.with.mobile.number.api');
+    Route::post('/login-with-email-address', [LoginController::class, 'loginWithEmailAddress'])->name('login.with.email.address.api');
+    Route::post('/resend-otp', [LoginController::class, 'resendOTP'])->name('resend.otp.api');
+    Route::post('/verify-otp', [LoginController::class, 'verifyOTP'])->name('verify.otp.api');
 
 });

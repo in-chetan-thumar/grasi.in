@@ -56,32 +56,8 @@
                                     <form action="<?php echo e(route('login')); ?>" method="POST">
                                         <?php echo csrf_field(); ?>
                                         <div class="mb-3">
-                                            <label for="username" class="form-label">
-                                                <?php echo e($label); ?>
+                                            <?php echo e(Form::bsText($label,'username',old('username'),'',['class'=>'','placeholder' => "Enter ".strtolower($label)],[],true)); ?>
 
-                                            </label>
-                                            <input type="text"
-                                                   class="form-control <?php $__errorArgs = ['username'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>"
-                                                   value="<?php echo e(old('username')); ?>" id="username" name="username" placeholder="Enter <?php echo e(strtolower($label)); ?>">
-                                            <?php $__errorArgs = ['username'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong><?php echo e($message); ?></strong>
-                                            </span>
-                                            <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
                                         </div>
 
                                         <?php if(config('constants.USER_PASSWORD_LOGIN')): ?>

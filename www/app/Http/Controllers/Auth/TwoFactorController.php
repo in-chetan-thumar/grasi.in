@@ -43,7 +43,7 @@ class TwoFactorController extends Controller
 
         if ($verify_two_factor_code_status['is_otp_valid']) {
             app('user-helper')->resetTwoFactorCode($user);
-            app('user-helper')->recordLoginAttempts($request, $user);
+            app('user-helper')->recordSuccessLoginAttempts($request, $user);
 
             return redirect()->route('root');
         }

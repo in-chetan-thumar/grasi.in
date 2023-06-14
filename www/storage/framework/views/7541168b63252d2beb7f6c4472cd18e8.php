@@ -4,6 +4,10 @@
     <?php $__env->startComponent('components.breadcrumb',["lists"=>['Dashboard' =>'']]); ?>
         <?php $__env->slot('title'); ?>  <?php echo app('translator')->get('translation.dashboards'); ?>  <?php $__env->endSlot(); ?>
     <?php echo $__env->renderComponent(); ?>
+
+    <div class="row">
+       
+    </div>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('script'); ?>
     <script src="<?php echo e(URL::asset('/assets/js/app.min.js')); ?>"></script>

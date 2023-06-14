@@ -24,8 +24,8 @@ class OtpVerifyRequest extends FormRequest
     public function rules()
     {
         return [
-             'mobile' => 'required|digits:10',
-             'mobile_otp' => 'required|digits:6',
+             'username' => 'required',
+             'two_factor_code' => 'required|digits:6',
         ];
     }
     

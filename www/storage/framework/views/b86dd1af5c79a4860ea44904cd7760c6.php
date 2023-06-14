@@ -11,4 +11,5 @@
 <link href="<?php echo e(URL::asset('assets/css/custom.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
 
 
+<link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
 <?php /**PATH D:\OSPanel\domains\Laravel10ProjectSkeleton\www\resources\views/admin/layouts/head-css.blade.php ENDPATH**/ ?>

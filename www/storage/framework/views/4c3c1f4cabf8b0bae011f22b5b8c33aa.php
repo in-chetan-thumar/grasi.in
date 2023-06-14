@@ -40,8 +40,6 @@
 <?php echo $__env->make('admin.layouts.customizer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!-- JAVASCRIPT -->
 <?php echo $__env->make('admin.layouts.vendor-scripts', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-@toastr_js
-@toastr_render
 </body>
 </html>
 <?php /**PATH D:\OSPanel\domains\Laravel10ProjectSkeleton\www\resources\views/admin/layouts/master.blade.php ENDPATH**/ ?>

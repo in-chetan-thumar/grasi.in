@@ -24,8 +24,7 @@ class UserController extends Controller
     {
         $table = resolve('user-repo')->renderHtmlTable($this->getParamsForFilter($request));
 
-        $skip_roles = [config('constants.SUPER_ADMIN')];
-        $roles = Role::whereNotIn('name', $skip_roles)->pluck('name', 'id');
+        $roles = resolve('role-repo')->activeItemDropDown();
         return view('admin.user.user_list', compact('table', 'roles'));
     }
 
@@ -39,9 +38,7 @@ class UserController extends Controller
 
         $data = [];
         try {
-            $skip_roles = [config('constants.SUPER_ADMIN')];
-            $roles = Role::whereNotIn('name', $skip_roles)->pluck('name', 'id');
-
+            $roles = resolve('role-repo')->activeItemDropDown();
             $data['error'] = false;
             $data['view'] = view('admin.user.offcanvas', compact('roles'))->render();
             return response()->json($data);
@@ -127,8 +124,7 @@ class UserController extends Controller
         $data = [];
         try {
             $user = resolve('user-repo')->findByID($id);
-            $skip_roles = [config('constants.SUPER_ADMIN')];
-            $roles = Role::whereNotIn('name', $skip_roles)->pluck('name', 'id');
+            $roles = resolve('role-repo')->activeItemDropDown();
 
             $data['error'] = false;
             $data['view'] = view('admin.user.offcanvas', compact('roles', 'user'))->render();

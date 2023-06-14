@@ -18,7 +18,24 @@ class UserHelper
         return $response;
     }
 
-    public function recordLoginAttempts($request, $user){
+    public function recordLoginAttempts($user){
+        $response['error'] = '';
+
+        // $user->increment('login_attempt');
+        //$attempt = $user->login_attempt ;
+        if ($user->login_attempt < 5) {
+            $user->increment('login_attempt');
+        } else {
+            $user->update([
+                'is_account_locked' => 'Y',
+                'account_locked_at' => Carbon::now()->toDateTimeString(),
+            ]);
+            $response['error'] = 'Your account has been locked. Please try after sometimes.';
+            return $response;
+        }
+    }
+
+    public function recordSuccessLoginAttempts($request, $user){
         $user->update([
             'logins' => $user->logins + 1,
             'last_login_ip' => $request->getClientIp(),
@@ -53,25 +70,19 @@ class UserHelper
     public function verifyTwoFactorCode($user, $two_factor_code)
     {
         $response['error'] = '';
+        $login_attempt = $this->recordLoginAttempts($user);
 
-        $user->increment('login_attempt');
-        //$attempt = $user->login_attempt ;
-        if ($user->login_attempt < 5) {
-            $user->increment('login_attempt');
-        } else {
-            $user->update([
-                'is_account_locked' => 'Y',
-                'account_locked_at' => Carbon::now()->toDateTimeString(),
-            ]);
-            $response['error'] = 'Your account has been locked. Please try after sometimes.';
-            return $response;
+        if (!empty($login_attempt['error'])) {
+            return $login_attempt ;
         }
 
         $is_otp_valid = FALSE;
         if ($two_factor_code == $user->two_factor_code){
+            $this->resetTwoFactorCode($user);
             $is_otp_valid = TRUE;
             $response['is_otp_valid'] = $is_otp_valid;
         } elseif (env('APP_ENV') != 'Production' AND $two_factor_code == '111111') {
+            $this->resetTwoFactorCode($user);
             $is_otp_valid = TRUE;
             $response['is_otp_valid'] = $is_otp_valid;
         } else {
