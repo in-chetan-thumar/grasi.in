@@ -80,9 +80,9 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>"
                                                            name="password" placeholder="Enter password"
-                                                           id="password-input" value="12345678">
+                                                           id="password-input" value="">
                                                     <button
-                                                        class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
+                                                        class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon"
                                                         type="button" id="password-addon"><i
                                                             class="ri-eye-fill align-middle"></i></button>
                                                     <?php $__errorArgs = ['password'];
@@ -157,10 +157,7 @@ unset($__errorArgs, $__bag); ?>
     </div>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('script'); ?>
-    <script src="<?php echo e(URL::asset('assets/libs/particles.js/particles.js.min.js')); ?>"></script>
-    <script src="<?php echo e(URL::asset('assets/js/pages/particles.app.js')); ?>"></script>
     <script src="<?php echo e(URL::asset('assets/js/pages/password-addon.init.js')); ?>"></script>
-
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('admin.layouts.master-without-nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\OSPanel\domains\Laravel10ProjectSkeleton\www\resources\views/admin/auth/login.blade.php ENDPATH**/ ?>

@@ -44,6 +44,11 @@ Route::group(['middleware' => $middleware], function () {
     Route::resource('usermanagements', \App\Http\Controllers\Admin\UserController::class);
     Route::get('/usermanagement/status/{id}', [\App\Http\Controllers\Admin\UserController::class, 'changeStatus'])->name('usermanagements.status');
 
+    // User Profile Controller
+    Route::resource('profiles', \App\Http\Controllers\Admin\UserProfileController::class);
+    Route::get('/profile', [\App\Http\Controllers\Admin\UserProfileController::class, 'index'])->name('profile.index');
+    Route::post('/change/password', [\App\Http\Controllers\Admin\UserProfileController::class, 'changePassword'])->name('change.password');
+
     // Email Template Controller
     Route::get('email-templates', [App\Http\Controllers\Admin\MessageTemplateController::class,'emailIndex'])->name('email.templates');
     Route::post('email-templates', [App\Http\Controllers\Admin\MessageTemplateController::class,'emailStore'])->name('email.templates.store');

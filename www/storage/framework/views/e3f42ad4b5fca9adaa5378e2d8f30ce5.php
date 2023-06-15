@@ -3,6 +3,7 @@
 <?php $__env->startSection('title'); ?>
     Email template
 <?php $__env->stopSection(); ?>
+
 <?php $__env->startSection('content'); ?>
 
     <?php $__env->startComponent('components.breadcrumb', ['lists' => ['Dashboard' => route('root')]]); ?>
@@ -16,15 +17,15 @@
         <div class="col-md-3">
             <!-- Left sidebar -->
             <div class="card">
-                <div class="mail-list card-body mt-2">
-                    <?php if(!empty($emailtemplates)): ?>
+                <?php if(!empty($emailtemplates->first())): ?>
+                    <div class="mail-list card-body mt-2">
                         <?php $__currentLoopData = $emailtemplates; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $row): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <a href="<?php echo e(route('email.templates')); ?>?id=<?php echo e($row->id); ?>"
                                 class="<?php echo e($emailtemplate->template_name == $row->template_name ? 'active' : ''); ?>"><i
                                     class="mdi mdi-email-outline"></i>&nbsp;<?php echo e($row->template_name); ?></a>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                    <?php endif; ?>
-                </div>
+                    </div>
+                <?php endif; ?>
             </div>
             <!-- End Left sidebar -->
         </div>
@@ -49,8 +50,10 @@
                                 'enctype' => 'multipart/form-data',
                             ]); ?>
 
-                            <input type="hidden" name="id" value="<?php echo e(!empty($emailtemplates) ? $emailtemplate->id:''); ?>" id="email_template_id">
-                            <input type="hidden" name="template_type" value="<?php echo e(!empty($emailtemplates) ? $emailtemplate->template_type:''); ?>">
+                            <input type="hidden" name="id"
+                                value="<?php echo e(!empty($emailtemplates) ? $emailtemplate->id : ''); ?>" id="email_template_id">
+                            <input type="hidden" name="template_type"
+                                value="<?php echo e(!empty($emailtemplates) ? $emailtemplate->template_type : ''); ?>">
                             
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="mb-3">

@@ -3,6 +3,7 @@
 @section('title')
     Email template
 @endsection
+
 @section('content')
 
     @component('components.breadcrumb', ['lists' => ['Dashboard' => route('root')]])
@@ -16,15 +17,15 @@
         <div class="col-md-3">
             <!-- Left sidebar -->
             <div class="card">
-                <div class="mail-list card-body mt-2">
-                    @if (!empty($emailtemplates))
+                @if (!empty($emailtemplates->first()))
+                    <div class="mail-list card-body mt-2">
                         @foreach ($emailtemplates as $row)
                             <a href="{{ route('email.templates') }}?id={{ $row->id }}"
                                 class="{{ $emailtemplate->template_name == $row->template_name ? 'active' : '' }}"><i
                                     class="mdi mdi-email-outline"></i>&nbsp;{{ $row->template_name }}</a>
                         @endforeach
-                    @endif
-                </div>
+                    </div>
+                @endif
             </div>
             <!-- End Left sidebar -->
         </div>
@@ -48,8 +49,10 @@
                                 'class' => 'col-md-12',
                                 'enctype' => 'multipart/form-data',
                             ]) !!}
-                            <input type="hidden" name="id" value="{{ !empty($emailtemplates) ? $emailtemplate->id:'' }}" id="email_template_id">
-                            <input type="hidden" name="template_type" value="{{ !empty($emailtemplates) ? $emailtemplate->template_type:'' }}">
+                            <input type="hidden" name="id"
+                                value="{{ !empty($emailtemplates) ? $emailtemplate->id : '' }}" id="email_template_id">
+                            <input type="hidden" name="template_type"
+                                value="{{ !empty($emailtemplates) ? $emailtemplate->template_type : '' }}">
                             {{-- @endcan --}}
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="mb-3">

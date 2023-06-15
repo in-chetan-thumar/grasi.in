@@ -73,21 +73,48 @@ class LoginController extends Controller
 
     protected function attemptLogin(Request $request)
     {
+
+
         try {
 
-            if (config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')) {
-                $user = resolve('user-repo')->findByUsername($request->username);
-
-                if (!empty($user)) {
-                    return $this->guard()->loginUsingId($user->id);
+            $user = resolve('user-repo')->findByUsername($request->username);
+        
+            if (!empty($user)) {
+                $login_attempt = app('user-helper')->recordLoginAttempts($user);
+                if (empty($login_attempt['error'])) {
+                    if (config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')) {
+                        return $this->guard()->loginUsingId($user->id);
+                    } else {
+                        return $this->guard()->attempt(
+                            $this->credentials($request),
+                            $request->boolean('remember')
+                        );
+                    }
                 } else {
-                    return false;
+                    $errors = new MessageBag(['username' => $login_attempt['error']]);
                 }
             } else {
-                return $this->guard()->attempt(
-                    $this->credentials($request), $request->boolean('remember')
-                );
+                $errors = new MessageBag(['username' => 'We can\'t find a user with these credentials.']);
             }
+            auth()->logout();
+            return redirect()->back()->withErrors($errors);
+
+
+
+
+            // if (config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')) {
+            //     $user = resolve('user-repo')->findByUsername($request->username);
+
+            //     if (!empty($user)) {
+            //         return $this->guard()->loginUsingId($user->id);
+            //     } else {
+            //         return false;
+            //     }
+            // } else {
+            //     return $this->guard()->attempt(
+            //         $this->credentials($request), $request->boolean('remember')
+            //     );
+            // }
         } catch (\Exception $e) {
             $errors = new MessageBag(['username' => ['Something went wrong..!']]);
             auth()->logout();

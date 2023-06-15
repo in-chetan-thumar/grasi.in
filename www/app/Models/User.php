@@ -81,4 +81,13 @@ class User extends Authenticatable
     {
         return Carbon::parse($this->created_at)->format('d-m-Y H:i');
     }
+
+    public function getProfileImageAttribute()
+    {
+      if (file_exists(config('constants.USER_DOC_URL') . auth()->id() . DIRECTORY_SEPARATOR . $this->avatar)) {
+        return config('constants.USER_DOC_URL') . auth()->id() . DIRECTORY_SEPARATOR . $this->avatar;
+      } else {
+        return asset('assets/images/default_profile.png');
+      }
+    }
 }

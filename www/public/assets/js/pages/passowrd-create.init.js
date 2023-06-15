@@ -40,6 +40,7 @@ var letter = document.getElementById("pass-lower");
 var capital = document.getElementById("pass-upper");
 var number = document.getElementById("pass-number");
 var length = document.getElementById("pass-length");
+var special = document.getElementById("pass-special");
 
 // When the user clicks on the password field, show the message box
 myInput.onfocus = function () {
@@ -81,6 +82,16 @@ myInput.onkeyup = function () {
     } else {
         number.classList.remove("valid");
         number.classList.add("invalid");
+    }
+
+    // Validate special characters
+    var specialCharacters = /[!@#$%^&*(),.?":{}|<>+_=-]/g;
+    if (myInput.value.match(specialCharacters)) {
+        special.classList.remove("invalid");
+        special.classList.add("valid");
+    } else {
+        special.classList.remove("valid");
+        special.classList.add("invalid");
     }
 
     // Validate length

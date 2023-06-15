@@ -18,15 +18,15 @@
             <!-- Left sidebar -->
             <div class="card">
 
-                <div class="mail-list card-body mt-2">
-                    @if (!empty($WhatsAppTemplates))
+                @if (!empty($WhatsAppTemplates->first()))
+                    <div class="mail-list card-body mt-2">
                         @foreach ($WhatsAppTemplates as $row)
                             <a href="{{ route('sms.templates') }}?id={{ $row->id }}"
                                 class="{{ $WhatsAppTemplate->template_name == $row->template_name ? 'active' : '' }}"><i
                                     class="mdi mdi-email-outline"></i>&nbsp;{{ $row->template_name }}</a>
                         @endforeach
-                    @endif
-                </div>
+                    </div>
+                @endif
             </div>
             <!-- End Left sidebar -->
         </div>
@@ -51,15 +51,17 @@
                                 'class' => 'col-md-12',
                                 'enctype' => 'multipart/form-data',
                             ]) !!}
-                            <input type="hidden" name="id" value="{{ $WhatsAppTemplate->id }}"
+                            <input type="hidden" name="id"
+                                value="{{ !empty($WhatsAppTemplate) ? $WhatsAppTemplate->id : '' }}"
                                 id="whatsapp_template_id">
-                            <input type="hidden" name="template_type" value="{{ $WhatsAppTemplate->template_type }}">
+                            <input type="hidden" name="template_type"
+                                value="{{ !empty($WhatsAppTemplate) ? $WhatsAppTemplate->template_type : '' }}">
                             {{-- @endcan --}}
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="mb-3">
                                     <div class="form-group">
                                         {{ Form::label('Template name') }}<span class="required">*</span>
-                                        {!! Form::text('template_name', $WhatsAppTemplate->template_name, [
+                                        {!! Form::text('template_name', !empty($WhatsAppTemplate) ? $WhatsAppTemplate->template_name : '', [
                                             'class' => 'form-control',
                                             'placeholder' => 'Template name',
                                             'id' => 'template_name',
@@ -76,11 +78,15 @@
                                 <div class="mb-3">
                                     <div class="form-group">
                                         {{ Form::label('Content') }}<span class="required">*</span>
-                                        {!! Form::textarea('whatsapp_template_content', $WhatsAppTemplate->html_template, [
-                                            'class' => 'form-control',
-                                            'placeholder' => 'Content',
-                                            'id' => 'whatsapp_template_content',
-                                        ]) !!}
+                                        {!! Form::textarea(
+                                            'whatsapp_template_content',
+                                            !empty($WhatsAppTemplate) ? $WhatsAppTemplate->html_template : '',
+                                            [
+                                                'class' => 'form-control',
+                                                'placeholder' => 'Content',
+                                                'id' => 'whatsapp_template_content',
+                                            ],
+                                        ) !!}
                                         @error('whatsapp_template_content')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

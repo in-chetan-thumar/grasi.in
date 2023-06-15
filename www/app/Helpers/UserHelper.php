@@ -9,7 +9,7 @@ class UserHelper
 {
     public function verifyUserAccount($user){
         $response['error'] = [];
-        if ($user->is_account_active == 'N') {
+        if ($user->is_active == 'N') {
             $response['error'] = 'You account is inactive, Please contact to administrator.' ;
         }
         if ($user->is_account_locked == 'Y' and $user->account_release_time_formatted < Carbon::now()->format('d-m-Y H:i')) {
