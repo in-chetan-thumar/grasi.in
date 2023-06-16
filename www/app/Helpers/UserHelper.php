@@ -12,9 +12,6 @@ class UserHelper
         if ($user->is_active == 'N') {
             $response['error'] = 'You account is inactive, Please contact to administrator.' ;
         }
-        if ($user->is_account_locked == 'Y' and $user->account_release_time_formatted < Carbon::now()->format('d-m-Y H:i')) {
-            $response['error'] = 'You account is deactivate, Please contact to administrator.' ;
-        }
         return $response;
     }
 
@@ -26,12 +23,25 @@ class UserHelper
         if ($user->login_attempt < 5) {
             $user->increment('login_attempt');
         } else {
-            $user->update([
-                'is_account_locked' => 'Y',
-                'account_locked_at' => Carbon::now()->toDateTimeString(),
-            ]);
-            $response['error'] = 'Your account has been locked. Please try after sometimes.';
-            return $response;
+            if($user->is_account_locked == 'Y' and $user->account_release_time_formatted < Carbon::now()->format('Y-m-d H:i:s')){
+                $user->update([
+                    'is_account_locked' => 'N',
+                    'account_locked_at' => null,
+                ]);
+                return null;
+            }else{
+
+                if(empty($user->account_locked_at)){
+                    $user->update([
+                        'is_account_locked' => 'Y',
+                        'account_locked_at' => Carbon::now()->toDateTimeString(),
+                    ]);
+                }
+                
+                $response['error'] = 'Your account has been locked. Please try after sometimes.';
+                return $response;
+            }
+
         }
     }
 
