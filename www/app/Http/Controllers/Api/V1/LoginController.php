@@ -65,6 +65,7 @@ class LoginController extends Controller
         try {
             $response = [];
             $user = resolve('user-repo')->findByUsername($request->username); 
+            
             if (empty($user)) {
                 return response(['errors' => 'We can\'t find a user with these credentials.'], 422);
             }
@@ -88,6 +89,7 @@ class LoginController extends Controller
         try {
             $response = [];
             $user = resolve('user-repo')->findByUsername($request->username); 
+            
             if (empty($user)) {
                 return response(['errors' => 'We can\'t find a user with these credentials.'], 422);
             }
@@ -112,6 +114,10 @@ class LoginController extends Controller
 
             $user = resolve('user-repo')->findByUsername($request->username); 
 
+            if (empty($user)) {
+                return response(['errors' => 'We can\'t find a user with these credentials.'], 422);
+            }
+
             $resend_otp = app('user-helper')->resendTwoFectorCode($user);
 
             if (!empty($resend_otp['error'])) {
@@ -129,6 +135,10 @@ class LoginController extends Controller
             $response = [];
 
             $user = resolve('user-repo')->findByUsername($request->username); 
+
+            if (empty($user)) {
+                return response(['errors' => 'We can\'t find a user with these credentials.'], 422);
+            }
 
             $verify_otp = app('user-helper')->verifyTwoFactorCode($user, $request->two_factor_code);
 
