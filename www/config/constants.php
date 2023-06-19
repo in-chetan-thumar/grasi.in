@@ -1,8 +1,8 @@
 <?php
 return [
-    'EMAIL_OTP_LOGIN' => false,
+    'EMAIL_OTP_LOGIN' => true,
     'MOBILE_OTP_LOGIN' => false,
-    'USER_PASSWORD_LOGIN' => true,
+    'USER_PASSWORD_LOGIN' => false,
     'APP_NAME' => env('APP_NAME', ''),
     //Emails
     'EMAIL'=>[

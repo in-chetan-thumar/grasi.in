@@ -36,9 +36,15 @@ class TwoFactorController extends Controller
         }
 
         $verify_two_factor_code_status = app('user-helper')->verifyTwoFactorCode($user, $two_factor_code);
+
         if(!empty($verify_two_factor_code_status['error'])){
-            auth()->logout();
-            return redirect()->back()->withErrors(['username' => $verify_two_factor_code_status['error']]);
+
+            if(auth()->user()->is_account_locked == 'Y'){
+                auth()->logout();
+                return redirect()->route('login')->withErrors(['username' => $verify_two_factor_code_status['error']]);
+            }
+
+            return redirect()->back()->withErrors(['two_factor_code' => $verify_two_factor_code_status['error']]);
         }
 
         if ($verify_two_factor_code_status['is_otp_valid']) {

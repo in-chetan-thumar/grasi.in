@@ -37,7 +37,7 @@ class UserHelper
                         'account_locked_at' => Carbon::now()->toDateTimeString(),
                     ]);
                 }
-                
+
                 $response['error'] = 'Your account has been locked. Please try after sometimes.';
                 return $response;
             }
