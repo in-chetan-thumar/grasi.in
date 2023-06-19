@@ -30,10 +30,4 @@ class ChangePasswordRequest extends FormRequest
             'password' => ['required',Password::min(8)->mixedCase()->numbers()->symbols(),'confirmed'],
         ];
     }
-    public function messages()
-    {
-        return [
-            'password.symbols' => 'The field must contain at least one symbol.',
-        ];
-    }
 }
