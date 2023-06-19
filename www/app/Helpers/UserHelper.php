@@ -110,6 +110,9 @@ class UserHelper
         $response['message'] = '';
 
         if ($user->two_factor_code_resend_attempt >= 5) {
+            $user->is_account_locked = 'Y';
+            $user->account_locked_at = Carbon::now()->toDateTimeString();
+            $user->save();
             $response['error'] = 'Your can not use resend password funcality more then 5 times.';
         } else {
             // Send OTP to users again

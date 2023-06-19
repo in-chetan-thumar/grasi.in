@@ -33,7 +33,7 @@
                     <div class="col-lg-12">
                         <div class="text-center mt-sm-5 mb-4 text-white-50">
                             <div>
-                                    <a href="<?php echo e(route('root')); ?>" class="d-inline-block auth-logo">
+                                <a href="<?php echo e(route('root')); ?>" class="d-inline-block auth-logo">
                                     <img src="<?php echo e(URL::asset('assets/images/logo-light.png')); ?>" alt="" height="20">
                                 </a>
                             </div>
@@ -53,6 +53,9 @@
                                     <p class="text-muted">Sign in to continue to <?php echo e(env('APP_NAME')); ?>.</p>
                                 </div>
                                 <div class="p-2 mt-4">
+                                    <?php if(\Illuminate\Support\Facades\Session::has('username')): ?>
+                                        <?php dd(\Illuminate\Support\Facades\Session::get('username')); ?>
+                                    <?php endif; ?>
                                     <form action="<?php echo e(route('login')); ?>" method="POST">
                                         <?php echo csrf_field(); ?>
                                         <div class="mb-3">
