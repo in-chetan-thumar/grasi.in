@@ -81,7 +81,10 @@ class User extends Authenticatable
     {
         return Carbon::parse($this->created_at)->format('d-m-Y H:i');
     }
-
+    public function getAccountReleaseTimeFormattedAttribute()
+    {
+        return !empty($this->account_locked_at) ? Carbon::parse($this->account_locked_at)->addMinute(config('constants.USER_LOCKED_MINUTES'))->format('Y-m-d H:i:s'): null;
+    }
     public function getProfileImageAttribute()
     {
       if (file_exists(config('constants.USER_DOC_URL') . auth()->id() . DIRECTORY_SEPARATOR . $this->avatar)) {

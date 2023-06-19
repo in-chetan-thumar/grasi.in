@@ -18,4 +18,5 @@ return [
     'APP_VERSION' => env('APP_VERSION', '1.0'),
     'LOGO_FILE_NAME' => 'logo-dark.png',
     'DEVELOPED_BY' => '',
+    'USER_LOCKED_MINUTES' => 2,
 ];
