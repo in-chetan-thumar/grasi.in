@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\MessageBag;
+use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
 {
@@ -71,53 +72,61 @@ class LoginController extends Controller
         ];
     }
 
+    public function login(Request $request)
+    {
+        $this->validateLogin($request);
+
+
+        $user = resolve('user-repo')->findByUsername($request->username);
+
+        if (!empty($user)) {
+            $login_attempt = app('user-helper')->recordLoginAttempts($user);
+
+            if (empty($login_attempt) && empty($login_attempt['error'])) {
+                if ($this->attemptLogin($request)) {
+                    if ($request->hasSession()) {
+                        $request->session()->put('auth.password_confirmed_at', time());
+                    }
+                    return $this->sendLoginResponse($request);
+                }
+                $request->session()->put('auth.error', trans('auth.failed'));
+                return $this->sendFailedLoginResponse($request);
+
+            } else {
+                $request->session()->put('auth.error', $login_attempt['error']);
+                return $this->sendFailedLoginResponse($request);
+            }
+        }
+
+        $request->session()->put('auth.error', 'We can\'t find a user with these credentials.');
+        return $this->sendFailedLoginResponse($request);
+    }
+
+    protected function sendFailedLoginResponse(Request $request)
+    {
+        throw ValidationException::withMessages([
+            $this->username() => [session()->get('auth.error')],
+        ]);
+    }
+
     protected function attemptLogin(Request $request)
     {
-
-
         try {
+            if (config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')) {
+                $user = resolve('user-repo')->findByUsername($request->username);
 
-            $user = resolve('user-repo')->findByUsername($request->username);
-        
-            if (!empty($user)) {
-                $login_attempt = app('user-helper')->recordLoginAttempts($user);
-                if (empty($login_attempt['error'])) {
-                    if (config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')) {
-                        return $this->guard()->loginUsingId($user->id);
-                    } else {
-                        return $this->guard()->attempt(
-                            $this->credentials($request),
-                            $request->boolean('remember')
-                        );
-                    }
+                if (!empty($user)) {
+                    return $this->guard()->loginUsingId($user->id);
                 } else {
-                    $errors = new MessageBag(['username' => $login_attempt['error']]);
+                    return false;
                 }
             } else {
-                $errors = new MessageBag(['username' => 'We can\'t find a user with these credentials.']);
+                return $this->guard()->attempt(
+                    $this->credentials($request), $request->boolean('remember')
+                );
             }
-            auth()->logout();
-            return redirect()->back()->withErrors($errors);
-
-
-
-
-            // if (config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')) {
-            //     $user = resolve('user-repo')->findByUsername($request->username);
-
-            //     if (!empty($user)) {
-            //         return $this->guard()->loginUsingId($user->id);
-            //     } else {
-            //         return false;
-            //     }
-            // } else {
-            //     return $this->guard()->attempt(
-            //         $this->credentials($request), $request->boolean('remember')
-            //     );
-            // }
         } catch (\Exception $e) {
             $errors = new MessageBag(['username' => ['Something went wrong..!']]);
-            auth()->logout();
             return redirect()->back()->withErrors($errors);
         }
     }
