@@ -75,13 +75,12 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $this->validateLogin($request);
-
-
+        
         $user = resolve('user-repo')->findByUsername($request->username);
-
+        
         if (!empty($user)) {
             $login_attempt = app('user-helper')->recordLoginAttempts($user);
-
+            
             if (empty($login_attempt) && empty($login_attempt['error'])) {
                 if ($this->attemptLogin($request)) {
                     if ($request->hasSession()) {
