@@ -76,7 +76,7 @@ Route::group(['middleware' => $middleware], function () {
 });
 
 Route::get('/form-custom-field',function (){
- return view('custom-form-field');
+    return view('custom-form-field');
 });
 
 
