@@ -31,7 +31,7 @@
                  <div class="menu_main">
                            <nav class="wsmenu">
                               <ul class="wsmenu-list">
-                                 <li><a href="{{ route('frontend.our-story') }}">Our Story</a></li>
+                                 <li><a href="{{ route('frontend.our_story') }}">Our Story</a></li>
                                  <li class="megamenumain"><a href="#">Our Solutions</a>
                                  {{-- mega menu start  --}}
                                   <div class="megamenu">
