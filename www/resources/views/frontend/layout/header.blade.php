@@ -1,5 +1,5 @@
 
-   
+
       <div class="site-main">
          <noscript>
             <div class="noscript">
@@ -14,14 +14,14 @@
          <header class="header header_main">
            <div class="top_header">
             <div class="container">
-              <div class="d-flex align-items-center justify-content-end"> 
+              <div class="d-flex align-items-center justify-content-end">
                  <ul>
                     <li><a href="https://www.llumarppf.in/Ewar/Dealer/login.php" target="blank" class="btn btn-primary">LLumar E-warranty</a></li>
                     <li><a href="{{ route('frontend.locate')}}" class="btn btn-primary">Locate LLumar Dealer</a></li>
                  </ul>
               </div>
               </div>
-           </div> 
+           </div>
            <div class="main_header">
             <div class="container">
               <div class="d-flex align-items-end justify-content-between">

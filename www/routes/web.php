@@ -21,15 +21,15 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes();
 
 $middleware = ['auth','throttle:120,1'];
-// home page route 
+// home page route
 Route::get('/',[homeController::class,'index'])->name('frontend.home');
 //Our Story page route
 Route::get('our-story',[ourStoryController::class,'index'])->name('frontend.our-story');
-//contact page route 
+//contact page route
 Route::get('contact',[contactController::class,'index'])->name('frontend.contact');
-//locate page route 
+//locate page route
 Route::get('locate',[locatetController::class,'index'])->name('frontend.locate');
-//graphic page route 
+//graphic page route
 Route::get('graphic',[graphicController::class,'index'])->name('frontend.graphic');
 
 
