@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\frontend\contactController;
+use App\Http\Controllers\frontend\graphicController;
+use App\Http\Controllers\frontend\homeController;
+use App\Http\Controllers\frontend\locatetController;
+use App\Http\Controllers\frontend\ourStoryController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -16,13 +21,24 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes();
 
 $middleware = ['auth','throttle:120,1'];
+// home page route
+Route::get('/',[homeController::class,'index'])->name('home');
+//Our Story page route
+Route::get('our-story',[ourStoryController::class,'index'])->name('our-story');
+//contact page route
+Route::get('contact',[contactController::class,'index'])->name('contact');
+//locate page route
+Route::get('locate',[locatetController::class,'index'])->name('locate');
+//graphic page route
+Route::get('graphic',[graphicController::class,'index'])->name('graphic');
+
 
 if(config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')){
     array_push($middleware,'twofactor');
 }
 
 Route::group(['middleware' => $middleware], function () {
-    Route::get('/', [App\Http\Controllers\Admin\DashboardController::class, 'root'])->name('root');
+    Route::get('/admin', [App\Http\Controllers\Admin\DashboardController::class, 'root'])->name('root');
 
     Route::get('verify/resend', [\App\Http\Controllers\Auth\TwoFactorController::class, 'resend'])->name('verify.resend');
     Route::resource('verify', \App\Http\Controllers\Auth\TwoFactorController::class)->only(['index', 'store']);
@@ -60,5 +76,7 @@ Route::group(['middleware' => $middleware], function () {
 });
 
 Route::get('/form-custom-field',function (){
- return view('custom-form-field');
+    return view('custom-form-field');
 });
+
+
