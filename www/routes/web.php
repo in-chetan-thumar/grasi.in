@@ -22,15 +22,15 @@ Auth::routes();
 
 $middleware = ['auth','throttle:120,1'];
 // home page route 
-Route::get('/',[homeController::class,'index'])->name('home');
+Route::get('/',[homeController::class,'index'])->name('frontend.home');
 //Our Story page route
-Route::get('our-story',[ourStoryController::class,'index'])->name('our-story');
+Route::get('our-story',[ourStoryController::class,'index'])->name('frontend.our-story');
 //contact page route 
-Route::get('contact',[contactController::class,'index'])->name('contact');
+Route::get('contact',[contactController::class,'index'])->name('frontend.contact');
 //locate page route 
-Route::get('locate',[locatetController::class,'index'])->name('locate');
+Route::get('locate',[locatetController::class,'index'])->name('frontend.locate');
 //graphic page route 
-Route::get('graphic',[graphicController::class,'index'])->name('graphic');
+Route::get('graphic',[graphicController::class,'index'])->name('frontend.graphic');
 
 
 if(config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')){

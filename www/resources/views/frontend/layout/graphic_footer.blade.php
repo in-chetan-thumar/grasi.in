@@ -94,7 +94,7 @@
 						<div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
 							<div class="footer_wrapper">
 								<ul>
-									<li><a href="{{ asset('our-story')}}">Our Story</a></li>
+									<li><a href="{{ route('our-story')}}">Our Story</a></li>
 									<li><a href="#">Our Solutions</a></li>
 									<li><a href="#">Casestudies</a></li>
 									<li><a href="#">Careers</a></li>
@@ -104,9 +104,9 @@
 						<div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
 							<div class="footer_wrapper">
 								<ul>
-									<li><a href="{{ asset('locate')}}">Locate LLumar Dealer</a></li>
+									<li><a href="{{ route('locate')}}">Locate LLumar Dealer</a></li>
 									<li><a href="#">LLumar E-warranty</a></li>
-									<li><a href="{{ asset('contact')}}">Contact</a></li>
+									<li><a href="{{ route('contact')}}">Contact</a></li>
 								</ul>
 							</div>
 						</div>

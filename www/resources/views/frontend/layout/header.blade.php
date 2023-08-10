@@ -17,7 +17,7 @@
               <div class="d-flex align-items-center justify-content-end"> 
                  <ul>
                     <li><a href="https://www.llumarppf.in/Ewar/Dealer/login.php" target="blank" class="btn btn-primary">LLumar E-warranty</a></li>
-                    <li><a href="{{{ asset('locate')}}}" class="btn btn-primary">Locate LLumar Dealer</a></li>
+                    <li><a href="{{ route('frontend.locate')}}" class="btn btn-primary">Locate LLumar Dealer</a></li>
                  </ul>
               </div>
               </div>
@@ -26,12 +26,12 @@
             <div class="container">
               <div class="d-flex align-items-end justify-content-between">
                  <div class="logo_main">
-                    <a href="{{ asset('/')}}"><img src="{{ asset('assets/frontend/images/logo.svg')}}" alt="image"></a>
+                    <a href="{{ route('frontend.home')}}"><img src="{{ asset('assets/frontend/images/logo.svg')}}" alt="image"></a>
                  </div>
                  <div class="menu_main">
                            <nav class="wsmenu">
                               <ul class="wsmenu-list">
-                                 <li><a href="{{ asset('our-story') }}">Our Story</a></li>
+                                 <li><a href="{{ route('frontend.our-story') }}">Our Story</a></li>
                                  <li class="megamenumain"><a href="#">Our Solutions</a>
                                  {{-- mega menu start  --}}
                                   <div class="megamenu">
@@ -156,7 +156,7 @@
                                         </div>
                                         <div class="col-lg-9">
                                           <div class="megamenu_right">
-                                            <h2><a href="{{ asset('graphic')}}"><h2>Graphics</h2></a>
+                                            <h2><a href="{{ route('frontend.graphic')}}"><h2>Graphics</h2></a>
                                           </div>
                                         </div>
                                       </div>
@@ -168,7 +168,7 @@
                                  </li>
                                  <li><a href="casestudies.php">Casestudies</a></li>
                                  <li><a href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/" target="blank">Careers</a></li>
-                                 <li><a href="{{ asset('contact')}}">Contact</a></li>
+                                 <li><a href="{{ route('frontend.contact')}}">Contact</a></li>
                               </ul>
                            </nav>
                            <a id="wsnavtoggle" class="wsanimated-arrow menu_close"><span></span><span></span><span></span><span></span></a>

@@ -19,19 +19,19 @@
 						<div class="col-lg-2 col-lg-2 col-lg-2 col-md-3 col-sm-6">
 							<div class="footer_wrapper">
 								<ul>
-									<li><a href="{{ asset('our-story') }}">Our Story</a></li>
+									<li><a href="{{ route('frontend.our-story') }}">Our Story</a></li>
 									<li><a href="#">Our Solutions</a></li>
 									<li><a href="#">Casestudies</a></li>
-									<li><a href="#">Careers</a></li>
+									<li><a href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/" target="blank">Careers</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-lg-2 col-lg-2 col-lg-2 col-md-3 col-sm-6">
 							<div class="footer_wrapper">
 								<ul>
-									<li><a href="{{ asset('locate')}}">Locate LLumar Dealer</a></li>
+									<li><a href="{{ route('frontend.locate')}}">Locate LLumar Dealer</a></li>
 									<li><a href="https://www.llumarppf.in/Ewar/Dealer/login.php" target="blank">LLumar E-warranty</a></li>
-									<li><a href="{{ asset('contact')}}">Contact</a></li>
+									<li><a href="{{ route('frontend.contact')}}">Contact</a></li>
 								</ul>
 							</div>
 						</div>
