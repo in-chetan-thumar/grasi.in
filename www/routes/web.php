@@ -24,7 +24,7 @@ $middleware = ['auth','throttle:120,1'];
 // home page route
 Route::get('/',[homeController::class,'index'])->name('frontend.home');
 //Our Story page route
-Route::get('our-story',[ourStoryController::class,'index'])->name('frontend.our_story');
+Route::get('our_story',[ourStoryController::class,'index'])->name('frontend.our_story');
 //contact page route
 Route::get('contact',[contactController::class,'index'])->name('frontend.contact');
 //locate page route

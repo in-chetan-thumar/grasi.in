@@ -2,7 +2,7 @@
 @extends('frontend.layout.master')
 
 {{-- home page title  --}}
-@section('title') Home @endsection
+@section('title') Home | Gras-I @endsection
 
 {{-- home page main content  --}}
 @section('content')
