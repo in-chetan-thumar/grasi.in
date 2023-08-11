@@ -20,7 +20,7 @@ class ContactMailNotification extends TemplateMailable
      */
     public function __construct($params)
     {
-        $this->NAME = 'kajal';
+        $this->NAME = 'Gras-i';
         $this->CONTACT_FIRST_NAME = $params['first_name'];
         $this->CONTACT_LAST_NAME = $params['last_name'];
         $this->CONTACT_EMAIL = $params['email'];
@@ -30,7 +30,7 @@ class ContactMailNotification extends TemplateMailable
     public function getHtmlLayout(): string
     {
         return view('email.email_layout')->with([
-            'TO' => 'kajal.baldha@tiez.nl',
+            'TO' => 'enquiry@gras.in',
             'CC' => implode(', ', $this->params['cc'] ?? ['']),
         ])->render();
     }

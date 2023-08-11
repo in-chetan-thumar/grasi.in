@@ -7,7 +7,7 @@ return [
     //Emails
     'EMAIL'=>[
         'LOCAL' => ['TO'=>['kajal.baldha@tiez.nl'],'CC'=>[]],
-        'DEVELOPMENT'=>['TO'=>['kajal.baldha@tiez.nl'],'CC'=>[]],
+        'DEVELOPMENT'=>['TO'=>['enquiry@gras.in'],'CC'=>[]],
     ],
     'PER_PAGE' => 10,
     'SUPER_ADMIN' => 'Super Admin',
