@@ -8,76 +8,85 @@
 					<div class="footer_form_sub">
 						<div class="row justify-content-center">
 							<div class="col-xxl-11 col-xl-11">
-					<div class="row align-items-center">
-						<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-							<div class="title_1 text-left">
-								<div class="title_main">Beautify a Living Space with<br> a Few Clicks</div>
-							</div>
-						</div>
-						<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-							<div class="footer_form_main">
-								<form action="">
-									<div class="row">
-										<div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6">
-											<div class="form-group input-box">
-												<label>First Name</label>
-												<input class="form-control input" placeholder="Type here" value="" type="text">
-											</div>
-										</div>
-										<div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6">
-											<div class="form-group input-box">
-												<label>Last Name</label>
-												<input class="form-control input" placeholder="Type here" value="" type="text">
-											</div>
-										</div>
-										<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-											<div class="form-group input-box select-box">
-												<label>Last Name</label>
-												<div class="relative">
-												<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-													<path d="M5.75593 5.62713C5.35716 6.08759 4.64284 6.08759 4.24407 5.62713L1.23682 2.15465C0.675942 1.50701 1.136 0.5 1.99275 0.5L8.00725 0.5C8.864 0.5 9.32406 1.50701 8.76318 2.15465L5.75593 5.62713Z" fill="#35ADD9"/>
-												</svg>
-												<select name="" id="" class="form-control input">
-													<option value="">Select</option>
-													<option value="">Select</option>
-													<option value="">Select</option>
-													<option value="">Select</option>
-													<option value="">Select</option>
-													<option value="">Select</option>
-												</select>
-											</div>
-											</div>
-										</div>
-										<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-											<div class="form-group input-box">
-												<label>Mobile</label>
-												<input class="form-control input" placeholder="Mobile Number" value="" type="number">
-											</div>
-										</div>
-										<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-											<div class="form-group input-box">
-												<label>Email</label>
-												<input class="form-control input" placeholder="email address" value="" type="email">
-											</div>
-										</div>
-										<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-											<div class="submit_btn">
-												<div class="btn btn-primary">
-													<input placeholder="Enquire Now" value="Enquire Now" type="submit">
-												</div>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-				</div>
+					            <div class="row align-items-center">
+						            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+							            <div class="title_1 text-left">
+								            <div class="title_main">Beautify a Living Space with<br> a Few Clicks</div>
+							            </div>
+						            </div>
+						            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+							            <div class="footer_form_main">
+											{{-- footer form start  --}}
+								            <form action="">
+									            <div class="row">
+
+										            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+											            <div class="form-group input-box">
+												            <label>First Name</label>
+												            <input class="form-control input" placeholder="Type here" value="" type="text">
+											            </div>
+										            </div>
+
+										            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+										            	<div class="form-group input-box">
+										            		<label>Last Name</label>
+										            		<input class="form-control input" placeholder="Type here" value="" type="text">
+										            	</div>
+										            </div>
+
+										            <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+											            <div class="form-group input-box select-box">
+												            <label>Last Name</label>
+												            <div class="relative">
+												                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+													                <path d="M5.75593 5.62713C5.35716 6.08759 4.64284 6.08759 4.24407 5.62713L1.23682 2.15465C0.675942 1.50701 1.136 0.5 1.99275 0.5L8.00725 0.5C8.864 0.5 9.32406 1.50701 8.76318 2.15465L5.75593 5.62713Z" fill="#35ADD9"/>
+												                </svg>
+												                <select name="" id="" class="form-control input">
+													                <option value="">Select</option>
+													                <option value="">Select</option>
+													                <option value="">Select</option>
+													                <option value="">Select</option>
+													                <option value="">Select</option>
+													                <option value="">Select</option>
+												                </select>
+											                </div>
+											            </div>
+										            </div>
+
+										            <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+										            	<div class="form-group input-box">
+										            		<label>Mobile</label>
+										            		<input class="form-control input" placeholder="Mobile Number" value="" type="number">
+										            	</div>
+										            </div>
+
+										            <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+										            	<div class="form-group input-box">
+										            		<label>Email</label>
+										            		<input class="form-control input" placeholder="email address" value="" type="email">
+										            	</div>
+										            </div>
+
+										            <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+										            	<div class="submit_btn">
+										            		<div class="btn btn-primary">
+										            			<input placeholder="Enquire Now" value="Enquire Now" type="submit">
+										            		</div>
+										            	</div>
+										            </div>
+									            </div>
+								            </form>
+											{{-- footer form end  --}}
+							            </div>
+						            </div>
+					            </div>
+				            </div>
+			            </div>
+				    </div>
 				</div>
 			</div>
 		</div>
+
 		<div class="top_footer">
 			<div class="row g-4 justify-content-center">
 				<div class="col-xxl-11 col-xl-11">
@@ -94,19 +103,19 @@
 						<div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
 							<div class="footer_wrapper">
 								<ul>
-									<li><a href="{{ route('our-story')}}">Our Story</a></li>
+									<li><a href="{{ route('frontend.our_story')}}">Our Story</a></li>
 									<li><a href="#">Our Solutions</a></li>
 									<li><a href="#">Casestudies</a></li>
-									<li><a href="#">Careers</a></li>
+									<li><a href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/" target="blank">Careers</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
 							<div class="footer_wrapper">
 								<ul>
-									<li><a href="{{ route('locate')}}">Locate LLumar Dealer</a></li>
-									<li><a href="#">LLumar E-warranty</a></li>
-									<li><a href="{{ route('contact')}}">Contact</a></li>
+									<li><a href="{{ route('frontend.locate')}}">Locate LLumar Dealer</a></li>
+									<li><a href="https://www.llumarppf.in/Ewar/Dealer/login.php" target="blank">LLumar E-warranty</a></li>
+									<li><a href="{{ route('frontend.contact')}}">Contact</a></li>
 								</ul>
 							</div>
 						</div>
@@ -145,9 +154,9 @@
 		<div class="bottom_footer">
 			<div class="row justify-content-center">
 				<div class="col-xxl-11 col-xl-11">
-			<p>Copyright@Gras-i</p>
-		</div>
-	</div>
+			        <p>Copyright@Gras-i</p>
+		        </div>
+	        </div>
 		</div>
 	</div>
 </footer>

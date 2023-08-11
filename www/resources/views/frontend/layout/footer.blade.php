@@ -1,5 +1,5 @@
 
-
+{{-- footer section   --}}
 <footer class="footer">
 	<div class="container">
 
@@ -19,7 +19,7 @@
 						<div class="col-lg-2 col-lg-2 col-lg-2 col-md-3 col-sm-6">
 							<div class="footer_wrapper">
 								<ul>
-									<li><a href="{{ route('frontend.our-story') }}">Our Story</a></li>
+									<li><a href="{{ route('frontend.our_story') }}">Our Story</a></li>
 									<li><a href="#">Our Solutions</a></li>
 									<li><a href="#">Casestudies</a></li>
 									<li><a href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/" target="blank">Careers</a></li>

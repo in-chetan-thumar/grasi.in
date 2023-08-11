@@ -2,7 +2,7 @@
 @extends('frontend.layout.master')
 
 {{-- graphic title  --}}
-@section('title') Graphics @endsection
+@section('title') Graphics | Gras-I @endsection
 
 {{-- graphic main content  --}}
 @section('content')
