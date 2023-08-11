@@ -7,7 +7,7 @@
 {{-- Our Story main content  --}}
 @section('content')
 
-    
+
 <section class="p0 inner_page our_story_page">
     <section class="inner_banner p0" style="background:url({{ asset('assets/frontend/images/ourstory_banner.webp')}});background-position: center;background-repeat: no-repeat;background-size: cover;">
         <div class="container">
@@ -24,10 +24,10 @@
             </div>
         </div>
     </section>
-    
-    
-    
-    
+
+
+
+
     <section class="page_middle_desc">
         <div class="container">
             <div class="row justify-content-center">
@@ -39,30 +39,30 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <section class="journey pt0">
         <div class="container">
             <div class="title_1">
                 <div class="title_main">Journey</div>
-                <div class="main_arrow"> 
+                <div class="main_arrow">
                     <div class="swiper-button-prev swiper-button-prev-journey">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> 
-                            <path d="M14.6 6L16 7.4L11.4 12L16 16.6L14.6 18L8.6 12L14.6 6Z" fill="white"/> 
-                        </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M14.6 6L16 7.4L11.4 12L16 16.6L14.6 18L8.6 12L14.6 6Z" fill="white"/>
+                        </svg>
                     </div>
                     <div class="swiper-button-next swiper-button-next-journey">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> 
-                            <rect width="24" height="24" rx="12" fill="#00A6C0"/> 
-                            <path d="M9.4 18L8 16.6L12.6 12L8 7.4L9.4 6L15.4 12L9.4 18Z" fill="white"/> 
-                        </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect width="24" height="24" rx="12" fill="#00A6C0"/>
+                            <path d="M9.4 18L8 16.6L12.6 12L8 7.4L9.4 6L15.4 12L9.4 18Z" fill="white"/>
+                        </svg>
                     </div>
                 </div>
             </div>
 
 
             <div class="swiper mySwiper_journey">
-                
+
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <figure class="journey_box" style="background:url({{ asset('assets/frontend/images/journeyimg1.webp')}});background-repeat: no-repeat;background-position: center;background-size: cover;">
@@ -156,16 +156,16 @@
                             </figcaption>
                         </figure>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </section>
-    
-    
-    
-    
-    
+
+
+
+
+
     <section class="team pt0" style="background-image: url({{ asset('assets/frontend/images/team_bg.svg')}});background-repeat: no-repeat;background-position:top center;background-size: 100% auto;">
         <div class="container">
             <div class="title_1">
@@ -264,8 +264,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <section class="mission">
         <div class="container">
 
@@ -286,8 +286,8 @@
                                         <div class="title_main">Mission</div>
                                     </div>
                                     <p>As a company whose prime focus has always been customer satisfaction, our mission is to provide excellence through total Integrity, professionalism and dedication. </p>
-    
-                                    <p>We offer intelligent surface solutions that are not only premium in nature and offer optimum functional value but are also available at mass-affordable prices. As a part of our mission, we make sure we continue to deliver the quality, execution, and service that we are known for.</p>						
+
+                                    <p>We offer intelligent surface solutions that are not only premium in nature and offer optimum functional value but are also available at mass-affordable prices. As a part of our mission, we make sure we continue to deliver the quality, execution, and service that we are known for.</p>
                                 </div>
                             </div>
                         </div>
@@ -312,14 +312,14 @@
                                      <div class="title_main">Vision</div>
                                     </div>
                                     <p>Since our inception, we have been generating and delivering intelligent, innovative, and functional solutions, which has made us a reputable name in the architectural and automotive industry. </p>
-                                    <p>Today, as we continue to provide state-of-the-art materials and services, we hold a vision to make it all aesthetically and technologically superior.</p>						
+                                    <p>Today, as we continue to provide state-of-the-art materials and services, we hold a vision to make it all aesthetically and technologically superior.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 </section>
@@ -327,7 +327,7 @@
 {{-- include footer  --}}
 @include('frontend.layout.footer')
 
-   
+
 @endsection
 
 
@@ -335,9 +335,9 @@
 @section('js')
   <script>
      var swiperjourney = new Swiper(".mySwiper_journey", {
-      
+
     speed: 1000,
-    
+
   	  //loop: true,
       slidesPerView: 5,
       spaceBetween:11,

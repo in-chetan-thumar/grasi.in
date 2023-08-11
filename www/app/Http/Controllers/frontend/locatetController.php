@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\City;
 use App\Models\Dealer;
 use App\Models\Dealers;
 use Illuminate\Http\Request;
@@ -17,32 +18,45 @@ class locatetController extends Controller
     {
 
         $llumarDealerData = Dealer::all();
-        $state=Dealer::select('state', 'city')->groupBy('state') ->pluck('state','city');
+        $states=Dealer::select('state')->groupBy('state') ->pluck('state');
         $city=Dealer::select('city')->groupBy('city')->pluck('city');
         // dd($state,$city);
-        return view('frontend.locate',['llumarDealerState' => $state, 'llumarDealercity' => $city]);
+        return view('frontend.locate',compact('llumarDealerData','states'));
     }
-    
-     
-    public function getCities(Request $request)
+
+
+    public function getCities($state)
     {
-    $state = $request->input('state');
+        try {
 
-    $cities = Dealer::where('state', $state)
-        ->pluck('city')
-        ->toArray();
-        dd($cities);
 
-    // return response()->json(['cities' => $cities]);
+            $options = '<option selected="selected" value="">Select city</option>';
+           // $states=Dealer::where('state',$state)->groupBy('state');
+            $cities= Dealer::select('city')->where('state',$state)->groupBy('city')->pluck('city');
+
+
+            foreach ($cities as  $city) {
+
+                $options .= '<option  value="' . $city . '">' . $city . '</option>';
+            }
+
+            $data['error'] = false;
+            $data['view'] = $options;
+            return response()->json($data);
+        } catch (\Exception $e) {
+            $data['error'] = true;
+            $data['message'] = resolve('common-helper')->generateErrorMessage($e);
+            return response()->json($data);
+        }
 }
-    
+
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        
+
     }
 
     /**
@@ -107,6 +121,11 @@ public function getData(Request $request)
 
     return $html;
 }
+    function getCityFromState($id)
+    {
+
+    }
+
 
 }
 
