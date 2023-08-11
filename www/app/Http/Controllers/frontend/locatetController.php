@@ -31,6 +31,7 @@ class locatetController extends Controller
     $cities = Dealer::where('state', $state)
         ->pluck('city')
         ->toArray();
+        dd($cities);
 
     // return response()->json(['cities' => $cities]);
 }

@@ -72,11 +72,11 @@
 							        <select name="" id="citySelect" class="form-control input">
 										<option value="">Select City</option>
                                        
-									@if (!empty($llumarDealercity))
+									
 									     @foreach ($llumarDealercity as $city)
 									          <option value="">{{ $city }}</option>
 							              @endforeach 
-									@endif	
+									
 
 										
 
