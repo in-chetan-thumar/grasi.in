@@ -5,9 +5,9 @@
 
 		<div class="top_footer">
 			<div class="row g-4 justify-content-center">
-				<div class="col-lg-11 col-lg-11">
+				<div class="col-xl-11 col-lg-11">
 					<div class="row g-4">
-						<div class="col-lg-5 col-lg-5 col-lg-5 col-md-3 col-sm-6">
+						<div class="col-xxl-5 col-xl-5 col-lg-5 col-md-3 col-sm-6">
 							<div class="footer_wrapper">
 								<div class="about_footer">
 									<div class="footer_logo">
@@ -16,7 +16,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-2 col-lg-2 col-lg-2 col-md-3 col-sm-6">
+						<div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
 							<div class="footer_wrapper">
 								<ul>
 									<li><a href="{{ route('frontend.our_story') }}">Our Story</a></li>
@@ -26,7 +26,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-2 col-lg-2 col-lg-2 col-md-3 col-sm-6">
+						<div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
 							<div class="footer_wrapper">
 								<ul>
 									<li><a href="{{ route('frontend.locate')}}">Locate LLumar Dealer</a></li>
@@ -35,7 +35,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-3 col-lg-3 col-lg-3 col-md-3 col-sm-6">
+						<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
 							<div class="footer_wrapper followus">
 								<div class="title">Follow Us On</div>
 								<div class="social_media">

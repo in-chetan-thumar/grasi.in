@@ -160,7 +160,7 @@
                                                             </div>
                                                             <div class="col-lg-9">
                                                                 <div class="megamenu_right">
-                                                                    <h2><a href="{{ route('frontend.graphic')}}"><h2>Graphics</h2></a>
+                                                                    <a href="{{ route('frontend.graphic')}}"><h2>Graphics</h2></a>
                                                                 </div>
                                                             </div>
                                                       </div>

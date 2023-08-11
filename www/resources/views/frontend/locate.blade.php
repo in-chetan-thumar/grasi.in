@@ -32,7 +32,8 @@
 			<div class="title_main">Locate LLumar Dealer</div>
 		</div>
 		{{-- dealer form start  --}}
-		<form action="">
+		<form action="" method="post">
+			@csrf
 		    <div class="row g-4 align-items-end">
 				<div class="col-xxl-10 col-xl-10 col-lg-9 col-md-12">
 					<div class="row g-4">
@@ -44,13 +45,18 @@
 							        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
 								        <path d="M5.75593 5.62713C5.35716 6.08759 4.64284 6.08759 4.24407 5.62713L1.23682 2.15465C0.675942 1.50701 1.136 0.5 1.99275 0.5L8.00725 0.5C8.864 0.5 9.32406 1.50701 8.76318 2.15465L5.75593 5.62713Z" fill="#000000"></path>
 							        </svg>
-							        <select name="" id="" class="form-control input">
+							        <select name=""  id="stateSelect" class="form-control input">
+										<option value="">Select State</option>
+
+										@foreach ($llumarDealerState as $state)
+                                               <option value="">{{ $state }}</option>
+                                        @endforeach
+
+								        {{-- <option value="">Maharashtra</option>
 								        <option value="">Maharashtra</option>
 								        <option value="">Maharashtra</option>
 								        <option value="">Maharashtra</option>
-								        <option value="">Maharashtra</option>
-								        <option value="">Maharashtra</option>
-								        <option value="">Maharashtra</option>
+								        <option value="">Maharashtra</option> --}}
 							        </select>
 						        </div>
 					        </div>
@@ -63,13 +69,23 @@
 							        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
 								        <path d="M5.75593 5.62713C5.35716 6.08759 4.64284 6.08759 4.24407 5.62713L1.23682 2.15465C0.675942 1.50701 1.136 0.5 1.99275 0.5L8.00725 0.5C8.864 0.5 9.32406 1.50701 8.76318 2.15465L5.75593 5.62713Z" fill="#000000"></path>
 							        </svg>
-							        <select name="" id="" class="form-control input">
+							        <select name="" id="citySelect" class="form-control input">
+										<option value="">Select City</option>
+                                       
+									@if (!empty($llumarDealercity))
+									     @foreach ($llumarDealercity as $city)
+									          <option value="">{{ $city }}</option>
+							              @endforeach 
+									@endif	
+
+										
+
+								        {{-- <option value="">Mumbai</option>
 								        <option value="">Mumbai</option>
 								        <option value="">Mumbai</option>
 								        <option value="">Mumbai</option>
 								        <option value="">Mumbai</option>
-								        <option value="">Mumbai</option>
-								        <option value="">Mumbai</option>
+								        <option value="">Mumbai</option> --}}
 							        </select>
 						        </div>
 					        </div>
@@ -292,6 +308,22 @@
 
 {{-- js code  --}}
 @section('js')
+
+<script>
+    // Use JavaScript/jQuery to handle AJAX request
+    $('#stateSelect').on('change', function() {
+        var selectedState = $(this).val();
+
+        // Send AJAX request to fetch cities based on selected state
+        $.get('/get-cities', { state: selectedState }, function(data) {
+            $('#citySelect').empty();
+            $.each(data.cities, function(key, value) {
+                $('#citySelect').append($('<option>').text(value).attr('value', value));
+            });
+        });
+    });
+</script>
+
      
         
  <script>

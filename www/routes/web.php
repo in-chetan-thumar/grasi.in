@@ -30,6 +30,8 @@ Route::get('our_story',[ourStoryController::class,'index'])->name('frontend.our_
 Route::resource('contact',contactController::class);
 //locate page route
 Route::get('locate',[locatetController::class,'index'])->name('frontend.locate');
+Route::get('/get-cities', [locatetController::class,'getCities']);
+
 //graphic page route
 Route::get('graphic',[graphicController::class,'index'])->name('frontend.graphic');
 
