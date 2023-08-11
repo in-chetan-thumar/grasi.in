@@ -26,7 +26,8 @@ Route::get('/',[homeController::class,'index'])->name('frontend.home');
 //Our Story page route
 Route::get('our-story',[ourStoryController::class,'index'])->name('frontend.our-story');
 //contact page route
-Route::get('contact',[contactController::class,'index'])->name('frontend.contact');
+//Route::get('contact',[contactController::class,'index'])->name('frontend.contact');
+Route::resource('contact',contactController::class);
 //locate page route
 Route::get('locate',[locatetController::class,'index'])->name('frontend.locate');
 //graphic page route

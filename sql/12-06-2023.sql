@@ -1,6 +1,6 @@
 /*
 SQLyog Ultimate v13.1.1 (64 bit)
-MySQL - 10.5.15-MariaDB-log : Database - test_velzon
+MySQL - 10.5.15-MariaDB-log : Database - test_grasi
 *********************************************************************
 */
 
@@ -12,9 +12,9 @@ MySQL - 10.5.15-MariaDB-log : Database - test_velzon
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`test_velzon` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`test_grasi` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 
-USE `test_velzon`;
+USE `test_grasi`;
 
 /*Table structure for table `failed_jobs` */
 
