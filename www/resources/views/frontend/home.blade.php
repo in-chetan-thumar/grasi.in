@@ -87,7 +87,7 @@
                    <a href="#" class="hover_img">
                        <img src="{{ asset('assets/frontend/images/solutionimg2.webp')}}" alt="image">
                        <figcaption>
-                           <h2>Architectural<br> Films</h2>
+                           <h2>Automotive<br> Films</h2>
                        </figcaption>
                    </a>
                </figure>
@@ -97,7 +97,7 @@
                    <a href="#" class="hover_img">
                        <img src="{{ asset('assets/frontend/images/solutionimg3.webp')}}" alt="image">
                        <figcaption>
-                           <h2>Architectural<br> Films</h2>
+                           <h2>Graphics</h2>
                        </figcaption>
                    </a>
                </figure>
@@ -240,11 +240,11 @@
        <div class="slide"><img src="{{ asset('assets/frontend/images/logo3.svg')}}" alt="image"></div>
        <div class="slide"><img src="{{ asset('assets/frontend/images/logo4.svg')}}" alt="image"></div>
        <div class="slide"><img src="{{ asset('assets/frontend/images/logo5.svg')}}" alt="image"></div>
-       <div class="slide"><img src="{{ asset('assets/frontend/images/logo1.svg')}}" alt="image"></div>
-       <div class="slide"><img src="{{ asset('assets/frontend/images/logo2.svg')}}" alt="image"></div>
-       <div class="slide"><img src="{{ asset('assets/frontend/images/logo3.svg')}}" alt="image"></div>
-       <div class="slide"><img src="{{ asset('assets/frontend/images/logo4.svg')}}" alt="image"></div>
-       <div class="slide"><img src="{{ asset('assets/frontend/images/logo5.svg')}}" alt="image"></div>
+       <div class="slide"><img src="{{ asset('assets/frontend/images/brands/brand-logos/Google-G.png')}}" alt="image"></div>
+       <div class="slide"><img src="{{ asset('assets/frontend/images/brands/brand-logos/RBS.png')}}" alt="image"></div>
+       <div class="slide"><img src="{{ asset('assets/frontend/images/brands/brand-logos/vodafone.png')}}" alt="image"></div>
+       <div class="slide"><img src="{{ asset('assets/frontend/images/brands/brand-logos/DBS.png')}}" alt="image"></div>
+       {{-- <div class="slide"><img src="{{ asset('assets/frontend/images/logo5.svg')}}" alt="image"></div> --}}
        
      </div>
    </div>
@@ -379,72 +379,72 @@
        <div class="swiper mySwiper_video">
            <div class="main_arrow"> 
                        <div class="swiper-button-prev swiper-button-prev-video"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M14.6 6L16 7.4L11.4 12L16 16.6L14.6 18L8.6 12L14.6 6Z" fill="white"/> </svg> </div>
-                     <div class="swiper-button-next swiper-button-next-video"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <rect width="24" height="24" rx="12" fill="#00A6C0"/> <path d="M9.4 18L8 16.6L12.6 12L8 7.4L9.4 6L15.4 12L9.4 18Z" fill="white"/> </svg> </div>
-                 </div>
+                       <div class="swiper-button-next swiper-button-next-video"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <rect width="24" height="24" rx="12" fill="#00A6C0"/> <path d="M9.4 18L8 16.6L12.6 12L8 7.4L9.4 6L15.4 12L9.4 18Z" fill="white"/> </svg> </div>
+           </div>
            <div class="swiper-wrapper">
                <div class="swiper-slide">
-                   <video class="insta-video" controls="" id="reel1" poster="{{ asset('assets/frontend/images/itrh.webp')}}">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/mp4">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/ogg">
-           </video>
-           <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reel1">
-               <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
-           </div>
+                   <video class="insta-video" controls="" id="reel1" poster="{{ asset('assets/frontend/images/Reel_Covers/image_54.png')}}">
+                       <source src="{{ asset('assets/frontend/images/videos/Checkout _this_video.mp4')}}" type="video/mp4">
+                       <source src="{{ asset('assets/frontend/images/videos/Checkout _this_video.mp4')}}" type="video/ogg">
+                    </video>
+                    <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reel1">
+                        <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
+                    </div>
                </div>
                <div class="swiper-slide">
-                   <video class="insta-video" controls="" id="reel2" poster="{{ asset('assets/frontend/images/itrh.webp')}}">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/mp4">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/ogg">
-           </video>
-           <div class="video-controls1 video-icon insta-play-icon reel2" data-reel="reel2">
-               <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
-           </div>
+                   <video class="insta-video" controls="" id="reel2" poster="{{ asset('assets/frontend/images/Reel_Covers/image_53(1).png')}}">
+                        <source src="{{ asset('assets/frontend/images/videos/Enjoy_the_best.mp4')}}" type="video/mp4">
+                        <source src="{{ asset('assets/frontend/images/videos/Enjoy_the_best.mp4')}}" type="video/ogg">
+                   </video>
+                   <div class="video-controls1 video-icon insta-play-icon reel2" data-reel="reel2">
+                        <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
+                    </div>
                </div>
                <div class="swiper-slide">
-                   <video class="insta-video" controls="" id="reel3" poster="{{ asset('assets/frontend/images/itrh.webp')}}">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/mp4">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/ogg">
-           </video>
-           <div class="video-controls1 video-icon insta-play-icon reel3" data-reel="reel3">
-               <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
-           </div>
+                   <video class="insta-video" controls="" id="reel3" poster="{{ asset('assets/frontend/images/Reel_Covers/image_52(1).png')}}">
+                       <source src="{{ asset('assets/frontend/images/videos/Gras-i_Meet-The.mp4')}}" type="video/mp4">
+                       <source src="{{ asset('assets/frontend/images/videos/Gras-i_Meet-The.mp4')}}" type="video/ogg">
+                    </video>
+                    <div class="video-controls1 video-icon insta-play-icon reel3" data-reel="reel3">
+                         <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
+                    </div>
                </div>
                <div class="swiper-slide">
-                   <video class="insta-video" controls="" id="reel4" poster="{{ asset('assets/frontend/images/itrh.webp')}}">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/mp4">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/ogg">
-           </video>
-           <div class="video-controls1 video-icon insta-play-icon reel4" data-reel="reel4">
-               <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
-           </div>
+                   <video class="insta-video" controls="" id="reel4" poster="{{ asset('assets/frontend/images/Reel_Covers/image_51.png')}}">
+                       <source src="{{ asset('assets/frontend/images/videos/Gras-i_was_delighted.mp4')}}" type="video/mp4">
+                       <source src="{{ asset('assets/frontend/images/videos/Gras-i_was_delighted.mp4')}}" type="video/ogg">
+                   </video>
+                   <div class="video-controls1 video-icon insta-play-icon reel4" data-reel="reel4">
+                        <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
+                    </div>
                </div>
                <div class="swiper-slide">
-                   <video class="insta-video" controls="" id="reel5" poster="{{ asset('assets/frontend/images/itrh.webp')}}">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/mp4">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/ogg">
-           </video>
-           <div class="video-controls1 video-icon insta-play-icon reel5" data-reel="reel5">
-               <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
-           </div>
+                   <video class="insta-video" controls="" id="reel5" poster="{{ asset('assets/frontend/images/Reel_Covers/image_56.png')}}">
+                       <source src="{{ asset('assets/frontend/images/videos/The_Ferrari_296_GTB.mp4')}}" type="video/mp4">
+                       <source src="{{ asset('assets/frontend/images/videos/The_Ferrari_296_GTB.mp4')}}" type="video/ogg">
+                    </video>
+                     <div class="video-controls1 video-icon insta-play-icon reel5" data-reel="reel5">
+                        <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
+                     </div>
                </div>
-               <div class="swiper-slide">
+               {{-- <div class="swiper-slide">
                    <video class="insta-video" controls="" id="reel6" poster="{{ asset('assets/frontend/images/itrh.webp')}}">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/mp4">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/ogg">
-           </video>
-           <div class="video-controls1 video-icon insta-play-icon reel6" data-reel="reel6">
-               <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
-           </div>
+                       <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/mp4">
+                       <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/ogg">
+                   </video>
+                   <div class="video-controls1 video-icon insta-play-icon reel6" data-reel="reel6">
+                       <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
+                   </div>
                </div>
                <div class="swiper-slide">
                    <video class="insta-video" controls="" id="reel7" poster="{{ asset('assets/frontend/images/itrh.webp')}}">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/mp4">
-               <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/ogg">
-           </video>
-           <div class="video-controls1 video-icon insta-play-icon reel7" data-reel="reel7">
-               <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
-           </div>
-               </div>
+                       <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/mp4">
+                       <source src="{{ asset('assets/frontend/images/Cuin_2.mp4')}}" type="video/ogg">
+                    </video>
+                    <div class="video-controls1 video-icon insta-play-icon reel7" data-reel="reel7">
+                        <img src="{{ asset('assets/frontend/images/video-icon.webp')}}" alt="video-icon">
+                    </div>
+               </div> --}}
            </div>
            
        </div>
