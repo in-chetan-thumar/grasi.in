@@ -11,7 +11,7 @@ use Spatie\MailTemplates\TemplateMailable;
 class ContactMailNotification extends TemplateMailable
 {
     use Queueable, SerializesModels;
-    public $PRACTICE_NAME,$CONTACT_DETAILS ,$NAME,$TO,$USER;
+    public $PRACTICE_NAME ,$NAME,$TO,$USER,$CONTACT_FIRST_NAME,$CONTACT_LAST_NAME,$CONTACT_EMAIL,$CONTACT_MESSAGE;
 
     /**
      * Create a new message instance.
@@ -20,8 +20,11 @@ class ContactMailNotification extends TemplateMailable
      */
     public function __construct($params)
     {
-
-        $this->params = $params ;
+        $this->NAME = 'kajal';
+        $this->CONTACT_FIRST_NAME = $params['first_name'];
+        $this->CONTACT_LAST_NAME = $params['last_name'];
+        $this->CONTACT_EMAIL = $params['email'];
+        $this->CONTACT_MESSAGE = $params['message'] ;
         $this->PRACTICE_NAME = config('constants.APP_NAME');
     }
     public function getHtmlLayout(): string

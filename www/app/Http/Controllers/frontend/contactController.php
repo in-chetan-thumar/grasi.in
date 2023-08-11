@@ -5,6 +5,7 @@ namespace App\Http\Controllers\frontend;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class contactController extends Controller
 {
@@ -28,8 +29,15 @@ class contactController extends Controller
      */
     public function store(ContactRequest $request)
     {
-        dd($request);
+        $params = [];
+        $params['first_name'] = $request->first_name;
+        $params['last_name'] = $request->last_name;
+        $params['email'] = $request->email;
+        $params['message'] = $request->message;
 
+        Mail::send(new \App\Mail\ContactMailNotification($params));
+        toastr()->success('Your enquire has been submitted successfully!');
+        return redirect()->back();
     }
 
     /**
