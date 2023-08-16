@@ -25,14 +25,16 @@ class LocatetController extends Controller
         $this->repository = $repository;
     }
 
-    public function index()
+    public function index(Request $request)
     {
+
+        $llumarDealers= resolve('Dealer-repo')->renderHtmlDealers($this->getParamsForFilter($request));
 
         $llumarDealerData = $this->repository->getAllData('all','1');
         $states = $this->repository->getAllData('state');
         $city = $this->repository->getAllData('city');
 
-        return view('frontend.locate',compact('llumarDealerData','states'));
+        return view('frontend.locate',compact('llumarDealerData','states','llumarDealers'));
     }
 
 
@@ -40,11 +42,9 @@ class LocatetController extends Controller
     {
         try {
 
-
             $options = '<option selected="selected" value="">Select city</option>';
             $cities=$this->repository->getAllData('city',$state);
             
-
             foreach ($cities as  $city) {
 
                 $options .= '<option  value="' . $city . '">' . $city . '</option>';

@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Repositories\CommonRepository;
+use App\Repositories\DealerRepository;
 use App\Repositories\EyeReviewDocumentsRepository;
 use App\Repositories\EyeReviewDetailsRepository;
 use App\Repositories\EyeReviewRepository;
@@ -38,6 +39,7 @@ class RepositoryServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->singleton('role-repo', RoleRepository::class);
+        $this->app->singleton('dealer-repo', DealerRepository::class);
         $this->app->singleton('user-repo', UserRepository::class);
         $this->app->singleton('permission-repo', PermissionRepository::class);
     }
