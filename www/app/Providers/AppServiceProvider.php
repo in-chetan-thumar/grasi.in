@@ -2,11 +2,12 @@
 
 namespace App\Providers;
 
+use App\Models\Dealer;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
-
+use App\Repositories\DealerRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -17,7 +18,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(DealerRepository::class, function ($app) {
+            return new DealerRepository(new Dealer());
+        });
     }
 
     /**
