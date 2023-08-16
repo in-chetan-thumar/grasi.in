@@ -6,8 +6,8 @@ return [
     'APP_NAME' => env('APP_NAME', ''),
     //Emails
     'EMAIL'=>[
-        'LOCAL' => ['TO'=>['kajal.baldha@tiez.nl'],'CC'=>[]],
-        'DEVELOPMENT'=>['TO'=>['enquiry@gras.in'],'CC'=>[]],
+        'LOCAL' => ['TO'=>['abhisek.khambhara@quantuminfoway.com'],'CC'=>[]],
+        'DEVELOPMENT'=>['TO'=>['abhisek.khambhara@quantuminfoway.com'],'CC'=>[]],
     ],
     'PER_PAGE' => 10,
     'SUPER_ADMIN' => 'Super Admin',

@@ -6,8 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMailNotification;
 
-class contactController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -35,7 +36,7 @@ class contactController extends Controller
         $params['email'] = $request->email;
         $params['message'] = $request->message;
 
-        Mail::send(new \App\Mail\ContactMailNotification($params));
+        Mail::send(new ContactMailNotification($params));
         toastr()->success('Your enquire has been submitted successfully!');
         return redirect()->back();
     }

@@ -6,21 +6,32 @@ use App\Http\Controllers\Controller;
 use App\Models\City;
 use App\Models\Dealer;
 use App\Models\Dealers;
+use App\Repositories\DealerRepository;
 use Illuminate\Http\Request;
 
 
-class locatetController extends Controller
+class LocatetController extends Controller
 {
     /**
      * Display a listing of the resource.
+     * 
+     * 
      */
+
+     protected $repository;
+
+    public function __construct(DealerRepository $repository)
+    {
+        $this->repository = $repository;
+    }
+
     public function index()
     {
 
-        $llumarDealerData = Dealer::all();
-        $states=Dealer::select('state')->groupBy('state') ->pluck('state');
-        $city=Dealer::select('city')->groupBy('city')->pluck('city');
-        // dd($state,$city);
+        $llumarDealerData = $this->repository->getAllData('all','1');
+        $states = $this->repository->getAllData('state');
+        $city = $this->repository->getAllData('city');
+
         return view('frontend.locate',compact('llumarDealerData','states'));
     }
 
@@ -31,9 +42,8 @@ class locatetController extends Controller
 
 
             $options = '<option selected="selected" value="">Select city</option>';
-           // $states=Dealer::where('state',$state)->groupBy('state');
-            $cities= Dealer::select('city')->where('state',$state)->groupBy('city')->pluck('city');
-
+            $cities=$this->repository->getAllData('city',$state);
+            
 
             foreach ($cities as  $city) {
 
@@ -48,7 +58,19 @@ class locatetController extends Controller
             $data['message'] = resolve('common-helper')->generateErrorMessage($e);
             return response()->json($data);
         }
-}
+       }
+
+       public function getFilteredData(Request $request) {
+            $filter = $request->city;
+            $DealerData = $this->repository->filterData('city',$filter);
+            return response()->json($DealerData);
+            // return view('frontend.locate', compact('DealerData','llmarDealerData'))->render();
+           
+        
+
+      
+        
+    }
 
 
     /**
@@ -99,28 +121,7 @@ class locatetController extends Controller
         //
     }
 
-    // app/Http/Controllers/LocationController.php
-
-
-public function getData(Request $request)
-{
-    $state = $request->input('state');
-    $city = $request->input('city');
-
-    // Retrieve data from your table based on state and city
-    $data = Dealer::where('state_column', $state)
-                      ->where('city_column', $city)
-                      ->get();
-
-    // Generate HTML to display the data
-    $html = '<ul>';
-    foreach ($data as $item) {
-        $html .= "<li>{$item->field1} - {$item->field2}</li>";
-    }
-    $html .= '</ul>';
-
-    return $html;
-}
+    
     function getCityFromState($id)
     {
 

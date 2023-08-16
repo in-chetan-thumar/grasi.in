@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\GraphicContactRequest;
+use App\Mail\GraphicMailNotification;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
-class graphicController extends Controller
+class GraphicController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,12 +26,24 @@ class graphicController extends Controller
         //
     }
 
-    /**
+       /**
      * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(GraphicContactRequest $request)
     {
-        //
+       
+        $params = [];
+        $params['first_name'] = $request->first_name;
+        $params['last_name'] = $request->last_name;
+        $params['subject'] = $request->subject;
+        $params['email'] = $request->email;
+        // dd($params);
+        Mail::send(new GraphicMailNotification($params));
+        toastr()->success('Your enquire has been submitted successfully!');
+        return redirect()->back();
     }
 
     /**

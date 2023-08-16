@@ -31,9 +31,15 @@ Route::resource('contact',contactController::class);
 //locate page route
 Route::get('locate',[locatetController::class,'index'])->name('frontend.locate');
 Route::get('/state/{state}', [locatetController::class,'getCities'])->name('locate.city');
+Route::get('/locate/state', [locatetController::class,'getFilteredData'])->name('locate.getData');
+
+
+
 
 //graphic page route
-Route::get('graphic',[graphicController::class,'index'])->name('frontend.graphic');
+// Route::resource('graphic', graphicController::class);
+Route::get('graphic', [graphicController::class,'index'])->name('frontend.graphic');
+Route::post('graphic', [graphicController::class,'store'])->name('graphic.send-email');
 
 
 if(config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')){
