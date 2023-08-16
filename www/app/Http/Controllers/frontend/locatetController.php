@@ -7,6 +7,7 @@ use App\Models\City;
 use App\Models\Dealer;
 use App\Models\Dealers;
 use App\Repositories\DealerRepository;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 
@@ -14,8 +15,8 @@ class LocatetController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * 
-     * 
+     *
+     *
      */
 
      protected $repository;
@@ -28,13 +29,13 @@ class LocatetController extends Controller
     public function index(Request $request)
     {
 
-        $llumarDealers= resolve('dealer-repo')->renderHtmlDealers($request);
-
-        $llumarDealerData = $this->repository->getAllData('all','1');
+        $llumarDealers= resolve('dealer-repo')->renderHtmlDealers($this->getParamsForFilter($request));
+dd($llumarDealers);
+        //$llumarDealerData = $this->repository->getAllData('all','1');
         $states = $this->repository->getAllData('state');
         $city = $this->repository->getAllData('city');
 
-        return view('frontend.locate',compact('llumarDealerData','states','llumarDealers'));
+        return view('frontend.locate',compact('states','llumarDealers'));
     }
 
 
@@ -44,7 +45,7 @@ class LocatetController extends Controller
 
             $options = '<option selected="selected" value="">Select city</option>';
             $cities=$this->repository->getAllData('city',$state);
-            
+
             foreach ($cities as  $city) {
 
                 $options .= '<option  value="' . $city . '">' . $city . '</option>';
@@ -59,17 +60,36 @@ class LocatetController extends Controller
             return response()->json($data);
         }
        }
+    public function getParamsForFilter(Request $request)
+    {
+
+        $previousUrl = parse_url(url()->previous());
+        $params = [];
+    if (request()->routeIs('frontend.locate') ) {
+            $params['path'] = \Illuminate\Support\Facades\Request::fullUrl();
+            $params['city'] =  $request->city_id ?? null;
+            $params['state'] =  $request->state_id ?? null;
+
+
+
+        }else{
+            parse_str($previousUrl['query'], $params);
+            $params['path'] =  url()->previous();
+        }
+
+        return $params;
+    }
 
        public function getFilteredData(Request $request) {
             $filter = $request->city;
             $DealerData = $this->repository->filterData('city',$filter);
             return response()->json($DealerData);
            ;
-           
-        
 
-      
-        
+
+
+
+
     }
 
 
@@ -121,7 +141,7 @@ class LocatetController extends Controller
         //
     }
 
-    
+
     function getCityFromState($id)
     {
 
