@@ -63,9 +63,8 @@ class LocatetController extends Controller
        public function getFilteredData(Request $request) {
             $filter = $request->city;
             $DealerData = $this->repository->filterData('city',$filter);
-            // return view('admin.user.llumarDealers', compact('DealerData'))->render();
             return response()->json($DealerData);
-            // return view('frontend.locate', compact('DealerData','llmarDealerData'))->render();
+           ;
            
         
 
