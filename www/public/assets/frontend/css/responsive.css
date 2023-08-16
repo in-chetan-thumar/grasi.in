@@ -40,8 +40,8 @@ span.wsmenu-click+a:after {content:"\f078";margin-left:5px;font-family:'FontAwes
 /*.wsmenu>.wsmenu-list>li.selected>a:after, .wsmenu>.wsmenu-list>li:hover>a:after {opacity: 1;width: 100%;}*/
 .wsmenu>.wsmenu-list>li>ul.sub-menu>li.selected a{color: #4fad1f;}
 
-.hover_box:hover .overlay_hover {opacity: 1; -webkit-transform: scale(1) rotateZ(0deg); -moz-transform: scale(1) rotateZ(0deg); -ms-transform: scale(1) rotateZ(0deg); -o-transform: scale(1) rotateZ(0deg); transform: scale(1) rotateZ(0deg);} 
-.hover_box:hover .overlay_hover span {opacity: 1; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; } 
+.hover_box:hover .overlay_hover {opacity: 1; -webkit-transform: scale(1) rotateZ(0deg); -moz-transform: scale(1) rotateZ(0deg); -ms-transform: scale(1) rotateZ(0deg); -o-transform: scale(1) rotateZ(0deg); transform: scale(1) rotateZ(0deg);}
+.hover_box:hover .overlay_hover span {opacity: 1; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; }
 .hover_box .overlay_hover span:after {position: absolute; content: ""; width: 60px; height: 2px; background-color: #fff; left: 50%; transform: translate(-50%, -50%); -moz-transform: translateY(-50%, -50%); -ms-transform: translateY(-50%, -50%); -o-transform: translateY(-50%, -50%); -webkit-transform: translateY(-50%, -50%); top: 50%; }
 
 .hover_img{width:100%;float:left;position:relative;overflow:hidden;}
@@ -118,7 +118,7 @@ span.wsmenu-click+a:after {content:"\f078";margin-left:5px;font-family:'FontAwes
 }
 
 @media screen and (min-width:1199px) {
-.our_graphic_page .inner_banner figcaption h2 { font-size: 64px;}    
+.our_graphic_page .inner_banner figcaption h2 { font-size: 64px;}
 .contact_page .inner_banner figcaption h2 { font-size: 56px;}
 }
 
@@ -291,7 +291,7 @@ footer .footer_links_box .title span:before { content: ""; position: absolute; t
 footer .footer_links_box .title span:after { content: ""; position: absolute; top: 50%; right: 0px; transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); height: 2px; width: 16px; background: #4fad1f; }
 footer .middle_content .footer_links_box .title { margin-bottom: 0; font-size: 16px; position: relative; color: #ffffff;line-height: inherit;}
 .footer_links_box { width: 100%; float: left; border:none;margin-bottom: 0px; background-color: transparent;border-bottom: 2px solid #4fad1f; }
-.list-style-none.mobile-accordion-toggle { display: none;padding:0px; margin:20px 0 20px 0; width: 100%; float: left; }   
+.list-style-none.mobile-accordion-toggle { display: none;padding:0px; margin:20px 0 20px 0; width: 100%; float: left; }
 .header .top_header .top_header_wrapper p {  max-width: 365px;}
 
 .header .top_header ul li .btn { font-size: 12px; min-width: 150px;}
@@ -348,7 +348,13 @@ footer .top_footer .footer_wrapper ul li+li {  margin-top: 10px;}
 }
 
 @media screen and (max-width:640px) {
-
+    .wp-icon{
+        width: 60px;
+        position: fixed;
+        right: 10px;
+        bottom:15px;
+        z-index: 10000;
+    }
 }
 
 @media screen and (min-width:576px) {
@@ -382,10 +388,10 @@ section {padding: 30px 0;}
     margin: auto;
     top: -10px;
     bottom: auto !important;}
-.title_1 .title_main {  font-size: 30px;} 
+.title_1 .title_main {  font-size: 30px;}
 
-.industries .col {width: 25%;} 
-.accordion-button {  font-size: 14px;}  
+.industries .col {width: 25%;}
+.accordion-button {  font-size: 14px;}
 .accordion-item+.accordion-item {  margin-top: 10px;}
 .accordion-body p {  font-size: 13px;}
 .inner_banner figcaption h2 br {display: none;}

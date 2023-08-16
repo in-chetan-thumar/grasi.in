@@ -71,7 +71,14 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-11 col-lg-11">
 			<p>Copyright@Gras-i</p>
+                    <div class="wp-icon">
+                        <a href="https://wa.link/35uzb5" target="_blank" class="" style="">
+                            <img src="{{ asset('assets/frontend/images/whatsapp.svg')}}" alt="whatsapp">
+                        </a>
+                    </div>
 		</div>
+
+
 	</div>
 		</div>
 	</div>
