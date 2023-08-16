@@ -6,7 +6,7 @@ return [
     'APP_NAME' => env('APP_NAME', ''),
     //Emails
     'EMAIL'=>[
-        'LOCAL' => ['TO'=>['kajal.baldha@tiez.nl'],'CC'=>[]],
+        'LOCAL' => ['TO'=>['recipient@example.com'],'CC'=>[]],
         'DEVELOPMENT'=>['TO'=>['enquiry@gras.in'],'CC'=>[]],
     ],
     'PER_PAGE' => 10,
