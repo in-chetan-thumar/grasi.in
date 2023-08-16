@@ -2790,3 +2790,10 @@ footer .bottom_footer p span {
 	font-size: 14px;
 	font-family: 'PoppinsLight';
 }
+.wp-icon{
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10000;
+}
