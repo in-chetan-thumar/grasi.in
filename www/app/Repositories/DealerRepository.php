@@ -23,7 +23,7 @@ class DealerRepository
         if($param == 'city')
         {
             if(!empty($state))
-            {   
+            {
                 return $this->model->select('city')->where('state',$state)->groupBy('city') ->pluck('city');
 
             }else{
@@ -37,16 +37,31 @@ class DealerRepository
             return $this->model->get();
         }
 
-        
+
 
         return $this->model->all();
     }
-
-    public function renderHtmlDealers($param="",$filter="")
+    public function filter($params)
     {
-        
-        $DealersData = $this->model->where('city',$filter)->get();
-       
+
+        $this->model = $this->model->when(isset($params['state']) AND !empty($params['state']) ,function ($query) use ($params){
+            return $query->where('state', $params['state']);
+        });
+
+
+        $this->model = $this->model->when(isset($params['city']) AND !empty($params['city']) ,function ($query) use ($params){
+            return $query->where('city', $params['city']);
+        });
+        return $this->model->get();
+
+
+    }
+    public function renderHtmlDealers($params)
+    {
+
+//        $DealersData = $this->model->where('city',$filter)->get();
+        $DealersData = $this->filter($params);
+
         return view('frontend.llumarDealers', compact('DealersData'))->render();
 
 
@@ -54,11 +69,11 @@ class DealerRepository
 
     public function filterData($param="",$filter="")
     {
-        
+
         if ($param === 'city') {
-           return $this->model->where('city',$filter)->get();          
-        } 
-    }         
+           return $this->model->where('city',$filter)->get();
+        }
+    }
 }
 
 

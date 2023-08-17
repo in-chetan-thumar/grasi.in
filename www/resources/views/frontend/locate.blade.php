@@ -32,10 +32,8 @@
 			<div class="title_main">Locate LLumar Dealer</div>
 		</div>
 		{{-- dealer form start  --}}
-			{!! Form::open([
-				'method' => 'POST',
-			]) !!}
-			
+
+        {!! Form::open(['url' =>route('frontend.locate'),'id' =>'form-search','method' => 'get']) !!}
 		    <div class="row g-4 align-items-end">
 				<div class="col-xxl-10 col-xl-10 col-lg-9 col-md-12">
 					<div class="row g-4">
@@ -48,7 +46,7 @@
 							        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
 								        <path d="M5.75593 5.62713C5.35716 6.08759 4.64284 6.08759 4.24407 5.62713L1.23682 2.15465C0.675942 1.50701 1.136 0.5 1.99275 0.5L8.00725 0.5C8.864 0.5 9.32406 1.50701 8.76318 2.15465L5.75593 5.62713Z" fill="#000000"></path>
 							        </svg>
-                                    <select name=""  id="state_id" class="form-control input">
+                                    <select name="state_id"  id="state_id" class="form-control input">
                                         <option value="">Select State</option>
 
                                         @foreach ($states as $state)
@@ -82,10 +80,13 @@
 					        <div class="submit_btn">
 						        <div class="btn btn-primary red">
 									{{-- <input type="submit" value="Search"> --}}
-									{!! Form::submit('Search', [
-										 'id' => 'filterBtn'
-									]) !!}
-								</div>
+
+{{--									{!! Form::submit('Search', [--}}
+{{--										 'id' => 'filterBtn'--}}
+{{--									]) !!}--}}
+                                    {!! Form::submit('Search', ['class' => 'btn btn-primary', 'id' => 'filterBtn']) !!}
+
+                                </div>
 					        </div>
 				        </div>
 					</div>
@@ -100,6 +101,7 @@
 	</div>
 </section>
 
+    <div class="clearfix"></div>
 
 <section class="dealers_list pt0">
 	<div class="container" id="filteredData">
@@ -247,39 +249,38 @@
     // });
 </script>
 
-<script>
-    
+{{--<script>--}}
 
-	$('#filteredData').hide();
 
-	$(document).ready(function(){
-         $('#filterBtn').click(function(e){
-            e.preventDefault();
-            $.ajaxSetup({
-                headers:{
-                    'X-CSRF-TOKEN':$("meta[name='csrf-token']").attr('content')
-                }
-            });
-            var filter = $('#city_id').val();
-            $.ajax({
-                url:"{{route('locate.getData')}}",
-                method:'GET',
-                data: {
-						city:filter
-				},
-				success:function(data){
-					$('#filteredData').show();
-					
-					// array.forEach(data => {
-					// 	console.log(data)
-					// });
-					
-				}
-            });
-         });
-     });
+	
+{{--	$('#filteredData').hide();--}}
 
-</script>
+{{--	$(document).ready(function(){--}}
+{{--         $('#filterBtn').click(function(e){--}}
+{{--            e.preventDefault();--}}
+{{--            $.ajaxSetup({--}}
+{{--                headers:{--}}
+{{--                    'X-CSRF-TOKEN':$("meta[name='csrf-token']").attr('content')--}}
+{{--                }--}}
+{{--            });--}}
+{{--            var filter = $('#city_id').val();--}}
+{{--            $.ajax({--}}
+{{--                url:"{{route('locate.getData')}}",--}}
+{{--                method:'GET',--}}
+{{--                data: {--}}
+{{--						city:filter--}}
+{{--				},--}}
+{{--				success:function(data){--}}
+{{--					$('#filteredData').show();--}}
+
+
+
+{{--				}--}}
+{{--            });--}}
+{{--         });--}}
+{{--     });--}}
+
+{{--</script>--}}
 
 
 

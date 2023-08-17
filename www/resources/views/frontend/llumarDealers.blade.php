@@ -1,15 +1,17 @@
 
-	
-		<div class="title_1 text-left">
-			<div class="title_main" id="cityName">Mumbai <span>02</span></div>
-		</div>
-		
+
+
+<div class="title_1 text-left">
+    <div class="title_main" id="cityName">Mumbai <span>02</span></div>
+</div>
+
+
 @foreach ($DealersData as $key => $row)
 
-            <div class="dealers_row">
-	            <div class="row g-4">
-		            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-					<div class="dealers_info">
+    <div class="dealers_row">
+        <div class="row g-4">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                    <div class="dealers_info">
 						<h2>{{$row->dealership_name}}</h2>
 						<span>Address: </span>
 						<p>{{$row->Address}}</p>
@@ -51,6 +53,6 @@
 				</div>
 			</div>
 		</div>
-	
-		@endforeach	
+
+@endforeach
 
