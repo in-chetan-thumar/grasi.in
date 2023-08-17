@@ -348,6 +348,13 @@ footer .top_footer .footer_wrapper ul li+li {  margin-top: 10px;}
 }
 
 @media screen and (max-width:640px) {
+    .dealer .link a {
+        margin-top: 26px;
+
+        height: 48px;
+        padding-top: 12px;
+    }
+
     .wp-icon{
         width: 60px;
         position: fixed;
@@ -400,8 +407,13 @@ section {padding: 30px 0;}
 .our_process .row-cols-5>* {   width: 33.33%;}
 .our_process .row .col:nth-child(even) {  margin-top: 7px;margin-bottom: 25px;}
 .our_process .row {justify-content: center;}
-.testimonials .title_1 .title_main {  max-width: 230px;text-align: left;}
-.testimonial_box {padding: 20px 20px 20px 20px;border-radius: 10px;}
+
+    .testimonials .title_1 .title_main {
+        /*max-width: 230px;*/
+        text-align: left;
+    }
+
+    .testimonial_box {padding: 20px 20px 20px 20px;border-radius: 10px;}
 .testimonial_box p {  font-size: 14px;}
 .testimonial_box .profile_main .profile_name h3 {  font-size: 14px;}
 .footer_form .title_1 .title_main {  font-size: 40px;}
