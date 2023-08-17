@@ -58,11 +58,12 @@ class DealerRepository
     }
     public function renderHtmlDealers($params)
     {
-        // dd($params);
+
 //        $DealersData = $this->model->where('city',$filter)->get();
         $DealersData = $this->filter($params);
 
         return view('frontend.llumarDealers', compact('DealersData'))->render();
+
 
     }
 

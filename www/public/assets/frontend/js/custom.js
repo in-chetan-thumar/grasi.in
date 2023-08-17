@@ -112,3 +112,6 @@ $(".insta-play-icon").on("click",function(e){
 
 });
 
+
+
+// copy button 
