@@ -103,11 +103,7 @@
                                           'placeholder' => 'Enter',
                                           'id'=>'first_name'
                                       ]) !!}
-                                                                <span class="text-danger" style="font-size:15px">
-                                                                    @error('first_name')
-                                                                    {{ $message }}
-                                                                    @enderror
-                                                                 </span>
+
                                                             </div>
                                                        </div>
                                                        <div class="col-12 col-lg-6 col-lg-6 col-md-6 col-sm-6">
@@ -118,11 +114,7 @@
                                           'class' => 'form-control input ',
                                           'placeholder' => 'Enter',
                                       ]) !!}
-                                                                <span class="text-danger" style="font-size:15px">
-                                                                    @error('last_name')
-                                                                    {{ $message }}
-                                                                    @enderror
-                                                                 </span>
+
                                                             </div>
                                                        </div>
 
@@ -133,11 +125,7 @@
                                                  'class' => 'form-control input ',
                                                  'placeholder' => 'ex. john@mail.com',
                                              ]) !!}
-                                                                <span class="text-danger" style="font-size:15px">
-                                                                    @error('email')
-                                                                    {{ $message }}
-                                                                    @enderror
-                                                                 </span>
+
                                                             </div>
                                                        </div>
                                                        <div class="col-12 col-lg-6 col-lg-6 col-md-6 col-sm-6">
@@ -146,19 +134,15 @@
                                                                  <div class="relative">
                                                                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none"> <path d="M4.85786 5.83586C4.80723 5.88839 4.74709 5.93001 4.68089 5.95833C4.61469 5.98664 4.54374 6.0011 4.47213 6.00086H4.2002C4.05585 5.99983 3.91754 5.94067 3.81448 5.83586L0.106722 1.98086C0.0729013 1.94601 0.0460606 1.90457 0.0277449 1.85892C0.00942918 1.81327 0 1.76431 0 1.71486C0 1.66542 0.00942918 1.61646 0.0277449 1.57081C0.0460606 1.52516 0.0729013 1.48372 0.106722 1.44886L0.619733 0.915864C0.652695 0.88088 0.692068 0.853081 0.735538 0.834102C0.779008 0.815123 0.825697 0.805346 0.872863 0.805346C0.920028 0.805346 0.966718 0.815123 1.01019 0.834102C1.05366 0.853081 1.09303 0.88088 1.12599 0.915864L4.33906 4.25286L7.54827 0.915864C7.58189 0.880641 7.62192 0.852679 7.66603 0.833596C7.71014 0.814513 7.75746 0.804687 7.80526 0.804688C7.85305 0.804688 7.90037 0.814513 7.94448 0.833596C7.98859 0.852679 8.02862 0.880641 8.06224 0.915864L8.5685 1.44886C8.60232 1.48372 8.62916 1.52516 8.64748 1.57081C8.6658 1.61646 8.67523 1.66542 8.67523 1.71486C8.67523 1.76431 8.6658 1.81327 8.64748 1.85892C8.62916 1.90457 8.60232 1.94601 8.5685 1.98086L4.85786 5.83586Z" fill="#5B6782"/>
                                                                  </svg>
-                                                                     <select name="subject" id="subject" class="form-control input">
-                                                                      <option value="1">Please Select</option>
+                                                                     <select name="subject"    class="form-control input subject">
+                                                                      <option value="">Please Select</option>
+                                                                      <option value="1">Select</option>
                                                                       <option value="2">Select</option>
                                                                       <option value="3">Select</option>
                                                                       <option value="4">Select</option>
                                                                       <option value="5">Select</option>
-                                                                      <option value="6">Select</option>
                                                                  </select>
-                                                                     <span class="text-danger" style="font-size:15px">
-                                                                    @error('subject')
-                                                                         {{ $message }}
-                                                                         @enderror
-                                                                 </span>
+
                                                             </div>
                                                             </div>
                                                        </div>
@@ -171,11 +155,7 @@
                                                  'rows'=>'10',
                                                  'cols'=>'30'
                                              ]) !!}
-                                                                <span class="text-danger" style="font-size:15px">
-                                                                    @error('message')
-                                                                    {{ $message }}
-                                                                    @enderror
-                                                                 </span>
+
 
                                                             </div>
                                                        </div>
@@ -215,9 +195,10 @@
 {{-- js  --}}
 @section('js')
 
+    {!! JsValidator::formRequest('App\Http\Requests\ContactRequest', '#Contact-form'); !!}
 
 <script>
-     
+
      $(document).ready(function() {
          $(".copy-button").click(function(e) {
 
@@ -229,13 +210,13 @@ alert(textToCopy)             // Create a temporary textarea element to hold the
              var tempTextArea = $("<textarea>");
              $("body").append(tempTextArea);
              tempTextArea.val(textToCopy).select();
-             
+
              // Copy the text to clipboard
              document.execCommand("copy");
-             
+
              // Remove the temporary textarea
              tempTextArea.remove();
-             
+
              // Optionally, provide some visual feedback that the copy was successful
           //    $(this).text("Copied!")
              alert("Copied!");
@@ -243,7 +224,7 @@ alert(textToCopy)             // Create a temporary textarea element to hold the
      });
 
  </script>
- 
+
 
 <script>
      var swiperjourney = new Swiper(".mySwiper_journey", {
