@@ -270,7 +270,9 @@
 				success:function(data){
 					$('#filteredData').show();
 					
-					
+					// array.forEach(data => {
+					// 	console.log(data)
+					// });
 					
 				}
             });

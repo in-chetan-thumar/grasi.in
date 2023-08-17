@@ -29,6 +29,7 @@ class LocatetController extends Controller
     {
 
         $llumarDealers= resolve('dealer-repo')->renderHtmlDealers($request);
+        
 
         $llumarDealerData = $this->repository->getAllData('all','1');
         $states = $this->repository->getAllData('state');
@@ -64,7 +65,7 @@ class LocatetController extends Controller
             $filter = $request->city;
             $DealerData = $this->repository->filterData('city',$filter);
             return response()->json($DealerData);
-           ;
+            // return view('frontend.locate', compact('DealerData','llmarDealerData'))->render();
            
         
 

@@ -169,7 +169,7 @@
                                           </div>
                                           {{-- mega menu end  --}}
                                   </li>
-                                  <li><a href="casestudies.php">Casestudies</a></li>
+                                  {{-- <li><a href="casestudies.php">Casestudies</a></li> --}}
                                   <li><a href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/" target="blank">Careers</a></li>
                                   <li><a href="{{ route('contact.index')}}">Contact</a></li>
                               </ul>
