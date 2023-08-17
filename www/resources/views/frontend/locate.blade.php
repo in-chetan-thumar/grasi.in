@@ -249,37 +249,37 @@
     // });
 </script>
 
-<script>
+{{--<script>--}}
 
 
-	$('#filteredData').hide();
+{{--	$('#filteredData').hide();--}}
 
-	$(document).ready(function(){
-         $('#filterBtn').click(function(e){
-            e.preventDefault();
-            $.ajaxSetup({
-                headers:{
-                    'X-CSRF-TOKEN':$("meta[name='csrf-token']").attr('content')
-                }
-            });
-            var filter = $('#city_id').val();
-            $.ajax({
-                url:"{{route('locate.getData')}}",
-                method:'GET',
-                data: {
-						city:filter
-				},
-				success:function(data){
-					$('#filteredData').show();
+{{--	$(document).ready(function(){--}}
+{{--         $('#filterBtn').click(function(e){--}}
+{{--            e.preventDefault();--}}
+{{--            $.ajaxSetup({--}}
+{{--                headers:{--}}
+{{--                    'X-CSRF-TOKEN':$("meta[name='csrf-token']").attr('content')--}}
+{{--                }--}}
+{{--            });--}}
+{{--            var filter = $('#city_id').val();--}}
+{{--            $.ajax({--}}
+{{--                url:"{{route('locate.getData')}}",--}}
+{{--                method:'GET',--}}
+{{--                data: {--}}
+{{--						city:filter--}}
+{{--				},--}}
+{{--				success:function(data){--}}
+{{--					$('#filteredData').show();--}}
 
 
 
-				}
-            });
-         });
-     });
+{{--				}--}}
+{{--            });--}}
+{{--         });--}}
+{{--     });--}}
 
-</script>
+{{--</script>--}}
 
 
 

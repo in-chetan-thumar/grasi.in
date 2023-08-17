@@ -30,7 +30,6 @@ class LocatetController extends Controller
     {
 
         $llumarDealers= resolve('dealer-repo')->renderHtmlDealers($this->getParamsForFilter($request));
-dd($llumarDealers);
         //$llumarDealerData = $this->repository->getAllData('all','1');
         $states = $this->repository->getAllData('state');
         $city = $this->repository->getAllData('city');
@@ -79,18 +78,15 @@ dd($llumarDealers);
 
         return $params;
     }
-
-       public function getFilteredData(Request $request) {
-            $filter = $request->city;
-            $DealerData = $this->repository->filterData('city',$filter);
-            return response()->json($DealerData);
-           ;
-
-
-
-
-
-    }
+//
+//       public function getFilteredData(Request $request) {
+//            $filter = $request->city;
+//            $DealerData = $this->repository->filterData('city',$filter);
+//
+//            return response()->json($DealerData);
+//
+//
+//    }
 
 
     /**

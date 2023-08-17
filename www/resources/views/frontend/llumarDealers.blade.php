@@ -4,6 +4,8 @@
 <div class="title_1 text-left">
     <div class="title_main" id="cityName">Mumbai <span>02</span></div>
 </div>
+
+
 @foreach ($DealersData as $key => $row)
 
     <div class="dealers_row">
