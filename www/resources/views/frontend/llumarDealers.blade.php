@@ -2,7 +2,7 @@
 
 
 <div class="title_1 text-left">
-    <div class="title_main" id="cityName">Mumbai <span>02</span></div>
+    <div class="title_main" id="cityName">{{$DealersData[0]['city']}}<span>{{$DealersData->count()}}</span></div>
 </div>
 
 
@@ -14,7 +14,7 @@
                     <div class="dealers_info">
 						<h2>{{$row->dealership_name}}</h2>
 						<span>Address: </span>
-						<p>{{$row->Address}}</p>
+						<p>{{$row->address}}</p>
 						<h3>{{$row->contact_name}}</h3>
 						<ul>
 
