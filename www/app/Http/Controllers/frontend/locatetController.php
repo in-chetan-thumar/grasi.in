@@ -3,11 +3,10 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
-use App\Models\City;
-use App\Models\Dealer;
-use App\Models\Dealers;
+use App\Http\Requests\LocateContactRequest;
+use App\Mail\LocateMailNotification;
 use App\Repositories\DealerRepository;
-use Carbon\Carbon;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
 
@@ -103,10 +102,26 @@ class LocatetController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+      /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(LocateContactRequest $request)
     {
-        //
+       
+        $params = [];
+        $params['first_name'] = $request->first_name;
+        $params['last_name'] = $request->last_name;
+        $params['location'] = $request->location;
+        $params['email'] = $request->email;
+        // dd($params);
+        Mail::send(new LocateMailNotification($params));
+        toastr()->success('Your enquire has been submitted successfully!');
+        return redirect()->back();
     }
+
 
     /**
      * Display the specified resource.
@@ -139,13 +154,6 @@ class LocatetController extends Controller
     {
         //
     }
-
-
-    function getCityFromState($id)
-    {
-
-    }
-
 
 }
 

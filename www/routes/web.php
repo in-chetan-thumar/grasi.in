@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\frontend\contactController;
-use App\Http\Controllers\frontend\graphicController;
-use App\Http\Controllers\frontend\homeController;
-use App\Http\Controllers\frontend\locatetController;
-use App\Http\Controllers\frontend\ourStoryController;
+use App\Http\Controllers\frontend\ContactController;
+use App\Http\Controllers\frontend\GraphicController;
+use App\Http\Controllers\frontend\HomeController;
+use App\Http\Controllers\frontend\LocatetController;
+use App\Http\Controllers\frontend\OurStoryController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -22,24 +22,22 @@ Auth::routes();
 
 $middleware = ['auth','throttle:120,1'];
 // home page route
-Route::get('/',[homeController::class,'index'])->name('frontend.home');
+Route::get('/',[HomeController::class,'index'])->name('frontend.home');
 //Our Story page route
-Route::get('our_story',[ourStoryController::class,'index'])->name('frontend.our_story');
+Route::get('our_story',[OurStoryController::class,'index'])->name('frontend.our_story');
 //contact page route
 //Route::get('contact',[contactController::class,'index'])->name('frontend.contact');
-Route::resource('contact',contactController::class);
+Route::resource('contact',ContactController::class);
 //locate page route
-Route::get('locate',[locatetController::class,'index'])->name('frontend.locate');
-Route::get('/state/{state}', [locatetController::class,'getCities'])->name('locate.city');
-Route::get('/locate/state', [locatetController::class,'getFilteredData'])->name('locate.getData');
-
-
-
+Route::get('locate',[LocatetController::class,'index'])->name('frontend.locate');
+Route::get('/state/{state}', [LocatetController::class,'getCities'])->name('locate.city');
+Route::get('/locate/state', [LocatetController::class,'getFilteredData'])->name('locate.getData');
+Route::post('locate', [LocatetController::class,'store'])->name('locate.send-email');
 
 //graphic page route
 // Route::resource('graphic', graphicController::class);
-Route::get('graphic', [graphicController::class,'index'])->name('frontend.graphic');
-Route::post('graphic', [graphicController::class,'store'])->name('graphic.send-email');
+Route::get('graphic', [GraphicController::class,'index'])->name('frontend.graphic');
+Route::post('graphic', [GraphicController::class,'store'])->name('graphic.send-email');
 
 
 if(config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')){
