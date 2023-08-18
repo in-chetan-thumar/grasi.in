@@ -204,13 +204,9 @@
              tempTextArea.remove();
              alert("Copied!");
          });
-<<<<<<< HEAD
 
      })
-=======
-     });
 
->>>>>>> f5a37680a55a94be94774497035462396e95d0fd
  </script>
 
 
