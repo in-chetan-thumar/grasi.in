@@ -69,7 +69,7 @@
                                  'city_id',
                                  isset($patient) ? $cities : [],
                                  isset($patient) ? $patient->city_id : old('city_id'),
-                                 ['class' => 'form-control input', 'id' => 'city_id', 'placeholder' => 'Select City'],
+                                 ['class' => 'form-control input', 'id' => 'city_id', 'placeholder' => 'Select City']
                                  ) !!}
 
 						        </div>
@@ -87,7 +87,8 @@
 					</div>
 				</div>
 
-				<div class="col-xxl-2 col-xl-2 col-lg-3 col-md-12">
+				<div class="col-xxl-2 col-xl-2 col-lg-3 col-md-12 link" >
+
 					<a href="#" class="btn btn-primary red" data-bs-toggle="modal" data-bs-target="#exampleModal">Become a Dealer</a>
 				</div>
 		    </div>
@@ -141,11 +142,7 @@
                                     'id'=>'first_name'
                                   ]) !!}
 
-                                 <span class="text-danger" style="font-size:15px">
-                                     @error('first_name')
-                                          {{ $message }}
-                                     @enderror
-                                </span>
+
 							</div>
 						</div>
 
@@ -157,11 +154,7 @@
                                    'placeholder' => 'Enter',
                                 ]) !!}
 
-                                 <span class="text-danger" style="font-size:15px">
-                                    @error('last_name')
-                                         {{ $message }}
-                                    @enderror
-                               </span>
+
 							</div>
 						</div>
 
@@ -173,19 +166,28 @@
 									    <path d="M5.75593 5.62713C5.35716 6.08759 4.64284 6.08759 4.24407 5.62713L1.23682 2.15465C0.675942 1.50701 1.136 0.5 1.99275 0.5L8.00725 0.5C8.864 0.5 9.32406 1.50701 8.76318 2.15465L5.75593 5.62713Z" fill="#35ADD9"/>
 								    </svg>
 								    <select name="location" id="location" class="form-control input">
+<<<<<<< HEAD
 									    <option value="">Location</option>
 									    <option value="1">Location</option>
+=======
+                                        <option value="">Please Select</option>
+                                        <option value="1">Location</option>
+>>>>>>> f5a37680a55a94be94774497035462396e95d0fd
 									    <option value="2">Location</option>
 									    <option value="3">Location</option>
 									    <option value="4">Location</option>
 									    <option value="5">Location</option>
 								    </select>
 							    </div>
+<<<<<<< HEAD
 								<span class="text-danger" style="font-size:15px">
 									@error('location')
 										 {{ $message }}
 									@enderror
 								</span>
+=======
+
+>>>>>>> f5a37680a55a94be94774497035462396e95d0fd
 							</div>
 						</div>
 
@@ -199,10 +201,7 @@
                                 ]) !!}
 
                                 <span class="text-danger" style="font-size:15px">
-                                    @error('number')
-                                           {{ $message }}
-                                    @enderror
-                               </span>
+
 							</div>
 						</div>
 
@@ -214,11 +213,7 @@
                                      'placeholder' => 'ex. john@mail.com',
                                  ]) !!}
 
-                                 <span class="text-danger" style="font-size:15px">
-                                     @error('email')
-                                         {{ $message }}
-                                      @enderror
-                                 </span>
+
 							</div>
 						</div>
 
@@ -235,7 +230,7 @@
 
 					</div>
 					{!!Form::close()!!}
-				
+
 				{{-- model form end--}}
 			</div>
 		</div>
@@ -256,6 +251,7 @@
 
 {{-- js code  --}}
 @section('js')
+    {!! JsValidator::formRequest('App\Http\Requests\LocateContactRequest', '#locate-form'); !!}
 
 <script>
 
@@ -297,38 +293,22 @@
     // });
 </script>
 
-<script>
+    <script>
 
+        $(document).ready(function() {
+            $(".copy-button").click(function (e) {
+                const textToCopy = this.previousElementSibling.textContent;
+                var tempTextArea = $("<textarea>");
+                $("body").append(tempTextArea);
+                tempTextArea.val(textToCopy).select();
+                document.execCommand("copy");
+                tempTextArea.remove();
+                alert("Copied!");
 
-	
-	
-	
+            });
+        });
 
-	// $(document).ready(function(){
-    //     $('#filterBtn').click(function(e){
-    //        e.preventDefault();
-    //        $.ajaxSetup({
-    //            headers:{
-    //                'X-CSRF-TOKEN':$("meta[name='csrf-token']").attr('content')
-    //            }
-    //        });
-    //        var filter = $('#city_id').val();
-    //        $.ajax({
-    //            url:"{{route('locate.getData')}}",
-    //            method:'GET',
-    //            data: {
-	// 					city:filter
-	// 			},
-	// 			success:function(data){
-	// 				$('#filteredData').show();
-
-	// 			}
-    //        });
-    //     });
-    // });
-
-</script>
-
+    </script>
 
 
  <script>

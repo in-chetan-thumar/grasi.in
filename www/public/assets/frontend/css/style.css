@@ -2797,3 +2797,15 @@ footer .bottom_footer p span {
     bottom: 20px;
     z-index: 10000;
 }
+
+.slide-track .slide img {
+    height: auto;
+    width: initial;
+    max-height: 62px;
+}
+.dealer .link a {
+    margin-top: 26px;
+
+    height: 48px;
+    padding-top: 12px;
+}
