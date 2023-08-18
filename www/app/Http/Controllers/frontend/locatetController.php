@@ -43,7 +43,7 @@ class LocatetController extends Controller
     {
         try {
 
-            $options = '<option selected="selected" value="">Select city</option>';
+            $options = '<option selected="selected" value="">Select City</option>';
             $cities=$this->repository->getAllData('city',$state);
 
             foreach ($cities as  $city) {

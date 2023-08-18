@@ -70,7 +70,8 @@
 		<div class="bottom_footer">
 			<div class="row justify-content-center">
 				<div class="col-lg-11 col-lg-11">
-			<p>Copyright@Gras-i</p>
+			<p>Handcrafted with by <span style="font-size:120%;color:red;">&hearts;</span>
+			<a href="https://www.buzzmakers.in/" target="blank" style="color: white; text-decoration:underline;">Buzz Makers</a></p>
                     <div class="wp-icon">
                         <a href="https://wa.link/35uzb5" target="_blank" class="" style="">
                             <img src="{{ asset('assets/frontend/images/whatsapp.svg')}}" alt="whatsapp">

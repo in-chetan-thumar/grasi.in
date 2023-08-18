@@ -14,7 +14,7 @@
                     <div class="dealers_info">
 						<h2>{{$row->dealership_name}}</h2>
 						<span>Address: </span>
-						<p>{{$row->address}}</p>
+						<p>{{$row->address}} - {{$row->pincode}}</p>
 						<h3>{{$row->contact_name}}</h3>
 						<ul>
 

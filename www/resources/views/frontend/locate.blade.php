@@ -167,8 +167,6 @@
 								    </svg>
 								    <select name="location" id="location" class="form-control input">
 
-									    <option value="">Location</option>
-									    <option value="1">Location</option>
                                         <option value="">Please Select</option>
                                         <option value="1">Location</option>
 									    <option value="2">Location</option>
@@ -289,7 +287,7 @@
 </script>
 
     <script>
-
+        $('#filteredData').hide;
         $(document).ready(function() {
             $(".copy-button").click(function (e) {
                 const textToCopy = this.previousElementSibling.textContent;
