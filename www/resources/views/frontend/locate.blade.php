@@ -130,7 +130,9 @@
 							<div class="form-group input-box popup_head">
 							    <div class="d-flex align-items-center justify-content-between">
 								    <div><h3>Become a dealer</h3></div>
-								    <div><a href="#" class="btn btn-primary">Find a Dealer</a></div>
+								    <div><button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                                            Find a Dealer</button>
+</div>
 							    </div>
 							</div>
 						</div>
