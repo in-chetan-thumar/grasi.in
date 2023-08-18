@@ -116,6 +116,7 @@ class LocatetController extends Controller
         $params['last_name'] = $request->last_name;
         $params['location'] = $request->location;
         $params['email'] = $request->email;
+        $params['number'] = $request->number;
         // dd($params);
         Mail::send(new LocateMailNotification($params));
         toastr()->success('Your enquire has been submitted successfully!');

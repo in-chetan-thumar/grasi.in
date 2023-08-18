@@ -195,7 +195,7 @@
 {{-- js  --}}
 @section('js')
 
-    {!! JsValidator::formRequest('App\Http\Requests\ContactRequest', '#Contact-form'); !!}
+    {!! JsValidator::formRequest('App\Http\Requests\ContactRequest', '#Contact-form') !!}
 
 <script>
 
@@ -225,7 +225,7 @@
              alert("Copied!");
          });
 
-
+     })
  </script>
 
 

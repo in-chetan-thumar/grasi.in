@@ -39,6 +39,7 @@ class GraphicController extends Controller
         $params['first_name'] = $request->first_name;
         $params['last_name'] = $request->last_name;
         $params['subject'] = $request->subject;
+        $params['number'] = $request->number;
         $params['email'] = $request->email;
         // dd($params);
         Mail::send(new GraphicMailNotification($params));
