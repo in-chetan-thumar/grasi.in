@@ -51,3 +51,6 @@
 
 @endforeach
 
+
+<a class="read-more-show hide" href="#">Show More</a> <span class="read-more-content">
+

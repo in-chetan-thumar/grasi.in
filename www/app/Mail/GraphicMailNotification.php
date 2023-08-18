@@ -11,7 +11,7 @@ use Spatie\MailTemplates\TemplateMailable;
 class GraphicMailNotification extends TemplateMailable
 {
     use Queueable, SerializesModels;
-    public $PRACTICE_NAME ,$NAME,$CONTACT_FIRST_NAME,$CONTACT_LAST_NAME,$CONTACT_EMAIL,$CONTACT_SUBJECT;
+    public $PRACTICE_NAME ,$NAME,$CONTACT_FIRST_NAME,$CONTACT_LAST_NAME,$CONTACT_EMAIL,$CONTACT_SUBJECT,$CONTACT_NUMBER;
 
     /**
      * Create a new message instance.
@@ -24,6 +24,7 @@ class GraphicMailNotification extends TemplateMailable
         $this->CONTACT_FIRST_NAME = $params['first_name'];
         $this->CONTACT_LAST_NAME = $params['last_name'];
         $this->CONTACT_EMAIL = $params['email'];
+        $this->CONTACT_NUMBER = $params['number'];
         $this->CONTACT_SUBJECT = $params['subject'];
         $this->PRACTICE_NAME = config('constants.APP_NAME');
     }

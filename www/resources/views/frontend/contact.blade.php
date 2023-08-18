@@ -190,7 +190,7 @@
 {{-- js  --}}
 @section('js')
 
-    {!! JsValidator::formRequest('App\Http\Requests\ContactRequest', '#Contact-form'); !!}
+    {!! JsValidator::formRequest('App\Http\Requests\ContactRequest', '#Contact-form') !!}
 
 <script>
 
@@ -204,8 +204,13 @@
              tempTextArea.remove();
              alert("Copied!");
          });
+<<<<<<< HEAD
+
+     })
+=======
      });
 
+>>>>>>> f5a37680a55a94be94774497035462396e95d0fd
  </script>
 
 

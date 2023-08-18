@@ -9,7 +9,7 @@ use Spatie\MailTemplates\TemplateMailable;
 class LocateMailNotification extends TemplateMailable
 {
     use Queueable, SerializesModels;
-    public $PRACTICE_NAME ,$NAME,$CONTACT_FIRST_NAME,$CONTACT_LAST_NAME,$CONTACT_EMAIL,$CONTACT_LOCATION;
+    public $PRACTICE_NAME ,$NAME,$CONTACT_FIRST_NAME,$CONTACT_LAST_NAME,$CONTACT_EMAIL,$CONTACT_LOCATION,$CONTACT_NUMBER;
 
     /**
      * Create a new message instance.
@@ -23,6 +23,7 @@ class LocateMailNotification extends TemplateMailable
         $this->CONTACT_LAST_NAME = $params['last_name'];
         $this->CONTACT_EMAIL = $params['email'];
         $this->CONTACT_LOCATION = $params['location'];
+        $this->CONTACT_NUMBER = $params['number'];
         $this->PRACTICE_NAME = config('constants.APP_NAME');
     }
     public function getHtmlLayout(): string
