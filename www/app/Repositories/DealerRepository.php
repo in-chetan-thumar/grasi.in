@@ -52,8 +52,11 @@ class DealerRepository
         $this->model = $this->model->when(isset($params['city']) AND !empty($params['city']) ,function ($query) use ($params){
             return $query->where('city', $params['city']);
         });
-        return $this->model->get();
-
+//        return $this->model->get();
+        return $this->model
+            ->latest()
+            ->paginate(config('constants.PER_PAGE'), ['*'], 'page', !empty($params['page']) ? $params['page'] : '')
+            ->setPath($params['path']);
 
     }
     public function renderHtmlDealers($params)

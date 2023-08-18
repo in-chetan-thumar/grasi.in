@@ -101,7 +101,9 @@
 
 <section class="dealers_list pt0">
 	<div class="container" id="filteredData">
+
              {!!$llumarDealers!!}
+
 	</div>
 </section>
 

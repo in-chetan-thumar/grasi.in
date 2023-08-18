@@ -1,15 +1,19 @@
 
-
-
+@if(!empty(request()->query('state_id')))
 <div class="title_1 text-left">
     <div class="title_main" id="cityName">{{$DealersData[0]['city']}}<span>{{$DealersData->count()}}</span></div>
 </div>
+@else
+    <div class="title_1 text-left">
+        <div class="title_main" id="cityName">All<span>{{$DealersData->count()}}</span></div>
+    </div>
+@endif
 
-
+<div class="dealers_row">
+    <div class="row g-4">
 @foreach ($DealersData as $key => $row)
 
-    <div class="dealers_row">
-        <div class="row g-4">
+
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <div class="dealers_info">
 						<h2>{{$row->dealership_name}}</h2>
@@ -51,11 +55,16 @@
 
 					</div>
 				</div>
-			</div>
-		</div>
+
 
 @endforeach
-
-
-
+    </div>
+    <div class="row  mt-4">
+        <div class="col-12">
+                <div class="float-end">
+                     {{$DealersData->links()}}
+                </div>
+        </div>
+    </div>
+</div>
 
