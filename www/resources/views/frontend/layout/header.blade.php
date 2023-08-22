@@ -37,6 +37,7 @@
                                       <a href="{{ route('frontend.our_story') }}">Our Story</a>
                                   </li>
                                   <li class="megamenumain"><a href="#">Our Solutions</a>
+                                      <ul class="sub-menu">
                                       {{-- mega menu start  --}}
                                       <div class="megamenu">
                                           <div class="megamenu_sub">
@@ -168,6 +169,7 @@
                                               </div>
                                           </div>
                                           {{-- mega menu end  --}}
+                                      </ul>
                                   </li>
                                   {{-- <li><a href="casestudies.php">Casestudies</a></li> --}}
                                   <li><a href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/" target="blank">Careers</a></li>

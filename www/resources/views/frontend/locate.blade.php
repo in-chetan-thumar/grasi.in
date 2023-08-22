@@ -87,7 +87,7 @@
 					</div>
 				</div>
 
-				<div class="col-xxl-2 col-xl-2 col-lg-3 col-md-12 link" >
+				<div class="col-xxl-2 col-xl-2 col-lg-3 col-md-12 link bad" >
 
 					<a href="#" class="btn btn-primary red" data-bs-toggle="modal" data-bs-target="#exampleModal">Become a Dealer</a>
 				</div>
