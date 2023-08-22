@@ -69,7 +69,7 @@
                                                                       <div class="megamenu_wrpr">
                                                                           <h4>Paint Protection Film</h4>
                                                                           <ul>
-                                                                            <li><a href="https://llumar.com/na/en/automotive/paint-protection-film/valor/" target="blank">valor</a></li>
+                                                                            <li><a href="https://llumar.com/na/en/automotive/paint-protection-film/valor/" target="blank">Valor</a></li>
                                                                             <li><a href="https://llumar.com/na/en/automotive/paint-protection-film/platinum-matte/" target="blank">Platinum Matte</a></li>
                                                                             <li><a href="https://llumar.com/na/en/automotive/paint-protection-film/platinum-extra/" target="blank">Platinum Extra</a></li>
                                                                             <li><a href="https://llumar.com/na/en/automotive/paint-protection-film/gloss-matte/" target="blank">Gloss and Matte</a></li>

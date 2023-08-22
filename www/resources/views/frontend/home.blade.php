@@ -97,7 +97,7 @@
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                         <figure class="solution_box hover_box">
                             <a href="{{ route('frontend.graphic')}}" class="hover_img">
-                                <img src="{{ asset('assets/frontend/images/solutionimg3.webp')}}" alt="image">
+                                <img src="{{ asset('assets/frontend/images/GrayMcLaren.png')}}" alt="image">
                                 <figcaption>
                                     <h2>Graphics</h2>
                                 </figcaption>
