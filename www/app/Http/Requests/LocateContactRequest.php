@@ -24,9 +24,10 @@ class LocateContactRequest extends FormRequest
         return [
             'first_name'=>'required',
             'last_name'=>'required',
-            'email'=>'required',
-            'location'=>'required',
-            'number'=>'required',
+            'email'=>'required|email',
+            'city'=>'required',
+            'state'=>'required',
+            'number'=>'required|numeric|digits:10',
         ];
     }
 }

@@ -158,26 +158,38 @@
 							</div>
 						</div>
 
-						<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+						<div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
 							<div class="form-group input-box select-box">
-								<label>Location</label>
-								{!! Form::text('location',  null, [
+								<label>City</label>
+								{!! Form::text('city',  null, [
 									'class' => 'form-control input ',
-									'placeholder' => 'Enter subject',
+									'placeholder' => 'Enter City',
 								   ]) !!}
 						</div>
 						</div>
+                        <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group input-box">
+                                <label>State</label>
+                                {!! Form::text('state',  null, [
+                                       'class' => 'form-control input ',
+                                       'placeholder' => 'Enter State',
+                                ]) !!}
+
+                                <span class="text-danger" style="font-size:15px"></span>
+                            </div>
+                        </div>
 
 						<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
 							<div class="form-group input-box">
 								<label>Mobile</label>
-								{!! Form::text('number',  null, [
+								{!! Form::number('number',  null, [
                                        'class' => 'form-control input ',
 									   'id' =>'number',
                                        'placeholder' => 'ex. 1234567890',
+                                       'oninput'=>"javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);",'maxlength' => "10",
                                 ]) !!}
 
-                                <span class="text-danger" style="font-size:15px">
+                                <span class="text-danger" style="font-size:15px"></span>
 
 							</div>
 						</div>

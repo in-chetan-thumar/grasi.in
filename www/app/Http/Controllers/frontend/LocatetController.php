@@ -28,7 +28,7 @@ class LocatetController extends Controller
     public function index(Request $request)
     {
 
-        
+
         $llumarDealers= resolve('dealer-repo')->renderHtmlDealers($this->getParamsForFilter($request));
         //$llumarDealerData = $this->repository->getAllData('all','1');
 
@@ -63,7 +63,7 @@ class LocatetController extends Controller
     public function getParamsForFilter(Request $request)
     {
 
-      
+
         $previousUrl = parse_url(url()->previous());
         $params = [];
     if (request()->routeIs('frontend.locate') ) {
@@ -110,11 +110,12 @@ class LocatetController extends Controller
      */
     public function store(LocateContactRequest $request)
     {
-       
+
         $params = [];
         $params['first_name'] = $request->first_name;
         $params['last_name'] = $request->last_name;
-        $params['location'] = $request->location;
+        $params['city'] = $request->city;
+        $params['state'] = $request->state;
         $params['email'] = $request->email;
         $params['number'] = $request->number;
         // dd($params);
