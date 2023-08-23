@@ -125,7 +125,7 @@
                                                        </div>
                                                        <div class="col-12 col-lg-6 col-lg-6 col-md-6 col-sm-6">
                                                             <div class="form-group input-box select-box">
-                                                                 <label>Select a Subject</label>
+                                                                 <label>Subject</label>
                                                                 {!! Form::text('subject',  null, [
                                                'class' => 'form-control input ',
                                                'placeholder' => 'Enter subject',

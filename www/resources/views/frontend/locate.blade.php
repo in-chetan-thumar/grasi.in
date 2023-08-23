@@ -87,7 +87,7 @@
 					</div>
 				</div>
 
-				<div class="col-xxl-2 col-xl-2 col-lg-3 col-md-12 link bad" >
+				<div class="col-xxl-2 col-xl-2 col-lg-3 col-md-12 link" >
 
 					<a href="#" class="btn btn-primary red" data-bs-toggle="modal" data-bs-target="#exampleModal">Become a Dealer</a>
 				</div>
@@ -101,9 +101,7 @@
 
 <section class="dealers_list pt0">
 	<div class="container" id="filteredData">
-
              {!!$llumarDealers!!}
-
 	</div>
 </section>
 
@@ -130,9 +128,7 @@
 							<div class="form-group input-box popup_head">
 							    <div class="d-flex align-items-center justify-content-between">
 								    <div><h3>Become a dealer</h3></div>
-								    <div><button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
-                                            Find a Dealer</button>
-</div>
+								    <div><a href="#" class="btn btn-primary">Find a Dealer</a></div>
 							    </div>
 							</div>
 						</div>
@@ -165,27 +161,11 @@
 						<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
 							<div class="form-group input-box select-box">
 								<label>Location</label>
-								<div class="relative">
-								    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-									    <path d="M5.75593 5.62713C5.35716 6.08759 4.64284 6.08759 4.24407 5.62713L1.23682 2.15465C0.675942 1.50701 1.136 0.5 1.99275 0.5L8.00725 0.5C8.864 0.5 9.32406 1.50701 8.76318 2.15465L5.75593 5.62713Z" fill="#35ADD9"/>
-								    </svg>
-								    <select name="location" id="location" class="form-control input">
-
-                                        <option value="">Please Select</option>
-                                        <option value="1">Location</option>
-									    <option value="2">Location</option>
-									    <option value="3">Location</option>
-									    <option value="4">Location</option>
-									    <option value="5">Location</option>
-								    </select>
-							    </div>
-
-								<span class="text-danger" style="font-size:15px">
-									@error('location')
-										 {{ $message }}
-									@enderror
-
-							</div>
+								{!! Form::text('location',  null, [
+									'class' => 'form-control input ',
+									'placeholder' => 'Enter subject',
+								   ]) !!}
+						</div>
 						</div>
 
 						<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -241,12 +221,14 @@
 {{-- include footer  --}}
 @include('frontend.layout.footer')
 
+
 @endsection
 
 
 
 
 {{-- js code  --}}
+
 @section('js')
     {!! JsValidator::formRequest('App\Http\Requests\LocateContactRequest', '#locate-form') !!}
 
@@ -291,7 +273,7 @@
 </script>
 
     <script>
-        $('#filteredData').hide;
+        // $('#filteredData').hide;
         $(document).ready(function() {
             $(".copy-button").click(function (e) {
                 const textToCopy = this.previousElementSibling.textContent;

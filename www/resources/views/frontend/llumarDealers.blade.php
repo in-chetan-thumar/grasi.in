@@ -9,11 +9,11 @@
     </div>
 @endif
 
-<div class="dealers_row">
-    <div class="row g-4">
+
 @foreach ($DealersData as $key => $row)
 
-
+            <div class="dealers_row">
+                <div class="row g-4">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <div class="dealers_info">
 						<h2>{{$row->dealership_name}}</h2>
@@ -56,9 +56,9 @@
 					</div>
 				</div>
 
-
+			</div>
+		</div>
 @endforeach
-    </div>
     <div class="row  mt-4">
         <div class="col-12">
                 <div class="float-end">
@@ -66,5 +66,5 @@
                 </div>
         </div>
     </div>
-</div>
+
 

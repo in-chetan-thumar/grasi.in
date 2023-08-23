@@ -439,6 +439,9 @@
 
  {{-- js --}}
  @section('js')
+ {!! JsValidator::formRequest('App\Http\Requests\GraphicContactRequest', '#graphic-form') !!}
+
+
     <script>
     var swiperjourney = new Swiper(".mySwiper_journey", {
       autoplay:2000,

@@ -37,11 +37,6 @@
                                                      'id'=>'first_name'
                                                  ]) !!}
 
-                                                <span class="text-danger" style="font-size:15px">
-                                                    @error('first_name')
-                                                         {{ $message }}
-                                                    @enderror
-                                                </span>
 											</div>
 										</div>
 										<div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6">
@@ -53,35 +48,17 @@
                                                     'placeholder' => 'Enter',
                                                 ]) !!}
 
-                                                <span class="text-danger" style="font-size:15px">
-                                                    @error('last_name')
-                                                         {{ $message }}
-                                                    @enderror
-                                                </span>
 											</div>
 										</div>
 										<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
 											<div class="form-group input-box select-box">
-												<label>Select  Subject</label>
-												<div class="relative">
-												<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-													<path d="M5.75593 5.62713C5.35716 6.08759 4.64284 6.08759 4.24407 5.62713L1.23682 2.15465C0.675942 1.50701 1.136 0.5 1.99275 0.5L8.00725 0.5C8.864 0.5 9.32406 1.50701 8.76318 2.15465L5.75593 5.62713Z" fill="#35ADD9"/>
-												</svg>
-												<select name="subject" id="subject" class="form-control input">
-                                                    <option value="">Select Subject</option>
-													<option value="1">Select</option>
-													<option value="2">Select</option>
-													<option value="3">Select</option>
-													<option value="4">Select</option>
-													<option value="5">Select</option>
-													<option value="6">Select</option>
-												</select>
-											</div>
-                                            <span class="text-danger" style="font-size:15px">
-                                                @error('subject')
-                                                     {{ $message }}
-                                                @enderror
-                                            </span>
+												<label>Subject</label>
+												
+												{!! Form::text('subject',  null, [
+                                                'class' => 'form-control input ',
+                                                'placeholder' => 'Enter subject',
+                                               ]) !!}
+											
 											</div>
 										</div>
 										<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -94,11 +71,6 @@
                                                      'placeholder' => 'ex. 1234567890',
                                                  ]) !!}
 
-                                                <span class="text-danger" style="font-size:15px">
-                                                    @error('number')
-                                                         {{ $message }}
-                                                    @enderror
-                                                </span>
 											</div>
 										</div>
 										<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -110,11 +82,6 @@
                                                      'placeholder' => 'ex. john@mail.com',
                                                  ]) !!}
 
-                                                <span class="text-danger" style="font-size:15px">
-                                                    @error('email')
-                                                         {{ $message }}
-                                                    @enderror
-                                                </span>
 											</div>
 										</div>
 										<div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
