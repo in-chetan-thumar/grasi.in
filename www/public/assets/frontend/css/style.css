@@ -2479,7 +2479,9 @@ footer .bottom_footer p span {
 
 .locate_page .inner_banner {
 	background-image: url("../images/AFC_1.png");
-	height: 265px;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    height: 300px;
 	text-align: center;
 }
 
