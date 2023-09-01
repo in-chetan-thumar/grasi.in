@@ -48,10 +48,10 @@
 
 				<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
 					<div class="dealers_map">
-{{--						<iframe title="myFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60474.123469991544!2d78.0544702293211!3d18.680470466431572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcddb27a9a89045%3A0x9f38c4351a15bbf2!2sNizamabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1691326796663!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d57765.99227337182!2d{{$row->longitude}}!3d{{$row->latitude}}!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1692266161871!5m2!1sen!2sin" width="100%" height="450"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="{{$row->url}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+                        {{--                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d57765.99227337182!2d{{$row->longitude}}!3d{{$row->latitude}}!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1692266161871!5m2!1sen!2sin" width="100%" height="450"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
 
 {{--                                <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"--}}
 {{--                                        marginwidth="0"--}}

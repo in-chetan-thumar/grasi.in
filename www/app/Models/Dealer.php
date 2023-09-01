@@ -16,6 +16,7 @@ class Dealer extends Model
     protected $primaryKey="id";
 
     protected $fillable = [
+        'sort_id',
         'dealership_name',
         'address',
         'state',
@@ -25,6 +26,8 @@ class Dealer extends Model
         'contact_email',
         'latitude',
         'longitude',
+        'is_active',
+        'url',
         'created_at',
         'created_by',
         'updated_at',

@@ -43,6 +43,7 @@ class DealerRepository
     }
     public function filter($params)
     {
+        $params['is_active'] =  'Y' ;
 
         $this->model = $this->model->when(isset($params['state']) AND !empty($params['state']) ,function ($query) use ($params){
             return $query->where('state', $params['state']);
@@ -52,9 +53,12 @@ class DealerRepository
         $this->model = $this->model->when(isset($params['city']) AND !empty($params['city']) ,function ($query) use ($params){
             return $query->where('city', $params['city']);
         });
+        $this->model = $this->model->when(isset($params['is_active']) AND !empty($params['is_active']) ,function ($query) use ($params){
+            return $query->where('is_active', $params['is_active']);
+        });
 //        return $this->model->get();
         return $this->model
-            ->latest()
+            ->orderBy('sort_id')
             ->paginate(config('constants.PER_PAGE'), ['*'], 'page', !empty($params['page']) ? $params['page'] : '')
             ->setPath($params['path']);
 
