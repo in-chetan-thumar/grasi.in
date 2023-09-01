@@ -2800,7 +2800,7 @@ footer .bottom_footer p span {
 .wp-icon{
     width: 60px;
     position: fixed;
-    right: 20px;
+    left: 20px;
     bottom: 20px;
     z-index: 10000;
 }
@@ -2850,7 +2850,7 @@ footer .bottom_footer p span {
     /*width: 125px;*/
     z-index: 10000;
     position: fixed;
-    right: 80px;
+    right: 20px;
     bottom: 27px;
 }
 .dealer-location{
