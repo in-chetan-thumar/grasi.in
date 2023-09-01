@@ -166,7 +166,7 @@
 
 
 
-    <section class="team pt0" style="background-image: url({{ asset('assets/frontend/images/team_bg.svg')}});background-repeat: no-repeat;background-position:top center;background-size: 100% auto;">
+    <section class="team pt0" >
         <div class="container">
             <div class="title_1">
                 <div class="title_main">Management Team</div>
@@ -178,7 +178,7 @@
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
                             <figure class="team_box">
                                 <div class="team_img">
-                                    <img src="{{ asset('assets/frontend/images/team/1.png')}}" width="" height="" alt="image">
+                                    <img src="{{ asset('assets/frontend/images/team/1.png')}}" width="" class="team-bg-logo" height="" alt="image" >
                                     <figcaption>
                                         <h2>Suryakant<br> Zaveri</h2>
                                         <p>Chairman</p>
@@ -190,7 +190,7 @@
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
                             <figure class="team_box">
                                 <div class="team_img">
-                                    <img src="{{ asset('assets/frontend/images/team/2.png')}}" width="" height="" alt="image">
+                                    <img src="{{ asset('assets/frontend/images/team/2.png')}}" class="team-bg-logo" width="" height="" alt="image">
                                     <figcaption>
                                         <h2>Sanjiv<br> Zaveri</h2>
                                         <p>Founder & Managing Director</p>
@@ -201,7 +201,7 @@
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
                             <figure class="team_box">
                                 <div class="team_img">
-                                    <img src="{{ asset('assets/frontend/images/team/3.png')}}" width="" height="" alt="image">
+                                    <img src="{{ asset('assets/frontend/images/team/3.png')}}"  class="team-bg-logo" width="" height="" alt="image">
                                     <figcaption>
                                         <h2>Siddharth<br> Zaveri</h2>
                                         <p>Marketing Director</p>
@@ -212,7 +212,7 @@
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
                             <figure class="team_box">
                                 <div class="team_img">
-                                    <img src="{{ asset('assets/frontend/images/team/4.png')}}" width="" height="" alt="image">
+                                    <img src="{{ asset('assets/frontend/images/team/4.png')}}" class="team-bg-logo" width="" height="" alt="image">
                                     <figcaption>
                                         <h2>Shobhit<br> Zaveri</h2>
                                         <p>Customer Relationships</p>
@@ -223,7 +223,7 @@
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
                             <figure class="team_box">
                                 <div class="team_img">
-                                    <img src="{{ asset('assets/frontend/images/team/5.png')}}" width="" height="" alt="image">
+                                    <img src="{{ asset('assets/frontend/images/team/5.png')}}" class="team-bg-logo" width="" height="" alt="image">
                                     <figcaption>
                                         <h2>Director Ashok<br> Singh</h2>
                                         <p>Sales Director</p>
@@ -234,7 +234,7 @@
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
                             <figure class="team_box">
                                 <div class="team_img">
-                                    <img src="{{ asset('assets/frontend/images/team/6.png')}}" width="" height="" alt="image">
+                                    <img src="{{ asset('assets/frontend/images/team/6.png')}}" class="team-bg-logo" width="" height="" alt="image">
                                     <figcaption>
                                         <h2>Bharat<br> Pandya</h2>
                                         <p>Accounts</p>
@@ -247,7 +247,7 @@
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
                             <figure class="team_box">
                                 <div class="team_img">
-                                    <img src="{{ asset('assets/frontend/images/team/7.png')}}" width="" height="" alt="image">
+                                    <img src="{{ asset('assets/frontend/images/team/7.png')}}" class="team-bg-logo" width="" height="" alt="image">
                                     <figcaption>
                                         <h2>Binita<br> Zaveri</h2>
                                         <p>Administrative Director</p>

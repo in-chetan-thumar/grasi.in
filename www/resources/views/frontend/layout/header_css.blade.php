@@ -8,3 +8,4 @@
  <link href="{{ asset('assets/frontend/css/jquery.fancybox.min.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('assets/frontend/css/responsive.css') }}" rel="stylesheet" type="text/css">
+ <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>

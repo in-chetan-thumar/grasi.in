@@ -79,7 +79,7 @@
 				        <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-4">
 					        <div class="submit_btn">
 						        <div class="btn btn-primary red">
-                                    {!! Form::submit('Search', ['class' => 'btn btn-primary', 'id' => 'filterBtn']) !!}
+                                    {!! Form::submit('Search', ['class' => 'btn ', 'id' => 'filterBtn']) !!}
 
                                 </div>
 					        </div>
