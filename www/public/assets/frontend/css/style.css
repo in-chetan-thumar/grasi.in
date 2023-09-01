@@ -2178,21 +2178,23 @@ footer .bottom_footer p span {
 }
 
 .journey_year {
-	font-size: 62px;
-	color: #ffffff;
-	font-family: 'AbhayaLibreBold';
-	line-height: normal;
-	display: inline-block;
-	text-align: center;
-	transform: translate(-50%, 0px) rotate(-90deg);
-	position: absolute;
-	bottom: 60px;
-	left: 50%;
-	transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
+    font-size: 62px;
+    color: #ffffff;
+    font-family: 'AbhayaLibreBold';
+    line-height: normal;
+    display: inline-block;
+    text-align: center;
+    transform: translate(-50%, 0px) rotate(-90deg);
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    width: 320px;
+    text-align: left;
 }
 
 .team_box {
@@ -2870,4 +2872,8 @@ footer .bottom_footer p span {
         background-repeat: no-repeat;
         background-position:top 75px left 10px;
     background-size: 100% auto;
+}
+*::-webkit-media-controls-start-playback-button {
+    display: none!important;
+    -webkit-appearance: none;
 }
