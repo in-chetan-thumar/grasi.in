@@ -50,11 +50,13 @@
 					<div class="dealers_map">
 {{--						<iframe title="myFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60474.123469991544!2d78.0544702293211!3d18.680470466431572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcddb27a9a89045%3A0x9f38c4351a15bbf2!2sNizamabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1691326796663!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d57765.99227337182!2d{{$row->longitude}}!3d{{$row->latitude}}!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1692266161871!5m2!1sen!2sin" width="100%" height="450"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{--                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d57765.99227337182!2d{{$row->longitude}}!3d{{$row->latitude}}!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1692266161871!5m2!1sen!2sin" width="100%" height="450"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
 
 
+                                <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
+                                        marginwidth="0"
+                                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q={{$row->dealership_name}}{{$row->address}} &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 
-{{--                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14686.856873748982!2d{{$row->longitude}}!3d{{$row->latitude}}!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e850f0ad765db%3A0xc09af2cbd5d01b41!2s{{$row->dealership_name}}!5e0!3m2!1sen!2sin!4v1693557285851!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
 					</div>
 				</div>
 
