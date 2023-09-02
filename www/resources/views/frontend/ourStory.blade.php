@@ -134,7 +134,7 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <figure class="journey_box" style="background:url({{ asset('assets/frontend/images/journeyimg1.webp')}});background-repeat: no-repeat;background-position: center;background-size: cover;">
+                        <figure class="journey_box" style="background:url({{ asset('assets/frontend/images/journeyimg7.webp')}});background-repeat: no-repeat;background-position: center;background-size: cover;">
                             <span class="journey_year">2015 / 2016</span>
                             <figcaption>
                                 <span>2015/2016</span>
@@ -146,7 +146,7 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <figure class="journey_box" style="background:url({{ asset('assets/frontend/images/journeyimg1.webp')}});background-repeat: no-repeat;background-position: center;background-size: cover;">
+                        <figure class="journey_box" style="background:url({{ asset('assets/frontend/images/journeyimg8.webp')}});background-repeat: no-repeat;background-position: center;background-size: cover;">
                             <span class="journey_year">2018 & Now</span>
                             <figcaption>
                                 <span>2018 & Now</span>

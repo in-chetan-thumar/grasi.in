@@ -369,6 +369,9 @@ footer .top_footer .footer_wrapper ul li+li {  margin-top: 10px;}
 .contact_page_form .footer_form_main {  padding: 30px 30px 30px 30px;}
 .megamenu_wrpr ul li+li {  margin-top: 5px;}
 .menu_img img {    border-radius: 10px;}
+
+.journey .swiper-slide:hover {  width: 300px !important;}
+.journey_box figcaption p {font-size: 12px;}
 }
 
 @media screen and (max-width:640px) {
@@ -419,7 +422,7 @@ footer .top_footer .footer_wrapper ul li+li {  margin-top: 10px;}
 .banner figcaption p { font-size: 15px;margin-top: 0px;}
 .banner .swiper_main_slide .banner_figcaption {  bottom: 70px;}
 .solution .title_1 .title_main br {display: none;}
-section {padding: 30px 0;}
+section {/* padding: 30px 0; */}
 .solution {padding-top: 30px;}
 .video_icon svg {width: 15px;}
 .video_icon { width: 50px;  height: 50px;}
@@ -500,6 +503,7 @@ html, body {  font-size: 14px;}
 .dealers_list .dealers_row .dealers_info ul li svg {  margin-right: 15px;}
 .dealers_list .dealers_row .dealers_info h3 {   font-size: 18px;}
 .contact_page_form .footer_form_main .submit_btn .btn {max-width: 200px;}
+.journey_box {padding: 15px;}
 }
 
 @media screen and (max-width:380px) {
