@@ -353,8 +353,15 @@
         prevEl: '.swiper-button-prev-journey',
       },
       breakpoints: {
+      	1501: {
+
+        },
+      	1500: {
+           centeredSlides: true,
+        },
         992: {
           slidesPerView: 5,
+          centeredSlides: true,
         },
         991: {
           slidesPerView: 4,
