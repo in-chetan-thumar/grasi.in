@@ -225,7 +225,7 @@
                                 <div class="team_img">
                                     <img src="{{ asset('assets/frontend/images/team/5.png')}}" class="team-bg-logo" width="" height="" alt="image">
                                     <figcaption>
-                                        <h2>Director Ashok<br> Singh</h2>
+                                        <h2>Ashok<br> Singh</h2>
                                         <p>Sales Director</p>
                                     </figcaption>
                                 </div>
@@ -237,7 +237,7 @@
                                     <img src="{{ asset('assets/frontend/images/team/6.png')}}" class="team-bg-logo" width="" height="" alt="image">
                                     <figcaption>
                                         <h2>Bharat<br> Pandya</h2>
-                                        <p>Accounts</p>
+                                        <p>Head of Accounts</p>
                                     </figcaption>
                                 </div>
                             </figure>
