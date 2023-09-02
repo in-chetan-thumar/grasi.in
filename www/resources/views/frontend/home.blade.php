@@ -97,7 +97,7 @@
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                         <figure class="solution_box hover_box">
                             <a href="{{ route('frontend.graphic')}}" class="hover_img">
-                                <img src="{{ asset('assets/frontend/images/GrayMcLaren.png')}}" alt="image">
+                                <img src="{{ asset('assets/frontend/images/GrayMcLaren.webp')}}" alt="image">
                                 <figcaption>
                                     <h2>Graphics</h2>
                                 </figcaption>
@@ -586,7 +586,7 @@
            {{-- insta reels  --}}
            <div class="swiper-wrapper">
                <div class="swiper-slide">
-                   <video class="insta-video" controls="" id="reel1" poster="{{ asset('assets/frontend/images/Reel_Covers/4.jpg')}}">
+                   <video class="insta-video" controls="" id="reel1" poster="{{ asset('assets/frontend/images/Reel_Covers/4.webp')}}">
                        <source src="{{ asset('assets/frontend/images/videos/Checkout _this_video.mp4')}}" type="video/mp4">
                        <source src="{{ asset('assets/frontend/images/videos/Checkout _this_video.mp4')}}" type="video/ogg">
                     </video>
@@ -595,7 +595,7 @@
                     </div>
                </div>
                <div class="swiper-slide">
-                   <video class="insta-video" controls="" id="reel2" poster="{{ asset('assets/frontend/images/Reel_Covers/5.jpg')}}">
+                   <video class="insta-video" controls="" id="reel2" poster="{{ asset('assets/frontend/images/Reel_Covers/5.webp')}}">
                         <source src="{{ asset('assets/frontend/images/videos/Enjoy_the_best.mp4')}}" type="video/mp4">
                         <source src="{{ asset('assets/frontend/images/videos/Enjoy_the_best.mp4')}}" type="video/ogg">
                    </video>
@@ -604,7 +604,7 @@
                     </div>
                </div>
                <div class="swiper-slide">
-                   <video class="insta-video" controls="" id="reel3" poster="{{ asset('assets/frontend/images/Reel_Covers/1.jpg')}}">
+                   <video class="insta-video" controls="" id="reel3" poster="{{ asset('assets/frontend/images/Reel_Covers/1.webp')}}">
                        <source src="{{ asset('assets/frontend/images/videos/Gras-i_Meet-The.mp4')}}" type="video/mp4">
                        <source src="{{ asset('assets/frontend/images/videos/Gras-i_Meet-The.mp4')}}" type="video/ogg">
                     </video>
@@ -613,7 +613,7 @@
                     </div>
                </div>
                <div class="swiper-slide">
-                   <video class="insta-video" controls="" id="reel4" poster="{{ asset('assets/frontend/images/Reel_Covers/3.jpg')}}">
+                   <video class="insta-video" controls="" id="reel4" poster="{{ asset('assets/frontend/images/Reel_Covers/3.webp')}}">
                        <source src="{{ asset('assets/frontend/images/videos/Gras-i_was_delighted.mp4')}}" type="video/mp4">
                        <source src="{{ asset('assets/frontend/images/videos/Gras-i_was_delighted.mp4')}}" type="video/ogg">
                    </video>
@@ -622,7 +622,7 @@
                     </div>
                </div>
                <div class="swiper-slide">
-                   <video class="insta-video" controls="" id="reel5" poster="{{ asset('assets/frontend/images/Reel_Covers/2.jpg')}}">
+                   <video class="insta-video" controls="" id="reel5" poster="{{ asset('assets/frontend/images/Reel_Covers/2.webp')}}">
                        <source src="{{ asset('assets/frontend/images/videos/The_Ferrari_296_GTB.mp4')}}" type="video/mp4">
                        <source src="{{ asset('assets/frontend/images/videos/The_Ferrari_296_GTB.mp4')}}" type="video/ogg">
                     </video>

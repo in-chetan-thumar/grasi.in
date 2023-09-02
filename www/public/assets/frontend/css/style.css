@@ -2483,7 +2483,7 @@ footer .bottom_footer p span {
 }
 
 .locate_page .inner_banner {
-	background-image: url("../images/AFC_1.png");
+	background-image: url("../images/AFC_1.webp");
     background-repeat: no-repeat;
     background-size: 100% 80%;
     height: 300px;
@@ -2868,7 +2868,7 @@ footer .bottom_footer p span {
     padding: 16px 7px 0px 0px;
 }
 .team-bg-logo{
-    background-image: url(../images/bg.png);
+    background-image: url(../images/bg.webp);
         background-repeat: no-repeat;
         background-position:top 75px left 10px;
     background-size: 100% auto;
