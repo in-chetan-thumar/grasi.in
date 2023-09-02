@@ -20,7 +20,6 @@
 							<div class="footer_wrapper">
 								<ul>
 									<li><a href="{{ route('frontend.our_story') }}">Our Story</a></li>
-									<li><a href="#">Our Solutions</a></li>
 									{{-- <li><a href="#">Casestudies</a></li> --}}
 									<li><a href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/" target="blank">Careers</a></li>
 								</ul>
