@@ -49,7 +49,7 @@
 				<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
 					<div class="dealers_map">
 
-                        <iframe src="{{$row->url}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="{!! $row->url !!}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                         {{--                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d57765.99227337182!2d{{$row->longitude}}!3d{{$row->latitude}}!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1692266161871!5m2!1sen!2sin" width="100%" height="450"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
 
