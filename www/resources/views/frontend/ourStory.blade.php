@@ -122,7 +122,7 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <figure class="journey_box" style="background:url({{ asset('assets/frontend/images/journeyimg6.webp')}});background-repeat: no-repeat;background-position: center;background-size: cover;">
+                        <figure class="journey_box" style="background:url({{ asset('assets/frontend/images/Group-9.webp')}});background-repeat: no-repeat;background-position: center;background-size: cover;">
                             <span class="journey_year">2012 / 2013</span>
                             <figcaption>
                                 <span>2012/2013</span>
@@ -336,50 +336,98 @@
 
 {{-- js  --}}
 @section('js')
-  <script>
-     var swiperjourney = new Swiper(".mySwiper_journey", {
+    <script>
+        var swiperjourney = new Swiper(".mySwiper_journey", {
 
-    speed: 1000,
+            speed: 1000,
 
-  	  //loop: true,
-      slidesPerView: 5,
-      spaceBetween:11,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-       navigation: {
-        nextEl: '.swiper-button-next-journey',
-        prevEl: '.swiper-button-prev-journey',
-      },
-      breakpoints: {
-      	1501: {
+            //loop: true,
+            slidesPerView: 5,
+            spaceBetween:11,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-journey',
+                prevEl: '.swiper-button-prev-journey',
+            },
+            breakpoints: {
+                1501: {
 
-        },
-      	1500: {
-           centeredSlides: true,
-        },
-        992: {
-          slidesPerView: 5,
-          centeredSlides: true,
-        },
-        991: {
-          slidesPerView: 4,
-          centeredSlides: true,
-        },
-        575: {
-          slidesPerView: 4,
-          centeredSlides: true,
-        },
-        480: {
-          slidesPerView: 3,
-          centeredSlides: true,
-        },
-        0: {
-          slidesPerView: 2,
-          centeredSlides: true,
-        },
-    }
-    });
-  </script>
+                },
+                1500: {
+                    centeredSlides: true,
+                },
+                992: {
+                    slidesPerView: 5,
+                    centeredSlides: true,
+                },
+                991: {
+                    slidesPerView: 4,
+                    centeredSlides: true,
+                },
+                767: {
+                    slidesPerView: 2,
+                    centeredSlides: true,
+                },
+                575: {
+                    slidesPerView: 2,
+                    centeredSlides: true,
+                },
+                480: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
+            }
+        });
+    </script>
+{{--  <script>--}}
+{{--     var swiperjourney = new Swiper(".mySwiper_journey", {--}}
+
+{{--    speed: 1000,--}}
+
+{{--  	  //loop: true,--}}
+{{--      slidesPerView: 5,--}}
+{{--      spaceBetween:11,--}}
+{{--      pagination: {--}}
+{{--        el: ".swiper-pagination",--}}
+{{--        clickable: true,--}}
+{{--      },--}}
+{{--       navigation: {--}}
+{{--        nextEl: '.swiper-button-next-journey',--}}
+{{--        prevEl: '.swiper-button-prev-journey',--}}
+{{--      },--}}
+{{--      breakpoints: {--}}
+{{--      	1501: {--}}
+
+{{--        },--}}
+{{--      	1500: {--}}
+{{--           centeredSlides: true,--}}
+{{--        },--}}
+{{--        992: {--}}
+{{--          slidesPerView: 5,--}}
+{{--          centeredSlides: true,--}}
+{{--        },--}}
+{{--        991: {--}}
+{{--          slidesPerView: 4,--}}
+{{--          centeredSlides: true,--}}
+{{--        },--}}
+{{--        575: {--}}
+{{--          slidesPerView: 4,--}}
+{{--          centeredSlides: true,--}}
+{{--        },--}}
+{{--        480: {--}}
+{{--          slidesPerView: 3,--}}
+{{--          centeredSlides: true,--}}
+{{--        },--}}
+{{--        0: {--}}
+{{--          slidesPerView: 2,--}}
+{{--          centeredSlides: true,--}}
+{{--        },--}}
+{{--    }--}}
+{{--    });--}}
+{{--  </script>--}}
 @endsection

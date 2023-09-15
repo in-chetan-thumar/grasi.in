@@ -129,23 +129,6 @@ span.wsmenu-click+a:after {content:"\f078";margin-left:5px;font-family:'FontAwes
   padding: 0 !important;
   border: none !important;
 }
-
-
-
-/**/
-.counter [class*="col-"] { width: auto; padding: 0 50px;}
-.counter .row [class*="col-"]+[class*="col-"] .count_up:after {    left: -50px;}
-.counter .row {justify-content: center;}
-
-
-.journey .swiper-slide:hover {
-  width: 380px !important;
-  transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-}
 }
 
 
@@ -178,12 +161,6 @@ span.wsmenu-click+a:after {content:"\f078";margin-left:5px;font-family:'FontAwes
 .process_box figcaption h2 {font-size: 25px;}
 .process_box .stepcount {width: 50px;height: 50px;bottom: -25px;}
 .process_box figcaption {    bottom: 35px;}
-
-
-
-/**/
-.counter [class*="col-"] {  padding: 0 25px;}
-.counter .row [class*="col-"]+[class*="col-"] .count_up:after {  left: -25px;}
 }
 
 @media screen and (max-width:1100px) {
@@ -325,6 +302,9 @@ section {padding: 80px 0;}
 .contact_details .row .row [class*="col-"]:nth-child(2) { text-align: center;}
 
 .contact_details .row .row [class*="col-"]:last-child {  text-align: right;}
+.video_slider, .journey {
+    margin-top: 0;
+}
 }
 
 
@@ -393,15 +373,9 @@ footer .top_footer .footer_wrapper ul li+li {  margin-top: 10px;}
 .megamenu_wrpr ul li+li {  margin-top: 5px;}
 .menu_img img {    border-radius: 10px;}
 
-
+.journey .swiper-slide:hover {  width: 300px !important;}
 .journey_box figcaption p {font-size: 12px;}
 }
-
-
-/*@media only screen and (max-width: 990px) and (min-width: 768px)  {
-.journey .swiper-slide:hover {  width: 300px !important;}
-}*/
-
 
 @media screen and (max-width:640px) {
     .dealer .link a {
@@ -532,6 +506,7 @@ html, body {  font-size: 14px;}
 .dealers_list .dealers_row .dealers_info ul li svg {  margin-right: 15px;}
 .dealers_list .dealers_row .dealers_info h3 {   font-size: 18px;}
 .contact_page_form .footer_form_main .submit_btn .btn {max-width: 200px;}
+.journey_box {padding: 15px;}
 }
 
 @media screen and (max-width:380px) {
@@ -539,7 +514,8 @@ html, body {font-size: 13px;}
 .industries_box h2 {  font-size: 13px;}
 .industries_box .industries_icn {  margin-bottom: 10px;}
 .journey_box {  height: 330px;}
-.journey_year {bottom: 40px;}
+
+.journey .swiper-slide:hover {   width: 250px !important;}
 .journey_box figcaption h2 {  font-size: 16px;}
 .journey_box figcaption p {font-size: 12px;}
 

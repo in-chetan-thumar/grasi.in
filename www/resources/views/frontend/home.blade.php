@@ -740,6 +740,7 @@
 {{-- js code  --}}
 @section('js')
 
+
         <script>
                var swiper_banner = new Swiper('.swiper-container-banner', {
                autoplay:5000,
