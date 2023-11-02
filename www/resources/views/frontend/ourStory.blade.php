@@ -339,49 +339,49 @@
     <script>
         var swiperjourney = new Swiper(".mySwiper_journey", {
 
-            speed: 1000,
+        speed: 1000,
 
-            //loop: true,
-            slidesPerView: 5,
-            spaceBetween:11,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next-journey',
-                prevEl: '.swiper-button-prev-journey',
-            },
-            breakpoints: {
-                1501: {
+        //loop: true,
+        slidesPerView: 5,
+        spaceBetween:11,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-journey',
+            prevEl: '.swiper-button-prev-journey',
+        },
+        breakpoints: {
+            1401: {
 
-                },
-                1500: {
-                    centeredSlides: true,
-                },
-                992: {
-                    slidesPerView: 5,
-                    centeredSlides: true,
-                },
-                991: {
-                    slidesPerView: 4,
-                    centeredSlides: true,
-                },
-                767: {
-                    slidesPerView: 2,
-                    centeredSlides: true,
-                },
-                575: {
-                    slidesPerView: 2,
-                    centeredSlides: true,
-                },
-                480: {
-                    slidesPerView: 2,
-                },
-                0: {
-                    slidesPerView: 1,
-                },
-            }
+            },
+            1400: {
+                centeredSlides: true,
+            },
+            992: {
+                slidesPerView: 5,
+                centeredSlides: true,
+            },
+            991: {
+                slidesPerView: 4,
+                centeredSlides: true,
+            },
+            767: {
+                slidesPerView: 2,
+                centeredSlides: true,
+            },
+            575: {
+                slidesPerView: 2,
+                centeredSlides: true,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            0: {
+                slidesPerView: 1,
+            },
+        }
         });
     </script>
 {{--  <script>--}}
