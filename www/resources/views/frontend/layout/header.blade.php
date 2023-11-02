@@ -52,11 +52,11 @@
                                                       </div>
                                                       <div class="col-lg-9">
                                                           <div class="megamenu_right">
-                                                              <h2>Automotive</h2>
+                                                                <a href="https://llumar.com/na/en/automotive/" target="blank"><h2>Automotive</h2></a>
                                                               <div class="row">
                                                                   <div class="col-xl-3 col-lg-3">
                                                                       <div class="megamenu_wrpr">
-                                                                          <h4>Window Tint</h4>
+                                                                        <a href="https://llumar.com/na/en/automotive/window-tint/" target="blank"><h4>Window Tint</h4></a>
                                                                           <ul>
                                                                             <li><a href="https://llumar.com/na/en/automotive/window-tint/ceramic/" target="blank">Ceramic</a></li>
                                                                             <li><a href="https://llumar.com/na/en/automotive/window-tint/metallized/" target="blank">Metallized</a></li>
@@ -68,7 +68,7 @@
                                                                   </div>
                                                                   <div class="col-xl-3 col-lg-3">
                                                                       <div class="megamenu_wrpr">
-                                                                          <h4>Paint Protection Film</h4>
+                                                                        <a href="https://llumar.com/na/en/automotive/paint-protection-film/" target="blank"><h4>Paint Protection Film</h4></a>
                                                                           <ul>
                                                                             <li><a href="https://llumar.com/na/en/automotive/paint-protection-film/valor/" target="blank">Valor</a></li>
                                                                             <li><a href="https://llumar.com/na/en/automotive/paint-protection-film/platinum-matte/" target="blank">Platinum Matte</a></li>
@@ -80,7 +80,7 @@
                                                                   </div>
                                                                   <div class="col-xl-3 col-lg-3">
                                                                       <div class="megamenu_wrpr">
-                                                                          <h4>Window Film and PPF Viewer</h4>
+                                                                        <a href="https://llumar.com/na/en/automotive/window-film-ppf-viewer/" target="blank"><h4>Window Film and PPF Viewer</h4></a>
                                                                       </div>
                                                                   </div>
                                                               </div>
@@ -100,11 +100,11 @@
                                                       </div>
                                                       <div class="col-lg-9">
                                                           <div class="megamenu_right">
-                                                              <h2>Architectural</h2>
+                                                                <a href="https://llumar.com/na/en/architectural/" target="blank"><h2>Architectural</h2></a>
                                                                   <div class="row">
                                                                       <div class="col-xl-3 col-lg-3">
                                                                           <div class="megamenu_wrpr">
-                                                                              <h4>Residential</h4>
+                                                                            <a href="https://llumar.com/na/en/architectural/residential-window-film/" target="blank"><h4>Residential</h4></a>
                                                                                   <ul>
                                                                                     <li><a href="https://llumar.com/na/en/architectural/residential-window-film/solar/" target="blank">Solar Control</a></li>
                                                                                     <li><a href="https://llumar.com/na/en/architectural/residential-window-film/decorative/" target="blank">Decorative</a></li>
@@ -115,7 +115,7 @@
                                                                         </div>
                                                                         <div class="col-xl-3 col-lg-3">
                                                                             <div class="megamenu_wrpr">
-                                                                                <h4>Commercial</h4>
+                                                                                <a href="https://llumar.com/na/en/architectural/commercial-window-film/" target="blank"><h4>Commercial</h4></a>
                                                                                     <ul>
                                                                                       <li><a href="https://llumar.com/na/en/architectural/commercial-window-film/solar/" target="blank">Solar Control</a></li>
                                                                                       <li><a href="https://llumar.com/na/en/architectural/commercial-window-film/decorative/" target="blank">Decorative</a></li>
@@ -126,7 +126,7 @@
                                                                        </div>
                                                                        <div class="col-lg-3 col-lg-3">
                                                                             <div class="megamenu_wrpr">
-                                                                                <h4>Resources</h4>
+                                                                                <a href="https://llumar.com/na/en/architectural/interactive-window-film-tools/" target="blank"><h4>Resources</h4></a>
                                                                                     <ul>
                                                                                       <li><a href="https://llumar.com/na/en/dealers/dealer-resources/window-film-spec-sheets/" target="blank">Spec Sheets</a></li>
                                                                                       <li><a href="https://llumar.com/na/en/architectural/interactive-window-film-tools/performance-comparison/" target="blank">Product Comparison</a></li>
@@ -137,7 +137,7 @@
                                                                       </div>
                                                                        <div class="col-lg-3 col-lg-3">
                                                                             <div class="megamenu_wrpr">
-                                                                                <h4>Film Viewers</h4>
+                                                                                <a href="" target="blank"><h4>Film Viewers</h4></a>
                                                                                      <ul>
                                                                                        <li><a href="https://llumar.com/na/en/architectural/interactive-window-film-tools/solar-decorative-film-viewer/" target="blank">Commercial</a></li>
                                                                                        <li><a href="https://llumar.com/na/en/architectural/interactive-window-film-tools/viewer-for-home/" target="blank">Residential</a></li>
