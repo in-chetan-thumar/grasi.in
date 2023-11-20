@@ -762,53 +762,50 @@
 
 
         <script>
-             var swiperverticals = new Swiper(".mySwiper_video", {
-                   //autoplay:2000,
-                 speed: 1000,
+            var swiperverticals = new Swiper(".mySwiper_video", {
+            //autoplay:2000,
+            speed: 1000,
 
-                   slidesPerView: 4,
-                   spaceBetween:40,
-                   pagination: {
-                     el: ".swiper-pagination",
-                     clickable: true,
-                   },
-                    navigation: {
-                     nextEl: '.swiper-button-next-video',
-                     prevEl: '.swiper-button-prev-video',
-                   },
-                   breakpoints: {
-      	             1200: {
-      		             //centeredSlides: true,
-      		             spaceBetween:30,
-      	           },
+            slidesPerView: 4,
+            spaceBetween:40,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-video',
+                prevEl: '.swiper-button-prev-video',
+            },
+            breakpoints: {
+                1200: {
+                    //centeredSlides: true,
+                    spaceBetween:30,
+                },
 
-                     991: {
-                       slidesPerView: 4,
-                       centeredSlides: true,
-                       spaceBetween:30,
-                     },
-                     767: {
-                       slidesPerView: 3,
-                       centeredSlides: true,
-                       spaceBetween:20,
-                     },
-                     575: {
-                       slidesPerView: 2,
-                       centeredSlides: true,
-                       spaceBetween:20,
-                     },
-                     480: {
-                       slidesPerView: 2,
-                       centeredSlides: true,
-                       spaceBetween:20,
-                     },
-                     0: {
-                       slidesPerView: 2,
-                       centeredSlides: true,
-                       spaceBetween:20,
-                     },
-                 }
+                991: {
+                slidesPerView: 4,
+                centeredSlides: true,
+                spaceBetween:30,
+                },
+                767: {
+                slidesPerView: 3,
+                centeredSlides: true,
+                spaceBetween:20,
+                },
+                575: {
+                slidesPerView: 2,
+                spaceBetween:20,
+                },
+                480: {
+                slidesPerView: 1,
+                spaceBetween:20,
+                },
+                0: {
+                slidesPerView: 1,
+                spaceBetween:20,
+                },
+            }
             });
-       </script>
+        </script>
 
 @endsection
