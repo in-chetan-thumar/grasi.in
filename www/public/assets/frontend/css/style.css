@@ -2818,3 +2818,7 @@ footer .bottom_footer p span {
     bottom: 20px;
     z-index: 10000;
 }
+
+@supports (-webkit-hyphens:none){
+	.video_slider .video-icon { display: none; }
+}
