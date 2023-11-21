@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Surface Solutions in India</title>
+    <meta name="description" content="High quality & smart architectural and automobile surface solutions for style and safety">
+    <meta name="keywords" content="High quality & smart architectural and automobile surface solutions for style and safety">
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ URL::asset('assets/frontend/images/favicon/favicon.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ URL::asset('assets/frontend/images/favicon/apple-touch-icon.png')}}">
