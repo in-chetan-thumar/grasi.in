@@ -287,7 +287,7 @@ body.wsactive { overflow: hidden; }
 .wsmenu>.wsmenu-list>li ul.sub-menu {min-width: calc(100% + 0px);padding:0px 0 0px 0px;}
 
 .wsmenu>.wsmenu-list>li ul.sub-menu {background:transparent;}
-.wsmenu>.wsmenu-list>li ul.sub-menu {box-shadow: none;}
+.wsmenu>.wsmenu-list>li ul.sub-menu {box-shadow: none; z-index: 1;}
 
 
 .header .top_header {  margin-bottom: -9px;}
