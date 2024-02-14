@@ -38,8 +38,9 @@ Route::post('locate', [LocatetController::class,'store'])->name('locate.send-ema
 // Route::resource('graphic', graphicController::class);
 Route::get('graphic', [GraphicController::class,'index'])->name('frontend.graphic');
 Route::post('graphic', [GraphicController::class,'store'])->name('graphic.send-email');
-Route::get('/enquiry-landing',[\App\Http\Controllers\frontend\EnquiryLandingController::class,'index'])->name('enquiry.index');
-Route::post('/enquiry-landing/store',[\App\Http\Controllers\frontend\EnquiryLandingController::class,'store'])->name('enquiry.store');
+Route::get('/grasi-llumar-enquiry',[\App\Http\Controllers\frontend\EnquiryLandingController::class,'index'])->name('enquiry.index');
+Route::post('/grasi-llumar-enquiry/store',[\App\Http\Controllers\frontend\EnquiryLandingController::class,'store'])->name('enquiry.store');
+Route::get('/grasi-llumar-enquiry/thank-you',[\App\Http\Controllers\frontend\EnquiryLandingController::class,'thankYou'])->name('enquiry.thank.you');
 
 if(config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')){
     array_push($middleware,'twofactor');

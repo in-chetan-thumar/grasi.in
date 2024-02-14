@@ -1389,7 +1389,7 @@ video{
 }
 
 .countries-input-container, .locations-input-container {
-  height: 2.5rem;
+  /*height: 2.5rem;*/
   position: relative;
 }
 

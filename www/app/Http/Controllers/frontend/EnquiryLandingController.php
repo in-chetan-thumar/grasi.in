@@ -43,7 +43,7 @@ class EnquiryLandingController extends Controller
         if($enquiry){
             Mail::send(new EnquiryMailNotification($params));
             toastr()->success('Your enquire has been submitted successfully!');
-            return redirect()->back();
+            return redirect()->route('enquiry.thank.you');
         }
         toastr()->success('Your enquire not submitted successfully!');
         return redirect()->back();
@@ -79,5 +79,9 @@ class EnquiryLandingController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+    public function thankYou(){
+        return view('landing_page.thank-you');
+
     }
 }

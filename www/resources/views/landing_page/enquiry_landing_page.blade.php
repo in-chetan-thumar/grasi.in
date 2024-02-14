@@ -111,14 +111,14 @@
                                 <div class="row">
                                     <div class="col-xxl-12 col-lg-12 col-md-12">
                                         <div class="form-group input-box">
-                                            <input type="text" class="form-control input" placeholder="Full Name" name="full_name" required>
+                                            <input type="text" class="form-control input" placeholder="Full Name" name="full_name" >
                                         </div>
                                     </div>
                                     <div class="col-6 col-xxl-6 col-lg-6 col-md-6">
                                         <div class="form-group input-box select-box">
                                             <div class="autocomplete-drop-down">
                                                 <div class="countries-input-container">
-                                                    <input class="countries-input form-control input" placeholder="Select Brand" type="text" name="brand" required>
+                                                    <input class="countries-input form-control input" placeholder="Select Brand" type="text" name="brand" >
                                                     <span class="input-arrow">&#9662;</span>
                                                 </div>
                                             </div>
@@ -130,11 +130,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-xxl-6 col-lg-6 col-md-6">
+                                    <div class="col-6 col-xxl-6 col-lg-6 col-md-6 ">
                                         <div class="form-group input-box select-box">
                                             <div class="autocomplete-drop-down">
                                                 <div class="locations-input-container">
-                                                    <input class="locations-input form-control input" placeholder="Select State" type="text" name="state" required>
+                                                    <input class="locations-input form-control input" placeholder="Select State" type="text" name="state" >
                                                     <span class="input-arrow">&#9662;</span>
                                                 </div>
                                             </div>
@@ -148,22 +148,22 @@
                                     </div>
                                     <div class="col-6 col-xxl-6 col-lg-6 col-md-6">
                                         <div class="form-group input-box">
-                                            <input type="text" class="form-control input" placeholder="City" name="city" required>
+                                            <input type="text" class="form-control input" placeholder="City" name="city" >
                                         </div>
                                     </div>
                                     <div class="col-6 col-xxl-6 col-lg-6 col-md-6">
                                         <div class="form-group input-box">
-                                            <input type="number" class="form-control input" placeholder="Pincode" name="pincode"  required>
+                                            <input type="number" class="form-control input" placeholder="Pincode" name="pincode"  >
                                         </div>
                                     </div>
                                     <div class="col-xxl-12 col-lg-12 col-md-12">
                                         <div class="form-group input-box">
-                                            <input type="number" class="form-control input" placeholder="Mobile Number" name="mobile" required>
+                                            <input type="number" class="form-control input" placeholder="Mobile Number" name="mobile" >
                                         </div>
                                     </div>
                                     <div class="col-xxl-12 col-lg-12 col-md-12">
                                         <div class="form-group input-box">
-                                            <input type="email" class="form-control input" placeholder="Email Address" name="email" required>
+                                            <input type="email" class="form-control input" placeholder="Email Address" name="email" >
                                         </div>
                                     </div>
                                     <div class="col-xxl-12 col-lg-12 col-md-12">
