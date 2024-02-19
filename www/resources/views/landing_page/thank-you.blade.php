@@ -55,7 +55,7 @@
 <header class="header">
                <div class="d-flex align-items-center justify-content-between">
                   <div class="main_logo">
-                      <a href="{{route('enquiry.index')}}"><img src="{{asset('assets/images/landing_image/logo.png')}}" alt=""></a>
+                      <a href="{{route('enquiry.index')}}"><img src="{{asset('assets/images/landing_image/grasi_llumar.png')}}" alt=""></a>
                   </div>
                   <div class="header_info">
                      <ul>

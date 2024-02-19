@@ -30,7 +30,7 @@ class ContactMailNotification extends TemplateMailable
     public function getHtmlLayout(): string
     {
         return view('email.email_layout')->with([
-            'TO' => 'enquiry@gras.in',
+            'TO' => 'enquiry@grasi.in',
             'CC' => implode(', ', $this->params['cc'] ?? ['']),
         ])->render();
     }

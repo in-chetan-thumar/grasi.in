@@ -62,8 +62,8 @@
                               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                                    <div class="contact_info_wrpr" >
                                         <span>Email Address</span>
-                                        <a href="mailto:enquiry@gras.in" class="text-to-copy">
-                                             enquiry@gras.in
+                                        <a href="mailto:enquiry@grasi.in" class="text-to-copy">
+                                            enquiry@grasi.in
                                         </a>
                                        <button class="copy-button"> <img src="{{asset('assets/frontend/images/copy.svg')}}" /></button>
                                    </div>

@@ -68,7 +68,7 @@
     <header class="header">
         <div class="d-flex align-items-center justify-content-between">
             <div class="main_logo">
-                <a href="{{route('enquiry.index')}}"><img src="{{asset('assets/images/landing_image/logo.png')}}" alt=""></a>
+                <a href="{{route('enquiry.index')}}"><img src="{{asset('assets/images/landing_image/grasi_llumar.png')}}" alt=""></a>
             </div>
             <div class="header_info">
                 <ul>
@@ -399,7 +399,7 @@
                                 </button>
                                 <video data-state="pause">
                                     <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                    <source src="{{asset('assets/images/landing_image/video_1.mp4')}}" type="video/mp4">
+                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_1.mp4')}}" type="video/mp4">
 
                                 </video>
                             </div>
@@ -424,7 +424,7 @@
                                 </button>
                                 <video data-state="pause">
                                     <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                    <source src="{{asset('assets/images/landing_image/video_2.mp4')}}" type="video/mp4">
+                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_2.mp4')}}" type="video/mp4">
 
                                 </video>
                             </div>
@@ -449,7 +449,7 @@
                                 </button>
                                 <video data-state="pause">
                                     <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                    <source src="{{asset('assets/images/landing_image/video_3.mp4')}}" type="video/mp4">
+                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_3.mp4')}}" type="video/mp4">
 
                                 </video>
                             </div>
@@ -474,7 +474,7 @@
                                 </button>
                                 <video data-state="pause">
                                     <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                    <source src="{{asset('assets/images/landing_image/video_4.mp4')}}" type="video/mp4">
+                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_4.mp4')}}" type="video/mp4">
 
                                 </video>
                             </div>
@@ -499,7 +499,7 @@
                                 </button>
                                 <video data-state="pause">
                                     <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                    <source src="{{asset('assets/images/landing_image/video_5.mp4')}}" type="video/mp4">
+                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_5.mp4')}}" type="video/mp4">
 
                                 </video>
                             </div>
@@ -524,7 +524,7 @@
                                 </button>
                                 <video data-state="pause">
                                     <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                    <source src="{{asset('assets/images/landing_image/video_1.mp4')}}" type="video/mp4">
+                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_6.mp4')}}" type="video/mp4">
 
                                 </video>
                             </div>
@@ -549,7 +549,7 @@
                                 </button>
                                 <video data-state="pause">
                                     <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                    <source src="{{asset('assets/images/landing_image/video_2.mp4')}}" type="video/mp4">
+                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_7.mp4')}}" type="video/mp4">
 
                                 </video>
                             </div>
@@ -593,7 +593,7 @@
                         </div>
                         <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                             <div class="feature_logo wow fadeInRight" data-wow-delay="0.6s">
-                                <img src="{{asset('assets/images/landing_image/feature_logo3.png')}}" alt="">
+                                <img src="{{asset('assets/images/landing_image/Cannonball-club-logo.png')}}"  alt="">
                             </div>
                         </div>
                         <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
@@ -617,52 +617,103 @@
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            1. Where can I get the LLumar® PPF from?
+                            1.	What is Paint Protection Film?
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p>Please ensure that you buy LLumar PPF from a genuine, LLumar® Authorized Dealer. You can head over to the Where to buy page on the LLumar India website (www.llumarppf.in) to find an authorized dealer or contact the Gras-i team (Marketeers of LLumar Pan India) wherein we will guide you to an Authorised Dealer to help you make your purchase.</p>
+                            <p>Paint protection film helps to prolong the original appearance of your car by shielding it from abrasions caused by rocks, insects, sand, salt, keys, and the weather. In addition to offering UV protection, paint protection film is nearly invisible, long-lasting, and low maintenance. Its self-healing feature uses heat applied to the film's surface to erase small scratches or blemishes.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            2. How do I know that the LLumar PPF I am purchasing is an original LLumar product or no?
+                             2.	Where can I get the LLumar® PPF from?
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p>There are a lot of people in the market claiming to sell LLumar® PPF. This doesn’t mean that what they are providing is original LLumar product. Like other products / services, there are several cases we have seen where some sellers in the market claim to sell LLumar but end up providing duplicate product to the end-user.</p>
+                            <p>Please ensure that you buy LLumar PPF from a genuine, LLumar® Authorized Dealer. You can head over to the Where to buy page on the LLumar India website (www.llumarppf.in) to find an authorized dealer or contact the Gras-i team (Marketeers of LLumar Pan India) wherein we will guide you to an Authorized Dealer to help you make your purchase.</p>
 
-                            <p>In such cases, be sure to be in touch with genuine LLumar fitment centres. If our team has guided you to an Authorized Fitment Centre, you shouldn’t have a problem. However, one must still check the authenticity of the product and here are some steps that one can follow to do so:-</p>
-
-                            <ul>
-                                <li>Ask the seller to show you the original LLumar PPF roll / box in which the film has arrived for installation</li>
-                                <li>Ask the seller to show you the roll no. / lot no. that is printed on the LLumar PPF roll box</li>
-                                <li>Match this roll no. / lot no. with the number that is printed on the liner of the PPF roll</li>
-                                <li>Check if the seller has genuine, authentic marketing collateral to showcase – all LLumar® Authorized Dealers are equipped with a set of these.</li>
-                                <li>Ask the seller to showcase their LLumar Dealer Certificate which is a sign of authenticity</li>
-                                <li>Last but most important of all is to ask the seller if you are entitled to an E-warranty post your LLumar PPF purchase. On buying original LLumar PPF, one receives an E-warranty i.e an electronically generated warranty card from the Gras-i headquarters. This warranty has to be filled in by the Authorised LLumar Dealer and only those who are Authorised Dealers get access to this system</li>
-                                <li>Be mindful that it is also easy to duplicate or forge an E-warranty by just manipulating a PDF version of the warranty. Make sure you ask the seller to show you their access to the E-warranty portal and how they are filling in the E-warranty details. Only Authorised Dealers have access to login to the LLumar E-warranty portal so anyone who denies showing you this process is most likely not selling genuine LLumar material</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            3. What warranty am I eligible for after the purchase of LLumar PPF?
-                        </button>
+                            3.	What if I cannot find a LLumar Authorized fitment center near me?                        </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p>The warranty that one is entitled to depends on the type of LLumar PPF purchased. Our warranties range from 5 years to 12 years with various types of LLumar PPF on offer like LLumar Classic, Platinum, Matte, Platinum Matte, Platinum Extra, Platinum 72 inches and Valor.
-                                The Manufacturer warrants professionally sold and applied LLumar Paint Protection Film against cracking, bubbling or discolouring caused solely by defects in manufacture of the material, for a period of 5, 10 or 12 years (as applicable) from the date of purchase of the Product. This warranty is valid only if the Product application was performed by an authorised LLumar dealer and an authorised installer in India in accordance with Manufacturer s application procedures and applicable law. This limited warranty applies only to original LLumar Paint Protection film.</p>
+                            <p>You can also contact us at the following number. Our representative will be happy to assist you.</p><p>
+
+                                Call us on +91 74004 80852
+                            </p>
                         </div>
                     </div>
                 </div>
+
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            4.	What are the paint protection film products that LLumar® India offers?                     </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>We offer multiple finishes, innovative 2-in-1 products, and go-to favourites, all of which are self-healing, extensively tested, and factory-backed. Decide what coverage you need, select your product and take any road with confidence.</p>
+
+                               <ul>
+                                <li>Gloss and Matte PPF</li>
+                                <li>Valor PPF</li>
+                                <li>Select Black PPF</li>
+                                <li>Platinum Gloss PPF</li>
+                                <li>Platinum Matte PPF</li>
+                                <li>Platinum Extra PPF</li>
+                            </ul>
+                            <p>
+                                For more information visit: <br><a href="https://llumar.com/emea/en/automotive/paint-protection-film/" target="_blank">https://llumar.com/emea/en/automotive/paint-protection-film/</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            5.	How do I know if the LLumar PPF I am purchasing is an original LLumar product or not?                       </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>There are a lot of people in the market claiming to sell LLumar® PPF. This doesn’t mean that what they are providing is an original LLumar product. Like other products/services, there are several cases we have seen where some sellers in the market claim to sell LLumar but end up providing duplicate products to the end user.
+                            </p>
+                            <p>
+                                In such cases, be sure to be in touch with genuine LLumar fitment centers. If our team has guided you to an Authorized Fitment Centre, you shouldn’t have a problem. However, one must still check the authenticity of the product and here are some steps that one can follow to do so:-
+                            </p>
+                            <ul>
+                                <li>Ask the seller to show you the original LLumar PPF roll/box in which the film has arrived for installation</li>
+                                <li>Ask the seller to show you the roll no. / lot no. that is printed on the LLumar PPF roll box</li>
+                                <li>Match this roll no. / lot no. with the number that is printed on the liner of the PPF roll</li>
+                                <li>Check if the seller has genuine, authentic marketing collateral to showcase – all LLumar® Authorized Dealers are equipped with a set of these.</li>
+                                <li>Ask the seller to showcase their LLumar Dealer Certificate which is a sign of authenticity</li>
+                                <li>Last but most important of all, ask the seller if you are entitled to an E-warranty post your LLumar PPF purchase. On buying an original LLumar PPF, one receives an E-warranty i.e. an electronically generated warranty card from the Gras-i headquarters. This warranty has to be filled in by the Authorized LLumar Dealer and only those who are Authorized Dealers get access to this system</li>
+                                <li>Be mindful that it is also easy to duplicate or forge an E-warranty by just manipulating a PDF version of the warranty. Make sure you ask the seller to show you their access to the E-warranty portal and how they are filling in the E-warranty details. Only Authorized Dealers have access to login to the LLumar E-warranty portal so anyone who denies showing you this process is most likely not selling genuine LLumar material</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            6.	What warranty am I eligible for after the purchase of LLumar PPF?                       </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>The warranty that one is entitled to depends on the type of LLumar PPF purchased. Our warranties range from 5 years to 12 years with various types of LLumar PPF on offer like LLumar Classic, Platinum, Matte, Platinum Matte, Platinum Extra, Platinum 72 inches and Valor. The Manufacturer warrants professionally sold and applied LLumar Paint Protection Film against cracking, bubbling or discoloration caused solely by defects in manufacture of the material, for a period of 5, 10 or 12 years (as applicable) from the date of purchase of the Product. This warranty is valid only if the Product application was performed by an authorized LLumar dealer and an authorized installer in India in accordance with Manufacturer s application procedures and applicable law. This limited warranty applies only to original LLumar Paint Protection film.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
