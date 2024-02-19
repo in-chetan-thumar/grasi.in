@@ -728,7 +728,7 @@
                 <a href="https://www.facebook.com/LLumarIndia" target="_blank"><img src="{{asset('assets/images/landing_image/2.png')}}" class="footer-icon"></a>
                 <a href="https://www.youtube.com/channel/UCcEuRwXA9rl4kz5A6N2q-5w" target="_blank"><img src="{{asset('assets/images/landing_image/3.png')}}" class="footer-icon"></a>
                 <a href="https://www.linkedin.com/company/68282904/admin/feed/posts/" target="_blank"> <img src="{{asset('assets/images/landing_image/4.png')}}" class="footer-icon"></a>
-            </div>
+            </div><br>
             <ul>
                 <li>Brought to India by</li>
                 <li><img src="{{asset('assets/images/landing_image/footer_img.png')}}" alt=""></li>
