@@ -28,7 +28,7 @@ class DealerRepository
 
             }else{
 
-                return $this->model->select('city')->where('is_active', 'Y')->groupBy('city') ->pluck('city');
+                return $this->model->select('city')->where('is_active', 'Y')->groupBy('city') ->pluck('city', 'city');
             }
         }
 

@@ -5,7 +5,7 @@
 </div>
 @else
     <div class="title_1 text-left">
-        <div class="title_main" id="cityName">All<span>{{$DealersData->count()}}</span></div>
+        <div class="title_main" id="cityName">All<span>{{$DealersData->total()}}</span></div>
     </div>
 @endif
 

@@ -50,7 +50,7 @@
                                         <option value="">Select State</option>
 
                                         @foreach ($states as $state)
-                                            <option value="{{$state}}">{{ $state }}</option>
+                                            <option value="{{$state}}" {{request()->query('state_id') == $state ? 'selected' : ''}}>{{ $state }}</option>
                                         @endforeach
                                     </select>
 						        </div>
@@ -67,8 +67,8 @@
 
                                     {!! Form::select(
                                  'city_id',
-                                 isset($patient) ? $cities : [],
-                                 isset($patient) ? $patient->city_id : old('city_id'),
+                                 isset($states) ? $cities : [],
+                                     request()->query('city_id'),
                                  ['class' => 'form-control input', 'id' => 'city_id', 'placeholder' => 'Select City']
                                  ) !!}
 
@@ -103,6 +103,7 @@
 	<div class="container" id="filteredData">
              {!!$llumarDealers!!}
 	</div>
+
 </section>
 
 

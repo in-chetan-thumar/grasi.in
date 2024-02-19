@@ -33,9 +33,9 @@ class LocatetController extends Controller
         //$llumarDealerData = $this->repository->getAllData('all','1');
 
         $states = $this->repository->getAllData('state');
-        $city = $this->repository->getAllData('city');
+        $cities = $this->repository->getAllData('city');
 
-        return view('frontend.locate',compact('states','llumarDealers'));
+        return view('frontend.locate',compact('states','llumarDealers','cities'));
     }
 
 
@@ -48,7 +48,7 @@ class LocatetController extends Controller
 
             foreach ($cities as  $city) {
 
-                $options .= '<option  value="' . $city . '">' . $city . '</option>';
+                $options .= '<option  value="' . $city . '" >' . $city . '</option>';
             }
 
             $data['error'] = false;
