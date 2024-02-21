@@ -13,7 +13,7 @@ header .header_info ul li a:hover {color: #D9272E;}
 
 
 @media screen and (max-width:1300px) {
-.banner .banner_img figcaption { padding-top: 30px;padding-left: 50px;}    
+.banner .banner_img figcaption { padding-top: 30px;padding-left: 50px;}
 .banner .banner_img figcaption h2 { font-size: 35px;}
 .banner .banner_img figcaption h4 {  font-size: 15px;}
 .banner .banner_img { margin-right: -100px;}
@@ -141,7 +141,7 @@ header .header_info ul li+li { margin-left: 10px;}
 header .header_info ul li a {  font-size: 12px;}
 header .header_info ul li svg { margin-right: 4px;}
 header .main_logo img {  max-width: 130px;}
-.site-main { padding-top: 67px;}
+.site-main { padding-top: 95px;}
 .feature_box .feature_cnt h2 {  font-size: 11px;}
 }
 
