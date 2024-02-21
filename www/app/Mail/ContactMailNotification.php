@@ -45,7 +45,7 @@ class ContactMailNotification extends TemplateMailable
 
         $to = $cc = $bcc =[];
 
-        $to = $this->params['to'] ?? ['kajal.baldha@tiez.nl'];
+        $to = $this->params['to'] ?? ['enquiry@grasi.in'];
         $cc = $this->params['cc'] ?? [];
 
         //Override to & cc variables for staging and local environment.
