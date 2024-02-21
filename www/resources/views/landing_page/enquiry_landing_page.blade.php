@@ -68,7 +68,7 @@
     <header class="header">
         <div class="d-flex align-items-center justify-content-between">
             <div class="main_logo">
-                <a href="{{route('enquiry.index')}}"><img src="{{asset('assets/images/landing_image/grasi_llumar.png')}}" alt=""></a>
+                <a href="{{route('enquiry.index')}}"><img src="{{asset('assets/images/landing_image/LLumar_india.png')}}" alt=""></a>
             </div>
             <div class="header_info">
                 <ul>
@@ -397,7 +397,7 @@
                                     </svg>
 
                                 </button>
-                                <video data-state="pause">
+                                <video data-state="pause" >
                                     <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
                                     <source src="{{asset('assets/images/landing_image/Reels/Reel_1.mp4')}}" type="video/mp4">
 
@@ -405,7 +405,56 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="video-container">
+                            <div class="video__wrapper">
+                                <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
+                                    </svg></button>
+                                <button type="button" class="video__play-button" data-button-state="pause">
+                                    <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
+                                    </svg>
+                                    <svg class="video__play-button-icon video__play-button-icon--pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="white" d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
+                                        <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8" height="38.5" />
+                                        <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8" height="38.5" />
+                                    </svg>
 
+                                </button>
+                                <video data-state="pause" poster="{{ asset('assets/images/landing_image/Reel_2_Thumbnail.jpg')}}">
+                                    <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
+                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_2.mp4')}}" type="video/mp4">
+
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-container">
+                            <div class="video__wrapper">
+                                <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
+                                    </svg></button>
+                                <button type="button" class="video__play-button" data-button-state="pause">
+                                    <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
+                                    </svg>
+                                    <svg class="video__play-button-icon video__play-button-icon--pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="white" d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
+                                        <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8" height="38.5" />
+                                        <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8" height="38.5" />
+                                    </svg>
+
+                                </button>
+                                <video data-state="pause"  poster="{{ asset('assets/images/landing_image/Reel_3_Thumbnail.jpg')}}">
+                                    <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
+                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_3.mp4')}}" type="video/mp4">
+
+                                </video>
+                            </div>
+                        </div>
+                    </div>
                     <div class="swiper-slide">
                         <div class="video-container">
                             <div class="video__wrapper">
@@ -506,56 +555,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="video-container">
-                            <div class="video__wrapper">
-                                <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
-                                    </svg></button>
-                                <button type="button" class="video__play-button" data-button-state="pause">
-                                    <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
-                                    </svg>
-                                    <svg class="video__play-button-icon video__play-button-icon--pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="white" d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
-                                        <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8" height="38.5" />
-                                        <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8" height="38.5" />
-                                    </svg>
 
-                                </button>
-                                <video data-state="pause">
-                                    <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_2.mp4')}}" type="video/mp4">
-
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="video-container">
-                            <div class="video__wrapper">
-                                <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
-                                    </svg></button>
-                                <button type="button" class="video__play-button" data-button-state="pause">
-                                    <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
-                                    </svg>
-                                    <svg class="video__play-button-icon video__play-button-icon--pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="white" d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z" />
-                                        <rect fill-rule="evenodd" clip-rule="evenodd" x="56" y="50.8" class="st1" width="8.8" height="38.5" />
-                                        <rect fill-rule="evenodd" clip-rule="evenodd" x="75.2" y="50.8" class="st1" width="8.8" height="38.5" />
-                                    </svg>
-
-                                </button>
-                                <video data-state="pause">
-                                    <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                    <source src="{{asset('assets/images/landing_image/Reels/Reel_3.mp4')}}" type="video/mp4">
-
-                                </video>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <!-- Add Arrows -->
                 <div class="main_arrow">
