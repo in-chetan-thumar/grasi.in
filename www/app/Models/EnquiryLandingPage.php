@@ -16,7 +16,8 @@ class EnquiryLandingPage extends Model
     protected $primaryKey="id";
 
     protected $fillable = [
-        'full_name',
+        'first_name',
+        'last_name',
         'brand',
         'state',
         'city',

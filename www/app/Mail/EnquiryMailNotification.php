@@ -24,7 +24,7 @@ class EnquiryMailNotification extends TemplateMailable
 
 
         $this->NAME = 'Gras-i';
-        $this->ENQUIRY_FULL_NAME = $params['full_name'];
+        $this->ENQUIRY_FULL_NAME = $params['first_name'].' '.$params['last_name'];
         $this->ENQUIRY_BRAND = $params['brand'];
         $this->ENQUIRY_STATE = $params['state'];
         $this->ENQUIRY_CITY = $params['city'] ;

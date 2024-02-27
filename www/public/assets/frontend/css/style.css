@@ -2469,7 +2469,10 @@ footer .bottom_footer p span {
   height: 60px;
   font-size: 16px;
 }
-
+.submit_btn  input{
+    height: 60px;
+    font-size: 16px;
+}
 .locate_page .inner_banner {
   background-color: #000000;
   height: 265px;

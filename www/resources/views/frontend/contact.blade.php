@@ -148,10 +148,11 @@
                                                        <div class="col-12 col-lg-12 col-lg-12 col-md-12 col-sm-12">
 
                                                             <div class="submit_btn">
-                                                                 <div class="btn btn-primary">
-                                                                     {!! Form::submit('Send Message', ['class' => 'save primary-button', 'id' => 'btnsubmit1']) !!}
+{{--                                                                 <div class="btn btn-primary">--}}
 
-                                                                 </div>
+                                                                     {!! Form::submit('Send Message', ['class' => 'save primary-button btn btn-primary g-recaptcha', 'id' => 'btnsubmit1','data-sitekey'=>env('NOCAPTCHA_SITEKEY_V3') ,'data-callback'=>'onSubmit']) !!}
+
+{{--                                                                 </div>--}}
                                                             </div>
                                                        </div>
                                                   </div>
@@ -182,7 +183,12 @@
 @section('js')
 
     {!! JsValidator::formRequest('App\Http\Requests\ContactRequest', '#Contact-form') !!}
-
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+            $(".Contact-form").submit();
+        }
+    </script>
 <script>
 
      $(document).ready(function() {

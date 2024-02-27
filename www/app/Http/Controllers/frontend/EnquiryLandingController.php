@@ -5,7 +5,9 @@ namespace App\Http\Controllers\frontend;
 use App\Http\Controllers\Controller;
 use App\Mail\EnquiryMailNotification;
 use App\Models\EnquiryLandingPage;
+use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 
 class EnquiryLandingController extends Controller
@@ -31,8 +33,21 @@ class EnquiryLandingController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'g-recaptcha-response' => ['required',   function (string $attribute, mixed $value, Closure $fail) {
+                $g_response = Http::asForm()->post("https://www.google.com/recaptcha/api/siteverify",[
+                    'secret'=> env('NOCAPTCHA_SECRET_V3'),
+                    'response'=> $value,
+                    'remoteip'=>\request()->ip(),
+                ]);
+                if (!$g_response->json('success')) {
+                    $fail("The {$attribute} is invalid.");
+                }
+            },],
+        ]);
         $params = [];
-        $params['full_name'] = $request->full_name;
+        $params['first_name'] = $request->first_name;
+        $params['last_name'] = $request->last_name;
         $params['brand'] = $request->brand;
         $params['state'] = $request->state;
         $params['city'] = $request->city;

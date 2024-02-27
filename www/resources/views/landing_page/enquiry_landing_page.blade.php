@@ -109,9 +109,14 @@
                                'class'=>'form_enquiry'
                            ]) !!}
                                 <div class="row">
-                                    <div class="col-xxl-12 col-lg-12 col-md-12">
+                                    <div class="col-xxl-6 col-lg-6 col-md-6">
                                         <div class="form-group input-box">
-                                            <input type="text" class="form-control input" placeholder="Full Name" name="full_name" >
+                                            <input type="text" class="form-control input" placeholder="First Name" name="first_name" >
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-lg-6 col-md-6">
+                                        <div class="form-group input-box">
+                                            <input type="text" class="form-control input" placeholder="Last Name" name="last_name" >
                                         </div>
                                     </div>
                                     <div class="col-6 col-xxl-6 col-lg-6 col-md-6">
@@ -169,7 +174,8 @@
                                     <div class="col-xxl-12 col-lg-12 col-md-12">
                                         <div class="submit_btn">
                                             <div class="btn btn-primary">
-                                                <input type="submit" name="submit" value="Enquire Now">
+                                                <input type="submit" name="submit" value="Enquire Now"  data-sitekey="{{ env('NOCAPTCHA_SITEKEY_V3')}}" class="g-recaptcha"
+                                                       data-callback='onSubmit'>
                                             </div>
                                         </div>
                                     </div>
@@ -764,7 +770,12 @@
 </body>
 
 </html>
-
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+    function onSubmit(token) {
+        $(".form_enquiry").submit();
+    }
+</script>
 <script type="text/javascript">
     /*************** home-Tabbing *****************************/
 

@@ -4,7 +4,9 @@ namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ContactRequest;
+use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMailNotification;
 
@@ -30,6 +32,18 @@ class ContactController extends Controller
      */
     public function store(ContactRequest $request)
     {
+        $this->validate($request, [
+            'g-recaptcha-response' => ['required',   function (string $attribute, mixed $value, Closure $fail) {
+                $g_response = Http::asForm()->post("https://www.google.com/recaptcha/api/siteverify",[
+                    'secret'=> env('NOCAPTCHA_SECRET_V3'),
+                    'response'=> $value,
+                    'remoteip'=>\request()->ip(),
+                ]);
+                if (!$g_response->json('success')) {
+                    $fail("The {$attribute} is invalid.");
+                }
+            },],
+        ]);
         $params = [];
         $params['first_name'] = $request->first_name;
         $params['last_name'] = $request->last_name;
