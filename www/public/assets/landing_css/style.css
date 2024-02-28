@@ -751,7 +751,11 @@ select{-moz-appearance:none;-ms-appearance:none;-o-appearance:none;-webkit-appea
 
 
 
-.how_it_works {width: 100%;float: left;position: relative;}
+.how_it_works {
+    width: 100%;float: left;
+    position: relative;
+    z-index: 0;
+}
 .how_it_works figcaption {
     position: absolute;
     z-index: 2222;
@@ -857,10 +861,13 @@ video {
     font: 1.75em/0 Apple Color Emoji;
     vertical-align: -0.15em;
 }
+.instagram_feed{
+    z-index: 0;
 
+}
 
-
-.instagram_feed .swiper_main_slide {margin-top: 150px;}
+.instagram_feed .swiper_main_slide {margin-top: 150px;
+}
 .instagram_feed .swiper_main_slide .swiper-slide:nth-child(even) .video-container {margin-top: -150px;}
 
 .feature_logo {width: 100%;float: left;text-align: center;}
@@ -1552,7 +1559,7 @@ section.thanks_page h3 {
     flex-shrink: 0;
     z-index: 10000;
     position: fixed;
-    right: 20px;
+    right: 80px;
     bottom: 27px;
 }
 .dealer-location{
@@ -1563,3 +1570,4 @@ section.thanks_page h3 {
     margin-right: 10px;
     width: 30px;
 }
+
