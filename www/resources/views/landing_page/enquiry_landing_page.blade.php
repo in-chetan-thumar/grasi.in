@@ -174,8 +174,11 @@
                                     <div class="col-xxl-12 col-lg-12 col-md-12">
                                         <div class="submit_btn">
                                             <div class="btn btn-primary">
-                                                <input type="submit" name="submit" value="Enquire Now"  data-sitekey="{{ env('NOCAPTCHA_SITEKEY_V3')}}" class="g-recaptcha"
-                                                       data-callback='onSubmit'>
+                                                <button class="g-recaptcha button_end"
+                                                        data-sitekey="{{ env('NOCAPTCHA_SITEKEY_V3')}}"
+                                                        data-callback='onSubmit'
+                                                        type="submit">Enquire Now
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -757,6 +760,7 @@
          </svg></button>
 
 </div>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
 <script src="{{asset('assets/landing_js/jquery-2.2.4.min.js')}}"></script>
 <script src="{{asset('assets/landing_js/bootstrap.min.js')}}"></script>
@@ -770,15 +774,12 @@
 </body>
 
 </html>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
-    function onSubmit(token) {
-        $(".form_enquiry").submit();
-    }
-</script>
+
 <script type="text/javascript">
     /*************** home-Tabbing *****************************/
-
+    function onSubmit(token) {
+        $("#form_enquiry").submit();
+    }
 
     $(window).ready(function() {
         setInterval(function() {

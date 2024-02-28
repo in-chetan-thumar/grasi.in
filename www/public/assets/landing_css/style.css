@@ -394,6 +394,32 @@ button {
     height: 55px;
 }
 
+.btn.white .button_end {
+    color: #000000;
+}
+.btn .button_end {
+    width: 100%;
+    min-width: 100%;
+    background: transparent;
+    border: none;
+    color: #000000;
+    padding: 0;
+    height: 55px;
+}
+.btn .button_end {
+    min-width: 293px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'HelveticaBold';
+    position: relative;
+    z-index: 1;
+    border-radius: 0px;
+    padding: 17px 25px 17px 25px;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none;
+    color: #ffffff;
+}
 .btn.white input {
     color: #000000;
 }
