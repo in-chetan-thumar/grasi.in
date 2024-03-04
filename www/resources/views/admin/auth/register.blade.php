@@ -3,7 +3,6 @@
     @lang('translation.signup')
 @endsection
 @section('content')
-
     <div class="auth-page-wrapper pt-5">
         <!-- auth page bg -->
         <div class="auth-one-bg-position auth-one-bg" id="auth-particles">
@@ -24,8 +23,8 @@
                     <div class="col-lg-12">
                         <div class="text-center mt-sm-5 mb-4 text-white-50">
                             <div>
-                                    <a href="{{route('root')}}" class="d-inline-block auth-logo">
-                                    <img src="{{ URL::asset('assets/images/logo-light.png') }}" alt="" height="20">
+                                <a href="{{ route('root') }}" class="d-inline-block auth-logo">
+                                    <img src="{{ asset('assets/frontend/images/logo.svg') }}" alt="" height="50">
                                 </a>
                             </div>
                             <p class="mt-3 fs-15 fw-medium">Premium Admin & Dashboard Template</p>
@@ -177,7 +176,7 @@
                         <div class="text-center">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> {{env('APP_NAME')}}.
+                            </script> {{ env('APP_NAME') }}.
                         </div>
                     </div>
                 </div>

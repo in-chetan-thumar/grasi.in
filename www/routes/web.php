@@ -7,6 +7,7 @@ use App\Http\Controllers\frontend\LocatetController;
 use App\Http\Controllers\frontend\OurStoryController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,30 +21,30 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
-$middleware = ['auth','throttle:120,1'];
+$middleware = ['auth', 'throttle:120,1'];
 // home page route
-Route::get('/',[HomeController::class,'index'])->name('frontend.home');
+Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 //Our Story page route
-Route::get('our_story',[OurStoryController::class,'index'])->name('frontend.our_story');
+Route::get('our_story', [OurStoryController::class, 'index'])->name('frontend.our_story');
 //contact page route
 //Route::get('contact',[contactController::class,'index'])->name('frontend.contact');
-Route::resource('contact',ContactController::class);
+Route::resource('contact', ContactController::class);
 //locate page route
-Route::get('locate',[LocatetController::class,'index'])->name('frontend.locate');
-Route::get('/state/{state}', [LocatetController::class,'getCities'])->name('locate.city');
-Route::get('/locate/state', [LocatetController::class,'getFilteredData'])->name('locate.getData');
-Route::post('locate', [LocatetController::class,'store'])->name('locate.send-email');
+Route::get('locate', [LocatetController::class, 'index'])->name('frontend.locate');
+Route::get('/state/{state}', [LocatetController::class, 'getCities'])->name('locate.city');
+Route::get('/locate/state', [LocatetController::class, 'getFilteredData'])->name('locate.getData');
+Route::post('locate', [LocatetController::class, 'store'])->name('locate.send-email');
 
 //graphic page route
 // Route::resource('graphic', graphicController::class);
-Route::get('graphic', [GraphicController::class,'index'])->name('frontend.graphic');
-Route::post('graphic', [GraphicController::class,'store'])->name('graphic.send-email');
-Route::get('/grasi-llumar-enquiry',[\App\Http\Controllers\frontend\EnquiryLandingController::class,'index'])->name('enquiry.index');
-Route::post('/grasi-llumar-enquiry/store',[\App\Http\Controllers\frontend\EnquiryLandingController::class,'store'])->name('enquiry.store');
-Route::get('/grasi-llumar-enquiry/thank-you',[\App\Http\Controllers\frontend\EnquiryLandingController::class,'thankYou'])->name('enquiry.thank.you');
+Route::get('graphic', [GraphicController::class, 'index'])->name('frontend.graphic');
+Route::post('graphic', [GraphicController::class, 'store'])->name('graphic.send-email');
+Route::get('/grasi-llumar-enquiry', [\App\Http\Controllers\frontend\EnquiryLandingController::class, 'index'])->name('enquiry.index');
+Route::post('/grasi-llumar-enquiry/store', [\App\Http\Controllers\frontend\EnquiryLandingController::class, 'store'])->name('enquiry.store');
+Route::get('/grasi-llumar-enquiry/thank-you', [\App\Http\Controllers\frontend\EnquiryLandingController::class, 'thankYou'])->name('enquiry.thank.you');
 
-if(config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')){
-    array_push($middleware,'twofactor');
+if (config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')) {
+    array_push($middleware, 'twofactor');
 }
 
 Route::group(['middleware' => $middleware], function () {
@@ -69,22 +70,27 @@ Route::group(['middleware' => $middleware], function () {
     Route::resource('usermanagements', \App\Http\Controllers\Admin\UserController::class);
     Route::get('/usermanagement/status/{id}', [\App\Http\Controllers\Admin\UserController::class, 'changeStatus'])->name('usermanagements.status');
 
+    // Dealers Controller Route
+    Route::resource('dealers', \App\Http\Controllers\Admin\DealerController::class);
+    Route::get('delete-dealer/{id}', [\App\Http\Controllers\Admin\DealerController::class, 'deleteDealer'])->name('dealers.destroy');
+    Route::get('/dealers/status/{id}', [\App\Http\Controllers\Admin\DealerController::class, 'changeStatus'])->name('dealers.status');
+
     // User Profile Controller
     Route::resource('profiles', \App\Http\Controllers\Admin\UserProfileController::class);
     Route::get('/profile', [\App\Http\Controllers\Admin\UserProfileController::class, 'index'])->name('profile.index');
     Route::post('/change/password', [\App\Http\Controllers\Admin\UserProfileController::class, 'changePassword'])->name('change.password');
 
     // Email Template Controller
-    Route::get('email-templates', [App\Http\Controllers\Admin\MessageTemplateController::class,'emailIndex'])->name('email.templates');
-    Route::post('email-templates', [App\Http\Controllers\Admin\MessageTemplateController::class,'emailStore'])->name('email.templates.store');
-    Route::get('sms-templates', [App\Http\Controllers\Admin\MessageTemplateController::class,'SMSIndex'])->name('sms.templates');
-    Route::post('sms-templates', [App\Http\Controllers\Admin\MessageTemplateController::class,'SMSStore'])->name('sms.templates.store');
-    Route::get('whatsapp-templates', [App\Http\Controllers\Admin\MessageTemplateController::class,'WhatsAppIndex'])->name('whatsapp.templates');
-    Route::post('whatsapp-templates', [App\Http\Controllers\Admin\MessageTemplateController::class,'WhatsAppStore'])->name('whatsapp.templates.store');
+    Route::get('email-templates', [App\Http\Controllers\Admin\MessageTemplateController::class, 'emailIndex'])->name('email.templates');
+    Route::post('email-templates', [App\Http\Controllers\Admin\MessageTemplateController::class, 'emailStore'])->name('email.templates.store');
+    Route::get('sms-templates', [App\Http\Controllers\Admin\MessageTemplateController::class, 'SMSIndex'])->name('sms.templates');
+    Route::post('sms-templates', [App\Http\Controllers\Admin\MessageTemplateController::class, 'SMSStore'])->name('sms.templates.store');
+    Route::get('whatsapp-templates', [App\Http\Controllers\Admin\MessageTemplateController::class, 'WhatsAppIndex'])->name('whatsapp.templates');
+    Route::post('whatsapp-templates', [App\Http\Controllers\Admin\MessageTemplateController::class, 'WhatsAppStore'])->name('whatsapp.templates.store');
 
 });
 
-Route::get('/form-custom-field',function (){
+Route::get('/form-custom-field', function () {
     return view('custom-form-field');
 });
 
