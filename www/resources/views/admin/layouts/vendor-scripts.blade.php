@@ -7,7 +7,7 @@
 <script src="{{ URL::asset('assets/js/plugins.min.js') }}"></script>
 
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script src="{{ URL::asset('/assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
 @yield('script')
 @yield('script-bottom')
