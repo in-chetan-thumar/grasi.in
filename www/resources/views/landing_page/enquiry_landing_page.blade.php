@@ -409,7 +409,7 @@
                                 <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg></button>
-                                <button type="button" class="video__play-button" data-button-state="pause">
+                                <button type="button" id="button_play" class="video__play-button" data-button-state="pause">
                                     <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg>
@@ -434,7 +434,7 @@
                                 <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg></button>
-                                <button type="button" class="video__play-button" data-button-state="pause">
+                                <button type="button" id="button_play" class="video__play-button" data-button-state="pause">
                                     <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg>
@@ -459,7 +459,7 @@
                                 <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg></button>
-                                <button type="button" class="video__play-button" data-button-state="pause">
+                                <button type="button" id="button_play" class="video__play-button" data-button-state="pause">
                                     <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg>
@@ -484,7 +484,7 @@
                                 <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg></button>
-                                <button type="button" class="video__play-button" data-button-state="pause">
+                                <button type="button" id="button_play" class="video__play-button" data-button-state="pause">
                                     <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg>
@@ -509,7 +509,7 @@
                                 <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg></button>
-                                <button type="button" class="video__play-button" data-button-state="pause">
+                                <button type="button" id="button_play" class="video__play-button" data-button-state="pause">
                                     <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg>
@@ -534,7 +534,7 @@
                                 <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg></button>
-                                <button type="button" class="video__play-button" data-button-state="pause">
+                                <button type="button" id="button_play" class="video__play-button" data-button-state="pause">
                                     <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg>
@@ -559,7 +559,7 @@
                                 <button type="button" class="video__fullscreen-button"><svg class="video__fullscreen-icon" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg></button>
-                                <button type="button" class="video__play-button" data-button-state="pause">
+                                <button type="button" id="button_play" class="video__play-button" data-button-state="pause">
                                     <svg class="video__play-button-icon video__play-button-icon--play" width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M47 24.5359C49.6667 26.0755 49.6667 29.9245 47 31.4641L6.49999 54.8468C3.83333 56.3864 0.499997 54.4619 0.499997 51.3827L0.499999 4.61731C0.5 1.53811 3.83333 -0.386389 6.5 1.15321L47 24.5359Z" fill="#D9D9D9" />
                                     </svg>
@@ -868,7 +868,7 @@
 
 <script>
     const videoElement = document.querySelector('video');
-    const playPauseButton = document.querySelector('button');
+    const playPauseButton =document.getElementById('button_play') ;
 
     playPauseButton.addEventListener('click', () => {
         playPauseButton.classList.toggle('playing');

@@ -507,6 +507,8 @@ header {
     z-index: 999;
     /*padding: 15px 42px;*/
     top: 0;
+    padding-left: 42px;
+    padding-right: 42px;
 }
 header.sticky {
     position: fixed;
@@ -603,6 +605,7 @@ header .header_info ul li svg {
     max-width: 357px;
     width: 100%;
     margin: 0 auto;
+    margin-top: 30px;
 }
 .banner .banner_form .contact_form>h2 {
     font-size: 32px;

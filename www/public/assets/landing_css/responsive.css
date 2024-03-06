@@ -13,6 +13,9 @@ header .header_info ul li a:hover {color: #D9272E;}
 
 
 @media screen and (max-width:1300px) {
+    header {   padding-left: 42px;
+        padding-right: 42px;
+    }
 .banner .banner_img figcaption { padding-top: 30px;padding-left: 50px;}
 .banner .banner_img figcaption h2 { font-size: 35px;}
 .banner .banner_img figcaption h4 {  font-size: 15px;}
@@ -20,6 +23,9 @@ header .header_info ul li a:hover {color: #D9272E;}
 }
 
 @media screen and (max-width:1400px) {
+    header {   padding-left: 42px;
+        padding-right: 42px;
+    }
 .video iframe { height: 600px;}
 .video_icon {top: auto;right: 200px;bottom: 200px;transform: none;}
 .instagram_feed .swiper_main_slide .swiper-slide:nth-child(even) .video-container {  margin-top: -100px;}
