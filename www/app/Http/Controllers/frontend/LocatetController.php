@@ -18,7 +18,7 @@ class LocatetController extends Controller
      *
      */
 
-     protected $repository;
+    protected $repository;
 
     public function __construct(DealerRepository $repository)
     {
@@ -29,13 +29,13 @@ class LocatetController extends Controller
     {
 
 
-        $llumarDealers= resolve('dealer-repo')->renderHtmlDealers($this->getParamsForFilter($request));
+        $llumarDealers = resolve('dealer-repo')->renderHtmlDealers($this->getParamsForFilter($request));
         //$llumarDealerData = $this->repository->getAllData('all','1');
 
         $states = $this->repository->getAllData('state');
         $cities = $this->repository->getAllData('city');
 
-        return view('frontend.locate',compact('states','llumarDealers','cities'));
+        return view('frontend.locate', compact('states', 'llumarDealers', 'cities'));
     }
 
 
@@ -44,9 +44,9 @@ class LocatetController extends Controller
         try {
 
             $options = '<option selected="selected" value="">Select City</option>';
-            $cities=$this->repository->getAllData('city',$state);
+            $cities = $this->repository->getAllData('city', $state);
 
-            foreach ($cities as  $city) {
+            foreach ($cities as $city) {
 
                 $options .= '<option  value="' . $city . '" >' . $city . '</option>';
             }
@@ -59,28 +59,27 @@ class LocatetController extends Controller
             $data['message'] = resolve('common-helper')->generateErrorMessage($e);
             return response()->json($data);
         }
-       }
+    }
     public function getParamsForFilter(Request $request)
     {
 
 
         $previousUrl = parse_url(url()->previous());
         $params = [];
-    if (request()->routeIs('frontend.locate') ) {
+        if (request()->routeIs('frontend.locate')) {
             $params['path'] = \Illuminate\Support\Facades\Request::fullUrl();
-            $params['city'] =  $request->city_id ?? null;
-            $params['state'] =  $request->state_id ?? null;
+            $params['city'] = $request->city_id ?? null;
+            $params['state'] = $request->state_id ?? null;
 
 
-
-        }else{
+        } else {
             parse_str($previousUrl['query'], $params);
-            $params['path'] =  url()->previous();
+            $params['path'] = url()->previous();
         }
 
         return $params;
     }
-//
+    //
 //       public function getFilteredData(Request $request) {
 //            $filter = $request->city;
 //            $DealerData = $this->repository->filterData('city',$filter);
@@ -102,7 +101,7 @@ class LocatetController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-      /**
+    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request

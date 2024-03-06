@@ -1,16 +1,18 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-layout="horizontal" data-layout-style="" data-layout-position="fixed"  data-topbar="light">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-layout="horizontal" data-layout-style=""
+    data-layout-position="fixed" data-topbar="light">
 
 <head>
     <meta charset="utf-8" />
-    <title> @yield('title')| {{env('APP_NAME')}}</title>
+    <title> @yield('title')| {{ env('APP_NAME') }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ URL::asset('assets/images/favicon.ico')}}">
+    <link rel="shortcut icon" href="{{ URL::asset('assets/frontend/images/favicon/favicon.png') }}">
     @include('admin.layouts.head-css')
 </head>
+
 <body>
 
     <!-- Begin page -->

@@ -13,7 +13,7 @@ class Dealer extends Model
     use HasFactory, CustomTimestamps, SoftDeletes;
 
     protected $table = "dealers";
-    protected $primaryKey="id";
+    protected $primaryKey = "id";
 
     protected $fillable = [
         'sort_id',
@@ -21,6 +21,7 @@ class Dealer extends Model
         'address',
         'state',
         'city',
+        'pincode',
         'contact_name',
         'contact_number',
         'contact_email',
