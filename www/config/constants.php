@@ -5,9 +5,9 @@ return [
     'USER_PASSWORD_LOGIN' => false,
     'APP_NAME' => env('APP_NAME', ''),
     //Emails
-    'EMAIL'=>[
-        'LOCAL' => ['TO'=>['recipient@example.com'],'CC'=>[]],
-        'DEVELOPMENT'=>['TO'=>['enquiry@grasi.in'],'CC'=>[]],
+    'EMAIL' => [
+        'LOCAL' => ['TO' => ['recipient@example.com'], 'CC' => []],
+        'DEVELOPMENT' => ['TO' => ['enquiry@grasi.in'], 'CC' => ['media@buzzmakers.in', 'social@buzzmakers.in', 'seobuzzmakers@gmail.com']],
     ],
     'PER_PAGE' => 10,
     'SUPER_ADMIN' => 'Super Admin',
