@@ -31,7 +31,7 @@ class DealerRequest extends FormRequest
             'contact_name' => 'required|string|min:3|max:255',
             'contact_number' => 'required|digits:10',
             'contact_email' => 'required|email|max:255',
-            'url' => 'required|string|min:3|max:255',
+            'url' => 'required|string|min:3|max:450',
             'latitude' => 'required|numeric|min:1',
             'longitude' => 'required|numeric|min:1',
         ];
