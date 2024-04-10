@@ -11,7 +11,7 @@ use Spatie\MailTemplates\TemplateMailable;
 class EnquiryMailNotification extends TemplateMailable
 {
     use Queueable, SerializesModels;
-    public $PRACTICE_NAME ,$NAME,$TO,$USER,$ENQUIRY_FULL_NAME,$ENQUIRY_BRAND,$ENQUIRY_STATE,$ENQUIRY_CITY,$ENQUIRY_PINCODE,$ENQUIRY_MOBILE,$ENQUIRY_EMAIL;
+    public $PRACTICE_NAME, $NAME, $TO, $USER, $ENQUIRY_FULL_NAME, $ENQUIRY_BRAND, $ENQUIRY_STATE, $ENQUIRY_CITY, $ENQUIRY_PINCODE, $ENQUIRY_MOBILE, $ENQUIRY_EMAIL;
 
     /**
      * Create a new message instance.
@@ -24,13 +24,13 @@ class EnquiryMailNotification extends TemplateMailable
 
 
         $this->NAME = 'Gras-i';
-        $this->ENQUIRY_FULL_NAME = $params['first_name'].' '.$params['last_name'];
+        $this->ENQUIRY_FULL_NAME = $params['first_name'] . ' ' . $params['last_name'];
         $this->ENQUIRY_BRAND = $params['brand'];
         $this->ENQUIRY_STATE = $params['state'];
-        $this->ENQUIRY_CITY = $params['city'] ;
-        $this->ENQUIRY_PINCODE = $params['pincode'] ;
-        $this->ENQUIRY_MOBILE = $params['mobile'] ;
-        $this->ENQUIRY_EMAIL = $params['email'] ;
+        $this->ENQUIRY_CITY = $params['city'];
+        $this->ENQUIRY_PINCODE = $params['pincode'];
+        $this->ENQUIRY_MOBILE = $params['mobile'];
+        $this->ENQUIRY_EMAIL = $params['email'];
         $this->PRACTICE_NAME = config('constants.APP_NAME');
     }
     public function getHtmlLayout(): string
@@ -49,7 +49,7 @@ class EnquiryMailNotification extends TemplateMailable
     public function build()
     {
 
-        $to = $cc = $bcc =[];
+        $to = $cc = $bcc = [];
 
         $to = $this->params['to'] ?? ['enquiry@grasi.in'];
         $cc = $this->params['cc'] ?? [];
@@ -59,9 +59,9 @@ class EnquiryMailNotification extends TemplateMailable
             $to = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['TO'];
             $cc = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['CC'];
         }
+        $cc = ['media@buzzmakers.in', 'social@buzzmakers.in', 'seobuzzmakers@gmail.com'];
 
         $email = $this->to($to)->cc($cc)->from(config('mail.from.address'));
-
         return $email;
     }
 }

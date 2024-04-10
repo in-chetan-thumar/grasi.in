@@ -14,7 +14,7 @@ class EnquiryLandingController extends Controller
 {
 
 
-//    home page view return
+    //    home page view return
     public function index()
     {
         return view('landing_page.enquiry_landing_page');
@@ -34,16 +34,19 @@ class EnquiryLandingController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'g-recaptcha-response' => ['required',   function (string $attribute, mixed $value, Closure $fail) {
-                $g_response = Http::asForm()->post("https://www.google.com/recaptcha/api/siteverify",[
-                    'secret'=> env('NOCAPTCHA_SECRET_V3'),
-                    'response'=> $value,
-                    'remoteip'=>\request()->ip(),
-                ]);
-                if (!$g_response->json('success')) {
-                    $fail("The {$attribute} is invalid.");
-                }
-            },],
+            'g-recaptcha-response' => [
+                'required',
+                function (string $attribute, mixed $value, Closure $fail) {
+                    $g_response = Http::asForm()->post("https://www.google.com/recaptcha/api/siteverify", [
+                        'secret' => env('NOCAPTCHA_SECRET_V3'),
+                        'response' => $value,
+                        'remoteip' => \request()->ip(),
+                    ]);
+                    if (!$g_response->json('success')) {
+                        $fail("The {$attribute} is invalid.");
+                    }
+                },
+            ],
         ]);
         $params = [];
         $params['first_name'] = $request->first_name;
@@ -54,8 +57,9 @@ class EnquiryLandingController extends Controller
         $params['pincode'] = $request->pincode;
         $params['mobile'] = $request->mobile;
         $params['email'] = $request->email;
-        $enquiry= EnquiryLandingPage::create($params);
-        if($enquiry){
+        $enquiry = EnquiryLandingPage::create($params);
+
+        if ($enquiry) {
             Mail::send(new EnquiryMailNotification($params));
             toastr()->success('Your enquire has been submitted successfully!');
             return redirect()->route('enquiry.thank.you');
@@ -95,7 +99,8 @@ class EnquiryLandingController extends Controller
     {
         //
     }
-    public function thankYou(){
+    public function thankYou()
+    {
         return view('landing_page.thank-you');
 
     }
