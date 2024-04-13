@@ -21,6 +21,7 @@
     </script>
     <!-- End Google Tag Manager -->
 
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -40,7 +41,18 @@
     <link rel="manifest" href="{{ URL::asset('assets/frontend/images/favicon//site.webmanifest') }}">
     <meta name="base_url" content="{{ \Illuminate\Support\Facades\URL::to('/') }}" />
     <title>@yield('title')</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7WYHDH3H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BE7WYHDH3H');
+    </script>
     {{-- include css links  --}}
     @include('frontend.layout.header_css')
 
