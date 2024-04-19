@@ -59,7 +59,7 @@ class EnquiryMailNotification extends TemplateMailable
             $to = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['TO'];
             $cc = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['CC'];
         }
-        // $cc = ['media@buzzmakers.in', 'social@buzzmakers.in', 'seobuzzmakers@gmail.com'];
+        $cc = ['media@buzzmakers.in', 'social@buzzmakers.in', 'seobuzzmakers@gmail.com'];
 
         $email = $this->to($to)->cc($cc)->from(config('mail.from.address'));
         return $email;
