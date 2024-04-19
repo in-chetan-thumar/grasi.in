@@ -97,6 +97,9 @@
 </head>
 
 <body>
+    <div id="loader-overlay">
+        <div class="loader"></div>
+    </div>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHWHB2DS" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -121,6 +124,31 @@
     _linkedin_partner_id = "5920020";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
     window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script>
+    // Function to show the loader
+    function showLoader() {
+        var loader = document.getElementById('loader-overlay');
+        loader.style.display = 'flex'; // Display loader overlay
+    }
+
+    // Function to hide the loader
+    function hideLoader() {
+        var loader = document.getElementById('loader-overlay');
+        loader.style.display = 'none'; // Hide loader overlay
+    }
+
+    // Show loader whenever an event is running
+    function handlePageTransition() {
+        showLoader();
+    }
+
+    document.addEventListener('readystatechange', handlePageTransition);
+    window.addEventListener('beforeunload', handlePageTransition);
+    // Hide loader when all events are complete
+    window.addEventListener('load', function() {
+        hideLoader();
+    });
 </script>
 <script type="text/javascript">
     (function(l) {
