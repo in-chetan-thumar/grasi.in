@@ -51,15 +51,15 @@ class EnquiryMailNotification extends TemplateMailable
 
         $to = $cc = $bcc = [];
 
-        $to = $this->params['to'] ?? ['enquiry@grasi.in'];
-        $cc = $this->params['cc'] ?? [];
-
+        // $to = $this->params['to'] ?? ['enquiry@grasi.in'];
+        // $cc = $this->params['cc'] ?? [];
+        // $cc = ['media@buzzmakers.in', 'social@buzzmakers.in', 'seobuzzmakers@gmail.com'];
         //Override to & cc variables for staging and local environment.
         if (strtoupper(env('APP_ENV')) !== 'PRODUCTION') {
             $to = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['TO'];
             $cc = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['CC'];
         }
-        $cc = ['media@buzzmakers.in', 'social@buzzmakers.in', 'seobuzzmakers@gmail.com'];
+
 
         $email = $this->to($to)->cc($cc)->from(config('mail.from.address'));
         return $email;
