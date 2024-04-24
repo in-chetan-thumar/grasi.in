@@ -9,7 +9,7 @@ use Spatie\MailTemplates\TemplateMailable;
 class LocateMailNotification extends TemplateMailable
 {
     use Queueable, SerializesModels;
-    public $PRACTICE_NAME ,$NAME,$CONTACT_FIRST_NAME,$CONTACT_LAST_NAME,$CONTACT_EMAIL,$CONTACT_CITY,$CONTACT_STATE,$CONTACT_NUMBER;
+    public $PRACTICE_NAME, $NAME, $CONTACT_FIRST_NAME, $CONTACT_LAST_NAME, $CONTACT_EMAIL, $CONTACT_CITY, $CONTACT_STATE, $CONTACT_NUMBER;
 
     /**
      * Create a new message instance.
@@ -43,16 +43,14 @@ class LocateMailNotification extends TemplateMailable
     public function build()
     {
 
-        $to = $cc = $bcc =[];
+        $to = $cc = $bcc = [];
 
-        $to = $this->params['to'] ?? ['enquiry@grasi.in'];
+        $to = $this->params['to'] ?? [];
         $cc = $this->params['cc'] ?? [];
 
         //Override to & cc variables for staging and local environment.
-        if (strtoupper(env('APP_ENV')) !== 'PRODUCTION') {
-            $to = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['TO'];
-            $cc = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['CC'];
-        }
+        $to = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['TO'];
+        $cc = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['CC'];
 
         $email = $this->to($to)->cc($cc)->from(config('mail.from.address'));
 
