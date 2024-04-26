@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('/grasi-llumar-enquiry', [\App\Http\Controllers\Api\V2\EnquiryLandingController::class, 'store'])->name('enquiry.store.with.api');
+Route::post('/contact', [\App\Http\Controllers\Api\V2\ContactController::class, 'store'])->name('contact.enquiry.store.with.api');
+
 Route::prefix('V1')->middleware(['throttle:60,1'])->group(function () {
 
     Route::post('/login-with-username-password', [LoginController::class, 'loginWithUsernamePassword'])->name('login.with.username.password.api');
