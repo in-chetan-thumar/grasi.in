@@ -17,7 +17,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-       return view('frontend.contact');
+        return view('frontend.contact');
     }
 
     /**
@@ -33,16 +33,19 @@ class ContactController extends Controller
     public function store(ContactRequest $request)
     {
         $this->validate($request, [
-            'g-recaptcha-response' => ['required',   function (string $attribute, mixed $value, Closure $fail) {
-                $g_response = Http::asForm()->post("https://www.google.com/recaptcha/api/siteverify",[
-                    'secret'=> env('NOCAPTCHA_SECRET_V3'),
-                    'response'=> $value,
-                    'remoteip'=>\request()->ip(),
-                ]);
-                if (!$g_response->json('success')) {
-                    $fail("The {$attribute} is invalid.");
-                }
-            },],
+            'g-recaptcha-response' => [
+                'required',
+                function (string $attribute, mixed $value, Closure $fail) {
+                    $g_response = Http::asForm()->post("https://www.google.com/recaptcha/api/siteverify", [
+                        'secret' => env('NOCAPTCHA_SECRET_V3'),
+                        'response' => $value,
+                        'remoteip' => \request()->ip(),
+                    ]);
+                    if (!$g_response->json('success')) {
+                        $fail("The {$attribute} is invalid.");
+                    }
+                },
+            ],
         ]);
         $params = [];
         $params['first_name'] = $request->first_name;
@@ -51,6 +54,7 @@ class ContactController extends Controller
         $params['message'] = $request->message;
 
         Mail::send(new ContactMailNotification($params));
+        app('common-helper')->CreateLead($request);
         toastr()->success('Your enquire has been submitted successfully!');
         return redirect()->back();
     }

@@ -6,6 +6,8 @@ use App\Models\MasterDistrict;
 use App\Models\MasterStates;
 use Carbon\CarbonPeriod;
 
+use Illuminate\Support\Facades\Http;
+
 class CommonHelper
 {
     /* Rendom password  generate */
@@ -39,7 +41,7 @@ class CommonHelper
 
         return $key;
     }
-    
+
     /* Generate numeric otp */
     public function numericOTP()
     {
@@ -116,11 +118,34 @@ class CommonHelper
     }
 
     /* Generate error message */
-    function generateErrorMessage($e){
+    function generateErrorMessage($e)
+    {
         if (env('APP_ENV') == 'PRODUCTION') {
             return "Something went wrong.Please contact to administrator";
         } else {
-            return "Message:" . $e->getMessage()." Filename:" . $e->getFile()." Line:" . $e->getLine();
+            return "Message:" . $e->getMessage() . " Filename:" . $e->getFile() . " Line:" . $e->getLine();
         }
+    }
+
+    public function CreateLead($request)
+    {
+        $url = 'https://www.zohoapis.in/crm/v2/functions/create_lead_from_website/actions/execute?auth_type=apikey&zapikey=1003.6bf41c62b6652557cb3dbe87b5649a1c.70669e4dfa0684f2c5672475b403ff9c';
+        $response = Http::post($url, [
+            'First_Name' => $request->first_name ?? "",
+            'Last_Name' => $request->last_name ?? "",
+            'Email' => $request->email ?? "",
+            'Mobile' => $request->mobile ?? "",
+            'Subject' => $request->subject ?? 'Gras-i',
+            'Message' => $request->message ?? 'Founded in 1997, we have gained significant experience and expertise in surface solutions over the past two decades. As a reputable player in the industry today, we are consistently striving to offer innovative and high-quality solutions that cater to all customer needs while standing head-to-head with future trends.',
+            'Brand' => $request->brand ?? "",
+            'State' => $request->state ?? "",
+            'City' => $request->city ?? "",
+            'Pin_code' => $request->pincode ?? "",
+        ]);
+        // if ($response->status() == 200) {
+        //     toastr()->success('Your enquire has been submitted successfully! ' . $response->body());
+        // } else {
+        //     return 'Unexpected HTTP status: ' . $response->status() . ' ' . $response->body();
+        // }
     }
 }
