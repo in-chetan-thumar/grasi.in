@@ -141,6 +141,7 @@ class CommonHelper
             'State' => $request->state ?? "",
             'City' => $request->city ?? "",
             'Pin_code' => $request->pincode ?? "",
+            'Lead_Source' => $request->message ? 'Website' : 'Landing Page',
         ]);
         // if ($response->status() == 200) {
         //     toastr()->success('Your enquire has been submitted successfully! ' . $response->body());
