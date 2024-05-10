@@ -18,7 +18,7 @@ class LlumarWindowFilm extends Model
         'first_name',
         'last_name',
         'project_type',
-        'type_of_file',
+        'type_of_film',
         'company_name',
         'mobile',
         'whatsapp_number',

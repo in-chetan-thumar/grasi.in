@@ -25,7 +25,7 @@ class LlumarWindowFilmRequest extends FormRequest
             'first_name' => 'required|string|min:2|max:200',
             'last_name' => 'required|string|min:2|max:200',
             'project_type' => 'required',
-            'type_of_file' => 'required',
+            'type_of_film' => 'required',
             'company_name' => 'required|string|min:2|max:200',
             'state' => 'required',
             'whatsapp_number' => 'required|numeric|digits:10',

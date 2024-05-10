@@ -149,7 +149,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-floating">
-                        <select class="form-select" name="type_of_file" id="floatingSelect1">
+                        <select class="form-select" name="type_of_film" id="floatingSelect1">
                             @foreach (config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_FILM') as $key => $value)
                                 <option value="{{ $key }}">{{ $value }}</option>
                             @endforeach
@@ -206,7 +206,11 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary enquiry_btn">Enquire Now</button>
+                    {{-- <button type="submit" class="btn btn-primary enquiry_btn">Enquire Now</button> --}}
+                    <button class="g-recaptcha btn btn-primary enquiry_btn"
+                        data-sitekey="{{ env('NOCAPTCHA_SITEKEY_V3') }}" data-callback='onSubmit'
+                        type="submit">Enquire Now
+                    </button>
                 </div>
             </div>
             {{ Form::close() }}
