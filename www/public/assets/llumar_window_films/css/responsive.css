@@ -1,0 +1,400 @@
+@media screen and (min-width:1600px) {
+}
+
+@media screen and (max-width:1440px) {
+    .highlight_info h4{
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width:1367px) {
+    .highlight_info h4 {
+        font-size: 20px;
+    }
+    .choose_img img{
+        margin: 30px 0 -120px;
+    }
+    .highlight_title h2:before{
+        width: 100%;
+    }
+    .highlight_title h2:after{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .banner_left h1{
+        font-size: 42px;
+    }
+    .highlight_info h4 {
+        width: 72%;
+    }
+    .film_sec button.nav-link{
+        font-size: 23px;
+    }
+    .choose_img img {
+        margin: 55px 0 -120px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .banner_left h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .banner_right {
+        padding: 0 0 0 70px;
+    }
+    .highlight_title h2{
+        font-size: 32px;
+        line-height: 60px;
+        padding: 0 60px;
+    }
+    .highlight_info h4 {
+        width: 83%;
+    }
+    .highlight_info p {
+        font-size: 16px;
+    }
+    .highlight_image p {
+        top: 32%;
+        font-size: 35px;
+    }
+    .highlight_image p.font_small {
+        left: 8%;
+        top: 33%;
+        font-size: 30px;
+    }
+    .highlight_image p.font_big {
+        left: 10%;
+        top: 30%;
+        font-size: 32px;
+    }
+    .recent_video.owl-carousel .item-video video{
+        width: 100%;
+        height: 350px;
+    }
+    .choose_img img {
+        margin: 130px 0 -120px;
+    }
+    h3.main_border{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    h3.main_border:after {
+        width: 115px;
+    }
+    .main_title h3{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header{
+        padding: 25px 50px;
+    }
+    .banner_left h1 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .banner_right {
+        padding: 0 0 0 20px;
+    }
+    .banner_right .form-floating>.form-select{
+        font-size: 14px;
+    }
+    .banner_right .form-control{
+        font-size: 14px;
+    }
+    .banner_right .form-floating>label{
+        font-size: 14px;
+    }
+    .highlight_sec {
+        padding: 45px 50px 0;
+    }
+    .highlight_info h4 {
+        width: 88%;
+    }
+    .highlight_info p {
+        font-size: 15px;
+    }
+    .film_sec{
+        padding: 60px 0 40px 50px;
+    }
+    h3.main_border {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    h3.main_border:after {
+        width: 105px;
+    }
+    .film_sec button.nav-link {
+        font-size: 21px;
+    }
+    .recent_sec{
+        padding: 50px 0px 50px 50px;
+    }
+    #horizontalTab.r-tabs .r-tabs-nav .r-tabs-anchor{
+        font-size: 20px;
+    }
+    #horizontalTab.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor{
+        font-size: 20px;
+    }
+    #horizontalTab.r-tabs .nav-pills .nav-link{
+        font-size: 16px;
+        height: 65px;
+    }
+    #horizontalTab.r-tabs .r-tabs-panel p{
+        margin: 0 0 40px;
+    }
+    .benefits_sec{
+        padding: 30px 40px 30px;
+    }
+    .window_block{
+        padding: 0 60px;
+    }
+    .window_image h5:after{
+        height: 38px;
+    }
+    .window_image h5{
+        font-size: 15px;
+        padding: 6px 20px;
+    }
+    .choose_sec{
+        padding: 20px 80px 30px 80px;
+    }
+    .choose_img img {
+        margin: 175px 0 -120px;
+    }
+    .trusted_block{
+        padding: 110px 60px 85px;
+    }
+    .main_title h3 {
+        font-size: 28px;
+    }
+    .main_title h3::before{
+        width: 105px;
+    }
+    .faq_block .main_title h3::before{
+        width: 50px;
+    }
+    .faq_block{
+        padding: 0 40px;
+    }
+    #horizontalTab1 .r-tabs-nav li a{
+        width: auto;
+        height: 60px;
+        font-size: 18px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    #horizontalTab1 .r-tabs-nav{
+        margin: 0 0 20px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .banner_left h1 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .banner_right .form-floating>.form-select{
+        font-size: 13px;
+    }
+    .banner_right .form-control{
+        font-size: 13px;
+    }
+    .banner_right .form-floating>label{
+        font-size: 13px;
+    }
+    .header {
+        padding: 20px 50px;
+    }
+    .banner{
+        padding: 30px 50px 60px 50px;
+    }
+    .banner_right button.enquiry_btn{
+        font-size: 15px;
+    }
+    .highlight_title h2 {
+        font-size: 24px;
+        line-height: 50px;
+        padding: 0 50px;
+    }
+    .highlight_image p {
+        top: 38%;
+        font-size: 28px;
+        left: 27%;
+    }
+    .highlight_image p.font_small {
+        left: 16%;
+        top: 38%;
+        font-size: 25px;
+    }
+    .highlight_image p.font_big {
+        left: 18%;
+        top: 35%;
+        font-size: 28px;
+    }
+    .highlight_info h4 {
+        width: 90%;
+        font-size: 18px;
+    }
+    .film_sec {
+        padding: 30px 0 30px 50px;
+    }
+    h3.main_border{
+        font-size: 24px;
+    }
+    h3.main_border:after {
+        width: 93px;
+    }
+    .film_sec button.nav-link {
+        font-size: 17px;
+    }
+    .recent_sec {
+        padding: 30px 0px 30px 50px;
+    }
+    .recent_video.owl-carousel .owl-nav .owl-prev, .recent_video.owl-carousel .owl-nav .owl-next{
+        width: 45px;
+        height: 45px;
+    }
+    #horizontalTab.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+        font-size: 17px;
+    }
+    #horizontalTab.r-tabs .r-tabs-nav .r-tabs-anchor{
+        padding: 18px 50px;
+    }
+    #horizontalTab.r-tabs .r-tabs-nav .r-tabs-anchor {
+        font-size: 17px;
+    }
+    #horizontalTab.r-tabs .r-tabs-panel p{
+        width: 100%;
+        font-size: 15px;
+    }
+    #horizontalTab.r-tabs .nav-pills .nav-link {
+        font-size: 15px;
+        height: 60px;
+    }
+    .benefit_tab_content h6{
+        font-size: 15px;
+    }
+    .benefit_main_content{
+        padding: 20px 0 0 45px;
+    }
+    .window_block {
+        padding: 0 50px;
+    }
+    .window_block ul.parent_block li{
+        width: 47%;
+    }
+    .window_block ul.parent_block li ul li{
+        line-height: 28px;
+    }
+    .choose_sec {
+        padding: 20px 60px;
+    }
+    .choose_info p{
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .trusted_block {
+        padding: 70px 60px 85px;
+    }
+    .main_title h3 {
+        font-size: 24px;
+        margin: 0 0 35px;
+    }
+    .main_title h3::before {
+        width: 85px;
+    }
+    #horizontalTab1 .r-tabs-nav li a{
+        height: 55px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .banner {
+        padding: 30px 50px;
+    }
+    .banner_left{
+        width: 100%;
+    }
+    .banner_left h1{
+        text-align: center;
+    }
+    .banner_right {
+        padding: 0;
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+    .highlight_sec:after{
+        display: none;
+    }
+    .highlight_sec {
+        padding: 45px 50px;
+        height: 100%;
+    }
+    .highlight_sec ul li{
+        width: 49%;
+        margin: 0 0 20px;
+    }
+}
+
+@media screen and (max-width:823px) {
+}
+
+@media screen and (max-width:768px) {
+    .highlight_title h2{
+        padding: 0 20px;
+    }
+    #horizontalTab.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor{
+        color: #000000;
+    }
+    #horizontalTab.r-tabs .r-tabs-accordion-title{
+        margin: 0 0 20px;
+    }
+    .window_block ul.parent_block li{
+        width: 100%;
+        margin: 0 0 40px 0;
+    }
+    .choose_info{
+        padding: 0 20px 0 0;
+    }
+    #horizontalTab1.r-tabs .r-tabs-accordion-title{
+        display: none;
+    }
+    #horizontalTab1 .r-tabs-nav li a{
+        padding: 0 23px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .banner_left h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width:667px) {
+}
+
+@media screen and (max-width:568px) {
+}
+
+@media screen and (max-width:567px) {
+}
+
+@media screen and (max-width:375px) {
+}
+
+@media screen and (max-width:360px) {
+}
+
+@media screen and (max-width:320px) {
+}
