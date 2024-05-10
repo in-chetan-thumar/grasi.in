@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Mail\WindowFilmsEnquiryMailNotification;
 use App\Models\LlumarWindowFilm;
 use Closure;
 use Illuminate\Http\Request;
@@ -60,8 +61,8 @@ class LlumarWindowFilmsController extends Controller
         $enquiry = LlumarWindowFilm::create($params);
 
         if ($enquiry) {
-            // Mail::send(new EnquiryMailNotification($params));
-            app('common-helper')->CreateLead($request);
+            Mail::send(new WindowFilmsEnquiryMailNotification($params));
+            // app('common-helper')->CreateLead($request);
             toastr()->success('Your enquire has been submitted successfully!');
             // return redirect()->route('enquiry.thank.you');
             return redirect()->back();
