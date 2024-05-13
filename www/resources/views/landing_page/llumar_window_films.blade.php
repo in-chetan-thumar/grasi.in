@@ -1294,11 +1294,33 @@
     <script type="text/javascript" src="{{ asset('assets/vendor/jsvalidation/js/jsvalidation.js') }}"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     {!! JsValidator::formRequest('App\Http\Requests\LlumarWindowFilmRequest', '#form_enquiry') !!}
-    items:3
-    }
-    }
-    })
-    });
+
+
+    <script>
+        $(document).ready(function(){
+            $('.recent_video.owl-carousel').owlCarousel({
+                loop:false,
+                margin:10,
+                items: 3,
+                nav: true,
+                dots: false,
+                video:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    568:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            })
+        });
     </script>
 
     <script type="text/javascript">
