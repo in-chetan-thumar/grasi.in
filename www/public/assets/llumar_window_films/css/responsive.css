@@ -379,22 +379,186 @@
         font-size: 24px;
         line-height: 32px;
     }
+    .highlight_sec ul li{
+        vertical-align: top;
+    }
+    .film_sec {
+        padding: 30px 30px;
+    }
+    .tab_images_top{
+        padding: 25px 0px 15px 0px;
+    }
+    .recent_sec {
+        padding: 20px 30px;
+    }
+    #horizontalTab.r-tabs .nav-pills .nav-link.active:after{
+        display: none;
+    }
+    .benefit_main_content {
+        padding: 20px 30px;
+    }
+    h3.main_border{
+        margin: 20px 0;
+    }
+    .choose_img img {
+        margin: 20px 0 0px;
+        width: 100%;
+    }
+    #horizontalTab1 .r-tabs-nav li a{
+        padding: 0 15px;
+        height: 42px;
+    }
+    #horizontalTab1 .r-tabs-nav {
+        margin: 0 0 5px;
+    }
+    .trusted_block {
+        padding: 50px;
+    }
+    .main_title h3{
+        margin: 0 0 25px;
+    }
+    .recent_video.owl-carousel .owl-nav{
+        left: 42%;
+        top: 100%;
+    }
+    .recent_video.owl-carousel .owl-nav .owl-prev, .recent_video.owl-carousel .owl-nav .owl-next{
+        width: 35px;
+        height: 35px;
+    }
 }
 
 @media screen and (max-width:667px) {
 }
 
 @media screen and (max-width:568px) {
+    .header {
+        padding: 20px 30px;
+    }
+    .banner {
+        padding: 20px 30px;
+    }
+    .banner_left h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .highlight_sec{
+        padding: 25px 30px;
+    }
+    .highlight_title h2{
+        font-size: 20px;
+    }
+    .highlight_sec ul li{
+        width: 100%;
+    }
+    h3.main_border {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    h3.main_border:after {
+        width: 75px;
+    }
+    .benefits_sec h3.main_border:after {
+        left: 38%;
+    }
+    .window_block {
+        padding: 0 30px;
+    }
+    .choose_sec {
+        padding: 20px 40px;
+    }
 }
 
 @media screen and (max-width:567px) {
+    #horizontalTab1 .r-tabs-nav li {
+        margin: 0 10px 10px 0;
+    }
+    #horizontalTab1 .accordion-item button.accordion-button{
+        padding: 20px 0;
+    }
+    .header {
+        padding: 20px 15px;
+    }
+    .logo{
+        width: 75%;
+    }
+    .header_links a{
+        margin: 0 0 0 20px;
+    }
+    .banner_right button.enquiry_btn{
+        height: 45px;
+    }
+    .highlight_title h2:before{
+        display: none;
+    }
+    .highlight_title h2:after{
+        display: none;
+    }
+    #horizontalTab.r-tabs .nav-pills .nav-link{
+        height: 48px;
+    }
+    #horizontalTab.r-tabs .r-tabs-panel p {
+        margin: 0 0 25px;
+    }
+    .window_image h5{
+        font-size: 12px;
+    }
+    .window_block ul.parent_block li p{
+        font-size: 13px;
+        padding: 0;
+    }
+    .window_block ul.parent_block li ul li{
+        font-size: 13px;
+    }
+    .tab_images_top img, .tab_images_bottom img {
+        height: 100%;
+    }
+    .window_block {
+        padding: 0;
+    }
+    #horizontalTab1 .accordion-item button.accordion-button{
+        font-size: 14px;
+    }
+    .recent_video.owl-carousel .owl-nav{
+        left: 32%;
+    }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:413px) {
+    .header_links a{
+        font-size: 12px;
+    }
+    .header_right{
+        padding: 8px 0 0;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .logo {
+        width: 60%;
+    }
+    .header_links a {
+        margin: 0 0 0 8px;
+    }
+    .faq_block {
+        padding: 0 20px;
+    }
 }
 
 @media screen and (max-width:360px) {
+    .header_links a img {
+        margin: 0 3px 0 0;
+    }
 }
 
 @media screen and (max-width:320px) {
+    .window_image h5 {
+        font-size: 11px;
+    }
+    .header_links a img{
+        width: 12px;
+        vertical-align: middle;
+    }
+    .header_links a {
+        font-size: 10px;
+    }
 }

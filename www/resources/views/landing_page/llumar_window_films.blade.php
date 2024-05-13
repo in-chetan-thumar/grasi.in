@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="form-floating">
+                    <div class="form-floating mb-3">
                         <input type="text" name="last_name" class="form-control" id="floatingLname" placeholder="">
                         <label for="floatingLname">Last Name</label>
                     </div>
@@ -148,7 +148,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="form-floating">
+                    <div class="form-floating mb-3">
                         <select class="form-select" name="type_of_film" id="floatingSelect1">
                             @foreach (config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_FILM') as $key => $value)
                                 <option value="{{ $key }}">{{ $value }}</option>
@@ -176,7 +176,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="form-floating">
+                    <div class="form-floating mb-3">
                         <input type="text" class="form-control" name="whatsapp_number" id="floatingWnumber"
                             oninput='this.value = this.value.replace(/[^0-9]/g, "")' maxlength="10" placeholder="">
                         <label for="floatingWnumber">WhatsApp Number</label>
@@ -1294,35 +1294,15 @@
     <script type="text/javascript" src="{{ asset('assets/vendor/jsvalidation/js/jsvalidation.js') }}"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     {!! JsValidator::formRequest('App\Http\Requests\LlumarWindowFilmRequest', '#form_enquiry') !!}
-    <script>
-        function onSubmit(token) {
-            $("#form_enquiry").submit();
-        }
-        $(document).ready(function() {
-            $('.recent_video.owl-carousel').owlCarousel({
-                loop: false,
-                margin: 10,
-                items: 3,
-                nav: true,
-                dots: false,
-                video: true,
-                responsive: {
-                    480: {
-                        items: 2
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            })
-        });
+    items:3
+    }
+    }
+    })
+    });
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             var $tabs = $('#horizontalTab');
             $tabs.responsiveTabs({
                 rotate: false,
@@ -1338,38 +1318,37 @@
                 },
                 activateState: function(e, state) {
                     //console.log(state);
-                    $('.info').html('Switched from <strong>' + state.oldState +
-                        '</strong> state to <strong>' + state.newState + '</strong> state!');
+                    $('.info').html('Switched from <strong>' + state.oldState + '</strong> state to <strong>' + state.newState + '</strong> state!');
                 }
             });
         });
+
     </script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function(){
             $('.trusted.owl-carousel').owlCarousel({
-                loop: true,
+                loop:true,
                 autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true,
-                autoplaySpeed: 5000,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                autoplaySpeed:5000,
                 slideTransition: "linear",
                 smartSpeed: 5000,
-                margin: 20,
+                margin:20,
                 nav: false,
                 dots: false,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1
                     },
-                    600: {
-                        items: 3,
+                    600:{
+                        items:3,
                     },
-                    1000: {
-                        items: 5,
-                        loop: true
+                    1000:{
+                        items:5,
+                        loop:true
                     }
                 }
             })
@@ -1377,7 +1356,7 @@
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             var $tabs = $('#horizontalTab1');
             $tabs.responsiveTabs({
                 rotate: false,
@@ -1393,11 +1372,11 @@
                 },
                 activateState: function(e, state) {
                     //console.log(state);
-                    $('.info').html('Switched from <strong>' + state.oldState +
-                        '</strong> state to <strong>' + state.newState + '</strong> state!');
+                    $('.info').html('Switched from <strong>' + state.oldState + '</strong> state to <strong>' + state.newState + '</strong> state!');
                 }
             });
         });
+
     </script>
 </body>
 <script type="text/javascript">
