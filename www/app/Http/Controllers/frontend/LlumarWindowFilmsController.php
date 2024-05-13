@@ -58,13 +58,16 @@ class LlumarWindowFilmsController extends Controller
         $params['whatsapp_number'] = $request->whatsapp_number;
         $params['state'] = $request->state;
         $params['email'] = $request->email;
+        $params['city'] = $request->city;
+        $params['pincode'] = $request->pincode;
         $enquiry = LlumarWindowFilm::create($params);
 
         if ($enquiry) {
             Mail::send(new WindowFilmsEnquiryMailNotification($params));
-            // app('common-helper')->CreateLead($request);
+            $Lead_Source = 'Window Films Enquiry';
+             app('common-helper')->CreateLead($request,$Lead_Source);
             toastr()->success('Your enquire has been submitted successfully!');
-            // return redirect()->route('enquiry.thank.you');
+//             return redirect()->route('enquiry.thank.you');
             return redirect()->back();
         }
         toastr()->success('Your enquire not submitted successfully!');

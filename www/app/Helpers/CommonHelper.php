@@ -127,7 +127,7 @@ class CommonHelper
         }
     }
 
-    public function CreateLead($request)
+    public function CreateLead($request,$Lead_Source)
     {
         $url = 'https://www.zohoapis.in/crm/v2/functions/create_lead_from_website/actions/execute?auth_type=apikey&zapikey=1003.6bf41c62b6652557cb3dbe87b5649a1c.70669e4dfa0684f2c5672475b403ff9c';
         $response = Http::post($url, [
@@ -141,7 +141,7 @@ class CommonHelper
             'State' => $request->state ?? "",
             'City' => $request->city ?? "",
             'Pin_code' => $request->pincode ?? "",
-            'Lead_Source' => $request->message ? 'Website' : 'Landing Page',
+            'Lead_Source' => $Lead_Source,
         ]);
         // if ($response->status() == 200) {
         //     toastr()->success('Your enquire has been submitted successfully! ' . $response->body());

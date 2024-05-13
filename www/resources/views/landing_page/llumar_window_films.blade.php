@@ -139,7 +139,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-floating mb-3">
-                        <select class="form-select" name="project_type" id="floatingSelect">
+                        <select class="form-select" name="project_type" id="project_type">
                             @foreach (config('constants.LLUMAR_WINDOW_FILMS.PROJECT_TYPE') as $key => $value)
                                 <option value="{{ $key }}">{{ $value }}</option>
                             @endforeach
@@ -159,7 +159,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="commercial_box" style="display: none;">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" name="type_of_property" id="floatingSelect1">
+                            @foreach (config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_PROPERTY') as $key => $value)
+                                <option value="{{ $key }}">{{ $value }}</option>
+                            @endforeach
+                        </select>
+                        <label for="floatingSelect1" class="select_label">Type of Property</label>
+                    </div>
+                </div>
+                <div class="col-md-12" id="residential_box" style="display: none;">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" name="company_name" id="floatingCname"
                             placeholder="">
@@ -183,6 +193,15 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="email" id="floatingEadd" placeholder="">
+                        <label for="floatingEadd">Email Address</label>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-floating mb-3">
@@ -197,10 +216,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" name="email" id="floatingEadd" placeholder="">
-                        <label for="floatingEadd">Email Address</label>
+                        <input type="text" class="form-control" name="city" id="floatingEadd" placeholder="">
+                        <label for="floatingEadd">City</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="pincode" id="floatingEadd" placeholder=""  oninput='this.value = this.value.replace(/[^0-9]/g, "")' maxlength="6" >
+                        <label for="floatingEadd">Pin code</label>
                     </div>
                 </div>
             </div>
@@ -1295,8 +1320,25 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
     {!! JsValidator::formRequest('App\Http\Requests\LlumarWindowFilmRequest', '#form_enquiry') !!}
 
-
     <script>
+        $(document).ready(function() {
+            $('#project_type').change(function() {
+                var selectedOption = $(this).val();
+
+                if (selectedOption === '1') {
+                    $('#residential_box').show();
+                    $('#commercial_box').hide();
+                } else if (selectedOption === '2') {
+                    $('#residential_box').hide();
+                    $('#commercial_box').show();
+                }
+            });
+        });
+    </script>
+    <script>
+        function onSubmit(token) {
+            $("#form_enquiry").submit();
+        }
         $(document).ready(function(){
             $('.recent_video.owl-carousel').owlCarousel({
                 loop:false,
