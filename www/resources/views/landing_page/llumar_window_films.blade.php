@@ -159,7 +159,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12" id="commercial_box" style="display: none;">
+                <div class="col-md-12" id="residential_box" style="display: none;">
                     <div class="form-floating mb-3">
                         <select class="form-select" name="type_of_property" id="floatingSelect1">
                             @foreach (config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_PROPERTY') as $key => $value)
@@ -169,7 +169,7 @@
                         <label for="floatingSelect1" class="select_label">Type of Property</label>
                     </div>
                 </div>
-                <div class="col-md-12" id="residential_box" style="display: none;">
+                <div class="col-md-12" id="commercial_box" style="display: none;">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" name="company_name" id="floatingCname"
                             placeholder="">
