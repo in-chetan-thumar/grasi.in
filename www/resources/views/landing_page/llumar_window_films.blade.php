@@ -1290,13 +1290,13 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/company/68282904/admin/feed/posts/" target="_blank" >
-                    <img src="{{ asset('assets/llumar_window_films/images/youtube.webp') }}" alt="YouTube"
+                <a href="https://www.youtube.com/@llumarindia" target="_blank">
+                <img src="{{ asset('assets/llumar_window_films/images/youtube.webp') }}" alt="YouTube"
                         title="YouTube" />
                 </a>
             </li>
             <li>
-                <a href="https://www.youtube.com/@llumarindia" target="_blank">
+                <a href="https://www.linkedin.com/company/68282904/admin/feed/posts/" target="_blank" >
                     <img src="{{ asset('assets/llumar_window_films/images/linked-in.webp') }}" alt="LinkedIn"
                         title="LinkedIn" />
                 </a>
