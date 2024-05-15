@@ -381,7 +381,7 @@
                     <div class="recent_video owl-carousel owl-theme">
                         <div class="item-video">
                             <video width="258"
-                                height="400"poster="{{ asset('assets/llumar_window_films/images/project1.webp') }}"
+                                height="400"poster="{{ asset('assets/llumar_window_films/images/Thumbnail_1.png') }}"
                                 controls>
                                 <source src="{{ asset('assets/llumar_window_films/images/Veronicas.mp4') }}"
                                     type="video/mp4">
@@ -389,7 +389,7 @@
                         </div>
                         <div class="item-video">
                             <video width="258"
-                                height="400"poster="{{ asset('assets/llumar_window_films/images/project2.webp') }}"
+                                height="400"poster="{{ asset('assets/llumar_window_films/images/Thumbnail_2.png') }}"
                                 controls>
                                 <source src="{{ asset('assets/llumar_window_films/images/Milind Soni.mp4') }}"
                                     type="video/mp4">
@@ -397,7 +397,7 @@
                         </div>
                         <div class="item-video">
                             <video width="258"
-                                height="400"poster="{{ asset('assets/llumar_window_films/images/project3.webp') }}"
+                                height="400"poster="{{ asset('assets/llumar_window_films/images/Thumbnail_3.png') }}"
                                 controls>
                                 <source src="{{ asset('assets/llumar_window_films/images/Friends.mp4') }}"
                                     type="video/mp4">
@@ -405,7 +405,7 @@
                         </div>
                         <div class="item-video">
                             <video width="258"
-                                height="400"poster="{{ asset('assets/llumar_window_films/images/project2.webp') }}"
+                                height="400"poster="{{ asset('assets/llumar_window_films/images/Thumbnail_4.png') }}"
                                 controls>
                                 <source src="{{ asset('assets/llumar_window_films/images/Bombay Sweet Shop.mp4') }}"
                                     type="video/mp4">
@@ -1278,25 +1278,25 @@
     <footer class="footer">
         <ul>
             <li>
-                <a href="#">
+                <a href="https://www.instagram.com/llumarindia/" target="_blank">
                     <img src="{{ asset('assets/llumar_window_films/images/instagram.webp') }}" alt="Instagram"
                         title="Instagram" />
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://www.facebook.com/LLumarIndia" target="_blank">
                     <img src="{{ asset('assets/llumar_window_films/images/facebook.webp') }}" alt="Facebook"
                         title="Facebook" />
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://www.linkedin.com/company/68282904/admin/feed/posts/" target="_blank" >
                     <img src="{{ asset('assets/llumar_window_films/images/youtube.webp') }}" alt="YouTube"
                         title="YouTube" />
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://www.youtube.com/@llumarindia" target="_blank">
                     <img src="{{ asset('assets/llumar_window_films/images/linked-in.webp') }}" alt="LinkedIn"
                         title="LinkedIn" />
                 </a>
@@ -1304,10 +1304,9 @@
         </ul>
         <div class="footer_info">
             <h6>Brought to India by </h6>
-            <img src="{{ asset('assets/llumar_window_films/images/footer_img.webp') }}" alt="GRAS"
-                title="GRAS" />
+            <a href="https://grasi.in/" target="_blank"><img src="{{ asset('assets/llumar_window_films/images/footer_img.webp') }}" alt="GRAS" title="GRAS" /></a>
         </div>
-        <p>Handcrafted with <span> ❤ </span> by <span>Buzz Makers.</span></p>
+        <p>Handcrafted with <span> ❤ </span> by <a href="https://buzzmakers.in/" target="_blank"><span>Buzz Makers. </span></a></p>
         <div class="footer_bottom"></div>
     </footer>
 
