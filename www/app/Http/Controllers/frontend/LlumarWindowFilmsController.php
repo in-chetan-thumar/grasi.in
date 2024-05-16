@@ -53,7 +53,8 @@ class LlumarWindowFilmsController extends Controller
         $params['last_name'] = $request->last_name;
         $params['project_type'] = $request->project_type;
         $params['type_of_film'] = $request->type_of_film;
-        $params['company_name'] = $request->company_name;
+        $params['type_of_property'] = $request->type_of_property ?? '';
+        $params['company_name'] = $request->company_name ??'';
         $params['mobile'] = $request->mobile;
         $params['whatsapp_number'] = $request->whatsapp_number;
         $params['state'] = $request->state;

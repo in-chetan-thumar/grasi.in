@@ -142,6 +142,12 @@ class CommonHelper
             'City' => $request->city ?? "",
             'Pin_code' => $request->pincode ?? "",
             'Lead_Source' => $Lead_Source,
+
+            'project_type' => $request->project_type ?? '',
+            'type_of_film' => $request->type_of_film ?? '',
+            'type_of_property' => $request->type_of_property ?? '',
+            'company_name' => $request->company_name ?? '',
+            'whatsapp_number' => $request->whatsapp_number,
         ]);
         // if ($response->status() == 200) {
         //     toastr()->success('Your enquire has been submitted successfully! ' . $response->body());
