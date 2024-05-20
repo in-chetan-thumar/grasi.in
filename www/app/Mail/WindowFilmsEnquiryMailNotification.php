@@ -13,7 +13,7 @@ use Spatie\MailTemplates\TemplateMailable;
 class WindowFilmsEnquiryMailNotification extends TemplateMailable
 {
     use Queueable, SerializesModels;
-    public $PRACTICE_NAME, $NAME, $TO, $USER, $FULL_NAME, $PROJECT_TYPE, $TYPE_OF_FILM, $COMPANY_NAME, $MOBILE, $WHATSAPP_MOBILE, $STATE, $EMAIL;
+    public $PRACTICE_NAME, $NAME, $TO, $USER, $FULL_NAME, $PROJECT_TYPE, $TYPE_OF_FILM, $COMPANY_NAME, $MOBILE, $WHATSAPP_MOBILE, $STATE, $EMAIL,$TYPE_OF_PROPERTY,$CITY,$PINCODE;
     /**
      * Create a new message instance.
      */
@@ -23,11 +23,14 @@ class WindowFilmsEnquiryMailNotification extends TemplateMailable
         $this->FULL_NAME = $params['first_name'] . ' ' . $params['last_name'];
         $this->PROJECT_TYPE = config('constants.LLUMAR_WINDOW_FILMS.PROJECT_TYPE.' . $params['project_type']);
         $this->TYPE_OF_FILM = config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_FILM.' . $params['type_of_film']);
+        $this->TYPE_OF_PROPERTY = config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_PROPERTY.' . $params['type_of_property']);
         $this->COMPANY_NAME = $params['company_name'];
         $this->WHATSAPP_MOBILE = $params['whatsapp_number'];
         $this->MOBILE = $params['mobile'];
         $this->STATE = config('constants.LLUMAR_WINDOW_FILMS.STATES.' . $params['state']);
+        $this->CITY = $params['city'];
         $this->EMAIL = $params['email'];
+        $this->PINCODE = $params['pincode'];
         $this->PRACTICE_NAME = config('constants.APP_NAME');
     }
 

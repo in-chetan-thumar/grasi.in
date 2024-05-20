@@ -75,7 +75,8 @@ return [
         'TYPE_OF_PROPERTY'=>[
           ''=>'Select type of property',
           '1'=>'Apartment',
-          '2'=>'Villa', '3'=>'Others',
+          '2'=>'Villa',
+          '3'=>'Others',
         ],
     ],
 
