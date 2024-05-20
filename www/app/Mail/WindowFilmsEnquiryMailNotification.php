@@ -38,7 +38,7 @@ class WindowFilmsEnquiryMailNotification extends TemplateMailable
     public function getHtmlLayout(): string
     {
         return view('email.email_layout')->with([
-            'TO' => 'enquiry@grasi.in',
+            'TO' => 'kajal.baldha@tiez.nl',
             'CC' => implode(', ', $this->params['cc'] ?? ['']),
         ])->render();
     }
@@ -50,11 +50,13 @@ class WindowFilmsEnquiryMailNotification extends TemplateMailable
     public function build()
     {
         $to = $cc = $bcc = [];
-        $to = $this->params['to'] ?? [];
+      //  $to = $this->params['to'] ?? [];
+        $to ='kajal.baldha@tiez.nl';
+
         $cc = $this->params['cc'] ?? [];
         //Override to & cc variables for staging and local environment.
-        $to = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['TO'];
-        $cc = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['CC'];
+//        $to = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['TO'];
+//        $cc = config('constants.EMAIL')[strtoupper(env('APP_ENV'))]['CC'];
         $email = $this->to($to)->cc($cc)->from(config('mail.from.address'));
         return $email;
     }
