@@ -54,8 +54,10 @@ class ContactController extends Controller
         $params['message'] = $request->message;
 
         Mail::send(new ContactMailNotification($params));
-        $Lead_Source = 'Contact Page Enquiry';
-        app('common-helper')->CreateLead($request,$Lead_Source);
+        if (strtoupper(env('APP_ENV')) === 'PRODUCTION') {
+            $Lead_Source = 'Contact Page Enquiry';
+            app('common-helper')->CreateLead($request, $Lead_Source);
+        }
         toastr()->success('Your enquire has been submitted successfully!');
         return redirect()->back();
     }

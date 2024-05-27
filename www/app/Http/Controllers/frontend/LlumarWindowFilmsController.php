@@ -54,7 +54,7 @@ class LlumarWindowFilmsController extends Controller
         $params['project_type'] = $request->project_type;
         $params['type_of_film'] = $request->type_of_film;
         $params['type_of_property'] = $request->type_of_property ?? '';
-        $params['company_name'] = $request->company_name ??'';
+        $params['company_name'] = $request->company_name ?? '';
         $params['mobile'] = $request->mobile;
         $params['whatsapp_number'] = $request->whatsapp_number;
         $params['state'] = $request->state;
@@ -65,11 +65,13 @@ class LlumarWindowFilmsController extends Controller
 
         if ($enquiry) {
             Mail::send(new WindowFilmsEnquiryMailNotification($params));
-            $Lead_Source = 'Window Films Enquiry';
-             app('common-helper')->CreateLead($request,$Lead_Source);
+            if (strtoupper(env('APP_ENV')) === 'PRODUCTION') {
+                $Lead_Source = 'Window Films Enquiry';
+                app('common-helper')->CreateLead($request, $Lead_Source);
+            }
             toastr()->success('Your enquire has been submitted successfully!');
-//             return redirect()->route('enquiry.thank.you');
-            return redirect()->back();
+            return redirect()->route('window.films.enquiry.thank.you');
+            // return redirect()->back();
         }
         toastr()->success('Your enquire not submitted successfully!');
         return redirect()->back();
@@ -105,5 +107,11 @@ class LlumarWindowFilmsController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function thankYou()
+    {
+        return view('landing_page.window-films-thank-you');
+
     }
 }

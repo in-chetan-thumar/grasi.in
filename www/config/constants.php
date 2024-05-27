@@ -22,7 +22,6 @@ return [
 
     'LLUMAR_WINDOW_FILMS' => [
         'STATES' => [
-            '' => 'Select state',
             'AN' => 'Andaman and Nicobar Islands',
             'AP' => 'Andhra Pradesh',
             'AR' => 'Arunachal Pradesh',
@@ -62,21 +61,18 @@ return [
             'WB' => 'West Bengal',
         ],
         'TYPE_OF_FILM' => [
-            '' => 'Select Type of Film Required',
             '1' => 'Solar Window Film',
             '2' => 'Decorative Window Film',
             '3' => 'Safety & Security Window Film',
         ],
         'PROJECT_TYPE' => [
-            '' => 'Select Project Type',
             '1' => 'Residential',
             '2' => 'Commercial',
         ],
-        'TYPE_OF_PROPERTY'=>[
-          ''=>'Select type of property',
-          '1'=>'Apartment',
-          '2'=>'Villa',
-          '3'=>'Others',
+        'TYPE_OF_PROPERTY' => [
+            '1' => 'Apartment',
+            '2' => 'Villa',
+            '3' => 'Others',
         ],
     ],
 

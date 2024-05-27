@@ -83,6 +83,10 @@
 </head>
 
 <body>
+
+    <div id="loader-overlay">
+        <div class="loader"></div>
+    </div>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHWHB2DS" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -140,6 +144,7 @@
                 <div class="col-md-6">
                     <div class="form-floating mb-3">
                         <select class="form-select" name="project_type" id="project_type">
+                            <option value="">Select Project Type</option>
                             @foreach (config('constants.LLUMAR_WINDOW_FILMS.PROJECT_TYPE') as $key => $value)
                                 <option value="{{ $key }}">{{ $value }}</option>
                             @endforeach
@@ -150,6 +155,7 @@
                 <div class="col-md-6">
                     <div class="form-floating mb-3">
                         <select class="form-select" name="type_of_film" id="floatingSelect1">
+                            <option value="">Select Type of Film Required</option>
                             @foreach (config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_FILM') as $key => $value)
                                 <option value="{{ $key }}">{{ $value }}</option>
                             @endforeach
@@ -162,6 +168,7 @@
                 <div class="col-md-12" id="residential_box" style="display: none;">
                     <div class="form-floating mb-3">
                         <select class="form-select" name="type_of_property" id="floatingSelect1">
+                            <option value="">Select type of property</option>
                             @foreach (config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_PROPERTY') as $key => $value)
                                 <option value="{{ $key }}">{{ $value }}</option>
                             @endforeach
@@ -206,6 +213,7 @@
                 <div class="col-md-12">
                     <div class="form-floating mb-3">
                         <select id="floatingSelect2" name="state" class="form-select">
+                            <option value="">Select state</option>
                             @foreach (config('constants.LLUMAR_WINDOW_FILMS.STATES') as $key => $value)
                                 <option value="{{ $key }}">{{ $value }}</option>
                             @endforeach
@@ -224,7 +232,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="pincode" id="floatingEadd" placeholder=""  oninput='this.value = this.value.replace(/[^0-9]/g, "")' maxlength="6" >
+                        <input type="text" class="form-control" name="pincode" id="floatingEadd" placeholder=""
+                            oninput='this.value = this.value.replace(/[^0-9]/g, "")' maxlength="6">
                         <label for="floatingEadd">Pin code</label>
                     </div>
                 </div>
@@ -1291,12 +1300,12 @@
             </li>
             <li>
                 <a href="https://www.youtube.com/@llumarindia" target="_blank">
-                <img src="{{ asset('assets/llumar_window_films/images/youtube.webp') }}" alt="YouTube"
+                    <img src="{{ asset('assets/llumar_window_films/images/youtube.webp') }}" alt="YouTube"
                         title="YouTube" />
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/company/68282904/admin/feed/posts/" target="_blank" >
+                <a href="https://www.linkedin.com/company/68282904/admin/feed/posts/" target="_blank">
                     <img src="{{ asset('assets/llumar_window_films/images/linked-in.webp') }}" alt="LinkedIn"
                         title="LinkedIn" />
                 </a>
@@ -1304,9 +1313,12 @@
         </ul>
         <div class="footer_info">
             <h6>Brought to India by </h6>
-            <a href="https://grasi.in/" target="_blank"><img src="{{ asset('assets/llumar_window_films/images/footer_img.webp') }}" alt="GRAS" title="GRAS" /></a>
+            <a href="https://grasi.in/" target="_blank"><img
+                    src="{{ asset('assets/llumar_window_films/images/footer_img.webp') }}" alt="GRAS"
+                    title="GRAS" /></a>
         </div>
-        <p>Handcrafted with <span> ❤ </span> by <a href="https://buzzmakers.in/" target="_blank"><span>Buzz Makers. </span></a></p>
+        <p>Handcrafted with <span> ❤ </span> by <a href="https://buzzmakers.in/" target="_blank"><span>Buzz Makers.
+                </span></a></p>
         <div class="footer_bottom"></div>
     </footer>
 
@@ -1338,26 +1350,26 @@
         function onSubmit(token) {
             $("#form_enquiry").submit();
         }
-        $(document).ready(function(){
+        $(document).ready(function() {
             $('.recent_video.owl-carousel').owlCarousel({
-                loop:false,
-                margin:10,
+                loop: false,
+                margin: 10,
                 items: 3,
                 nav: true,
                 dots: false,
-                video:true,
-                responsive:{
-                    0:{
-                        items:1
+                video: true,
+                responsive: {
+                    0: {
+                        items: 1
                     },
-                    568:{
-                        items:1
+                    568: {
+                        items: 1
                     },
-                    600:{
-                        items:3
+                    600: {
+                        items: 3
                     },
-                    1000:{
-                        items:3
+                    1000: {
+                        items: 3
                     }
                 }
             })
@@ -1365,7 +1377,7 @@
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             var $tabs = $('#horizontalTab');
             $tabs.responsiveTabs({
                 rotate: false,
@@ -1381,37 +1393,37 @@
                 },
                 activateState: function(e, state) {
                     //console.log(state);
-                    $('.info').html('Switched from <strong>' + state.oldState + '</strong> state to <strong>' + state.newState + '</strong> state!');
+                    $('.info').html('Switched from <strong>' + state.oldState +
+                        '</strong> state to <strong>' + state.newState + '</strong> state!');
                 }
             });
         });
-
     </script>
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function() {
             $('.trusted.owl-carousel').owlCarousel({
-                loop:true,
+                loop: true,
                 autoplay: true,
-                autoplayTimeout:3000,
-                autoplayHoverPause:true,
-                autoplaySpeed:5000,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                autoplaySpeed: 5000,
                 slideTransition: "linear",
                 smartSpeed: 5000,
-                margin:20,
+                margin: 20,
                 nav: false,
                 dots: false,
-                responsiveClass:true,
-                responsive:{
-                    0:{
-                        items:1
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
                     },
-                    600:{
-                        items:3,
+                    600: {
+                        items: 3,
                     },
-                    1000:{
-                        items:5,
-                        loop:true
+                    1000: {
+                        items: 5,
+                        loop: true
                     }
                 }
             })
@@ -1419,7 +1431,7 @@
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             var $tabs = $('#horizontalTab1');
             $tabs.responsiveTabs({
                 rotate: false,
@@ -1435,13 +1447,38 @@
                 },
                 activateState: function(e, state) {
                     //console.log(state);
-                    $('.info').html('Switched from <strong>' + state.oldState + '</strong> state to <strong>' + state.newState + '</strong> state!');
+                    $('.info').html('Switched from <strong>' + state.oldState +
+                        '</strong> state to <strong>' + state.newState + '</strong> state!');
                 }
             });
         });
-
     </script>
 </body>
+<script>
+    // Function to show the loader
+    function showLoader() {
+        var loader = document.getElementById('loader-overlay');
+        loader.style.display = 'flex'; // Display loader overlay
+    }
+
+    // Function to hide the loader
+    function hideLoader() {
+        var loader = document.getElementById('loader-overlay');
+        loader.style.display = 'none'; // Hide loader overlay
+    }
+
+    // Show loader whenever an event is running
+    function handlePageTransition() {
+        showLoader();
+    }
+
+    document.addEventListener('readystatechange', handlePageTransition);
+    window.addEventListener('beforeunload', handlePageTransition);
+    // Hide loader when all events are complete
+    window.addEventListener('load', function() {
+        hideLoader();
+    });
+</script>
 <script type="text/javascript">
     _linkedin_partner_id = "5920020";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];

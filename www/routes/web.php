@@ -46,6 +46,7 @@ Route::get('/grasi-llumar-enquiry/thank-you', [\App\Http\Controllers\frontend\En
 //LLumar Window films
 Route::get('/llumar-window-films', [\App\Http\Controllers\frontend\LlumarWindowFilmsController::class, 'index'])->name('llumar.window.films.index');
 Route::post('/llumar-window-films/store', [\App\Http\Controllers\frontend\LlumarWindowFilmsController::class, 'store'])->name('llumar.window.films.store');
+Route::get('/llumar-window-films/thank-you', [\App\Http\Controllers\frontend\LlumarWindowFilmsController::class, 'thankYou'])->name('window.films.enquiry.thank.you');
 
 if (config('constants.MOBILE_OTP_LOGIN') || config('constants.EMAIL_OTP_LOGIN')) {
     array_push($middleware, 'twofactor');

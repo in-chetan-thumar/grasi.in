@@ -61,8 +61,10 @@ class EnquiryLandingController extends Controller
 
         if ($enquiry) {
             Mail::send(new EnquiryMailNotification($params));
-            $Lead_Source = 'PPF Enquiry';
-            app('common-helper')->CreateLead($request,$Lead_Source);
+            if (strtoupper(env('APP_ENV')) === 'PRODUCTION') {
+                $Lead_Source = 'PPF Enquiry';
+                app('common-helper')->CreateLead($request, $Lead_Source);
+            }
             toastr()->success('Your enquire has been submitted successfully!');
             return redirect()->route('enquiry.thank.you');
         }

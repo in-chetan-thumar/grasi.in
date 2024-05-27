@@ -127,7 +127,7 @@ class CommonHelper
         }
     }
 
-    public function CreateLead($request,$Lead_Source)
+    public function CreateLead($request, $Lead_Source)
     {
         $url = 'https://www.zohoapis.in/crm/v2/functions/create_lead_from_website/actions/execute?auth_type=apikey&zapikey=1003.6bf41c62b6652557cb3dbe87b5649a1c.70669e4dfa0684f2c5672475b403ff9c';
         $response = Http::post($url, [
@@ -135,20 +135,37 @@ class CommonHelper
             'Last_Name' => $request->last_name ?? "",
             'Email' => $request->email ?? "",
             'Mobile' => $request->mobile ?? "",
-            'Subject' => $request->subject ?? 'Gras-i',
-            'Message' => $request->message ?? 'Founded in 1997, we have gained significant experience and expertise in surface solutions over the past two decades. As a reputable player in the industry today, we are consistently striving to offer innovative and high-quality solutions that cater to all customer needs while standing head-to-head with future trends.',
+            'Subject' => $request->subject ?? '',
+            'Message' => $request->message ?? '',
             'Brand' => $request->brand ?? "",
-            'State' => $request->state ?? "",
+            'State' => ($Lead_Source == 'Window Films Enquiry') ? config('constants.LLUMAR_WINDOW_FILMS.STATES.' . $request->state) : ($request->state ?? ""),
             'City' => $request->city ?? "",
             'Pin_code' => $request->pincode ?? "",
             'Lead_Source' => $Lead_Source,
-
-            'project_type' => $request->project_type ?? '',
-            'type_of_film' => $request->type_of_film ?? '',
-            'type_of_property' => $request->type_of_property ?? '',
-            'company_name' => $request->company_name ?? '',
-            'whatsapp_number' => $request->whatsapp_number,
+            'Project_Type' => (config('constants.LLUMAR_WINDOW_FILMS.PROJECT_TYPE.' . $request->project_type) ?? ''),
+            'Type_Of_Film_Required' => (config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_FILM.' . $request->type_of_film) ?? ''),
+            'Type_Of_Property' => (config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_PROPERTY.' . $request->type_of_property) ?? ''),
+            'Company' => $request->company_name ?? '',
+            'WhatsApp_Number' => $request->whatsapp_number ?? '',
         ]);
+        // $data = [
+        //     'First_Name' => $request->first_name ?? null,
+        //     'Last_Name' => $request->last_name ?? null,
+        //     'Email' => $request->email ?? null,
+        //     'Mobile' => $request->mobile ?? null,
+        //     'Subject' => $request->subject ?? '',
+        //     'Message' => $request->message ?? '',
+        //     'Brand' => $request->brand ?? '',
+        //     'State' => ($Lead_Source == 'Window Films Enquiry') ? config('constants.LLUMAR_WINDOW_FILMS.STATES.' . $request->state) : ($request->state ?? null),
+        //     'City' => $request->city ?? null,
+        //     'Pin_code' => $request->pincode ?? null,
+        //     'Lead_Source' => $Lead_Source,
+        //     'Project_Type' => $request->project_type ? config('constants.LLUMAR_WINDOW_FILMS.PROJECT_TYPE.' . $request->project_type) : null,
+        //     'Type_Of_Film_Required' => $request->type_of_film ? config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_FILM.' . $request->type_of_film) : null,
+        //     'Type_Of_Property' => $request->type_of_property ? config('constants.LLUMAR_WINDOW_FILMS.TYPE_OF_PROPERTY.' . $request->type_of_property) : null,
+        //     'Company' => $request->company_name ?? null,
+        //     'WhatsApp_Number' => $request->whatsapp_number ?? null,
+        // ];
         // if ($response->status() == 200) {
         //     toastr()->success('Your enquire has been submitted successfully! ' . $response->body());
         // } else {
