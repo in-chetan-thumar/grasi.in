@@ -20,7 +20,6 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PHWHB2DS');
     </script>
     <!-- End Google Tag Manager -->
-    <!-- Meta Tag -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content = "telephone=no">
@@ -41,6 +40,18 @@
     <link rel="stylesheet" href="{{ asset('assets/llumar_window_films/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/llumar_window_films/css/responsive-tabs.css') }}">
 
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11116955619"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'AW-11116955619');
+    </script>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -68,18 +79,6 @@
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=435501495476111&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11116955619"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'AW-11116955619');
-    </script>
 </head>
 
 <body>
