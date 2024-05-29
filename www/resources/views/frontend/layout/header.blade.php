@@ -54,8 +54,7 @@
                                                         </div>
                                                         <div class="col-lg-9">
                                                             <div class="megamenu_right">
-                                                                <a href="https://llumar.com/emea/en/automotive/"
-                                                                    target="blank">
+                                                                <a href="{{ route('enquiry.index') }}" target="blank">
                                                                     <h2>Automotive</h2>
                                                                 </a>
                                                                 <div class="row">
@@ -131,7 +130,7 @@
                                                         </div>
                                                         <div class="col-lg-9">
                                                             <div class="megamenu_right">
-                                                                <a href="https://llumar.com/emea/en/architectural/"
+                                                                <a href="{{ route('llumar.window.films.index') }}"
                                                                     target="blank">
                                                                     <h2>Architectural</h2>
                                                                 </a>
