@@ -7,7 +7,8 @@ return [
     //Emails
     'EMAIL' => [
         'LOCAL' => ['TO' => ['recipient@example.com'], 'CC' => []],
-        'PRODUCTION' => ['TO' => ['enquiry@grasi.in'], 'CC' => ['media@buzzmakers.in', 'social@buzzmakers.in', 'seobuzzmakers@gmail.com']],
+        // 'PRODUCTION' => ['TO' => ['enquiry@grasi.in'], 'CC' => ['media@buzzmakers.in', 'social@buzzmakers.in', 'seobuzzmakers@gmail.com']],
+        'PRODUCTION' => ['TO' => ['abhisek.khambhara@quantuminfoway.com'], 'CC' => []],
     ],
     'PER_PAGE' => 10,
     'SUPER_ADMIN' => 'Super Admin',

@@ -65,10 +65,10 @@ class LlumarWindowFilmsController extends Controller
 
         if ($enquiry) {
             Mail::send(new WindowFilmsEnquiryMailNotification($params));
-            if (strtoupper(env('APP_ENV')) === 'PRODUCTION') {
-                $Lead_Source = 'Window Films Enquiry';
-                app('common-helper')->CreateLead($request, $Lead_Source);
-            }
+            // if (strtoupper(env('APP_ENV')) === 'PRODUCTION') {
+            //     $Lead_Source = 'Window Films Enquiry';
+            //     app('common-helper')->CreateLead($request, $Lead_Source);
+            // }
             toastr()->success('Your enquire has been submitted successfully!');
             return redirect()->route('window.films.enquiry.thank.you');
             // return redirect()->back();
