@@ -37,8 +37,8 @@
 
         body {
             -webkit-text-size-adjust: none;
-            background-color: #00A6C0;
-            color: #718096;
+            background-color: #f4f4f4;
+            color: #333333;
             height: 100%;
             line-height: 1.4;
             margin: 0;
@@ -65,22 +65,22 @@
         /* Typography */
 
         h1 {
-            color: #3d4852;
-            font-size: 18px;
+            color: #333333;
+            font-size: 24px;
             font-weight: bold;
             margin-top: 0;
             text-align: left;
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: bold;
             margin-top: 0;
             text-align: left;
         }
 
         h3 {
-            font-size: 14px;
+            font-size: 18px;
             font-weight: bold;
             margin-top: 0;
             text-align: left;
@@ -104,7 +104,7 @@
             -premailer-cellpadding: 0;
             -premailer-cellspacing: 0;
             -premailer-width: 100%;
-            background-color: #00A6C0;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
             width: 100%;
@@ -127,7 +127,7 @@
         }
 
         .header a {
-            color: #3d4852;
+            color: #333333;
             font-size: 19px;
             font-weight: bold;
             text-decoration: none;
@@ -137,6 +137,8 @@
 
         .logo {
             width: 100%;
+            max-width: 150px;
+            height: auto;
         }
 
         /* Body */
@@ -145,7 +147,7 @@
             -premailer-cellpadding: 0;
             -premailer-cellspacing: 0;
             -premailer-width: 100%;
-            background-color: #00A6C0;
+            background-color: #ffffff;
             margin: 0;
             padding: 0;
             width: 100%;
@@ -159,12 +161,11 @@
             border-color: #e8e5ef;
             border-radius: 2px;
             border-width: 1px;
-            box-shadow: 0 2px 0 rgba(0, 0, 150, 0.025), 2px 4px 0 rgba(0, 0, 150, 0.015);
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.025), 2px 4px 0 rgba(0, 0, 0, 0.015);
             margin: 0 auto;
             padding: 0;
             width: 80%;
         }
-
 
         /* Tables */
 
@@ -194,10 +195,12 @@
             padding: 32px;
         }
 
+        /* Footer */
+
         .nhsuk-footer {
-            padding-bottom: 24px;
-            padding-top: 24px;
-            background-color: #d8dde0;
+            width: 100%;
+            padding: 24px 0;
+            background-color: #f4f4f4;
             border-top: 4px solid #00A6C0;
         }
 
@@ -205,24 +208,6 @@
             clear: both;
             content: '';
             display: block;
-        }
-
-        @media print {
-            .nhsuk-footer {
-                display: none;
-            }
-        }
-
-        @media (min-width: 40.0625em) {
-            .nhsuk-footer {
-                padding-bottom: 32px;
-            }
-        }
-
-        @media (min-width: 40.0625em) {
-            .nhsuk-footer {
-                padding-top: 32px;
-            }
         }
 
         .nhsuk-footer__list-item-link {
@@ -238,18 +223,18 @@
         }
 
         .nhsuk-footer__copyright {
+            width: 100%;
             font-weight: 400;
             font-size: 14px;
-            font-size: 0.875rem;
             line-height: 1.71429;
             color: #4c6272;
             margin-bottom: 0;
+            text-align: center;
         }
 
         @media (min-width: 40.0625em) {
             .nhsuk-footer__copyright {
                 font-size: 16px;
-                font-size: 1rem;
                 line-height: 1.5;
             }
         }
@@ -263,7 +248,7 @@
 
         @media (min-width: 48.0625em) {
             .nhsuk-footer__copyright {
-                width: 40%;
+                /* width: 40%; */
             }
         }
     </style>
@@ -277,8 +262,8 @@
                 <table class="content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
                     <tr>
                         <td class="header">
-                            <a href="" style="display: inline-block;">
-                                <img src="https://grasi.in/assets/frontend/images/logo.svg"
+                            <a href="{{ route('frontend.home') }}" style="display: inline-block;">
+                                <img src="https://grasi.in/assets/frontend/images/logo.svg" class="logo"
                                     alt="{{ config('constants.APP_NAME') }}" title="{{ config('constants.APP_NAME') }}">
                             </a>
                         </td>
@@ -287,7 +272,7 @@
                     <!-- Email Body -->
                     <tr>
                         <td class="body" width="100%" cellpadding="0" cellspacing="0">
-                            <table class="inner-body" align="center" width="80%" cellpadding="0" cellspacing="0"
+                            <table class="inner-body" align="center" width="570" cellpadding="0" cellspacing="0"
                                 role="presentation">
                                 <!-- Body content -->
                                 <tr>
@@ -295,34 +280,39 @@
                                         <?php echo '{{{ body }}}'; ?>
                                     </td>
                                 </tr>
+
                             </table>
                         </td>
                     </tr>
 
-                    @if (strtoupper(env('APP_ENV')) !== 'PRODUCTION')
-                        <table class="content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                            <tr>
-                                <td class="body" width="100%" cellpadding="0" cellspacing="0">
-                                    <table align="center" width="80%" cellpadding="0" cellspacing="0"
-                                        role="presentation">
-                                        <tr>
-                                            <td class="content-cell" style="background-color: white;">
+                    <?php if (strtoupper(env('APP_ENV')) !== 'PRODUCTION'): ?>
+                    <tr>
+                        <td class="body" width="100%" cellpadding="0" cellspacing="0">
+                            <table class="inner-body" align="center" width="570" cellpadding="0" cellspacing="0"
+                                role="presentation">
+                                <tr>
+                                    <td class="content-cell" style="background-color: white;">
+                                        Actual Email notification recipients: <br>
+                                        Email Notification - To: <?php echo $TO; ?> <br>
+                                        Email Notification - CC: <?php echo $CC; ?><br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <?php endif; ?>
 
-                                                <?php echo '
-                                                                                                    Actual Email notification recipients: <br>
-                                                                                                    Email Notification - To: ' .
-                                                    $TO .
-                                                    ' <br>
-                                                                                                    Email Notification - CC: ' .
-                                                    $CC .
-                                                    '<br>'; ?>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    @endif
+                    <!-- Footer -->
+                    <tr>
+                        <td>
+                            <div class="nhsuk-footer">
+                                <p class="nhsuk-footer__copyright">
+                                    <?php echo date('Y'); ?> &copy; {{ env('APP_NAME') }}. Handcrafted with <span> ❤ </span>
+                                    by <a href="https://buzzmakers.in/" target="_blank"><span>Buzz Makers.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
                 </table>
             </td>
         </tr>
