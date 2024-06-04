@@ -263,7 +263,7 @@
                     <tr>
                         <td class="header">
                             <a href="{{ route('frontend.home') }}" style="display: inline-block;">
-                                <img src="{{ url('assets/frontend/images/logo.svg') }}" class="logo"
+                                <img src="{{ url('assets/frontend/images/logo.png') }}" class="logo"
                                     alt="{{ config('constants.APP_NAME') }}" title="{{ config('constants.APP_NAME') }}">
                             </a>
                         </td>
