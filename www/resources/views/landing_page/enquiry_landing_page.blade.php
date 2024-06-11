@@ -1663,7 +1663,7 @@
         showLoader();
     }
 
-    document.addEventListener('readystatechange', handlePageTransition);
+    // document.addEventListener('readystatechange', handlePageTransition);
     window.addEventListener('beforeunload', handlePageTransition);
     // Hide loader when all events are complete
     window.addEventListener('load', function() {
