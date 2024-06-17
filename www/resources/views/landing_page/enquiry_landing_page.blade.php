@@ -116,7 +116,7 @@
             <div class="d-flex align-items-center justify-content-between">
                 <div class="main_logo">
                     <a href="{{ route('enquiry.index') }}"><img
-                            src="{{ asset('assets/images/landing_image/llumar_india.webp') }}" alt=""></a>
+                            src="{{ asset('assets/images/landing_image/llumar_india_logo.webp') }}" alt=""></a>
                 </div>
                 <div class="header_info">
                     <ul>
