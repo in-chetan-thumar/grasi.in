@@ -116,7 +116,7 @@
             <div class="d-flex align-items-center justify-content-between">
                 <div class="main_logo">
                     <a href="{{ route('enquiry.index') }}"><img
-                            src="{{ asset('assets/images/landing_image/LLumar_india.webp') }}" alt=""></a>
+                            src="{{ asset('assets/images/landing_image/llumar_india.webp') }}" alt=""></a>
                 </div>
                 <div class="header_info">
                     <ul>
@@ -364,13 +364,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
         <section class="how_it_works p0">
             <div class="row">
                 <div class="col-xxl-6 col-xl-6">
@@ -391,38 +384,20 @@
                     </figcaption>
                 </div>
             </div>
-
             <div class="screen_box">
-
                 <div class="video_wrapper">
-
                     <div class="play_btn btn_play video_icon">
-
                         <a id="play_video_two" class="play_video" title="Play">
-
-                            <img src="{{ asset('assets/images/landing_image/play-circle-regular.webp') }}" /></a>
-
+                            <img src="{{ asset('assets/images/landing_image/play_circle_regular.webp') }}" /></a>
                     </div>
-
                     <span class="video_close">
-
-                        <img src="{{ asset('assets/images/landing_image/paush-circle-regular.webp') }}" />
-
+                        <img src="{{ asset('assets/images/landing_image/paush_circle_regular.webp') }}" />
                     </span>
-
                     <!-- <img src="images/screen_img.webp" alt=""> -->
-
                     <div class="video_sub">
-
                         <div class="video">
-
                             <div class="video_thumbnail">
-
-
                                 <img src="{{ asset('assets/images/landing_image/video_img.webp') }}" />
-
-
-
                             </div>
 
 
@@ -519,7 +494,8 @@
                                     </button>
                                     <video data-state="pause">
                                         <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                        <source src="{{ asset('assets/images/landing_image/Reels/Reel_1.mp4') }}"
+                                        <source
+                                            src="{{ asset('assets/images/landing_image/insta_reels/reel_1.mp4') }}"
                                             type="video/mp4">
 
                                     </video>
@@ -559,7 +535,8 @@
                                     <video data-state="pause"
                                         poster="{{ asset('assets/images/landing_image/Reel_2_Thumbnail.webp') }}">
                                         <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                        <source src="{{ asset('assets/images/landing_image/Reels/Reel_2.mp4') }}"
+                                        <source
+                                            src="{{ asset('assets/images/landing_image/insta_reels/reel_2.mp4') }}"
                                             type="video/mp4">
 
                                     </video>
@@ -599,7 +576,8 @@
                                     <video data-state="pause"
                                         poster="{{ asset('assets/images/landing_image/Reel_3_Thumbnail.webp') }}">
                                         <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                        <source src="{{ asset('assets/images/landing_image/Reels/Reel_3.mp4') }}"
+                                        <source
+                                            src="{{ asset('assets/images/landing_image/insta_reels/reel_3.mp4') }}"
                                             type="video/mp4">
 
                                     </video>
@@ -638,7 +616,8 @@
                                     </button>
                                     <video data-state="pause">
                                         <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                        <source src="{{ asset('assets/images/landing_image/Reels/Reel_4.mp4') }}"
+                                        <source
+                                            src="{{ asset('assets/images/landing_image/insta_reels/reel_4.mp4') }}"
                                             type="video/mp4">
 
                                     </video>
@@ -677,7 +656,8 @@
                                     </button>
                                     <video data-state="pause">
                                         <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                        <source src="{{ asset('assets/images/landing_image/Reels/Reel_5.mp4') }}"
+                                        <source
+                                            src="{{ asset('assets/images/landing_image/insta_reels/reel_5.mp4') }}"
                                             type="video/mp4">
 
                                     </video>
@@ -716,7 +696,8 @@
                                     </button>
                                     <video data-state="pause">
                                         <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                        <source src="{{ asset('assets/images/landing_image/Reels/Reel_6.mp4') }}"
+                                        <source
+                                            src="{{ asset('assets/images/landing_image/insta_reels/reel_6.mp4') }}"
                                             type="video/mp4">
 
                                     </video>
@@ -755,7 +736,8 @@
                                     </button>
                                     <video data-state="pause">
                                         <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
-                                        <source src="{{ asset('assets/images/landing_image/Reels/Reel_7.mp4') }}"
+                                        <source
+                                            src="{{ asset('assets/images/landing_image/insta_reels/reel_7.mp4') }}"
                                             type="video/mp4">
 
                                     </video>
@@ -793,25 +775,25 @@
                         <div class="row g-4 align-items-center">
                             <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                                 <div class="feature_logo wow fadeInRight" data-wow-delay="0.2s">
-                                    <img src="{{ asset('assets/images/landing_image/feature_logo1.webp') }}"
+                                    <img src="{{ asset('assets/images/landing_image/feature_logo_1.webp') }}"
                                         alt="">
                                 </div>
                             </div>
                             <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                                 <div class="feature_logo wow fadeInRight" data-wow-delay="0.4s">
-                                    <img src="{{ asset('assets/images/landing_image/feature_logo2.webp') }}"
+                                    <img src="{{ asset('assets/images/landing_image/feature_logo_2.webp') }}"
                                         alt="">
                                 </div>
                             </div>
                             <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                                 <div class="feature_logo wow fadeInRight" data-wow-delay="0.6s">
-                                    <img src="{{ asset('assets/images/landing_image/Cannonball-club-logo.webp') }}"
+                                    <img src="{{ asset('assets/images/landing_image/Cannonball_club_logo.webp') }}"
                                         alt="">
                                 </div>
                             </div>
                             <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                                 <div class="feature_logo wow fadeInRight" data-wow-delay="0.8s">
-                                    <img src="{{ asset('assets/images/landing_image/feature_logo4.webp') }}"
+                                    <img src="{{ asset('assets/images/landing_image/feature_logo_4.webp') }}"
                                         alt="">
                                 </div>
                             </div>
