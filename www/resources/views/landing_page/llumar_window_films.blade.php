@@ -337,39 +337,39 @@
                         <div class="tab-pane fade show active" id="v-pills-solar" role="tabpanel"
                             aria-labelledby="v-pills-solar-tab">
                             <div class="tab_images_top">
-                                <img src="{{ asset('assets/llumar_window_films/images/residential-solar-control-hero-small-desktop.webp') }}"
+                                <img src="{{ asset('assets/llumar_window_films/images/residential_solar_control_hero_small_desktop.webp') }}"
                                     alt="Solar Window Film" title="Solar Window Film" />
                                 <h5>Solar Window Film</h5>
                             </div>
 
                             <div class="tab_images_bottom">
-                                <img src="{{ asset('assets/llumar_window_films/images/commercial-solar-control-hero-small-desktop.webp') }}"
+                                <img src="{{ asset('assets/llumar_window_films/images/commercial_solar_control_hero_small_desktop.webp') }}"
                                     alt="Solar Window Film" title="Solar Window Film" />
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-decorative" role="tabpanel"
                             aria-labelledby="v-pills-decorative-tab">
                             <div class="tab_images_top">
-                                <img src="{{ asset('assets/llumar_window_films/images/decorative-residential-hero-small-desktop.webp') }}"
+                                <img src="{{ asset('assets/llumar_window_films/images/decorative_residential_hero_small_desktop.webp') }}"
                                     alt="Decorative Window Film" title="Decorative Window Film" />
                                 <h5>Decorative Window Film</h5>
                             </div>
 
                             <div class="tab_images_bottom">
-                                <img src="{{ asset('assets/llumar_window_films/images/decorative-commercial-hero-small-desktop.webp') }}"
+                                <img src="{{ asset('assets/llumar_window_films/images/decorative_commercial_hero_small_desktop.webp') }}"
                                     alt="Decorative Window Film" title="Decorative Window Film" />
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-safety" role="tabpanel"
                             aria-labelledby="v-pills-safety-tab">
                             <div class="tab_images_top">
-                                <img src="{{ asset('assets/llumar_window_films/images/residential safety-security-hero-small-desktop.webp') }}"
+                                <img src="{{ asset('assets/llumar_window_films/images/residential_safety_security_hero_small_desktop.webp') }}"
                                     alt="Safety & Security Window Film" title="Safety & Security Window Film" />
                                 <h5>Safety & Security Window Film</h5>
                             </div>
 
                             <div class="tab_images_bottom">
-                                <img src="{{ asset('assets/llumar_window_films/images/commercial-solar-control-hero-small-desktop.webp') }}"
+                                <img src="{{ asset('assets/llumar_window_films/images/commercial_solar_control_hero_small_desktop.webp') }}"
                                     alt="Safety & Security Window Film" title="Safety & Security Window Film" />
                             </div>
                         </div>
@@ -389,33 +389,33 @@
                     <div class="recent_video owl-carousel owl-theme">
                         <div class="item-video">
                             <video width="258"
-                                height="400"poster="{{ asset('assets/llumar_window_films/images/Thumbnail_1.png') }}"
+                                height="400"poster="{{ asset('assets/llumar_window_films/images/thumbnail_1.webp') }}"
                                 controls>
-                                <source src="{{ asset('assets/llumar_window_films/images/Veronicas.mp4') }}"
+                                <source src="{{ asset('assets/llumar_window_films/images/veronicas.mp4') }}"
                                     type="video/mp4">
                             </video>
                         </div>
                         <div class="item-video">
                             <video width="258"
-                                height="400"poster="{{ asset('assets/llumar_window_films/images/Thumbnail_2.png') }}"
+                                height="400"poster="{{ asset('assets/llumar_window_films/images/thumbnail_2.webp') }}"
                                 controls>
-                                <source src="{{ asset('assets/llumar_window_films/images/Milind Soni.mp4') }}"
+                                <source src="{{ asset('assets/llumar_window_films/images/milind_soni.mp4') }}"
                                     type="video/mp4">
                             </video>
                         </div>
                         <div class="item-video">
                             <video width="258"
-                                height="400"poster="{{ asset('assets/llumar_window_films/images/Thumbnail_3.png') }}"
+                                height="400"poster="{{ asset('assets/llumar_window_films/images/thumbnail_3.webp') }}"
                                 controls>
-                                <source src="{{ asset('assets/llumar_window_films/images/Friends.mp4') }}"
+                                <source src="{{ asset('assets/llumar_window_films/images/friends.mp4') }}"
                                     type="video/mp4">
                             </video>
                         </div>
                         <div class="item-video">
                             <video width="258"
-                                height="400"poster="{{ asset('assets/llumar_window_films/images/Thumbnail_4.png') }}"
+                                height="400"poster="{{ asset('assets/llumar_window_films/images/thumbnail_4.webp') }}"
                                 controls>
-                                <source src="{{ asset('assets/llumar_window_films/images/Bombay Sweet Shop.mp4') }}"
+                                <source src="{{ asset('assets/llumar_window_films/images/bombay_sweet_shop.mp4') }}"
                                     type="video/mp4">
                             </video>
                         </div>
