@@ -42,7 +42,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> -->
+    <!-- <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon"> -->
     <link href="{{ asset('assets/landing_css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/landing_css/animate.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/landing_css/font-awesome.css') }}" rel="stylesheet" type="text/css">
@@ -116,7 +116,7 @@
             <div class="d-flex align-items-center justify-content-between">
                 <div class="main_logo">
                     <a href="{{ route('enquiry.index') }}"><img
-                            src="{{ asset('assets/images/landing_image/LLumar_india.png') }}" alt=""></a>
+                            src="{{ asset('assets/images/landing_image/LLumar_india.webp') }}" alt=""></a>
                 </div>
                 <div class="header_info">
                     <ul>
@@ -148,7 +148,7 @@
                             <h4 class="wow fadeInRight" data-wow-delay="0.4s"><span>World’s No. 1</span> paint
                                 protection film</h4>
                         </figcaption>
-                        <img src="{{ asset('assets/images/landing_image/banner.png') }}" alt=""
+                        <img src="{{ asset('assets/images/landing_image/banner.webp') }}" alt=""
                             class=" wow fadeInLeft" data-wow-delay="0.2s">
                     </div>
                 </div>
@@ -400,17 +400,17 @@
 
                         <a id="play_video_two" class="play_video" title="Play">
 
-                            <img src="{{ asset('assets/images/landing_image/play-circle-regular.png') }}" /></a>
+                            <img src="{{ asset('assets/images/landing_image/play-circle-regular.webp') }}" /></a>
 
                     </div>
 
                     <span class="video_close">
 
-                        <img src="{{ asset('assets/images/landing_image/paush-circle-regular.png') }}" />
+                        <img src="{{ asset('assets/images/landing_image/paush-circle-regular.webp') }}" />
 
                     </span>
 
-                    <!-- <img src="images/screen_img.png" alt=""> -->
+                    <!-- <img src="images/screen_img.webp" alt=""> -->
 
                     <div class="video_sub">
 
@@ -419,7 +419,7 @@
                             <div class="video_thumbnail">
 
 
-                                <img src="{{ asset('assets/images/landing_image/video_img.jpg') }}" />
+                                <img src="{{ asset('assets/images/landing_image/video_img.webp') }}" />
 
 
 
@@ -452,7 +452,7 @@
                             <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <figure class="what_we_done_box wow fadeInUp" data-wow-delay="0.2s">
                                     <div class="what_we_done_box_icn">
-                                        <img src="{{ asset('assets/images/landing_image/maskgroup.png') }}"
+                                        <img src="{{ asset('assets/images/landing_image/maskgroup.webp') }}"
                                             alt="">
                                     </div>
                                     <figcaption>
@@ -464,7 +464,7 @@
                             <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <figure class="what_we_done_box wow fadeInUp" data-wow-delay="0.4s">
                                     <div class="what_we_done_box_icn">
-                                        <img src="{{ asset('assets/images/landing_image/maskgroup.png') }}"
+                                        <img src="{{ asset('assets/images/landing_image/maskgroup.webp') }}"
                                             alt="">
                                     </div>
                                     <figcaption>
@@ -557,7 +557,7 @@
 
                                     </button>
                                     <video data-state="pause"
-                                        poster="{{ asset('assets/images/landing_image/Reel_2_Thumbnail.jpg') }}">
+                                        poster="{{ asset('assets/images/landing_image/Reel_2_Thumbnail.webp') }}">
                                         <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
                                         <source src="{{ asset('assets/images/landing_image/Reels/Reel_2.mp4') }}"
                                             type="video/mp4">
@@ -597,7 +597,7 @@
 
                                     </button>
                                     <video data-state="pause"
-                                        poster="{{ asset('assets/images/landing_image/Reel_3_Thumbnail.jpg') }}">
+                                        poster="{{ asset('assets/images/landing_image/Reel_3_Thumbnail.webp') }}">
                                         <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
                                         <source src="{{ asset('assets/images/landing_image/Reels/Reel_3.mp4') }}"
                                             type="video/mp4">
@@ -793,25 +793,25 @@
                         <div class="row g-4 align-items-center">
                             <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                                 <div class="feature_logo wow fadeInRight" data-wow-delay="0.2s">
-                                    <img src="{{ asset('assets/images/landing_image/feature_logo1.png') }}"
+                                    <img src="{{ asset('assets/images/landing_image/feature_logo1.webp') }}"
                                         alt="">
                                 </div>
                             </div>
                             <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                                 <div class="feature_logo wow fadeInRight" data-wow-delay="0.4s">
-                                    <img src="{{ asset('assets/images/landing_image/feature_logo2.png') }}"
+                                    <img src="{{ asset('assets/images/landing_image/feature_logo2.webp') }}"
                                         alt="">
                                 </div>
                             </div>
                             <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                                 <div class="feature_logo wow fadeInRight" data-wow-delay="0.6s">
-                                    <img src="{{ asset('assets/images/landing_image/Cannonball-club-logo.png') }}"
+                                    <img src="{{ asset('assets/images/landing_image/Cannonball-club-logo.webp') }}"
                                         alt="">
                                 </div>
                             </div>
                             <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                                 <div class="feature_logo wow fadeInRight" data-wow-delay="0.8s">
-                                    <img src="{{ asset('assets/images/landing_image/feature_logo4.png') }}"
+                                    <img src="{{ asset('assets/images/landing_image/feature_logo4.webp') }}"
                                         alt="">
                                 </div>
                             </div>
@@ -995,17 +995,17 @@
             <div class="container">
                 <div>
                     <a href="https://www.instagram.com/llumarindia" target="_blank"><img
-                            src="{{ asset('assets/images/landing_image/1.png') }}" class="footer-icon"></a>
+                            src="{{ asset('assets/images/landing_image/1.webp') }}" class="footer-icon"></a>
                     <a href="https://www.facebook.com/LLumarIndia" target="_blank"><img
-                            src="{{ asset('assets/images/landing_image/2.png') }}" class="footer-icon"></a>
+                            src="{{ asset('assets/images/landing_image/2.webp') }}" class="footer-icon"></a>
                     <a href="https://www.youtube.com/channel/UCcEuRwXA9rl4kz5A6N2q-5w" target="_blank"><img
-                            src="{{ asset('assets/images/landing_image/3.png') }}" class="footer-icon"></a>
+                            src="{{ asset('assets/images/landing_image/3.webp') }}" class="footer-icon"></a>
                     <a href="https://www.linkedin.com/company/68282904/admin/feed/posts/" target="_blank"> <img
-                            src="{{ asset('assets/images/landing_image/4.png') }}" class="footer-icon"></a>
+                            src="{{ asset('assets/images/landing_image/4.webp') }}" class="footer-icon"></a>
                 </div><br>
                 <ul>
                     <li>Brought to India by</li>
-                    <li><img src="{{ asset('assets/images/landing_image/footer_img.png') }}" alt=""></li>
+                    <li><img src="{{ asset('assets/images/landing_image/footer_img.webp') }}" alt=""></li>
                 </ul><br>
                 <p>Handcrafted with ❤ by <a href="https://www.buzzmakers.in/" target="_blank">Buzz Makers.</a></p>
             </div>
@@ -1243,8 +1243,8 @@
     const countriesByAbbreviation = [
         //   {
         //     country: "MBW",
-        //     abbreviation: "images/bmw.png",
-        //     imagelogo: "images/bmw.png"
+        //     abbreviation: "images/bmw.webp",
+        //     imagelogo: "images/bmw.webp"
         //   }
         {
             country: "BMW",
