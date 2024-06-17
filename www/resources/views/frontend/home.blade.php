@@ -714,11 +714,11 @@
     </section>
 
     <!--
-                                        <section class="instagram_story">
-                                           <div class="container">
+                                            <section class="instagram_story">
+                                               <div class="container">
 
-                                           </div>
-                                        </section> -->
+                                               </div>
+                                            </section> -->
 
 
 
@@ -769,7 +769,7 @@
                     <div class="swiper-slide">
                         <video class="insta-video" controls="" id="reel3"
                             poster="{{ asset('assets/frontend/images/Reel_Covers/7.webp') }}">
-                            <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp44') }}"
+                            <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp4') }}"
                                 type="video/mp4">
                             <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp4') }}"
                                 type="video/ogg">
