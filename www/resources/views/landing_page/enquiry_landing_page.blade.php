@@ -90,6 +90,17 @@
         gtag('config', 'AW-11116955619');
     </script>
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7WYHDH3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BE7WYHDH3H');
+</script>
+
+
 </head>
 
 <body>
