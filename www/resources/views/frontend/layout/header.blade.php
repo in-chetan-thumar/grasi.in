@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="d-flex align-items-center justify-content-end">
                     <ul>
-                        <li><a href="https://www.llumarppf.in/Ewar/Dealer/login.php" target="blank"
+                        <li><a href="https://www.llumarppf.in/Ewar/Dealer/login.php" target="_blank"
                                 class="btn btn-primary">LLumar E-warranty</a></li>
                         <li><a href="{{ route('frontend.locate') }}" class="btn btn-primary">Locate LLumar Dealer</a>
                         </li>
@@ -54,28 +54,28 @@
                                                         </div>
                                                         <div class="col-lg-9">
                                                             <div class="megamenu_right">
-                                                                <a href="{{ route('enquiry.index') }}" target="blank">
+                                                                <a href="{{ route('enquiry.index') }}" target="_blank">
                                                                     <h2>Automotive</h2>
                                                                 </a>
                                                                 <div class="row">
                                                                     <div class="col-xl-3 col-lg-3">
                                                                         <div class="megamenu_wrpr">
                                                                             <a href="https://llumar.com/emea/en/automotive/window-tint/"
-                                                                                target="blank">
+                                                                                target="_blank">
                                                                                 <h4>Window Tint</h4>
                                                                             </a>
                                                                             <ul>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/window-tint/ceramic/"
-                                                                                        target="blank">Ceramic</a></li>
+                                                                                        target="_blank">Ceramic</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/window-tint/metallized/"
-                                                                                        target="blank">Metallized</a>
+                                                                                        target="_blank">Metallized</a>
                                                                                 </li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/window-tint/dyed/"
-                                                                                        target="blank">Dyed</a></li>
+                                                                                        target="_blank">Dyed</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/window-tint/clear/"
-                                                                                        target="blank">Clear</a></li>
+                                                                                        target="_blank">Clear</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/window-tint/benefits/"
-                                                                                        target="blank">Window Tint
+                                                                                        target="_blank">Window Tint
                                                                                         Benefits</a></li>
                                                                             </ul>
                                                                         </div>
@@ -83,23 +83,23 @@
                                                                     <div class="col-xl-3 col-lg-3">
                                                                         <div class="megamenu_wrpr">
                                                                             <a href="https://llumar.com/emea/en/automotive/paint-protection-film/"
-                                                                                target="blank">
+                                                                                target="_blank">
                                                                                 <h4>Paint Protection Film</h4>
                                                                             </a>
                                                                             <ul>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/valor/"
-                                                                                        target="blank">Valor</a></li>
+                                                                                        target="_blank">Valor</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/platinum-matte/"
-                                                                                        target="blank">Platinum
+                                                                                        target="_blank">Platinum
                                                                                         Matte</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/platinum-extra/"
-                                                                                        target="blank">Platinum
+                                                                                        target="_blank">Platinum
                                                                                         Extra</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/gloss-matte/"
-                                                                                        target="blank">Gloss and
+                                                                                        target="_blank">Gloss and
                                                                                         Matte</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/select-black/"
-                                                                                        target="blank">Select Black</a>
+                                                                                        target="_blank">Select Black</a>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -107,7 +107,7 @@
                                                                     <div class="col-xl-3 col-lg-3">
                                                                         <div class="megamenu_wrpr">
                                                                             <a href="https://llumar.com/emea/en/automotive/window-film-ppf-viewer/"
-                                                                                target="blank">
+                                                                                target="_blank">
                                                                                 <h4>Window Film and PPF Viewer</h4>
                                                                             </a>
                                                                         </div>
@@ -131,28 +131,29 @@
                                                         <div class="col-lg-9">
                                                             <div class="megamenu_right">
                                                                 <a href="{{ route('llumar.window.films.index') }}"
-                                                                    target="blank">
+                                                                    target="_blank">
                                                                     <h2>Architectural</h2>
                                                                 </a>
                                                                 <div class="row">
                                                                     <div class="col-xl-3 col-lg-3">
                                                                         <div class="megamenu_wrpr">
                                                                             <a href="https://llumar.com/emea/en/architectural/residential-window-film/"
-                                                                                target="blank">
+                                                                                target="_blank">
                                                                                 <h4>Residential</h4>
                                                                             </a>
                                                                             <ul>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/solar/"
-                                                                                        target="blank">Solar Control</a>
+                                                                                        target="_blank">Solar
+                                                                                        Control</a>
                                                                                 </li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/decorative/"
-                                                                                        target="blank">Decorative</a>
+                                                                                        target="_blank">Decorative</a>
                                                                                 </li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/safety-security/"
-                                                                                        target="blank">Safety &
+                                                                                        target="_blank">Safety &
                                                                                         Security</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/benefits/"
-                                                                                        target="blank">Window Film
+                                                                                        target="_blank">Window Film
                                                                                         Benefits</a></li>
                                                                             </ul>
                                                                         </div>
@@ -160,21 +161,21 @@
                                                                     <div class="col-xl-3 col-lg-3">
                                                                         <div class="megamenu_wrpr">
                                                                             <a href="https://llumar.com/emea/en/architectural/commercial-window-film/"
-                                                                                target="blank">
+                                                                                target="_blank">
                                                                                 <h4>Commercial</h4>
                                                                             </a>
                                                                             <ul>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/commercial-window-film/solar/"
-                                                                                        target="blank">Solar
+                                                                                        target="_blank">Solar
                                                                                         Control</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/commercial-window-film/decorative/"
-                                                                                        target="blank">Decorative</a>
+                                                                                        target="_blank">Decorative</a>
                                                                                 </li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/commercial-window-film/safety-security/"
-                                                                                        target="blank">Safety &
+                                                                                        target="_blank">Safety &
                                                                                         Security</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/commercial-window-film/benefits/"
-                                                                                        target="blank">Commercial
+                                                                                        target="_blank">Commercial
                                                                                         Benefits</a></li>
                                                                             </ul>
                                                                         </div>
@@ -182,36 +183,36 @@
                                                                     <div class="col-lg-3 col-lg-3">
                                                                         <div class="megamenu_wrpr">
                                                                             <a href="https://llumar.com/emea/en/architectural/interactive-window-film-tools/"
-                                                                                target="blank">
+                                                                                target="_blank">
                                                                                 <h4>Resources</h4>
                                                                             </a>
                                                                             <ul>
                                                                                 <li><a href="https://llumar.com/emea/en/dealers/dealer-resources/window-film-spec-sheets/"
-                                                                                        target="blank">Spec Sheets</a>
+                                                                                        target="_blank">Spec Sheets</a>
                                                                                 </li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/interactive-window-film-tools/performance-comparison/"
-                                                                                        target="blank">Product
+                                                                                        target="_blank">Product
                                                                                         Comparison</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/interactive-window-film-tools/energy-savings-calculator/"
-                                                                                        target="blank">Energy Savings
+                                                                                        target="_blank">Energy Savings
                                                                                         Calaculator</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/interactive-window-film-tools/downloads/"
-                                                                                        target="blank">Downloads
+                                                                                        target="_blank">Downloads
                                                                                         Library</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-lg-3 col-lg-3">
                                                                         <div class="megamenu_wrpr">
-                                                                            <a href="" target="blank">
+                                                                            <a href="" target="_blank">
                                                                                 <h4>Film Viewers</h4>
                                                                             </a>
                                                                             <ul>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/interactive-window-film-tools/solar-decorative-film-viewer/"
-                                                                                        target="blank">Commercial</a>
+                                                                                        target="_blank">Commercial</a>
                                                                                 </li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/interactive-window-film-tools/viewer-for-home/"
-                                                                                        target="blank">Residential</a>
+                                                                                        target="_blank">Residential</a>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -248,7 +249,7 @@
                                 </li>
                                 {{-- <li><a href="casestudies.php">Casestudies</a></li> --}}
                                 <li><a href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/"
-                                        target="blank">Careers</a></li>
+                                        target="_blank">Careers</a></li>
                                 <li><a href="{{ route('contact.index') }}">Contact</a></li>
                             </ul>
                         </nav>

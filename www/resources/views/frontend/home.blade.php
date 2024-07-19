@@ -80,7 +80,7 @@
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                             <figure class="solution_box hover_box">
-                                <a href="{{ route('llumar.window.films.index') }}" target="blank" class="hover_img">
+                                <a href="{{ route('llumar.window.films.index') }}" target="_blank" class="hover_img">
                                     <img src="{{ asset('assets/frontend/images/solutionimg1.webp') }}" alt="image">
                                     <figcaption>
                                         <h2>Architectural<br> Films</h2>
@@ -90,7 +90,7 @@
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                             <figure class="solution_box hover_box">
-                                <a href="{{ route('enquiry.index') }}" target="blank" class="hover_img">
+                                <a href="{{ route('enquiry.index') }}" target="_blank" class="hover_img">
                                     <img src="{{ asset('assets/frontend/images/solutionimg2.webp') }}" alt="image">
                                     <figcaption>
                                         <h2>Automotive<br> Films</h2>
