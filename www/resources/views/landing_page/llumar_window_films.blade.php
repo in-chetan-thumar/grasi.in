@@ -1340,7 +1340,13 @@
     <script type="text/javascript" src="{{ asset('assets/vendor/jsvalidation/js/jsvalidation.js') }}"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     {!! JsValidator::formRequest('App\Http\Requests\LlumarWindowFilmRequest', '#form_enquiry') !!}
-
+<script 
+      type="text/javascript"
+      src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+      id="aisensy-wa-widget"
+      widget-id="dau6nk"
+    >
+    </script>
     <script>
         $(document).ready(function() {
             $('#project_type').change(function() {
