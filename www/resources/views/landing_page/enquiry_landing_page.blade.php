@@ -1034,8 +1034,13 @@
     {!! JsValidator::formRequest('App\Http\Requests\EnquiryRequest', '#form_enquiry') !!}
 
 </body>
-<script type="text/javascript" src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js" id="aisensy-wa-widget"
-    widget-id="dau6nk"></script>
+ <script 
+      type="text/javascript"
+      src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+      id="aisensy-wa-widget"
+      widget-id="CKwKu7"
+    >
+    </script>
 <script type="text/javascript">
     _linkedin_partner_id = "5920020";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
