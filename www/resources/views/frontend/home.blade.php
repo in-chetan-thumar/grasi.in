@@ -56,6 +56,19 @@
                         </div>
                     </div>
 
+                    <div class="swiper-slide">
+                        <img srcset="{{ asset('assets/frontend/images/banner4.webp') }}"
+                            src="{{ asset('assets/frontend/images/banner4.webp') }}" alt="image" />
+                        <div class="banner_figcaption">
+                            <div class="container">
+                                <figcaption>
+                                    <h2>Safety Glazing: Superior Heat Rejection & Anti-Glare Clarity</h2>
+                                    <p>For a Cooler, Clearer Drive!</p>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="swiper-pagination-banner"></div>
             </div>
@@ -122,7 +135,7 @@
 
     {{-- youtub video  --}}
     <section class="video p0">
-        <a href="https://youtu.be/Kr4SVDffpZk" data-fancybox="group">
+        <a href="https://www.youtube.com/embed/EY6t-LLVGyg?si=GqMYl2IS6Ii_Py4W" data-fancybox="group">
             <div class="video_icon">
                 <svg viewBox="0 0 462.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                     <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -132,7 +145,7 @@
                     </g>
                 </svg>
             </div>
-            <img src="{{ asset('assets/frontend/images/videoimg.webp') }}" alt="image">
+            <img src="{{ asset('assets/frontend/images/llumar-showreel-cover-image.webp') }}" alt="image">
         </a>
     </section>
 
@@ -196,7 +209,7 @@
                         <div class="row g-4 align-items-center flex-row-reverse">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                                 <div class="whygrass_img">
-                                    <img src="{{ asset('assets/frontend/images/whygrassimg.webp') }}" alt="image">
+                                    <img src="{{ asset('assets/frontend/images/why-grasI.webp') }}" alt="image">
                                 </div>
                             </div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -714,11 +727,11 @@
     </section>
 
     <!--
-                                            <section class="instagram_story">
-                                               <div class="container">
+                                                                                                                                            <section class="instagram_story">
+                                                                                                                                               <div class="container">
 
-                                               </div>
-                                            </section> -->
+                                                                                                                                               </div>
+                                                                                                                                            </section> -->
 
 
 
@@ -743,7 +756,7 @@
                     </div>
                 </div>
                 {{-- insta reels  --}}
-                <div class="swiper-wrapper">
+                {{-- 
                     <div class="swiper-slide">
                         <video class="insta-video" controls="" id="reel1"
                             poster="{{ asset('assets/frontend/images/Reel_Covers/4.webp') }}">
@@ -753,6 +766,41 @@
                                 type="video/ogg">
                         </video>
                         <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reel1">
+                            <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
+                        </div>
+                    </div> --}}
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video class="insta-video" controls="" id="reel1"
+                            poster="{{ asset('assets/frontend/images/Reel_Covers/8.webp') }}">
+                            <source src="{{ asset('assets/frontend/images/videos/llumar-film.mp4') }}" type="video/mp4">
+                            <source src="{{ asset('assets/frontend/images/videos/llumar-film.mp4') }}" type="video/ogg">
+                        </video>
+                        <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reel1">
+                            <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="insta-video" controls="" id="reel7"
+                            poster="{{ asset('assets/frontend/images/Reel_Covers/9.webp') }}">
+                            <source src="{{ asset('assets/frontend/images/videos/your-car-is-your-first-love.mp4') }}"
+                                type="video/mp4">
+                            <source src="{{ asset('assets/frontend/images/videos/your-car-is-your-first-love.mp4') }}"
+                                type="video/ogg">
+                        </video>
+                        <div class="video-controls1 video-icon insta-play-icon reel7" data-reel="reel7">
+                            <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="insta-video" controls="" id="reel6"
+                            poster="{{ asset('assets/frontend/images/Reel_Covers/10.webp') }}">
+                            <source src="{{ asset('assets/frontend/images/videos/dealer-meet-2024.mp4') }}"
+                                type="video/mp4">
+                            <source src="{{ asset('assets/frontend/images/videos/dealer-meet-2024.mp4') }}"
+                                type="video/ogg">
+                        </video>
+                        <div class="video-controls1 video-icon insta-play-icon reel6" data-reel="reel6">
                             <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
                         </div>
                     </div>
@@ -766,18 +814,16 @@
                             <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <video class="insta-video" controls="" id="reel3"
-                            poster="{{ asset('assets/frontend/images/Reel_Covers/7.webp') }}">
-                            <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp4') }}"
-                                type="video/mp4">
-                            <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp4') }}"
-                                type="video/ogg">
-                        </video>
-                        <div class="video-controls1 video-icon insta-play-icon reel3" data-reel="reel3">
-                            <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
-                        </div>
+                    {{-- <div class="swiper-slide">
+                    <video class="insta-video" controls="" id="reel3"
+                        poster="{{ asset('assets/frontend/images/Reel_Covers/7.webp') }}">
+                        <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp4') }}" type="video/mp4">
+                        <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp4') }}" type="video/ogg">
+                    </video>
+                    <div class="video-controls1 video-icon insta-play-icon reel3" data-reel="reel3">
+                        <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
                     </div>
+                </div> --}}
                     {{-- <div class="swiper-slide">
                         <video class="insta-video" controls="" id="reel2"
                             poster="{{ asset('assets/frontend/images/Reel_Covers/5.webp') }}">
