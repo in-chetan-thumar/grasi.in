@@ -2821,20 +2821,28 @@ video {
 .countries-input,
 .countries-list,
 .locations-input,
-.locations-list {
+.locations-list,
+.customer-type-input,
+.customer-type-list,
+.product-category-list,
+.product-category-input {
     border: none;
     box-sizing: border-box;
     width: 100%;
 }
 
 .countries-input-container,
-.locations-input-container {
+.locations-input-container,
+.customer-type-input-container,
+.product-category-input-container {
     /*height: 2.5rem;*/
     position: relative;
 }
 
 .countries-input,
-.locations-input {
+.locations-input,
+.customer-type-input,
+.product-category-input {
     height: 2.5rem;
     padding: 1em 0.5em;
     position: relative;
@@ -2842,11 +2850,15 @@ video {
     transition-delay: 0.2s;
 }
 .countries-input:focus + .input-underline,
-.locations-input:focus + .input-underline {
+.locations-input:focus + .input-underline,
+.customer-type-input:focus + .input-underline,
+.product-category-input:focus + .input-underline {
     transform: scaleY(0);
 }
 .countries-input:focus ~ .input-arrow,
-.locations-input:focus ~ .input-arrow {
+.locations-input:focus ~ .input-arrow,
+.customer-type-input:focus ~ .input-arrow,
+.product-category-input:focus + .input-arrow  {
     transform: rotate(180deg);
 }
 
@@ -2870,7 +2882,9 @@ video {
 }
 
 .countries-list-container,
-.locations-list-container {
+.locations-list-container,
+.customer-type-list-container,
+.product-category-list-container {
     box-shadow: 0 8px 15px 0 rgba(33, 33, 33, 0.2);
     opacity: 0;
     position: relative;
@@ -2887,7 +2901,9 @@ video {
     pointer-events: none;
 }
 .countries-list-container.visible,
-.locations-list-container.visible {
+.locations-list-container.visible,
+.customer-type-list-container.visible,
+.product-category-list-container.visible {
     opacity: 1;
     transform: scaleY(1);
     visibility: visible;
@@ -2895,7 +2911,9 @@ video {
 }
 
 .countries-list,
-.locations-list {
+.locations-list,
+.customer-type-list,
+.product-category-list {
     align-content: middle;
     display: flex;
     flex-wrap: wrap;
@@ -2907,7 +2925,9 @@ video {
 }
 
 .country,
-.location {
+.location,
+.customer-type,
+.product-category {
     cursor: pointer;
     padding: 5px 5px;
     transition: background 0.5s ease;
@@ -2932,28 +2952,38 @@ video {
 }
 
 .country:hover,
-.location:hover {
+.location:hover,
+.customer-type:hover,
+.product-category:hover {
     background: #000000;
     color: #ffffff;
 }
 .country span,
-.location span {
+.location span,
+.customer-type span,
+.product-category span {
     box-sizing: border-box;
     display: inline-block;
 }
 
 .country--abbreviation,
-.location--abbreviation {
+.location--abbreviation,
+.customer-type--abbreviation,
+.product-category--abbreviation {
     padding: 0;
     width: 0;
 }
 
 .country--name,
-.location--name {
+.location--name,
+.customer-type--name,
+.product-category--name {
     width: 78%;
 }
 .countries-list li + li,
-.locations-list li + li {
+.locations-list li + li,
+.customer-type-list li + li,
+.product-category-list li + li {
     margin-top: 5px;
 }
 

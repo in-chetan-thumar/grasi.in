@@ -24,14 +24,17 @@ class EnquiryRequest extends FormRequest
     public function rules()
     {
         return [
-            'first_name'=>'required',
-            'last_name'=>'required',
-            'brand'=>'required',
-            'state'=>'required',
-            'city'=>'required',
-            'pincode'=>'required|numeric|digits:6',
-            'mobile'=>'required|numeric|digits:10',
-            'email'=>'required',
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'product_category' => 'required',
+            'customer_type' => 'required',
+            'brand' => 'required',
+            'model' => 'required',
+            'state' => 'required',
+            'city' => 'required',
+            'pincode' => 'required|numeric|digits:6',
+            'mobile' => 'required|numeric|digits:10',
+            'email' => 'required',
         ];
     }
 

@@ -51,7 +51,10 @@ class EnquiryLandingController extends Controller
         $params = [];
         $params['first_name'] = $request->first_name;
         $params['last_name'] = $request->last_name;
-        $params['brand'] = $request->brand;
+        $params['product_category'] = $request->product_category;
+        $params['customer_type'] = $request->customer_type;
+        $params['model'] = $request->model ?? '';
+        $params['brand'] = $request->brand ?? '';
         $params['state'] = $request->state;
         $params['city'] = $request->city;
         $params['pincode'] = $request->pincode;
@@ -64,6 +67,13 @@ class EnquiryLandingController extends Controller
             if (strtoupper(env('APP_ENV')) === 'PRODUCTION') {
                 $Lead_Source = 'PPF Enquiry';
                 app('common-helper')->CreateLead($request, $Lead_Source);
+
+                $params_for_whatsapp_message = [];
+                $params_for_whatsapp_message['image_url'] = url('assets/images/Llumar_Protection_Creative.png');
+                $params_for_whatsapp_message['image_filename'] = 'Llumar_Protection_Creative';
+                $params_for_whatsapp_message['mobile'] = $request->mobile;
+                $params_for_whatsapp_message['campaign_name'] = env('AISENSY_LLUMAR_ENQUIRY_THANK_YOU_CAMPAIGN_NAME');
+                app('common-helper')->sendAisensyWhatsAppMessage($params_for_whatsapp_message);
             }
             toastr()->success('Your enquire has been submitted successfully!');
             return redirect()->route('enquiry.thank.you');

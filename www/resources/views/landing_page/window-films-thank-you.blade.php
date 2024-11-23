@@ -127,7 +127,7 @@
 
         <section class="thanks_page">
             <div class="container">
-                <img src="{{ asset('assets/images/landing_image/thanks_img.png') }}" alt="" />
+                <img src="{{ asset('assets/images/landing_image/thanks_img.webp') }}" alt="" />
                 <h3>Thank You!</h3>
                 <p>
                     Information Submitted Successfully, We will contact you
@@ -141,7 +141,7 @@
                 <ul>
                     <li>Brought to India by</li>
                     <li>
-                        <img src="{{ asset('assets/images/landing_image/footer_img.png') }}" alt="" />
+                        <img src="{{ asset('assets/images/landing_image/footer_img.webp') }}" alt="" />
                     </li>
                 </ul>
                 <br />

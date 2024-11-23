@@ -28,7 +28,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="shortcut icon" href="{{ asset('assets/images/landing_image/favicon.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/images/landing_image/favicon.webp') }}" type="image/x-icon">
     <link href="{{ asset('assets/landing_css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/landing_css/animate.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/landing_css/font-awesome.css') }}" rel="stylesheet" type="text/css">
@@ -123,7 +123,7 @@
 
             <div class="container">
 
-                <img src="{{ asset('assets/images/landing_image/thanks_img.png') }}" alt="">
+                <img src="{{ asset('assets/images/landing_image/thanks_img.webp') }}" alt="">
                 <h3>Thank You!</h3>
                 <p>Information Submitted Successfully, We will contact you soon.</p>
 
@@ -137,7 +137,7 @@
             <div class="container">
                 <ul>
                     <li>Brought to India by</li>
-                    <li><img src="{{ asset('assets/images/landing_image/footer_img.png') }}" alt=""></li>
+                    <li><img src="{{ asset('assets/images/landing_image/footer_img.webp') }}" alt=""></li>
                 </ul><br>
                 <p>Handcrafted with ❤ by <a href="https://www.buzzmakers.in/" target="_blank">Buzz Makers.</a></p>
             </div>

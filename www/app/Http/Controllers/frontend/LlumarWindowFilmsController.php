@@ -68,6 +68,13 @@ class LlumarWindowFilmsController extends Controller
             if (strtoupper(env('APP_ENV')) === 'PRODUCTION') {
                 $Lead_Source = 'Window Films Enquiry';
                 app('common-helper')->CreateLead($request, $Lead_Source);
+
+                $params_for_whatsapp_message = [];
+                $params_for_whatsapp_message['image_url'] = url('assets/images/Grass_i_windows_films.png');
+                $params_for_whatsapp_message['image_filename'] = 'Grass_i_windows_films';
+                $params_for_whatsapp_message['mobile'] = $request->whatsapp_number ?? $request->mobile;
+                $params_for_whatsapp_message['campaign_name'] = env('AISENSY_LLUMAR_WINDOW_FILMS_THANK_YOU_CAMPAIGN_NAME');
+                app('common-helper')->sendAisensyWhatsAppMessage($params_for_whatsapp_message);
             }
             toastr()->success('Your enquire has been submitted successfully!');
             return redirect()->route('window.films.enquiry.thank.you');

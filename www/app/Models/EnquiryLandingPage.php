@@ -18,6 +18,9 @@ class EnquiryLandingPage extends Model
     protected $fillable = [
         'first_name',
         'last_name',
+        'product_category',
+        'customer_type',
+        'model',
         'brand',
         'state',
         'city',

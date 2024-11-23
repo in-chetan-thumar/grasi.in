@@ -2,9 +2,12 @@
 
 namespace App\Helpers;
 
+use App\Models\EnquiryLandingPage;
+use App\Models\LlumarWindowFilm;
 use App\Models\MasterDistrict;
 use App\Models\MasterStates;
 use Carbon\CarbonPeriod;
+use Carbon\Carbon;
 
 use Illuminate\Support\Facades\Http;
 
@@ -133,11 +136,14 @@ class CommonHelper
         $response = Http::post($url, [
             'First_Name' => $request->first_name ?? "",
             'Last_Name' => $request->last_name ?? "",
+            'Product_Category' => $request->product_category ?? "",
+            'Customer_Type' => $request->customer_type ?? "",
             'Email' => $request->email ?? "",
             'Mobile' => $request->mobile ?? "",
             'Subject' => $request->subject ?? '',
             'Message' => $request->message ?? '',
             'Brand' => $request->brand ?? "",
+            'Model' => $request->model ?? "",
             'State' => ($Lead_Source == 'Window Films Enquiry') ? config('constants.LLUMAR_WINDOW_FILMS.STATES.' . $request->state) : ($request->state ?? ""),
             'City' => $request->city ?? "",
             'Pin_code' => $request->pincode ?? "",
@@ -172,4 +178,119 @@ class CommonHelper
         //     return 'Unexpected HTTP status: ' . $response->status() . ' ' . $response->body();
         // }
     }
+
+    // Send WhatsApp messages for marketing
+    public function sendAisensyWhatsAppMessage($params)
+    {
+
+        // Prepare the message data
+        $messageData = [
+            'apiKey' => env('AISENSY_API_KEY'),
+            'campaignName' => $params['campaign_name'],
+            'destination' => $params['mobile'], // Dynamic destination
+            'userName' => 'Gras Impex Pvt. Ltd.',
+            'templateParams' => [],
+            'source' => 'new-landing-page form',
+            'media' => [
+                'url' => $params['image_url'],
+                'filename' => $params['image_filename'] ?? 'sample_media'
+            ],
+            'buttons' => [],
+            'carouselCards' => [],
+            'location' => [],
+            'paramsFallbackValue' => []
+        ];
+
+        // Send the HTTP POST request to Aisensy API to send the WhatsApp message
+        $response = Http::post('https://backend.aisensy.com/campaign/t1/api/v2', $messageData);
+
+        // Check if the response is successful
+        if ($response->successful()) {
+            return response()->json(['message' => 'WhatsApp message sent successfully']);
+        } else {
+            return response()->json(['error' => 'Failed to send WhatsApp message', 'details' => $response->body()], 500);
+        }
+    }
+
+    public function getYesterdayLastHourInquiryDataAndSendMessages()
+    {
+        // Get the current date and time
+        $currentDateTime = now();
+
+        // Calculate the start and end times for the same time yesterday
+        $startTime = $currentDateTime->copy()->subDay()->setHour($currentDateTime->hour - 1);
+        $endTime = $currentDateTime->copy()->subDay();
+
+
+        // Fetch records from EnquiryLandingPage created in the specified hour yesterday
+        $enquiryLandingPageData = EnquiryLandingPage::whereBetween('created_at', [$startTime, $endTime])
+            ->whereNotNull('mobile')  // Ensure mobile is not null
+            ->get(['mobile', 'first_name', 'last_name', 'created_at'])
+            ->map(fn($item) => [
+                'mobile' => $item->mobile,
+                'full_name' => trim($item->first_name . ' ' . $item->last_name) ?: 'Unknown',
+                'campaign_name' => env('AISENSY_LLUMAR_ENQUIRY_FOLLOW_UP_CAMPAIGN_NAME'),
+            ]);
+
+        // Fetch records from LlumarWindowFilm created in the specified hour yesterday
+        $llumarWindowFilmData = LlumarWindowFilm::whereBetween('created_at', [$startTime, $endTime])
+            ->whereNotNull('whatsapp_number')  // Ensure whatsapp_number is not null
+            ->get(['whatsapp_number', 'first_name', 'last_name', 'created_at'])
+            ->map(fn($item) => [
+                'mobile' => $item->whatsapp_number,
+                'full_name' => trim($item->first_name . ' ' . $item->last_name) ?: 'Unknown',
+                'campaign_name' => env('AISENSY_LLUMAR_WINDOW_FILMS_FOLLOW_UP_CAMPAIGN_NAME'),
+            ]);
+
+        // Merge both collections
+        $mergedData = $enquiryLandingPageData->merge($llumarWindowFilmData)->toArray();
+
+        // Debug the data
+        // dd($mergedData, $currentHour, $startTime, $endTime);
+
+        // Send messages if data exists
+        if (!empty($mergedData) && count($mergedData) > 0) {
+            foreach ($mergedData as $value) {
+                $this->sendAisensyFollowUpMessage($value);
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+
+
+    // Follow Up Inquiry sending message
+    public function sendAisensyFollowUpMessage($params)
+    {
+        // Prepare the message data (similar to your cURL payload)
+        $messageData = [
+            'apiKey' => env('AISENSY_API_KEY'),
+            'campaignName' => $params['campaign_name'],
+            'destination' => $params['mobile'], // The recipient's phone number
+            'userName' => 'Gras Impex Pvt. Ltd.',
+            'templateParams' => [$params['full_name']],
+            'source' => 'new-landing-page form',
+            'media' => [],
+            'buttons' => [],
+            'carouselCards' => [],
+            'location' => [],
+            'paramsFallbackValue' => [
+                'FirstName' => $params['full_name']
+            ]
+        ];
+
+        // Send the HTTP POST request to Aisensy API to send the WhatsApp message
+        $response = Http::post('https://backend.aisensy.com/campaign/t1/api/v2', $messageData);
+
+        // // Check if the response is successful
+        // if ($response->successful()) {
+        //     return response()->json(['message' => 'WhatsApp message sent successfully']);
+        // } else {
+        //     return response()->json(['error' => 'Failed to send WhatsApp message', 'details' => $response->body()], 500);
+        // }
+    }
+
 }

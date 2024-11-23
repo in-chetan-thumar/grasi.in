@@ -189,7 +189,63 @@
                                                 name="last_name">
                                         </div>
                                     </div>
-                                    <div class="col-6 col-xxl-6 col-lg-6 col-md-6">
+                                    <div class="col-xxl-6 col-lg-6 col-md-6">
+                                        <!-- Product Category Dropdown -->
+                                        <div class="form-group input-box select-box">
+                                            <div class="autocomplete-drop-down">
+                                                <div class="product-category-input-container">
+                                                    <input class="product-category-input form-control input"
+                                                        placeholder="Product category" type="text"
+                                                        name="product_category" readonly>
+                                                    <span class="input-arrow">&#9662;</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-category-list-container">
+                                                <ul class="product-category-list">
+                                                    <li>&nbsp;</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xxl-6 col-lg-6 col-md-6">
+                                        <div class="form-group input-box select-box">
+                                            <div class="autocomplete-drop-down">
+                                                <div class="customer-type-input-container">
+                                                    <input class="customer-type-input form-control input"
+                                                        placeholder="Customer type" type="text"
+                                                        name="customer_type" readonly>
+                                                    <span class="input-arrow">&#9662;</span>
+                                                </div>
+                                            </div>
+                                            <div class="customer-type-list-container">
+                                                <ul class="customer-type-list">
+                                                    <li>&nbsp;</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Extra Inputs Section -->
+                                    {{-- <div class="extra-inputs-container" style="display: none;"> --}}
+                                    <div class="col-xxl-6 col-lg-6 col-md-6 brand-inputs-container"
+                                        style="display: none;">
+                                        <div class="form-group input-box">
+                                            <input type="text" class="form-control input" placeholder="Brand"
+                                                name="brand">
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-lg-6 col-md-6 model-inputs-container"
+                                        style="display: none;">
+                                        <div class="form-group input-box">
+                                            <input type="text" class="form-control input" placeholder="Model"
+                                                name="model">
+                                        </div>
+                                    </div>
+                                    {{-- </div> --}}
+
+
+                                    {{-- <div class="col-6 col-xxl-6 col-lg-6 col-md-6">
                                         <div class="form-group input-box select-box">
                                             <div class="autocomplete-drop-down">
                                                 <div class="countries-input-container">
@@ -205,13 +261,14 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-6 col-xxl-6 col-lg-6 col-md-6 ">
                                         <div class="form-group input-box select-box">
                                             <div class="autocomplete-drop-down">
                                                 <div class="locations-input-container">
                                                     <input class="locations-input form-control input"
-                                                        placeholder="Select State" type="text" name="state">
+                                                        placeholder="Select State" type="text" name="state"
+                                                        readonly>
                                                     <span class="input-arrow">&#9662;</span>
                                                 </div>
                                             </div>
@@ -235,19 +292,19 @@
                                                 name="pincode">
                                         </div>
                                     </div>
-                                    <div class="col-xxl-12 col-lg-12 col-md-12">
+                                    <div class="col-6 col-xxl-6 col-lg-6 col-md-6">
                                         <div class="form-group input-box">
                                             <input type="number" class="form-control input"
                                                 placeholder="Mobile Number" name="mobile">
                                         </div>
                                     </div>
-                                    <div class="col-xxl-12 col-lg-12 col-md-12">
+                                    <div class="col-12 col-xxl-12 col-lg-12 col-md-12">
                                         <div class="form-group input-box">
                                             <input type="email" class="form-control input"
                                                 placeholder="Email Address" name="email">
                                         </div>
                                     </div>
-                                    <div class="col-xxl-12 col-lg-12 col-md-12">
+                                    <div class="col-12 col-xxl-12 col-lg-12 col-md-12">
                                         <div class="submit_btn">
                                             <div class="btn btn-primary">
                                                 <button class="g-recaptcha button_end"
@@ -1514,65 +1571,36 @@
         }
     ];
 
-    const filterLocationsOnChange = (event) => {
-        const value = event.target.value.toLowerCase();
-
-        const result = locationsByAbbreviation.filter((locationObject) => {
-            const abbreviation = locationObject.abbreviation || '';
-            const imagelogo = locationObject.imagelogo || '';
-            const location = locationObject.location || '';
-            const locationString = `${imagelogo} ${abbreviation} ${location}`;
-
-            return locationString.toLowerCase().includes(value);
-        });
-
-        generateLocationsList(result);
-    };
-
     const addEventListenerToLocations = () => {
         const locationsInput = document.querySelector('.locations-input');
         const locationListItems = document.querySelectorAll('.location');
-        let locationListItemIndex = 0;
-        const locationListItemILength = locationListItems.length;
 
-        for (locationListItemIndex; locationListItemIndex < locationListItemILength; locationListItemIndex++) {
-            const locationListItem = locationListItems[locationListItemIndex];
-
-            locationListItem.addEventListener('mousedown', (event) => {
+        locationListItems.forEach((item) => {
+            item.addEventListener('mousedown', (event) => {
                 event.preventDefault();
-                event.stopPropagation();
-
                 const value = event.currentTarget.innerText;
                 locationsInput.value = value;
 
-                filterLocationsOnChange({
-                    target: {
-                        value
-                    }
-                });
-
-                locationsInput.focus();
+                // Hide the dropdown after selection
+                const locationsList = document.querySelector('.locations-list-container');
+                locationsList.classList.remove('visible');
             });
-        }
-    }
+        });
+    };
 
     const createLocationListItem = ({
-        imagelogo = '',
-        location = '',
-        abbreviation = ''
+        location = ''
     }) => (
-        `<li class="location" data-value="${imagelogo} ${abbreviation} ${location}"><span class="location--abbreviation"><img src="${abbreviation}" /></span> <span class="location--name">${location}</span></li>`
+        `<li class="location" data-value="${location}"><span class="location--name">${location}</span></li>`
     );
 
     const generateLocationsList = (locationsArray) => {
         const locationsList = document.querySelector('.locations-list');
         locationsList.innerHTML = '';
 
-        const locationsLength = locationsArray.length;
-
-        for (let locationIndex = 0; locationIndex < locationsLength; locationIndex++) {
-            locationsList.innerHTML += createLocationListItem(locationsArray[locationIndex]);
-        }
+        locationsArray.forEach((locationObject) => {
+            locationsList.innerHTML += createLocationListItem(locationObject);
+        });
 
         addEventListenerToLocations();
     };
@@ -1580,18 +1608,20 @@
     document.addEventListener("DOMContentLoaded", () => {
         const locationsInput = document.querySelector('.locations-input');
 
+        // Generate the initial dropdown list
         generateLocationsList(locationsByAbbreviation);
 
-        locationsInput.addEventListener('keyup', filterLocationsOnChange);
-
-        locationsInput.addEventListener('focus', () => {
+        // Show dropdown on input click
+        locationsInput.addEventListener('click', () => {
             const locationsList = document.querySelector('.locations-list-container');
             locationsList.classList.add('visible');
         });
 
-        locationsInput.addEventListener('blur', (event) => {
+        // Hide dropdown on blur
+        locationsInput.addEventListener('blur', () => {
             const locationsList = document.querySelector('.locations-list-container');
-            locationsList.classList.remove('visible');
+            setTimeout(() => locationsList.classList.remove('visible'),
+                100); // Delay for dropdown click
         });
     });
 </script>
@@ -1668,5 +1698,150 @@
     // Hide loader when all events are complete
     window.addEventListener('load', function() {
         hideLoader();
+    });
+</script>
+<script>
+    const customerTypes = [{
+            type: "Customer"
+        },
+        {
+            type: "Retailer"
+        }
+    ];
+
+    const addEventListenerToCustomerTypes = () => {
+        const customerTypeInput = document.querySelector('.customer-type-input');
+        const customerTypeItems = document.querySelectorAll('.customer-type');
+
+        customerTypeItems.forEach((item) => {
+            item.addEventListener('mousedown', (event) => {
+                event.preventDefault();
+                const value = event.currentTarget.innerText;
+                customerTypeInput.value = value;
+
+                toggleExtraInputs(value);
+
+                // Hide the dropdown after selection
+                const customerTypeList = document.querySelector('.customer-type-list-container');
+                customerTypeList.classList.remove('visible');
+            });
+        });
+    };
+
+    const createCustomerTypeListItem = ({
+        type = ''
+    }) => (
+        `<li class="customer-type" data-value="${type}">${type}</li>`
+    );
+
+    const generateCustomerTypeList = (customerTypesArray) => {
+        const customerTypeList = document.querySelector('.customer-type-list');
+        customerTypeList.innerHTML = '';
+
+        customerTypesArray.forEach((typeObject) => {
+            customerTypeList.innerHTML += createCustomerTypeListItem(typeObject);
+        });
+
+        addEventListenerToCustomerTypes();
+    };
+
+    const toggleExtraInputs = (selectedType) => {
+        const brandInputsContainer = document.querySelector('.brand-inputs-container');
+        const modelInputsContainer = document.querySelector('.model-inputs-container');
+
+        if (selectedType === "Customer") {
+            modelInputsContainer.style.display = "block";
+            brandInputsContainer.style.display = "block";
+        } else {
+            brandInputsContainer.style.display = "none";
+            modelInputsContainer.style.display = "none";
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const customerTypeInput = document.querySelector('.customer-type-input');
+
+        // Generate the initial dropdown list
+        generateCustomerTypeList(customerTypes);
+
+        // Show dropdown on input click
+        customerTypeInput.addEventListener('click', () => {
+            const customerTypeList = document.querySelector('.customer-type-list-container');
+            customerTypeList.classList.add('visible');
+        });
+
+        // Hide dropdown on blur
+        customerTypeInput.addEventListener('blur', () => {
+            const customerTypeList = document.querySelector('.customer-type-list-container');
+            setTimeout(() => customerTypeList.classList.remove('visible'),
+                100); // Delay for dropdown click
+        });
+    });
+</script>
+<script>
+    const productCategories = [{
+            category: "PPF"
+        },
+        {
+            category: "Window film"
+        },
+        {
+            category: "PPF and Window film"
+        }
+    ];
+
+    const addEventListenerToProductCategories = () => {
+        const productCategoryInput = document.querySelector('.product-category-input');
+        const productCategoryItems = document.querySelectorAll('.product-category');
+
+        productCategoryItems.forEach((item) => {
+            item.addEventListener('mousedown', (event) => {
+                event.preventDefault();
+                const value = event.currentTarget.innerText;
+                productCategoryInput.value = value;
+
+                // Hide the dropdown after selection
+                const productCategoryList = document.querySelector(
+                    '.product-category-list-container');
+                productCategoryList.classList.remove('visible');
+            });
+        });
+    };
+
+    const createProductCategoryListItem = ({
+        category = ''
+    }) => (
+        `<li class="product-category" data-value="${category}">${category}</li>`
+    );
+
+    const generateProductCategoryList = (categoriesArray) => {
+        const productCategoryList = document.querySelector('.product-category-list');
+        productCategoryList.innerHTML = '';
+
+        categoriesArray.forEach((categoryObject) => {
+            productCategoryList.innerHTML += createProductCategoryListItem(categoryObject);
+        });
+
+        addEventListenerToProductCategories();
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const productCategoryInput = document.querySelector('.product-category-input');
+
+        // Generate the initial dropdown list
+        generateProductCategoryList(productCategories);
+
+        // Show dropdown on input click
+        productCategoryInput.addEventListener('click', () => {
+            const productCategoryList = document.querySelector('.product-category-list-container');
+            productCategoryList.classList.add('visible');
+        });
+
+        // Hide dropdown on blur
+        productCategoryInput.addEventListener('blur', () => {
+            const productCategoryList = document.querySelector('.product-category-list-container');
+            setTimeout(() => productCategoryList.classList.remove('visible'),
+                100); // Delay for dropdown click
+        });
     });
 </script>
