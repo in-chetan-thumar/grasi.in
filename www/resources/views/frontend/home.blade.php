@@ -727,11 +727,11 @@
     </section>
 
     <!--
-                                                                                                                                            <section class="instagram_story">
-                                                                                                                                               <div class="container">
+                                                                                                                                                                                                                                                                                                    <section class="instagram_story">
+                                                                                                                                                                                                                                                                                                       <div class="container">
 
-                                                                                                                                               </div>
-                                                                                                                                            </section> -->
+                                                                                                                                                                                                                                                                                                       </div>
+                                                                                                                                                                                                                                                                                                    </section> -->
 
 
 
@@ -915,15 +915,19 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What kind of solutions we provide?
+                                    What does Gras-i do?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Gras-i offers surface solutions for buildings and cars. We provide performance films
-                                        and graphics solutions, such as window films and Paint Protection Films, for both
-                                        interior and exterior surfaces.</p>
+                                    <p>
+                                        Gras-i is a 25 year old company based out of Mumbai, India.<br>
+                                        Gras-i functions as a marketeer, having exclusive Pan India rights to sell & market
+                                        brand LLumar.<br>
+                                        LLumar is a brand from the USA which offers high-end performance films for the
+                                        automotive & architectural industries.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -932,49 +936,116 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Does Gras-i sell directly to end-users?
+                                    What are LLumar Performance Films?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Gras-i offers surface solutions for buildings and cars. We provide performance films
-                                        and graphics solutions, such as window films and Paint Protection Films, for both
-                                        interior and exterior surfaces.</p>
+                                    <p>
+                                        Gras-i provides a range of top-of-the-line LLumar performance films for the
+                                        automotive & architectural space in India. These films help in:<br>
+                                        - Heat Reduction<br>
+                                        - Safety Enhancement<br>
+                                        - Aesthetic Improvement<br><br>
+                                        Our range includes:<br>
+                                        - TPU Paint Protection Films<br>
+                                        - Polyester Heat Rejection Films<br>
+                                        - Polyester Safety Films<br>
+                                        - Polyester Decorative Films<br>
+
+                                    </p>
                                 </div>
                             </div>
                         </div>
+
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    How can I contact the Gras-i team?
+                                    How can one avail these performance films from Gras-i?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Gras-i offers surface solutions for buildings and cars. We provide performance films
-                                        and graphics solutions, such as window films and Paint Protection Films, for both
-                                        interior and exterior surfaces.</p>
+                                    <p>Gras-i has a well established channel of dealers in India that provide LLumar
+                                        Films.<br>
+                                        To get assistance, you can contact the Gras-i team through:<br>
+                                        Call us on 7400480852 OR write an e-mail to - <a
+                                            href="mailto:enquiry@grasi.in">enquiry@grasi.in</a>.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingfour">
+                            <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                    How can I ensure the authenticity of the products I purchase from Gras-i?
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Does Gras-i sell directly to end-users?
                                 </button>
                             </h2>
-                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Gras-i offers surface solutions for buildings and cars. We provide performance films
-                                        and graphics solutions, such as window films and Paint Protection Films, for both
-                                        interior and exterior surfaces.</p>
+                                    <p> Gras-i is the master distributor and marketer of LLumar films in India. To purchase
+                                        LLumar films, end-users must go through Gras-i's authorized channel partners or
+                                        dealers.</p>
+                                    <p>
+                                        For assistance, the Gras-i team can help connect you with the relevant dealer based
+                                        on your specific requirements. Call on us 7400480852 OR write an e-mail to -
+                                        <a href="mailto:enquiry@grasi.in" style="">enquiry@grasi.in</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How can I contact the Gras-i team?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p> Gras-i is the master distributor and marketer of LLumar films in India. To purchase
+                                        LLumar films, end-users must go through Gras-i's authorized channel partners or
+                                        dealers.</p>
+                                    <p>
+                                        For assistance, the Gras-i team can help connect you with the relevant dealer based
+                                        on your specific requirements. Call on us 7400480852 OR write an e-mail to -
+                                        enquiry@grasi.in.</p>
+                                </div>
+                            </div>
+                        </div> --}}
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                    How can I be sure that the products sold by your dealers are genuine?
+                                </button>
+                            </h2>
+                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>To ensure you're purchasing authentic LLumar films (PPF ), follow these simple
+                                        steps:<br>
+                                        - Visit an Authorized Fitment Centre (AFC) for paint protection film (PPF) purchases
+                                        to ensure authenticity.<br>
+                                        - Check for a Genuine LLumar Dealer Certificate at the dealership, which confirms
+                                        their authorized status.<br>
+                                        - Ask for an E-Warranty (Electronic Warranty) for PPF. Lack of this warranty could
+                                        indicate counterfeit products.<br>
+                                        - Verify the PPF Roll for a Unique Identity Number (UIN) and a Lot Number.<br>
+                                    </p>
+                                    <p>In case of other products or if one still needs further clarity, you can always
+                                        contact the Gras-i team to know if the product you are getting is genuine or not.
+                                    </p>
                                 </div>
                             </div>
                         </div>
