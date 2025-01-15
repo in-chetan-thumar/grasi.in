@@ -91,14 +91,17 @@
     </script>
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7WYHDH3H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7WYHDH3H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-BE7WYHDH3H');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BE7WYHDH3H');
+    </script>
 
 
 </head>
@@ -1091,13 +1094,8 @@
     {!! JsValidator::formRequest('App\Http\Requests\EnquiryRequest', '#form_enquiry') !!}
 
 </body>
- <script 
-      type="text/javascript"
-      src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
-      id="aisensy-wa-widget"
-      widget-id="CKwKu7"
-    >
-    </script>
+<script type="text/javascript" src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js" id="aisensy-wa-widget"
+    widget-id="CKwKu7"></script>
 <script type="text/javascript">
     _linkedin_partner_id = "5920020";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];

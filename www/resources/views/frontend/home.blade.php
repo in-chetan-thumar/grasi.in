@@ -1,9 +1,33 @@
 {{-- extend master layout  --}}
 @extends('frontend.layout.master')
 
-{{-- home page title  --}}
-@section('title')
-    Home | Gras-I
+{{-- home page sco  --}}
+@section('sco')
+    <title>Surface Protective Films in India | Gras-i</title>
+    <meta name="description"
+        content="Grasi offers premium surface protective films in India, providing reliable surface protection solutions for various applications. Explore our high-quality protective films today." />
+
+    <meta name="keywords"
+        content="surface protective film, surface protection film India, premium protective film, protective film suppliers" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="Surface Protective Films in India | Gras-i" />
+    <meta property="og:description"
+        content="Grasi offers premium surface protective films in India, providing reliable surface protection solutions for various applications. Explore our high-quality protective films today." />
+    <meta property="og:url" content="https://www.grasi.in/" />
+    <meta property="og:image" content="https://www.grasi.in/assets/frontend/images/banner1.webp" />
+    <meta property="og:site_name" content="Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Surface Protective Films in India | Gras-i" />
+    <meta name="twitter:description"
+        content="Grasi offers premium surface protective films in India, providing reliable surface protection solutions for various applications. Explore our high-quality protective films today." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/frontend/images/banner1.webp" />
+    <meta name="twitter:url" content="https://www.grasi.in" />
+
+    <link rel="canonical" href="https://www.grasi.in" />
 @endsection
 
 {{-- home page main content  --}}
@@ -727,11 +751,11 @@
     </section>
 
     <!--
-                                                                                                                                                                                                                                                                                                    <section class="instagram_story">
-                                                                                                                                                                                                                                                                                                       <div class="container">
+                                                                                                                                                                                                                                                                                                                    <section class="instagram_story">
+                                                                                                                                                                                                                                                                                                                       <div class="container">
 
-                                                                                                                                                                                                                                                                                                       </div>
-                                                                                                                                                                                                                                                                                                    </section> -->
+                                                                                                                                                                                                                                                                                                                       </div>
+                                                                                                                                                                                                                                                                                                                    </section> -->
 
 
 

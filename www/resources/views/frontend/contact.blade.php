@@ -1,12 +1,11 @@
 {{-- extend master layout  --}}
 @extends('frontend.layout.master')
 
-{{-- home page title  --}}
-@section('title')
-    Contact | Gras-I
+{{-- content page sco  --}}
+@section('sco')
 @endsection
 
-{{-- home page main content  --}}
+{{-- content page main content  --}}
 @section('content')
     {{-- contact section start  --}}
     <section class="p0 inner_page contact_page">

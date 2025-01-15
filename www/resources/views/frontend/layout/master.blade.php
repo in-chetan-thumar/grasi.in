@@ -25,11 +25,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Smart Surface Solutions in India</title>
-    <meta name="description"
-        content="High quality & smart architectural and automobile surface solutions for style and safety">
-    <meta name="keywords"
-        content="High quality & smart architectural and automobile surface solutions for style and safety">
+    @yield('sco')
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ URL::asset('assets/frontend/images/favicon/favicon.png') }}">
     <link rel="apple-touch-icon" sizes="180x180"
@@ -40,7 +36,6 @@
         href="{{ URL::asset('assets/frontend/images/favicon/favicon-16x16.png') }} ">
     <link rel="manifest" href="{{ URL::asset('assets/frontend/images/favicon//site.webmanifest') }}">
     <meta name="base_url" content="{{ \Illuminate\Support\Facades\URL::to('/') }}" />
-    <title>@yield('title')</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7WYHDH3H"></script>
     <script>

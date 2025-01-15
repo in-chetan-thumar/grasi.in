@@ -1,8 +1,10 @@
 {{-- extend master layout  --}}
 @extends('frontend.layout.master')
 
-{{-- graphic title  --}}
-@section('title') Graphics | Gras-I @endsection
+{{-- graphic sco  --}}
+@section('sco') 
+
+@endsection
 
 {{-- graphic main content  --}}
 @section('content')
