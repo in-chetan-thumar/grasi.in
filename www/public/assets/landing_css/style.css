@@ -3,8 +3,10 @@ body {
     font-family: "HelveticaRegular";
     font-size: 16px;
     font-weight: 400;
-    color: #000000;
-    background-color: #ffffff;
+    /* color: #000000; */
+    color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: #030706;
     height: auto !important;
     text-align: left;
     margin: 0;
@@ -227,7 +229,7 @@ h6,
     line-height: 1.5;
     display: block;
     margin: 0 0 15px 0;
-    color: #000000;
+    color: #ffffff;
 }
 
 h1,
@@ -347,7 +349,7 @@ section {
     content: "";
     height: 4px;
     width: 134px;
-    background-color: #d9272e;
+    background:  linear-gradient(90deg, #D92A2E 10%, #EBB81A 100%) !important;
     left: 0;
     right: 0;
     margin: auto;
@@ -451,6 +453,7 @@ button {
     padding: 17px 25px 17px 25px;
     border: none !important;
     box-shadow: none !important;
+    
     outline: none;
     color: #ffffff;
 }
@@ -460,7 +463,8 @@ button {
 .btn-primary {
     position: relative;
     z-index: 999;
-    background-color: #000000 !important;
+    /* background-color: #000000 !important; */
+     background: linear-gradient(90deg, #D92A2E 10%, #EBB81A 100%) !important;
     color: #ffffff !important;
 }
 
@@ -554,8 +558,11 @@ header.sticky {
     -ms-transform: translateY(100%);
     -o-transform: translateY(100%);
     -webkit-transform: translateY(100%);
-    border-bottom: 1px solid #dddddd;
-    background-color: #ffffff;
+    border-bottom: 1px solid #030706;
+    /* background-color: #ffffff; */
+    color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: #030706;
     top: auto;
     padding: 15px 42px;
 }
@@ -582,7 +589,7 @@ header .header_info ul li {
     font-size: 14px;
 }
 header .header_info ul li a {
-    color: #000000;
+    color: #ffffff;
     display: flex;
     align-items: center;
     line-height: normal;
@@ -607,7 +614,8 @@ header .header_info ul li svg {
     position: relative;
 }
 .banner .banner_img img {
-    width: 100%;
+    width: 90%;
+    margin-top: 192px;
 }
 .banner .banner_img figcaption {
     position: absolute;
@@ -669,7 +677,7 @@ header .header_info ul li svg {
 .input-box .input,
 .select,
 .input-label {
-    color: #000000;
+    color: #ffffff;
 }
 .input-box {
     width: 100%;
@@ -706,7 +714,7 @@ header .header_info ul li svg {
     background: transparent;
     padding: 5px 0px;
     font-family: inherit;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
 }
 .input-box .input:focus,
 .select:focus {
@@ -927,7 +935,12 @@ select {
 .feature {
 }
 .feature .container {
-    max-width: 1220px;
+    /* max-width: 1220px; */
+  padding: 0px 42px;
+}
+.faq .container {
+    /* max-width: 1220px; */
+  padding: 0px 42px;
 }
 .feature_box {
     display: flex;
@@ -1176,7 +1189,7 @@ select {
 }
 .what_we_done .what_we_done_box figcaption p {
     font-size: 24px;
-    color: #000000;
+    color: #ffffff;
     line-height: normal;
 }
 
@@ -2896,6 +2909,7 @@ video {
     top: 100%;
     left: 0;
     background-color: #ffffff;
+    color: #030706;
     z-index: 888888;
     padding: 5px;
     pointer-events: none;

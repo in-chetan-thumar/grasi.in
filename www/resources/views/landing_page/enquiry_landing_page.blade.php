@@ -130,23 +130,18 @@
             <div class="d-flex align-items-center justify-content-between">
                 <div class="main_logo">
                     <a href="{{ route('enquiry.index') }}"><img
-                            src="{{ asset('assets/images/landing_image/llumar_india_logo.webp') }}" alt=""></a>
+                            src="{{ asset('assets/llumar_window_films/images/logo.webp') }}" alt=""></a>
                 </div>
                 <div class="header_info">
                     <ul>
                         <li><a target="_blank"
-                                href="https://wa.me/+917400480852?text=Hello, I want to get my vehicle protected with LLumar PPF. Kindly let me know how to go ahead."><svg
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M17.05 2.91C16.1332 1.98392 15.0412 1.24967 13.8377 0.75005C12.6341 0.250433 11.3432 -0.00454115 10.04 -1.46553e-06C4.58005 -1.46553e-06 0.130049 4.45 0.130049 9.91C0.130049 11.66 0.590049 13.36 1.45005 14.86L0.0500488 20L5.30005 18.62C6.75005 19.41 8.38005 19.83 10.04 19.83C15.5 19.83 19.9501 15.38 19.9501 9.92C19.9501 7.27 18.92 4.78 17.05 2.91ZM10.04 18.15C8.56005 18.15 7.11005 17.75 5.84005 17L5.54005 16.82L2.42005 17.64L3.25005 14.6L3.05005 14.29C2.2278 12.977 1.79119 11.4592 1.79005 9.91C1.79005 5.37 5.49005 1.67 10.03 1.67C12.23 1.67 14.3 2.53 15.85 4.09C16.6175 4.85396 17.2257 5.76266 17.6394 6.76342C18.0531 7.76419 18.2641 8.83711 18.26 9.92C18.2801 14.46 14.58 18.15 10.04 18.15ZM14.56 11.99C14.31 11.87 13.09 11.27 12.87 11.18C12.64 11.1 12.48 11.06 12.31 11.3C12.14 11.55 11.67 12.11 11.53 12.27C11.39 12.44 11.24 12.46 10.99 12.33C10.74 12.21 9.94005 11.94 9.00005 11.1C8.26005 10.44 7.77005 9.63 7.62005 9.38C7.48005 9.13 7.60005 9 7.73005 8.87C7.84005 8.76 7.98005 8.58 8.10005 8.44C8.22005 8.3 8.27005 8.19 8.35005 8.03C8.43005 7.86 8.39005 7.72 8.33005 7.6C8.27005 7.48 7.77005 6.26 7.57005 5.76C7.37005 5.28 7.16005 5.34 7.01005 5.33H6.53005C6.36005 5.33 6.10005 5.39 5.87005 5.64C5.65005 5.89 5.01005 6.49 5.01005 7.71C5.01005 8.93 5.90005 10.11 6.02005 10.27C6.14005 10.44 7.77005 12.94 10.25 14.01C10.84 14.27 11.3 14.42 11.66 14.53C12.25 14.72 12.79 14.69 13.22 14.63C13.7 14.56 14.69 14.03 14.89 13.45C15.1 12.87 15.1 12.38 15.03 12.27C14.96 12.16 14.81 12.11 14.56 11.99Z"
-                                        fill="#D9272E" />
-                                </svg> +917400480852</a></li>
+                                href="https://wa.me/+917400480852?text=Hello, I want to get my vehicle protected with LLumar PPF. Kindly let me know how to go ahead.">
+                                <img src="{{ asset('assets/images/landing_image/whatsapp_icon.png') }}" alt=""
+                                    class=" me-2"> +917400480852</a></li>
 
-                        <li><a href="tel:+917400480852"><svg viewBox="0 0 16 23" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.06106 1.68849C1.10419 1.5275 1.15335 1.3595 1.20853 1.18448C1.26435 1.00964 1.32188 0.84388 1.38111 0.687206L7.03178 2.2013L6.70361 7.28975L3.15185 9.34035C3.56456 10.7623 4.14102 12.1204 4.88124 13.4148C5.62163 14.7085 6.48079 15.8487 7.45873 16.8354L10.9734 14.8267L15.5878 17.0207L14.0737 22.6714C13.9041 22.6604 13.7307 22.6312 13.5536 22.5838L13.0465 22.4479C10.9698 21.8915 9.06958 20.8861 7.34592 19.4317C5.62145 17.9779 4.19839 16.2852 3.07673 14.3537C1.9549 12.4229 1.19934 10.3487 0.810047 8.13105C0.420925 5.91275 0.504597 3.76523 1.06106 1.68849Z"
-                                        fill="#D9272E" />
-                                </svg>
+                        <li><a href="tel:+917400480852">
+                                <img src="{{ asset('assets/images/landing_image/call_icon.png') }}" alt=""
+                                    class=" me-2">
                                 +917400480852</a></li>
                     </ul>
                 </div>
@@ -162,7 +157,7 @@
                             <h4 class="wow fadeInRight" data-wow-delay="0.4s"><span>World’s No. 1</span> paint
                                 protection film</h4>
                         </figcaption>
-                        <img src="{{ asset('assets/images/landing_image/banner.webp') }}" alt=""
+                        <img src="{{ asset('assets/images/landing_image/new-banner.png') }}" alt=""
                             class=" wow fadeInLeft" data-wow-delay="0.2s">
                     </div>
                 </div>
@@ -498,7 +493,7 @@
                             <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <figure class="what_we_done_box wow fadeInUp" data-wow-delay="0.2s">
                                     <div class="what_we_done_box_icn">
-                                        <img src="{{ asset('assets/images/landing_image/maskgroup.webp') }}"
+                                        <img src="{{ asset('assets/images/landing_image/maskgroup-new.png') }}"
                                             alt="">
                                     </div>
                                     <figcaption>
@@ -510,7 +505,7 @@
                             <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <figure class="what_we_done_box wow fadeInUp" data-wow-delay="0.4s">
                                     <div class="what_we_done_box_icn">
-                                        <img src="{{ asset('assets/images/landing_image/maskgroup.webp') }}"
+                                        <img src="{{ asset('assets/images/landing_image/maskgroup-new.png') }}"
                                             alt="">
                                     </div>
                                     <figcaption>
@@ -875,10 +870,10 @@
         </section>
 
 
-        <section class="faq cms_page pt0">
-            <div class="container">
+        <section class="faq cms_page pt0" style="padding-bottom: 0px !important;">
+            <div class="container" style="background-color: #ffffff; ">
                 <div class="title_1">
-                    <div class="title_main wow fadeInUp" data-wow-delay="0.2s">FAQs</div>
+                    <div class="title_main wow fadeInUp" data-wow-delay="0.2s" style="color:#000000">FAQs</div>
                 </div>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
@@ -1044,32 +1039,7 @@
 
 
 
-        <footer>
-            <div class="container">
-                <div>
-                    <a href="https://www.instagram.com/llumarindia" target="_blank"><img
-                            src="{{ asset('assets/images/landing_image/1.webp') }}" class="footer-icon"></a>
-                    <a href="https://www.facebook.com/LLumarIndia" target="_blank"><img
-                            src="{{ asset('assets/images/landing_image/2.webp') }}" class="footer-icon"></a>
-                    <a href="https://www.youtube.com/channel/UCcEuRwXA9rl4kz5A6N2q-5w" target="_blank"><img
-                            src="{{ asset('assets/images/landing_image/3.webp') }}" class="footer-icon"></a>
-                    <a href="https://www.linkedin.com/company/68282904/admin/feed/posts/" target="_blank"> <img
-                            src="{{ asset('assets/images/landing_image/4.webp') }}" class="footer-icon"></a>
-                </div><br>
-                <ul>
-                    <li>Brought to India by</li>
-                    <li><img src="{{ asset('assets/images/landing_image/footer_img.webp') }}" alt=""></li>
-                </ul><br>
-                <p>Handcrafted with ❤ by <a href="https://www.buzzmakers.in/" target="_blank">Buzz Makers.</a></p>
-            </div>
-            <div class=" dealer-bg">
-                <a href="https://grasi.in/locate" class="dealer-icon" target="_blank">
-                    <img src="{{ asset('assets/images/landing_image/location.svg') }}"
-                        class="dealer-location float-start" alt="whatsapp">
-                    <span class="dealer-text float-end">FIND A DEALER</span></a>
 
-            </div>
-        </footer>
 
 
         <button type="button" class="btn_back_top" id="btn-back-to-top"><svg fill="#000000" height="800px"
@@ -1082,6 +1052,32 @@
             </svg></button>
 
     </div>
+    <footer>
+        <div class="container">
+            <div>
+                <a href="https://www.instagram.com/llumarindia" target="_blank"><img
+                        src="{{ asset('assets/images/landing_image/1.webp') }}" class="footer-icon"></a>
+                <a href="https://www.facebook.com/LLumarIndia" target="_blank"><img
+                        src="{{ asset('assets/images/landing_image/2.webp') }}" class="footer-icon"></a>
+                <a href="https://www.youtube.com/channel/UCcEuRwXA9rl4kz5A6N2q-5w" target="_blank"><img
+                        src="{{ asset('assets/images/landing_image/3.webp') }}" class="footer-icon"></a>
+                <a href="https://www.linkedin.com/company/68282904/admin/feed/posts/" target="_blank"> <img
+                        src="{{ asset('assets/images/landing_image/4.webp') }}" class="footer-icon"></a>
+            </div><br>
+            <ul>
+                <li>Brought to India by</li>
+                <li><img src="{{ asset('assets/images/landing_image/footer_img.webp') }}" alt=""></li>
+            </ul><br>
+            <p>Handcrafted with ❤ by <a href="https://www.buzzmakers.in/" target="_blank">Buzz Makers.</a></p>
+        </div>
+        <div class=" dealer-bg">
+            <a href="https://grasi.in/locate" class="dealer-icon" target="_blank">
+                <img src="{{ asset('assets/images/landing_image/location.svg') }}"
+                    class="dealer-location float-start" alt="whatsapp">
+                <span class="dealer-text float-end">FIND A DEALER</span></a>
+
+        </div>
+    </footer>
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <script src="{{ asset('assets/landing_js/jquery-2.2.4.min.js') }}"></script>

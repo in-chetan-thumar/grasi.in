@@ -224,11 +224,11 @@
                         <a href="https://www.buzzmakers.in/" target="_blank"
                             style="color: white; text-decoration:underline;">Buzz Makers</a>
                     </p>
-                    <div class="wp-icon">
+                    {{-- <div class="wp-icon">
                         <a href="https://wa.link/35uzb5" target="_blank" class="" style="">
                             <img src="{{ asset('assets/frontend/images/whatsapp.svg') }}" alt="whatsapp">
                         </a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
