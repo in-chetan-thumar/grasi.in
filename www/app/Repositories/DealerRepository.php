@@ -42,7 +42,7 @@ class DealerRepository
 
         if ($param == 'city') {
             if (!empty($state)) {
-                return $this->model->select('city')->where('is_active', 'Y')->where('state', $state)->groupBy('city')->pluck('city');
+                return $this->model->select('city')->where('is_active', 'Y')->where('state', $state)->groupBy('city')->pluck('city', 'city');
 
             } else {
 

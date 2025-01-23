@@ -107,7 +107,7 @@
     <header class="header">
         <div class="header_left">
             <div class="logo">
-                <img src="{{ asset('assets/llumar_window_films/images/logo.webp') }}" alt="LLumar" title="LLumar" />
+                <img src="{{ asset('assets/images/light-logo.png') }}" alt="LLumar" title="LLumar" />
             </div>
         </div>
         <div class="header_right">
@@ -1481,14 +1481,16 @@
         loader.style.display = 'none'; // Hide loader overlay
     }
 
-    // Show loader whenever an event is running
-    function handlePageTransition() {
-        showLoader();
-    }
+    // Attach event listeners to buttons or elements that trigger events
+    document.querySelectorAll('button, a').forEach(function(element) {
+        element.addEventListener('click', function() {
+            showLoader();
+            // Hide loader after 5 seconds in case the event takes too long
+            setTimeout(hideLoader, 5000);
+        });
+    });
 
-    // document.addEventListener('readystatechange', handlePageTransition);
-    window.addEventListener('beforeunload', handlePageTransition);
-    // Hide loader when all events are complete
+    // Hide loader when the page is fully loaded
     window.addEventListener('load', function() {
         hideLoader();
     });
