@@ -5,6 +5,7 @@ use App\Http\Controllers\frontend\GraphicController;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\LocatetController;
 use App\Http\Controllers\frontend\OurStoryController;
+use App\Http\Controllers\LlumarController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -24,6 +25,17 @@ Auth::routes();
 $middleware = ['auth', 'throttle:120,1'];
 // home page route
 Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
+
+
+Route::get('automotive-paint-protection-film-ppf', [LlumarController::class, 'automativePPF'])->name('llumar.automativePPF');
+Route::post('automotive-paint-protection-film-ppf-send-message', [LlumarController::class, 'automativePPFSendMessage'])->name('llumar.automativePPF.send.message');
+
+Route::get('platinum-paint-protection-film-ppf', [LlumarController::class, 'platinumPPF'])->name('llumar.platinumPPF');
+Route::post('platinum-paint-protection-film-ppf-send-message', [LlumarController::class, 'platinumPPFSendMessage'])->name('llumar.platinumPPF.send.message');
+
+Route::get('valor-paint-protection-film-ppf', [LlumarController::class, 'valorPPF'])->name('llumar.valorPPF');
+Route::post('valor-paint-protection-film-ppf-send-message', [LlumarController::class, 'valorPPFSendMessage'])->name('llumar.valorPPF.send.message');
+
 //Our Story page route
 Route::get('our_story', [OurStoryController::class, 'index'])->name('frontend.our_story');
 //contact page route

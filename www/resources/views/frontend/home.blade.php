@@ -98,12 +98,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
     <section class="solution">
         <div class="container">
             <div class="row justify-content-center">
