@@ -11,13 +11,18 @@
 
 
     <header class="header header_main">
-        <div class="top_header">
+        <div class="top_header link-for-web">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-end">
                     <ul>
+                         <li><a href="{{ route('frontend.locate') }}" class="btn btn-primary">Locate LLumar Dealer</a>
+                        </li>
                         <li><a href="https://www.llumarppf.in/Ewar/Dealer/login.php" target="_blank"
                                 class="btn btn-primary">LLumar E-warranty</a></li>
-                        <li><a href="{{ route('frontend.locate') }}" class="btn btn-primary">Locate LLumar Dealer</a>
+                       
+                           <li>
+                            <a href="https://llumarppf.in/Ewar/User/index.php" class="btn btn-primary">Verify
+                                E-Warranty</a>
                         </li>
                     </ul>
                 </div>
@@ -34,6 +39,15 @@
                     <div class="menu_main">
                         <nav class="wsmenu">
                             <ul class="wsmenu-list">
+                                <li class="link-for-mobile"> <a href="{{ route('frontend.locate') }}">Locate LLumar
+                                        Dealer</a></li>
+                                <li class="link-for-mobile"> <a href="https://www.llumarppf.in/Ewar/Dealer/login.php"
+                                        target="_blank">LLumar
+                                        E-warranty</a></li>
+                                
+                                <li class="link-for-mobile"> <a href="https://llumarppf.in/Ewar/User/index.php"
+                                        target="_blank">Verify
+                                        E-Warranty</a></li>
                                 <li>
                                     <a href="{{ route('frontend.our_story') }}">Our Story</a>
                                 </li>
@@ -250,6 +264,8 @@
                                 {{-- <li><a href="casestudies.php">Casestudies</a></li> --}}
                                 <li><a href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/"
                                         target="_blank">Careers</a></li>
+                                <li><a href="https://grasi.in/blog/"
+                                        target="_blank">Blogs</a></li>
                                 <li><a href="{{ route('contact.index') }}">Contact</a></li>
                             </ul>
                         </nav>

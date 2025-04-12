@@ -13,7 +13,7 @@
             <h6>with automotive paint protection film</h6>
         </div>
         <!-- <div>
-            <img src="assets/images/slider-car-new.jpg" class="w-100" alt="">
+            <img src="{{ asset('assets/llumar/images/slider-car-new.jpg')}}" class="w-100" alt="">
         </div> -->
     </section>
 
@@ -24,7 +24,7 @@
             <h6>with automotive paint protection film</h6>
         </div>
         <div>
-            <img src="assets/images/slider-car-new.webp" class="w-100" alt="">
+            <img src="{{ asset('assets/llumar/images/slider-car-new.webp')}}" class="w-100" alt="">
         </div>
     </section>
     <!-- section hero-image end -->
@@ -36,7 +36,7 @@
                 <div class="col-md-6">
                     <h1>Automotive <br> Paint Protection Film(PPF)</h1>
                     <div class="title-divider">
-                        <img src="assets/images/dash.svg" alt="">
+                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                     </div>
                     <p>Your car can radiate the same shine and pristine exterior for
                         years, despite all the external contaminants and road hazards
@@ -48,8 +48,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="ppf-image">
-                        <img src="assets/images/about-car.webp" class="w-100" alt="">
-                        <img src="assets/images/about-film.webp" class="film-img" alt="">
+                        <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
+                        <img src="{{ asset('assets/llumar/images/about-film.webp')}}" class="film-img" alt="">
                     </div>
                 </div>
             </div>
@@ -63,31 +63,31 @@
                 <label class="title-label-text-size">Why Choose</label>
                 <h2>LLumar Automotive PPF</h2>
                 <div class="title-divider">
-                    <img src="assets/images/dash.svg" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <!-- ppf -->
             <div class="row why-choose-points">
                 <div class="col-md-4">
-                    <!-- <img src="assets/images/protection.svg" alt=""> -->
-                    <img src="assets/images/protection.png" alt="">
+                    <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
+                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="">
                     <h4>Scratch & Impact Resistance</h4>
                     <p>Shields your car from minor abrasions,
                         rock chips, and road debris,
                         preventing scratches.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/UV-1.png" alt="">
+                    <img src="{{ asset('assets/llumar/images/UV-1.png')}}" alt="">
                     <h4>Hydrophobic Topcoat</h4>
                     <p>Designed to repel water, dirt,
                         and contaminants, making cleaning
                         and maintaining it easier.</p> 
-                     <!-- <img src="assets/images/self-healing.svg" alt=""> -->
+                     <!-- <img src="{{ asset('assets/llumar/images/self-healing.svg')}}" alt=""> -->
                     
                   
                 </div>
                 <div class="col-md-4">
-                     <img src="assets/images/self-healing.png" alt="">
+                     <img src="{{ asset('assets/llumar/images/self-healing.png')}}" alt="">
                      <h4>Self Healing Technology</h4>
                      <p>When exposed to the sun or warm water,
                          it automatically disappears minor
@@ -97,7 +97,7 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-4">
-                    <img src="assets/images/durable.png" alt="">
+                    <img src="{{ asset('assets/llumar/images/durable.png')}}" alt="">
                     <h4>Customized Fit</h4>
                     <p>Made to fit your vehicle seamlessly
                         by adding a layer of invisible yet
@@ -107,16 +107,16 @@
                 </div>
                 <div class="col-md-4">
                     
-                    <!-- <img src="assets/images/durable.svg" alt=""> -->
-                    <img src="assets/images/UV.png" alt="">
+                    <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
+                    <img src="{{ asset('assets/llumar/images/UV.png')}}" alt="">
                     <h4>UV & Stain Resistance</h4>
                     <p>Prevents paint fading, yellowing,
                         and staining caused by UV rays,
                         bird droppings, and road grime.</p> 
                 </div>
                 <div class="col-md-4">
-                    <!-- <img src="assets/images/glare.svg" alt=""> -->
-                    <img src="assets/images/glare.png" alt="">
+                    <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
+                    <img src="{{ asset('assets/llumar/images/glare.png')}}" alt="">
                     <h4>Multiple Finishes</h4>
                     <p>An array of options, from glossy,
                         atte, or specialty finishes,
@@ -133,7 +133,7 @@
                 <label class="title-label-text-size">Features of</label>
                 <h2>LLumar Automotive PPF</h2>
                 <div class="title-divider">
-                    <img src="assets/images/dash.svg" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <div class="row mt-5">
@@ -196,7 +196,7 @@
                 <div class="col-md-3">
                     <div>
                         <h4>Full Vehicle Coverage</h4>
-                        <img src="assets/images/full-car.webp" alt="">
+                        <img src="{{ asset('assets/llumar/images/full-car.webp')}}" alt="">
                         <p>Covers every painted surface of the vehicle</p>
                     </div>
                 </div>
@@ -205,27 +205,27 @@
             <h4>Partial Plus Protection</h4>
             <div class="vehicle-container mb-4">
                 <div>
-                    <img src="assets/images/cars-full-bonnet.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-full-bonnet.webp')}}" alt="">
                     <p>FullBonnet</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-door-cups.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-side-mirrors.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-rear-front-bumper.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-door-edge.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -233,22 +233,22 @@
             <h4>Basic Partial Protection</h4>
             <div class="vehicle-container">
                 <div>
-                    <img src="assets/images/cars-door-cups.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-side-mirrors.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-rear-front-bumper.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-door-edge.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -269,7 +269,7 @@
             <div>
                 <h2>Automotive PPF Gallery</h2>
                 <div class="title-divider">
-                    <img src="assets/images/dash.svg" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <div class="row">
@@ -362,36 +362,36 @@
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
                         <div class="title-divider">
-                            <img src="assets/images/dash.svg" alt="">
+                            <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-4 col-6">
-                            <!-- <img src="assets/images/weather.svg" alt=""> -->
-                            <img src="assets/images/weather.png" alt="">
+                            <!-- <img src="{{ asset('assets/llumar/images/weather.svg')}}" alt=""> -->
+                            <img src="{{ asset('assets/llumar/images/weather.png')}}" alt="">
                             <p>Harsh <br> Weather</p>
                         </div>
                         <div class="col-md-4 col-6">
-                            <!-- <img src="assets/images/rock-chips.svg" alt=""> -->
-                            <img src="assets/images/rock-chips.png" alt="">
+                            <!-- <img src="{{ asset('assets/llumar/images/rock-chips.svg')}}" alt=""> -->
+                            <img src="{{ asset('assets/llumar/images/rock-chips.png')}}" alt="">
                             <p>Rock Chips <br>& Scratches</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-6">
-                            <!-- <img src="assets/images/paint-fading-staining.svg" alt=""> -->
-                            <img src="assets/images/paint-fading-staining.png" alt="">
+                            <!-- <img src="{{ asset('assets/llumar/images/paint-fading-staining.svg')}}" alt=""> -->
+                            <img src="{{ asset('assets/llumar/images/paint-fading-staining.png')}}" alt="">
                             <p>Paint Fading <br> & Staining</p>
                         </div>
                         <div class="col-md-4 col-6">
-                            <!-- <img src="assets/images/bird-dropping.svg" alt=""> -->
-                            <img src="assets/images/bird-dropping.png" alt="">
+                            <!-- <img src="{{ asset('assets/llumar/images/bird-dropping.svg')}}" alt=""> -->
+                            <img src="{{ asset('assets/llumar/images/bird-dropping.png')}}" alt="">
                             <p>Bird <br> Droppings</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <img src="assets/images/protection against.webp" class="w-100" alt="">
+                    <img src="{{ asset('assets/llumar/images/protection against.webp')}}" class="w-100" alt="">
                 </div>
             </div>
         </div>
@@ -403,19 +403,19 @@
             <div class="text-center">
                 <h2>Related Products</h2>
                 <div class="title-divider mb-0">
-                    <img src="assets/images/dash.svg" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
-            <div class="button-view">
+            <!--div class="button-view">
                 <a href="#" class="btn btn-outline-dark btn-llumar-second">VIEW ALL</a>
-            </div>
+            </div-->
             <div class="mt-4">
                 <div class="sliderproducts">
                     <div>
                         <a href="{{route('llumar.platinumPPF')}}">
-                            <img src="assets/images/about-car.webp" class="w-100" alt="">
+                            <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
                             <div class="title-product">
-                                <label>Platinum Paint Protection Film </label><br>
+                                <label>Platinum paint protection film </label><br>
                                 {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
                                 </label>
                             </div>
@@ -423,9 +423,9 @@
                     </div>
                     <div>
                         <a href="{{route('llumar.valorPPF')}}">
-                            <img src="assets/images/about-car.webp" class="w-100" alt="">
+                            <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
                             <div class="title-product">
-                                <label>valor Paint Protection Film </label><br>
+                                <label>Valor paint protection film </label><br>
                                 {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
                                 </label>
                             </div>
@@ -442,7 +442,7 @@
         <div class="container reveal">
             <div class="row bg-dark-gray rounded-5 p-3">
                 <div class="col-md-4 ps-0">
-                    <img src="assets/images/inquiry-car.webp" class="w-100" alt="">
+                    <img src="{{ asset('assets/llumar/images/inquiry-car.webp')}}" class="w-100" alt="">
                 </div>
                 <div class="col-md-8 form-section-alignment">
                     <div class="mb-3">
@@ -543,7 +543,7 @@
                 <label class="title-label-text-size">Frequently Asked Questions</label>
                 <h2>About Automotive PPF</h2>
                 <div class="title-divider">
-                    <img src="assets/images/dash.svg" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
 

@@ -102,6 +102,14 @@ p {
     padding-bottom: 18rem;
 }
 
+.hero-section-platinum {
+    background-image: url(../images/slider-pattern.svg), url(../images/platinum_ppf/cover.webp);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: auto, 40px;
+    padding-bottom: 18rem;
+}
+
 /* .hero-section{
     background-image: url(../images/slider-pattern.png);
     background-size:100%;
@@ -193,6 +201,15 @@ p {
     padding-top: 6rem;
     padding-bottom: 3rem;
 }
+.why-choose-platinum {
+    background-image: url(../images/platinum_ppf/why-choose-cover.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
 
 .why-choose h4 {
     color: var(--orange);
@@ -205,6 +222,15 @@ p {
 /* features-section */
 .features-section {
     background-image: url(../images/feature-car-back.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+}
+
+.features-section-platinum {
+    background-image: url(../images/platinum_ppf/feature-cover.webp);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white);

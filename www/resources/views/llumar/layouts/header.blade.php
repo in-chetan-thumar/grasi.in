@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/llamar-logo.png" alt="Logo">
+                <img src="{{ asset('assets/llumar/images/llamar-logo.png')}}" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -13,19 +13,19 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="our-story.html">Our Story</a>
+                        <a class="nav-link" aria-current="page" href="{{ route('frontend.our_story') }}">Our Story</a>
                     </li>
-                    {{-- <li class="nav-item">
+                    <!--li class="nav-item">
                         <a class="nav-link" href="our-products.html">Our Solutions</a>
-                    </li> --}}
+                    </li-->
                     <li class="nav-item">
-                        <a class="nav-link" href="careers.html">Careers</a>
+                        <a class="nav-link" href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/" >Careers</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="blogs.html">Blogs</a>
-                    </li> --}}
                     <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        <a class="nav-link" href="https://grasi.in/blog/" target="_blank">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('contact.index') }}">Contact Us</a>
                     </li>
                 </ul>
             </div>
