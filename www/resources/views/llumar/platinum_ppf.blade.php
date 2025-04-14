@@ -250,31 +250,29 @@
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
-            <div class="row">
-                <div class="mt-4 d-flex   flex-wrap gap-3 "> 
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/platinum_ppf/1.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
-                    </div>
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/platinum_ppf/2.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
-                    </div>
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/platinum_ppf/3.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
-                    </div>
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/platinum_ppf/4.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
-                    </div>
+            <div class="row  mt-4 d-flex g-3 "> 
+                <div class="col-3" >
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/1.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                </div>
+                <div class="col-3">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/2.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                </div>
+                <div class="col-3">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/3.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                </div>
+                <div class="col-3">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/4.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
                 </div>
             </div>
-            <div class="row">
-                <div class="mt-4 d-flex flex-wrap gap-3 ">
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/platinum_ppf/5.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
-                    </div>
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/platinum_ppf/6.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
-                    </div>
+        
+            <div class="row  mt-4 d-flex g-3">
+                <div class="col-3">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/5.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
                 </div>
+                <div class="col-3">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/6.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                </div>
+            </div>
             </div>
         </div>
     </section>

@@ -141,10 +141,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="features-points feature-two">
-                                <h4>Self-Healing Coating</h4>
-                              
+                                <h4>Self-Healing Coating</h4>    
                            </div>
-
                         </div>
                         <div class="col-md-6">
                             <div class="features-points feature-three">
@@ -263,7 +261,8 @@
         </div>
     </section>
 
-    <!-- gallery -->
+      <!-- gallery -->
+ 
     <section class="gallery-section bg-dark-gray">
         <div class="container reveal">
             <div>
@@ -272,32 +271,28 @@
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
-            <div class="row">
-                <div class="mt-4 d-flex  flex-wrap gap-3 ">
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/automative_ppf/1.png') }}" class="w-100 gallery-img" alt="Automotive PPF">
-                    </div> 
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/automative_ppf/2.png') }}" class="w-100 gallery-img" alt="Automotive PPF">
-                    </div> 
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/automative_ppf/3.png') }}" class="w-100 gallery-img" alt="Automotive PPF">
-                    </div> 
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/automative_ppf/4.png') }}" class="w-100 gallery-img" alt="Automotive PPF">
-                    </div>        
+            <div class="row mt-4 d-flex g-3">
+                <div class="col-3">
+                    <img src="{{ asset('assets/llumar/images/automative_ppf/1.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
                 </div>
+                <div class="col-3">
+                    <img src="{{ asset('assets/llumar/images/automative_ppf/2.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
+                </div>
+                <div class="col-3">
+                    <img src="{{ asset('assets/llumar/images/automative_ppf/3.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
+                </div>
+                <div class="col-3">
+                    <img src="{{ asset('assets/llumar/images/automative_ppf/4.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
+                </div>
+                <!-- Continue other images similarly -->
             </div>
-            <div class="row">
-                <div class="mt-4 d-flex flex-wrap gap-3 ">
-                    <div class="flex-fill" style="max-width: 24%;">
-                        <img src="{{ asset('assets/llumar/images/automative_ppf/5.png') }}" class="w-100 gallery-img" alt="Automotive PPF">
-                    </div>
+            <div class="row mt-4 d-flex gap-3">
+                <div class="col-3">
+                    <img src="{{ asset('assets/llumar/images/automative_ppf/5.png') }}" class="w-100 gallery-img" alt="Automotive PPF">
                 </div>
             </div>
         </div>
     </section>
-    
     <!-- Image Modal -->
     <div id="imageModal" class="image-modal">
         <span class="close-modal">&times;</span>
