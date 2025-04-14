@@ -425,7 +425,7 @@
                         <a href="{{route('llumar.valorPPF')}}">
                             <img src="assets/images/about-car.webp" class="w-100" alt="">
                             <div class="title-product">
-                                <label>valor Paint Protection Film </label><br>
+                                <label>Valor Paint Protection Film </label><br>
                                 {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
                                 </label>
                             </div>
