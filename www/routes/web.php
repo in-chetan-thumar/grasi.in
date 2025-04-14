@@ -49,6 +49,7 @@ Route::get('locate', [LocatetController::class, 'index'])->name('frontend.locate
 Route::get('/state/{state}', [LocatetController::class, 'getCities'])->name('locate.city');
 Route::get('/locate/state', [LocatetController::class, 'getFilteredData'])->name('locate.getData');
 Route::post('locate', [LocatetController::class, 'store'])->name('locate.send-email');
+Route::resource('privacy-policy', \App\Http\Controllers\frontend\PrivacyPolicyController::class);
 
 //graphic page route
 // Route::resource('graphic', graphicController::class);
