@@ -1,7 +1,7 @@
 @extends('llumar.layouts.master')
 
 @section('title')
-    LLumar
+   Automotive paint protection film
 @endsection
 @section('content')
 

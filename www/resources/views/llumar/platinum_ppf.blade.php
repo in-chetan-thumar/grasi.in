@@ -1,7 +1,7 @@
 @extends('llumar.layouts.master')
 
 @section('title')
-    LLumar
+    Platinum paint protection film
 @endsection
 @section('content')
     <!-- section hero-image -->
@@ -489,14 +489,13 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How long does LLumar Automotive PPF last?
+                                    How long does LLumar Platinum PPF last?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     LLumar Platinum PPF is designed to last up to 10 years with proper maintenance. You can check the LLumar Care and Maintenance Guidelines to know more. 
-
                                 </div>
                             </div>
                         </div>
