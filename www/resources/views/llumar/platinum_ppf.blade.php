@@ -4,28 +4,26 @@
     LLumar
 @endsection
 @section('content')
-
-
     <!-- section hero-image -->
-    <section class="hero-section responsive-desktop">
+    <section class="hero-section hero-section-platinum responsive-desktop">
         <div class="title-section">
             <h1>Protect & Preserve<br><span> Your Car’s Style</span></h1>
             <h6>Platinum Paint Protection Film
             </h6>
         </div>
         <!-- <div>
-            <img src="assets/images/slider-car-new.jpg" class="w-100" alt="">
+            <img src="{{ asset('assets/llumar/images/slider-car-new.jpg')}}" class="w-100" alt="">
         </div> -->
     </section>
 
     <!-- hero section mobile -->
     <section class="hero-section responsive-mobile">
         <div class="title-section">
-            <h1>KEEP YOUR CAR <br><span>looking new</span></h1>
-            <h6>with automotive paint protection film</h6>
+            <h1>Protect & Preserve<br><span> Your Car’s Style</span></h1>
+            <h6>Platinum Paint Protection Film
         </div>
         <div>
-            <img src="assets/images/slider-car-new" class="w-100" alt="">
+            <img src="{{ asset('assets/llumar/images/platinum_ppf/cover.webp')}}" class="w-100" alt="">
         </div>
     </section>
     <!-- section hero-image end -->
@@ -37,15 +35,15 @@
                 <div class="col-md-6">
                     <h1> Platinum  <br> Paint Protection Film(PPF)</h1>
                     <div class="title-divider">
-                        <img src="assets/images/dash.svg" alt="">
+                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                     </div>
                     <p>Your vehicle is an investment—protect it with the best durability and defense. The Platinum Paint Protection Films offer a solid and stylish shield against road debris, scratches, and other environmental contaminants. Backed by self-healing technology, its hydrophobic topcoat, and superior stain resistance, it promises long-lasting protection with a clear layer that enhances your vehicle's aesthetic appeal.
                     </p>
                 </div>
                 <div class="col-md-6">
                     <div class="ppf-image">
-                        <img src="assets/images/about-car.webp" class="w-100" alt="">
-                        <img src="assets/llumar/images/platinum_ppf/about-side-photo-two.webp" class="film-img" alt="">
+                        <img src="{{ asset('assets/llumar/images/platinum_ppf/about-main-photo.webp')}}" class="w-100" alt="">
+                        <img src="{{ asset('assets/llumar/images/platinum_ppf/about-side-photo-two.webp')}}" class="film-img" alt="">
                     </div>
                 </div>
             </div>
@@ -53,33 +51,32 @@
     </section>
 
     <!-- why choose section -->
-    <section class="why-choose reveal">
+    <section class="why-choose why-choose-platinum reveal">
         <div class="container">
             <div>
                 <label class="title-label-text-size">Why Choose</label>
                 <h2>LLumar Platinum PPF</h2>
                 <div class="title-divider">
-                    <img src="assets/llumar/images/platinum_ppf/why-choose-cover.png" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <!-- ppf -->
             <div class="row why-choose-points">
                 <div class="col-md-4">
-                    <!-- <img src="assets/images/protection.svg" alt=""> -->
-                    <img src="assets/images/protection.png" alt="">
+                    <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
+                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="">
                     <h4>Strong Protection</h4>
                     <p>Shields against rock chips, road debris, and scratches.
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/llumar/images/platinum_ppf/why-choose-icons -Hydro.png" alt="">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Hydro.png')}}" alt="">
                     <h4>Hydrophobic Topcoat </h4>
                     <p>Our patented top coat, Hydrogard offers strong durability and repels water, dirt, and grime for seamless and easier maintenance.</p> 
-    
                 </div>
                 <div class="col-md-4">
-                     <!-- <img src="assets/images/self-healing.svg" alt=""> -->
-                     <img src="assets/images/self-healing.png" alt="">
+                     <!-- <img src="{{ asset('assets/llumar/images/self-healing.svg')}}" alt=""> -->
+                     <img src="{{ asset('assets/llumar/images/self-healing.png')}}" alt="">
                      <h4>Self-Healing Surface </h4>
                      <p>Minor scratches disappear with sun or heat exposure.
                     </p> 
@@ -88,20 +85,20 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-4">
-                    <img src="assets/llumar/images/platinum_ppf/why-choose-icons -Durable.png" alt=""> 
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Durable.png')}}" alt=""> 
                     <h4>Long-Lasting Durability </h4>
                     <p>Designed to withstand extreme external conditions with a factory-backed warranty.
                     </p>
                 </div>
                 <div class="col-md-4">
                     
-                     <img src="assets/llumar/images/platinum_ppf/why-choose-icons -Stain.png " alt="">
+                     <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Stain.png')}}" alt="">
                     <h4>Stain Resistance</h4>
                     <p>Blocks staining from bird droppings, bug splatter, and pollutants.</p> 
-                    <!-- <img src="assets/images/durable.svg" alt=""> -->
+                    <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/llumar/images/platinum_ppf/why-choose-icons -Crystal clear.png" alt="">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Crystal clear.png')}}" alt="">
                     <h4>Crystal-Clear Transparency </h4>
                     <p>Virtually invisible with no texture and distortion, maintaining your car’s original finish</p> 
                 </div>
@@ -110,13 +107,13 @@
     </section>
 
     <!-- features -->
-    <section class="features-section reveal">
+    <section class="features-section features-section-platinum reveal">
         <div class="container">
             <div class="title-section-alignment">
                 <label class="title-label-text-size">Features of</label>
                 <h2>LLumar Platinum  PPF</h2>
                 <div class="title-divider">
-                    <img src="assets/images/dash.svg" alt="">
+                    <img src="{{ asset('assets/llumar/images/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <div class="row mt-5">
@@ -178,7 +175,7 @@
                 <div class="col-md-3">
                     <div>
                         <h4>Full Vehicle Coverage</h4>
-                        <img src="assets/images/full-car.webp" alt="">
+                        <img src="{{ asset('assets/llumar/images/full-car.webp')}}" alt="">
                         <p>Covers every painted surface of the vehicle</p>
                     </div>
                 </div>
@@ -187,27 +184,27 @@
             <h4>Partial Plus Protection</h4>
             <div class="vehicle-container mb-4">
                 <div>
-                    <img src="assets/images/cars-full-bonnet.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-full-bonnet.webp')}}" alt="">
                     <p>FullBonnet</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-door-cups.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-side-mirrors.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-rear-front-bumper.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-door-edge.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -215,22 +212,22 @@
             <h4>Basic Partial Protection</h4>
             <div class="vehicle-container">
                 <div>
-                    <img src="assets/images/cars-door-cups.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-side-mirrors.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-rear-front-bumper.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="assets/images/cars-door-edge.webp" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -245,95 +242,52 @@
         </div>
     </section>
 
-    <!-- gallery -->
-    {{-- <section class="gallery-section bg-dark-gray">
+    <section class="gallery-section bg-dark-gray">
         <div class="container reveal">
             <div>
-                <h2>Automotive PPF Gallery</h2>
+                <h2>Platinum PPF Gallery</h2>
                 <div class="title-divider">
-                    <img src="assets/images/dash.svg" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="responsive-desktop">
-                        <div class="mb-3">
-                            <iframe width="100%" height="190"
-                                src="https://www.youtube.com/embed/qUyuPqDAJTE?si=BmCte9l4_YTrVXiM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="mb-3">
-                            <iframe width="100%" height="190"
-                                src="https://www.youtube.com/embed/qUyuPqDAJTE?si=BmCte9l4_YTrVXiM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div>
-                            <iframe width="100%" height="190"
-                                src="https://www.youtube.com/embed/qUyuPqDAJTE?si=BmCte9l4_YTrVXiM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
+                <div class="mt-4 d-flex   flex-wrap gap-3 "> 
+                    <div class="flex-fill" style="max-width: 24%;">
+                        <img src="{{ asset('assets/llumar/images/platinum_ppf/1.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
                     </div>
-                    <!-- mobile reponsive video -->
-                    <div class="responsive-mobile">
-                        <div class="slidervideo">
-                            <div>
-                                <iframe width="100%" height="190"
-                                    src="https://www.youtube.com/embed/qUyuPqDAJTE?si=BmCte9l4_YTrVXiM"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <div>
-                                <iframe width="100%" height="190"
-                                    src="https://www.youtube.com/embed/qUyuPqDAJTE?si=BmCte9l4_YTrVXiM"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <div>
-                                <iframe width="100%" height="190"
-                                    src="https://www.youtube.com/embed/qUyuPqDAJTE?si=BmCte9l4_YTrVXiM"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
+                    <div class="flex-fill" style="max-width: 24%;">
+                        <img src="{{ asset('assets/llumar/images/platinum_ppf/2.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                    </div>
+                    <div class="flex-fill" style="max-width: 24%;">
+                        <img src="{{ asset('assets/llumar/images/platinum_ppf/3.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                    </div>
+                    <div class="flex-fill" style="max-width: 24%;">
+                        <img src="{{ asset('assets/llumar/images/platinum_ppf/4.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="video-container">
-                        <video class="video" id="bVideo">
-                            <source src="https://youtu.be/EQHmxX8RSJM" />
-                        </video>
-                        <!-- <iframe width="100%" height="450" class="video" id="bVideo"
-                            src="https://www.youtube.com/embed/n3XnqbxQF_E?si=mDOLQtKUEKd2b4cx"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                        <!-- <div id="playButton" class="playButton" onclick="playPause()"><i
-                                class="bi bi-play-circle-fill play-icon"></i></div> -->
-                        <div id="playButton" class="playButton" onclick="playPause()"></div>
+            </div>
+            <div class="row">
+                <div class="mt-4 d-flex flex-wrap gap-3 ">
+                    <div class="flex-fill" style="max-width: 24%;">
+                        <img src="{{ asset('assets/llumar/images/platinum_ppf/5.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
                     </div>
-                    <div class="video-desc">
-                        <div>
-                            <h4>See LLumar in action!</h4>
-                            <p>Experience this product first-hand with these visuals that display their look,
-                                feel, & benefits effortlessly.</p>
-                        </div>
-                        <div>
-                            <a href="#"><i class="bi bi-arrow-right fs-4"></i></a>
-                        </div>
+                    <div class="flex-fill" style="max-width: 24%;">
+                        <img src="{{ asset('assets/llumar/images/platinum_ppf/6.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
                     </div>
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
+    
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <button class="nav-btn prev-btn">&lt;</button>
+        <div class="square-image-container">
+            <img class="modal-content" id="expandedImg">
+        </div>
+        <button class="nav-btn next-btn">&gt;</button>
+    </div>
 
     <!-- protection -->
     <section class="protection-section">
@@ -344,35 +298,35 @@
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
                         <div class="title-divider">
-                            <img src="assets/images/dash.svg" alt="">
+                            <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-4 col-6">
-                            <img src="assets/images/rock-chips.png" alt="">
-                           <p> Scratches <br>& Swirl Marks</p>                            
+                            <img src="{{ asset('assets/llumar/images/rock-chips.png')}}" alt="">
+                           <p> Scratches &<br>Swirl Marks</p>                            
                             
                         </div>
                         <div class="col-md-4 col-6">
                        
-                            <img src="assets/llumar/images/platinum_ppf/protection-rock-chips.png" alt="">
-                            <p>Rock Chips<br> & Road Debris</p> 
+                            <img src="{{ asset('assets/llumar/images/platinum_ppf/protection-rock-chips.png')}}" alt="">
+                            <p>Rock Chips &<br>  Road Debris</p> 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-6">
-                            <img src="assets/images/paint-fading-staining.png" alt="">
+                            <img src="{{ asset('assets/llumar/images/paint-fading-staining.png')}}" alt="">
                             <p>Paint Damage<br> & Staining</p>
                         </div>
                         <div class="col-md-4 col-6">
  
-                            <img src="assets/images/bird-dropping.png" alt="">
+                            <img src="{{ asset('assets/llumar/images/bird-dropping.png')}}" alt="">
                             <p>Bug Splatters<br> & Bird Droppings</p> 
                         </div>
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <img src="assets/llumar/images/platinum_ppf/protection-sec-photo.webp" class="w-100" alt="">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/protection-sec-photo.webp')}}" class="w-100" alt="">
                 </div>
             </div>
         </div>
@@ -384,19 +338,19 @@
             <div class="text-center">
                 <h2>Related Products</h2>
                 <div class="title-divider mb-0">
-                    <img src="assets/images/dash.svg" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
-            <div class="button-view">
+            <!--div class="button-view">
                 <a href="#" class="btn btn-outline-dark btn-llumar-second">VIEW ALL</a>
-            </div>
+            </div-->
             <div class="mt-4">
                 <div class="sliderproducts">
                     <div>
                         <a href="{{route('llumar.automativePPF')}}">
-                            <img src="assets/images/about-car.webp" class="w-100" alt="">
+                            <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
                             <div class="title-product">
-                                <label>Automative Paint Protection Film </label><br>
+                                <label>Automative paint protection film </label><br>
                                 {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
                                 </label>
                             </div>
@@ -404,9 +358,9 @@
                     </div>
                     <div>
                         <a href="{{route('llumar.valorPPF')}}">
-                            <img src="assets/images/about-car.webp" class="w-100" alt="">
+                            <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
                             <div class="title-product">
-                                <label>Valor Paint Protection Film </label><br>
+                                <label>Valor paint protection film </label><br>
                                 {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
                                 </label>
                             </div>
@@ -424,7 +378,7 @@
         <div class="container reveal">
             <div class="row bg-dark-gray rounded-5 p-3">
                 <div class="col-md-4 ps-0">
-                    <img src="assets/images/inquiry-car.webp" class="w-100" alt="">
+                    <img src="{{ asset('assets/llumar/images/inquiry-car.webp')}}" class="w-100" alt="">
                 </div>
                 <div class="col-md-8 form-section-alignment">
                     <div class="mb-3">
@@ -480,7 +434,7 @@
                                     '2' => 'Service Two',
                                     '3' => 'Service Three',
                                 ], null, [
-                                    'class' => 'form-select',
+                                    'class' => 'form-select custom-select ',
                                     'id' => 'floatingSelect',
                                     'aria-label' => 'Floating label select example',
                                 ]) !!}
@@ -493,11 +447,11 @@
                                         <div class="form-floating">
                                             {!! Form::textarea('additional_info', null, [
                                                 'class' => 'form-control',
-                                                'placeholder' => 'Additional Info',
+                                                'placeholder' => 'Additional info',
                                                 'id' => 'floatingTextarea',
                                                 'style' => 'height: 100px;', // Optional: control initial height
                                             ]) !!}
-                                            <label for="floatingTextarea">Additional Info</label>
+                                            <label for="floatingTextarea">Additional info</label>
                                         </div>
                                     </div>
                                 </div>
@@ -522,9 +476,9 @@
         <div class="container">
             <div class="text-center  reveal">
                 <label class="title-label-text-size">Frequently Asked Questions</label>
-                <h2>About Automotive PPF</h2>
+                <h2>About Platinum PPF</h2>
                 <div class="title-divider">
-                    <img src="assets/images/dash.svg" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
 
@@ -643,6 +597,6 @@
 @endsection
 @section('js')
     {!! JsValidator::formRequest('App\Http\Requests\SendMessageRequest', '#platinum-ppf-form') !!}
-    <script> 
-    </script>
+    <script src="{{ asset('assets/llumar/js/image_modal.js')}}"></script>
+
 @endsection

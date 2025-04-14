@@ -2,11 +2,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 crossorigin="anonymous"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/jquery.min.js"></script>
-<!-- <script src="assets/js/bootstrap.js"></script> -->
-<script src="assets/js/slick.js"></script>
-<script src="assets/js/custom.js"></script>
+<script src="{{ asset('assets/llumar/js/popper.min.js')}}"></script>
+<script src="{{ asset('assets/llumar/js/jquery.min.js')}}"></script>
+<!-- <script src="{{ asset('assets/llumar/js/bootstrap.js')}}"></script> -->
+<script src="{{ asset('assets/llumar/js/slick.js')}}"></script>
+<script src="{{ asset('assets/llumar/js/custom.js')}}"></script>
 <script type="text/javascript" src="{{ asset('assets/vendor/jsvalidation/js/jsvalidation.js')}}"></script>
 
 @yield('script')
@@ -54,7 +54,6 @@ crossorigin="anonymous"></script>
 <script src="{{ asset('assets/frontend/js/webslidemenu.js')}}"></script>
 <script src="{{ asset('assets/frontend/js/jquery.fancybox.min.js')}}"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
-<script src="assets/js/slick.js"></script>
-<script src="assets/js/custom.js"></script>
-<script src="{{ asset('assets/frontend/js/custom.js')}}"></script>
+<script src="{{ asset('assets/llumar/js/slick.js')}}"></script>
+<script src="{{ asset('assets/llumar/js/custom.js')}}"></script>
 <script type="text/javascript" src="{{ asset('assets/vendor/jsvalidation/js/jsvalidation.js')}}"></script>
