@@ -1,4 +1,21 @@
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 1150px) {
+    .ppf-image .film-img {
+        position: absolute;
+        left: 0rem;
+        bottom: 0rem;
+        width: 16rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .ppf-image .film-img {
+        position: absolute;
+        left: 0rem;
+        bottom: 0rem;
+        width: 10rem;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -11,6 +28,12 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+    .ppf-image .film-img {
+        position: absolute;
+        left: 0rem;
+        bottom: 0rem;
+        width: 10rem;
     }
 }
 
@@ -127,7 +150,7 @@
         position: absolute;
         left: 0rem;
         bottom: 0rem;
-        width: 16rem;
+        width: 10rem;
     }
 
     /* why-choose */
@@ -228,4 +251,11 @@
 
 }
 
-@media only screen and (width: 540px) {}
+@media only screen and (width: 540px) {
+    .ppf-image .film-img {
+        position: absolute;
+        left: 0rem;
+        bottom: 0rem;
+        width: 16rem;
+    }
+}

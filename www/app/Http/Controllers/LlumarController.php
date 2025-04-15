@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Http\Requests\AutomativePPFRequest;
 use App\Http\Requests\SendMessageRequest;
 use App\Mail\ContactMailNotification;
 use Illuminate\Http\Request;
@@ -11,11 +9,11 @@ use Mail;
 class LlumarController extends Controller
 {
     
-    public function automativePPF(){
-        return view('llumar.automative_ppf');
+    public function automotivePPF(){
+        return view('llumar.automotive_ppf');
     }
-    public function automativePPFSendMessage(SendMessageRequest $request){
-        $params = [];
+    public function automotivePPFSendMessage(SendMessageRequest $request){
+    $params = [];
         $params['first_name'] = $request->name;
         $params['last_name'] = '';
         $params['email'] = $request->email;

@@ -272,23 +272,23 @@
                 </div>
             </div>
             <div class="row mt-4 d-flex g-3">
-                <div class="col-3">
-                    <img src="{{ asset('assets/llumar/images/automative_ppf/1.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/automotive_ppf/1.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
                 </div>
-                <div class="col-3">
-                    <img src="{{ asset('assets/llumar/images/automative_ppf/2.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/automotive_ppf/2.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
                 </div>
-                <div class="col-3">
-                    <img src="{{ asset('assets/llumar/images/automative_ppf/3.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/automotive_ppf/3.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
                 </div>
-                <div class="col-3">
-                    <img src="{{ asset('assets/llumar/images/automative_ppf/4.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/automotive_ppf/4.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
                 </div>
                 <!-- Continue other images similarly -->
             </div>
             <div class="row mt-4 d-flex gap-3">
-                <div class="col-3">
-                    <img src="{{ asset('assets/llumar/images/automative_ppf/5.png') }}" class="w-100 gallery-img" alt="Automotive PPF">
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/automotive_ppf/5.png') }}" class="w-100 gallery-img" alt="Automotive PPF">
                 </div>
             </div>
         </div>
@@ -307,7 +307,7 @@
     <section class="protection-section">
         <div class="container">
             <div class="row align-items-center reveal">
-                <div class="col-md-5 title-section-alignment">
+                <div class="col-md-6 title-section-alignment">
                     <div>
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
@@ -316,31 +316,31 @@
                         </div>
                     </div>
                     <div class="row mt-4">
-                        <div class="col-md-4 col-6">
+                        <div class="col-6 ">
                             <!-- <img src="{{ asset('assets/llumar/images/weather.svg')}}" alt=""> -->
                             <img src="{{ asset('assets/llumar/images/weather.png')}}" alt="">
                             <p>Harsh <br> Weather</p>
                         </div>
-                        <div class="col-md-4 col-6">
+                        <div class="col-6">
                             <!-- <img src="{{ asset('assets/llumar/images/rock-chips.svg')}}" alt=""> -->
                             <img src="{{ asset('assets/llumar/images/rock-chips.png')}}" alt="">
                             <p>Rock Chips <br>& Scratches</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 col-6">
+                        <div class="col-6">
                             <!-- <img src="{{ asset('assets/llumar/images/paint-fading-staining.svg')}}" alt=""> -->
                             <img src="{{ asset('assets/llumar/images/paint-fading-staining.png')}}" alt="">
                             <p>Paint Fading <br> & Staining</p>
                         </div>
-                        <div class="col-md-4 col-6">
+                        <div class="col-6">
                             <!-- <img src="{{ asset('assets/llumar/images/bird-dropping.svg')}}" alt=""> -->
                             <img src="{{ asset('assets/llumar/images/bird-dropping.png')}}" alt="">
                             <p>Bird <br> Droppings</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/protection against.webp')}}" class="w-100" alt="">
                 </div>
             </div>
@@ -356,9 +356,9 @@
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
-            <!--div class="button-view">
+            <div class="button-view">
                 <a href="#" class="btn btn-outline-dark btn-llumar-second">VIEW ALL</a>
-            </div-->
+            </div>
             <div class="mt-4">
                 <div class="sliderproducts">
                     <div>
@@ -398,10 +398,10 @@
                         <label class="title-label-text-size">Fill Out the Form Below!</label>
                     </div>
                     {!! Form::open([
-                        'url' => route('llumar.automativePPF.send.message'),
+                        'url' => route('llumar.automotivePPF.send.message'),
                         'method' => 'POST',
-                        'id' => 'automative-ppf-form',
-                        'class' => 'automative-ppf-form',
+                        'id' => 'automotive-ppf-form',
+                        'class' => 'automotive-ppf-form',
                     ]) !!}
                         <div class="row">
                             <div class="col-md-6">
@@ -493,7 +493,6 @@
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
-
             <div class="row justify-content-center">
                 <div class="col-md-9">
                     <div class="accordion" id="accordionExample">
@@ -613,6 +612,6 @@
     </button>
 @endsection
 @section('js')
-    {!! JsValidator::formRequest('App\Http\Requests\SendMessageRequest', '#automative-ppf-form') !!}
+    {!! JsValidator::formRequest('App\Http\Requests\SendMessageRequest', '#automotive-ppf-form') !!}
     <script src="{{ asset('assets/llumar/js/image_modal.js')}}"></script>
 @endsection

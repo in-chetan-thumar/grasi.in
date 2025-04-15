@@ -14,13 +14,13 @@ $(document).ready(function() {
         currentIndex = $galleryImgs.index(this);
         $modal.show();
         $modalImg.attr('src', $(this).attr('src'));
-        $('body').addClass('no-scroll');
+        document.body.style.overflow = 'hidden';;
     });
     
     // Close modal function
     const closeModal = () => {
         $modal.hide();
-        $('body').removeClass('no-scroll');
+        document.body.style.overflow = '';
     };
     
     // Show next image

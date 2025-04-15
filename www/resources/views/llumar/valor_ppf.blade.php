@@ -248,22 +248,22 @@
                 </div>
             </div>
             <div class="row  mt-4 d-flex g-3 "> 
-                <div class="col-3" >
+                <div class="col-md-3" >
                     <img src="{{ asset('assets/llumar/images/valor_ppf/1.png') }}" class="w-100 gallery-img" alt="Valor PPF">
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <img src="{{ asset('assets/llumar/images/valor_ppf/2.png') }}" class="w-100 gallery-img" alt="Valor PPF">
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <img src="{{ asset('assets/llumar/images/valor_ppf/3.png') }}" class="w-100 gallery-img" alt="Valor PPF">
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <img src="{{ asset('assets/llumar/images/valor_ppf/4.png') }}" class="w-100 gallery-img" alt="Valor PPF">
                 </div>
             </div>
         
             <div class="row  mt-4 d-flex g-3">
-                <div class="col-3">
+                <div class="col-md-3">
                     <img src="{{ asset('assets/llumar/images/valor_ppf/5.png') }}" class="w-100 gallery-img" alt="Valor PPF">
                 </div>
                 
@@ -271,52 +271,24 @@
             </div>
         </div>
     </section>
-    <!-- gallery -->
-    {{-- <section class="gallery-section bg-dark-gray">
-        <div class="container reveal">
-            <div>
-                <h2>Valor PPF Gallery</h2>
-                <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
-                </div>
-            </div>
-            <div class="row  mt-4 d-flex g-3 "> 
-                <div class="col-3"> 
-                        <img src="{{ asset('assets/llumar/images/valor_ppf/1.png') }}" class="w-100 gallery-img" alt="Valor PPF">
-                    <div class="col-3">
-                        <img src="{{ asset('assets/llumar/images/valor_ppf/2.png') }}" class="w-100 gallery-img" alt="Valor PPF">
-                    </div>
-                    <div class="col-3" >
-                        <img src="{{ asset('assets/llumar/images/valor_ppf/3.png') }}" class="w-100 gallery-img" alt="Valor PPF">
-                    </div>
-                    <div class="col-3">
-                        <img src="{{ asset('assets/llumar/images/valor_ppf/4.png') }}" class="w-100 gallery-img" alt="Valor PPF">
-                    </div>
-                </div>
-            </div>
-            <div class="row  mt-4 d-flex g-3">
-                <div class="col-3">
-                    <img src="{{ asset('assets/llumar/images/valor_ppf/5.png') }}" class="w-100 gallery-img" alt="Automotive PPF">
-                </div>
-            </div>
-        </div>
-    </section> --}}
+  
     
     <!-- Image Modal -->
-    <div id="imageModal" class="image-modal">
-        <span class="close-modal">&times;</span>
-        <button class="nav-btn prev-btn">&lt;</button>
-        <div class="square-image-container">
-            <img class="modal-content" id="expandedImg">
+    <div class="row">
+        <div id="imageModal" class="image-modal col-6">
+            <span class="close-modal">&times;</span>
+            <button class="nav-btn prev-btn">&lt;</button>
+            <div class="square-image-container">
+                <img class="modal-content" id="expandedImg">
+            </div>
+            <button class="nav-btn next-btn">&gt;</button>
         </div>
-        <button class="nav-btn next-btn">&gt;</button>
     </div>
-
     <!-- protection -->
     <section class="protection-section">
         <div class="container">
             <div class="row align-items-center reveal">
-                <div class="col-md-5 title-section-alignment">
+                <div class="col-md-6 title-section-alignment">
                     <div>
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
@@ -325,29 +297,29 @@
                         </div>
                     </div>
                     <div class="row mt-4">
-                        <div class="col-md-4 col-6">
+                        <div class="col-6">
                             <img src="{{ asset('assets/llumar/images/rock-chips.png')}}" alt=""class="mb-2">
                             <p>Rock Chips<br>& Scratches</p>
                         </div>
-                        <div class="col-md-4 col-6">
+                        <div class="col-6">
                            <img src="{{ asset('assets/llumar/images/valor_ppf/protection-against-icon.png')}}" alt=""class="mb-2">
                             <p>Acid Rain &<br>UV Damage</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 col-6">
+                        <div class="col-6">
                             <!-- <img src="{{ asset('assets/llumar/images/paint-fading-staining.svg')}}" alt=""> -->
                             <img src="{{ asset('assets/llumar/images/platinum_ppf/protection-rock-chips.png')}}" alt="" class="mb-2">
                             <p>Road Debris &<br>Salt Corrosion </p>
                         </div>
-                        <div class="col-md-4 col-6">
+                        <div class=" col-6">
                             <!-- <img src="{{ asset('assets/llumar/images/bird-dropping.svg')}}" alt=""> -->
                             <img src="{{ asset('assets/llumar/images/bird-dropping.png')}}" alt="" class="mb-2">
                             <p>Bird Droppings& <br>Tree Sap</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/platinum_ppf/about-side-photo-two.webp')}}" class="w-100" alt="">
                     
                 </div>
@@ -370,10 +342,10 @@
             <div class="mt-4">
                 <div class="sliderproducts">
                     <div>
-                        <a href="{{route('llumar.automativePPF')}}">
+                        <a href="{{route('llumar.automotivePPF')}}">
                             <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
                             <div class="title-product">
-                                <label>Automative paint protection film </label><br>
+                                <label>Automotive paint protection film </label><br>
                                 {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
                                 </label>
                             </div>
