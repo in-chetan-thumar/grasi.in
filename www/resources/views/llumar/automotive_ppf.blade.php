@@ -12,9 +12,9 @@
             <h1>KEEP YOUR CAR <br><span>looking new</span></h1>
             <h6>with automotive paint protection film</h6>
         </div>
-        <!-- <div>
+        <div>
             <img src="{{ asset('assets/llumar/images/slider-car-new.jpg')}}" class="w-100" alt="">
-        </div> -->
+        </div> 
     </section>
 
     <!-- hero section mobile -->
@@ -347,7 +347,7 @@
         </div>
     </section>
 
-    <!-- related products -->
+    {{-- <!-- related products -->
     <section class="products-section bg-dark-gray">
         <div class="container reveal">
             <div class="text-center">
@@ -365,9 +365,9 @@
                         <a href="{{route('llumar.platinumPPF')}}">
                             <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
                             <div class="title-product">
-                                <label>Platinum paint protection film </label><br>
+                                <label>Platinum paint protection film </label><br> --}}
                                 {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
-                                </label>
+                                {{-- </label>
                             </div>
                         </a>
                     </div>
@@ -375,16 +375,16 @@
                         <a href="{{route('llumar.valorPPF')}}">
                             <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
                             <div class="title-product">
-                                <label>Valor paint protection film </label><br>
+                                <label>Valor paint protection film </label><br> --}}
                                 {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
-                                </label>
+                                {{-- </label>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- section form -->
     <section class="form-section">
         <div class="container reveal">

@@ -17,7 +17,7 @@
     </section>
 
     <!-- hero section mobile -->
-    <section class="hero-section responsive-mobile">
+    <section class="hero-section hero-section-platinum responsive-mobile">
         <div class="title-section">
             <h1>Protect & Preserve<br><span> Your Car’s Style</span></h1>
             <h6>Platinum Paint Protection Film
@@ -27,7 +27,6 @@
         </div>
     </section>
     <!-- section hero-image end -->
-
     <!-- section PPF -->
     <section class="section-ppf bg-dark-gray">
         <div class="container">
@@ -331,26 +330,26 @@
     </section>
 
     <!-- related products -->
-    <section class="products-section bg-dark-gray">
+    {{-- <section class="products-section bg-dark-gray">
         <div class="container reveal">
             <div class="text-center">
                 <h2>Related Products</h2>
                 <div class="title-divider mb-0">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
-            </div>
+            </div> --}}
             <!--div class="button-view">
                 <a href="#" class="btn btn-outline-dark btn-llumar-second">VIEW ALL</a>
             </div-->
-            <div class="mt-4">
+            {{-- <div class="mt-4">
                 <div class="sliderproducts">
                     <div>
                         <a href="{{route('llumar.automotivePPF')}}">
                             <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
                             <div class="title-product">
                                 <label>Automotive paint protection film </label><br>
-                                {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
-                                </label>
+                                 <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
+                                {{-- </label>
                             </div>
                         </a>
                     </div>
@@ -359,15 +358,15 @@
                             <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
                             <div class="title-product">
                                 <label>Valor paint protection film </label><br>
-                                {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
-                                </label>
+                                 <label>A clear PPF that enhances your car’s aesthetics while protecting against scratches, road debris, and environmental damage. --}}
+                                {{-- </label>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>  --}}
 
     <!-- section form -->
   
