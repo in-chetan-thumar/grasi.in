@@ -29,14 +29,19 @@ Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 
 // LLumar pages grouped
 Route::prefix('llumar')->name('llumar.')->group(function () {
-    Route::get('automotive-paint-protection-film', [LlumarController::class, 'automotivePPF'])->name('automotivePPF');
-    Route::post('automotive-paint-protection-film-send-message', [LlumarController::class, 'automotivePPFSendMessage'])->name('automotivePPF.send.message');
+    Route::get('automotive-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'automotivePPF'])->name('automotivePPF');
+    Route::post('automotive-paint-protection-film-send-message', [App\Http\Controllers\llumar\LlumarController::class, 'automotivePPFSendMessage'])->name('automotivePPF.send.message');
 
-    Route::get('platinum-paint-protection-film', [LlumarController::class, 'platinumPPF'])->name('platinumPPF');
-    Route::post('platinum-paint-protection-film-send-message', [LlumarController::class, 'platinumPPFSendMessage'])->name('platinumPPF.send.message');
+    Route::get('platinum-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'platinumPPF'])->name('platinumPPF');
+    Route::post('platinum-paint-protection-film-send-message', [App\Http\Controllers\llumar\LlumarController::class, 'platinumPPFSendMessage'])->name('platinumPPF.send.message');
 
-    Route::get('valor-paint-protection-film', [LlumarController::class, 'valorPPF'])->name('valorPPF');
-    Route::post('valor-paint-protection-film-send-message', [LlumarController::class, 'valorPPFSendMessage'])->name('valorPPF.send.message');
+    Route::get('valor-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'valorPPF'])->name('valorPPF');
+    Route::post('valor-paint-protection-film-send-message', [App\Http\Controllers\llumar\LlumarController::class, 'valorPPFSendMessage'])->name('valorPPF.send.message');
+
+    Route::get('dyed-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'dyedWindowFilm'])->name('dyedFilm');
+    Route::get('send.message', [App\Http\Controllers\llumar\LlumarController::class, 'sendMessage'])->name('send.message');
+
+
 });
 
 //Our Story page route

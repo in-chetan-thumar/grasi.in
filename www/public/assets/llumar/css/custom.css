@@ -107,14 +107,12 @@ p {
    
 }
 .hero-section-valor {
-    background-image: url(../images/slider-pattern.svg), url(../images/valor_ppf/hero-cover.webp);
+    background-image:  url(../images/valor_ppf/hero-cover.webp);
 }
-/* .hero-section{
-    background-image: url(../images/slider-pattern.png);
-    background-size:100%;
-    background-repeat: no-repeat;
-    padding-bottom: 17rem;
-} */
+.hero-section-dyed {
+    background-image: url("../images/dyed_window_film/web page 1.png");
+}
+
 .hero-section .title-section {
     margin: 0 auto;
     text-align: center;
@@ -187,7 +185,11 @@ p {
     position: absolute;
     left: -7rem;
     bottom: -1.8rem;
-    width: 16rem;
+    width: 21rem;
+    position: absolute;
+   
+    height: 13rem;
+
 }
 
 /* why-choose */
@@ -206,6 +208,10 @@ p {
 }
 .why-choose-valor {
     background-image: url(../images/valor_ppf/why-choose-cover.webp);
+
+}
+.why-choose-dyed {
+    background-image: url("../images/dyed_window_film/web page 4.png");
 
 }
 .why-choose h4 {
@@ -232,6 +238,9 @@ p {
 .features-section-valor {
     background-image: url(../images/valor_ppf/protection-cover.webp);
 }
+.features-section-dyed{
+    background-image: url("../images/dyed_window_film/web page 5.png");
+}
 .features-section .features-points h4 {
     color: var(--orange);
 }
@@ -246,7 +255,6 @@ p {
 }
 
 .features-section .feature-one {
-    /* background-image: url(../images/1.svg); */
     background-image: url(../images/1.png);
 }
 
@@ -723,22 +731,21 @@ footer .bi::before {
     transform: translateY(0);
     opacity: 1;
 }
-
-
 .custom-select {
-   
-    background-color: #111;
-    color: white;
     padding-right: 3rem;
-
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><polygon points='0,0 10,0 5,6' fill='white'/></svg>");
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
     background-position: right 0.75rem center;
-    background-size: 0.60rem 0.3rem; /* Smaller size */
-   
-    background-position: right 0.75rem top 55%; /* ↓ Aligns arrow with text */
+    background-size: 0.60rem 0.3rem !important; /* Added !important */
+    background-position: right 0.75rem top 55%;
     border-radius: 4px;
+    -webkit-appearance: none !important; /* Force custom styling on WebKit browsers */
+    -moz-appearance: none !important; /* Force custom styling on Firefox */
+    appearance: none !important; /* Standard property */
+}
+.custom-select option{
+    background-color: white;
+    color: black;
 }
 
 /* Modal Styles */

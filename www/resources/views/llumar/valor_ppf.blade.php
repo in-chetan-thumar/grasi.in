@@ -73,7 +73,7 @@
                 <div class="col-md-4">
                     <img src="{{ asset('assets/llumar/images/valor_ppf/Self Healing-1.png')}}" alt="">
                     <h4>Advanced Durability </h4>
-                    <p> Protects against rock chips, road debris, mud splatters, and tar marks, increasing its life.
+                    <p>Protects against rock chips, road debris, mud splatters, and tar marks, increasing its life upto 12 years.
                     </p> 
                 </div>
                 </div>
@@ -112,9 +112,9 @@
             <div class="title-section-alignment">
                 <label class="title-label-text-size">Features of</label>
                 <h2>LLumar Valor PPF</h2>
-                {{-- <div class="title-divider">
+                <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
-                </div> --}}
+                </div>
             </div>
             <div class="row mt-5">
                 <div class="col-md-10 ps-4">
@@ -422,12 +422,12 @@
                             <div class="col-md-6">
                             <div class="form-floating">
                                 {!! Form::select('service', [
-                                    '' => 'Choose your service',
-                                    '1' => 'Service One',
-                                    '2' => 'Service Two',
-                                    '3' => 'Service Three',
+                                  '' => 'Choose your service',
+                                    '1' => 'Paint Protection Film',
+                                    '2' => 'Automotive Window Film',
+                                    '3' => 'Architectural Window Film',
                                 ], null, [
-                                    'class' => 'form-select custom-select ',
+                                    'class' => 'form-select custom-select  ',
                                     'id' => 'floatingSelect',
                                     'aria-label' => 'Floating label select example',
                                 ]) !!}

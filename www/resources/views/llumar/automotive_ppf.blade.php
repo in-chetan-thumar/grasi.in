@@ -119,7 +119,7 @@
                     <img src="{{ asset('assets/llumar/images/glare.png')}}" alt="">
                     <h4>Multiple Finishes</h4>
                     <p>An array of options, from glossy,
-                        atte, or specialty finishes,
+                        matte, or specialty finishes,
                         to match your style.</p>
                 </div>
             </div>
@@ -140,12 +140,12 @@
                 <div class="col-md-10 ps-4">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="features-points feature-two">
+                            <div class="features-points feature-one">
                                 <h4>Self-Healing Coating</h4>    
                            </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features-points feature-three">
+                            <div class="features-points feature-two">
                                 <h4>UV Resistance</h4>
                               
                            </div>
@@ -153,14 +153,13 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="features-points feature-four">
+                            <div class="features-points feature-three">
                                 <h4>Hydrophobic Surface</h4>
                            </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features-points feature-one">
-                                <h4>Protection From External Hazards</h4>
-                               
+                            <div class="features-points feature-four">
+                                <h4>Protection From External Hazards</h4>   
                             </div> 
                         </div>
                     </div>
@@ -442,12 +441,11 @@
                             <div class="form-floating">
                                 {!! Form::select('service', [
                                     '' => 'Choose your service',
-                                    '1' => 'Service One',
-                                    '2' => 'Service Two',
-                                    '3' => 'Service Three',
+                                    '1' => 'Paint Protection Film',
+                                    '2' => 'Automotive Window Film',
+                                    '3' => 'Architectural Window Film',
                                 ], null, [
-                                    'class' => 'form-select custom-select ',
-                                    'id' => 'floatingSelect',
+                                    'class' => 'form-select custom-select  ',
                                     'aria-label' => 'Floating label select example',
                                 ]) !!}
                                 <label for="floatingSelect">Choose your service</label>

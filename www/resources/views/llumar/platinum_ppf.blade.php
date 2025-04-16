@@ -86,7 +86,7 @@
                 <div class="col-md-4">
                     <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Durable.png')}}" alt=""> 
                     <h4>Long-Lasting Durability </h4>
-                    <p>Designed to withstand extreme external conditions with a factory-backed warranty.
+                    <p>Designed to withstand extreme external conditions with a factory-backed warranty of upto 10 years.
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -112,7 +112,7 @@
                 <label class="title-label-text-size">Features of</label>
                 <h2>LLumar Platinum  PPF</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <div class="row mt-5">
@@ -125,17 +125,16 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features-points feature-three">
+                            <div class="features-points feature-two">
                                 <h4>Stain Resistance 
-                               </h4>
-                              
+                               </h4>     
                            </div>
                             
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                           <div class="features-points feature-two">
+                           <div class="features-points feature-three">
                                  <h4>Self-Healing Coating </h4>
                             </div>
                         </div>
@@ -426,12 +425,12 @@
                             <div class="col-md-6">
                             <div class="form-floating">
                                 {!! Form::select('service', [
-                                    '' => 'Choose your service',
-                                    '1' => 'Service One',
-                                    '2' => 'Service Two',
-                                    '3' => 'Service Three',
+                                   '' => 'Choose your service',
+                                    '1' => 'Paint Protection Film',
+                                    '2' => 'Automotive Window Film',
+                                    '3' => 'Architectural Window Film',
                                 ], null, [
-                                    'class' => 'form-select custom-select ',
+                                    'class' => 'form-select custom-select  ',
                                     'id' => 'floatingSelect',
                                     'aria-label' => 'Floating label select example',
                                 ]) !!}

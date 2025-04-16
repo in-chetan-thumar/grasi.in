@@ -298,9 +298,15 @@
     }
 
 }
+@media  only screen and (max-width: 540px) {
+    .llumar-logo{
+        width: 50px !important;
+    }
+  }
 
 
 @media only screen and (width: 540px) {
+  
     .ppf-image .film-img {
         position: absolute;
         left: 0rem;
