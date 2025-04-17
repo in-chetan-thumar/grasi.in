@@ -101,7 +101,7 @@ p {
     padding-bottom: 18rem;
 }
 .hero-section-autotmotive {
-    background-image: url(../images/slider-pattern.svg), url(../images/slider-car-new.webp);
+    background-image: url(../images/slider-car-new.webp);
   
 }
 .hero-section-platinum {
@@ -118,7 +118,7 @@ p {
     background-image: url("../images/ceramic_window_film/Group 3.png");
 }
 .hero-section-metallized{
-    background-image: url(../images/slider-pattern.svg), url("../images/metallized_window_film/1.png");
+    background-image:  url("../images/metallized_window_film/1.png");
 }
 .hero-section .title-section {
     margin: 0 auto;
