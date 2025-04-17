@@ -97,15 +97,13 @@
                                                                     </div>
                                                                     <div class="col-xl-3 col-lg-3">
                                                                         <div class="megamenu_wrpr">
-                                                                            <a href="https://llumar.com/emea/en/automotive/paint-protection-film/"
-                                                                                target="_blank">
+                                                                            <a href="{{route('llumar.automotive.PPF')}}"
+                                                                               >
                                                                                 <h4>Paint Protection Film</h4>
                                                                             </a>
                                                                             <ul>
                                                                                 
-                                                                                <li><a href="{{route('llumar.automotive.PPF')}}"
-                                                                                    >Automotive</a></li>
-                                                                                <li><a href="{{route('llumar.valor.PPF')}}"
+                                                                                    <li><a href="{{route('llumar.valor.PPF')}}"
                                                                                    >Valor</a></li>
                                                                                 <li><a href="{{route('llumar.platinum.PPF')}}"
                                                                                    >Platinum</a></li>
