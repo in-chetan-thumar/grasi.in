@@ -39,7 +39,7 @@
                     <div class="menu_main">
                         <nav class="wsmenu">
                             <ul class="wsmenu-list">
-                                <li class="link-for-mobile"> <a href="{{ route('frontend.locate') }}">Locate LLumar
+                                {{-- <li class="link-for-mobile"> <a href="{{ route('frontend.locate') }}">Locate LLumar
                                         Dealer</a></li>
                                 <li class="link-for-mobile"> <a href="https://www.llumarppf.in/Ewar/Dealer/login.php"
                                         target="_blank">LLumar
@@ -47,7 +47,7 @@
                                 
                                 <li class="link-for-mobile"> <a href="https://llumarppf.in/Ewar/User/index.php"
                                         target="_blank">Verify
-                                        E-Warranty</a></li>
+                                        E-Warranty</a></li> --}}
                                 <li>
                                     <a href="{{ route('frontend.our_story') }}">Our Story</a>
                                 </li>
@@ -68,7 +68,7 @@
                                                         </div>
                                                         <div class="col-lg-9">
                                                             <div class="megamenu_right">
-                                                                <a href="{{ route('enquiry.index') }}" target="_blank">
+                                                                <a href="{{ route('llumar.automotive.PPF') }}" >
                                                                     <h2>Automotive</h2>
                                                                 </a>
                                                                 <div class="row">
@@ -79,17 +79,17 @@
                                                                                 <h4>Window Tint</h4>
                                                                             </a>
                                                                             <ul>
-                                                                                <li><a href="https://llumar.com/emea/en/automotive/window-tint/ceramic/"
-                                                                                        target="_blank">Ceramic</a></li>
-                                                                                <li><a href="https://llumar.com/emea/en/automotive/window-tint/metallized/"
-                                                                                        target="_blank">Metallized</a>
+                                                                                <li><a href="{{route('llumar.ceramic.window.film')}}"
+                                                                                   >Ceramic</a></li>
+                                                                                <li><a href="{{route('llumar.metallized.window.film')}}"
+                                                                                    >Metallized</a>
                                                                                 </li>
-                                                                                <li><a href="https://llumar.com/emea/en/automotive/window-tint/dyed/"
-                                                                                        target="_blank">Dyed</a></li>
+                                                                                <li><a href="{{route('llumar.dyed.window.film')}}"
+                                                                                    >Dyed</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/window-tint/clear/"
-                                                                                        target="_blank">Clear</a></li>
+                                                                                    target="_blank"       >Clear</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/window-tint/benefits/"
-                                                                                        target="_blank">Window Tint
+                                                                                    target="_blank">Window Tint
                                                                                         Benefits</a></li>
                                                                             </ul>
                                                                         </div>
@@ -101,8 +101,10 @@
                                                                                 <h4>Paint Protection Film</h4>
                                                                             </a>
                                                                             <ul>
-                                                                                <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/valor/"
-                                                                                        target="_blank">Valor</a></li>
+                                                                                <li><a href="{{route('llumar.valor.PPF')}}"
+                                                                                   >Valor</a></li>
+                                                                                <li><a href="{{route('llumar.platinum.PPF')}}"
+                                                                                   >Platinum</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/platinum-matte/"
                                                                                         target="_blank">Platinum
                                                                                         Matte</a></li>

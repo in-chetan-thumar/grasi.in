@@ -37,7 +37,7 @@ Route::prefix('llumar')->name('llumar.')->group(function () {
 
     Route::get('valor-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'valorPPF'])->name('valor.PPF');
 
-    Route::get('dyed-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'dyedWindowFilm'])->name('dyed.window.Film');
+    Route::get('dyed-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'dyedWindowFilm'])->name('dyed.window.film');
 
     Route::get('ceramic-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'ceramicWindowFilm'])->name('ceramic.window.film');
     
