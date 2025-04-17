@@ -1,7 +1,7 @@
 @extends('llumar.layouts.master')
 
 @section('title')
-    1. Dyed window film
+     Dyed window film
 @endsection
 @section('content')
     <!-- section hero-image -->

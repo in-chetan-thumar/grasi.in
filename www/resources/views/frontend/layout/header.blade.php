@@ -68,9 +68,10 @@
                                                         </div>
                                                         <div class="col-lg-9">
                                                             <div class="megamenu_right">
-                                                                <a href="{{ route('llumar.automotive.PPF') }}" >
-                                                                    <h2>Automotive</h2>
-                                                                </a>
+                                                                <div class="megamenu_right">
+                                                                    <a href="{{ route('enquiry.index') }}" target="_blank">
+                                                                        <h2>Automotive</h2>
+                                                                    </a>
                                                                 <div class="row">
                                                                     <div class="col-xl-3 col-lg-3">
                                                                         <div class="megamenu_wrpr">
@@ -101,6 +102,9 @@
                                                                                 <h4>Paint Protection Film</h4>
                                                                             </a>
                                                                             <ul>
+                                                                                
+                                                                                <li><a href="{{route('llumar.automotive.PPF')}}"
+                                                                                    >Automotive</a></li>
                                                                                 <li><a href="{{route('llumar.valor.PPF')}}"
                                                                                    >Valor</a></li>
                                                                                 <li><a href="{{route('llumar.platinum.PPF')}}"

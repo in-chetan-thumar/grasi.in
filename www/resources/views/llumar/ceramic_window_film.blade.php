@@ -1,7 +1,7 @@
 @extends('llumar.layouts.master')
 
 @section('title')
-    1. Ceramic window film
+     Ceramic window film
 @endsection
 @section('content')
     <!-- section hero-image -->
