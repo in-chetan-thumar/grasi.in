@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1150px) {
+    .hero-section .title-section {
+        width: 70%;
+      }
     .ppf-image .film-img {
         position: absolute;
         left: 0rem;
@@ -6,8 +9,14 @@
         width: 16rem;
     }
 }
-
+@media only screen and (min-width: 1280px) and (max-width: 1280px) {
+    .hero-section-dyed h1 {
+        font-size: 2rem;
+    }
+}
 @media only screen and (max-width: 992px) {
+    
+    
     .ppf-image .film-img {
         position: absolute;
         left: 0rem;
@@ -15,26 +24,24 @@
         width: 10rem;
     }
 }
-
-
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 
     .hero-section .title-section {
-        width: 25rem;
+      width: 70%;
     }
     
      /* hero section */
     .hero-section {   
         padding-bottom: 5rem;
         background-size: 110%, 110%;         /* Increase size */
-        background-position: center top 60px; /* Push it down from the top */  
-    }
+        background-position: center top 60px; 
+     }   
     .hero-section h1 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
    
     .hero-section span {
-        font-size: 2.75rem;
+        font-size: 2rem;
     }
     
     .hero-section h6 {
@@ -43,11 +50,9 @@
         font-size: 0.95rem;
         font-family: fontLR;
     }
-    
-
     .hero-section-platinum {   
         padding-bottom: 11rem;
-        background-size: 110%, 110%;         /* Increase size */
+        background-size: 90%, 90%;         /* Increase size */
         background-position: center top 50px; /* Push it down from the top */  
     }
     .hero-section-platinum h1 {
@@ -64,7 +69,6 @@
         font-size: 0.95rem;
         font-family: fontLR;
     }
-    
     .vehicle-container {
         display: flex;
         flex-wrap: wrap;
@@ -80,7 +84,6 @@
     .responsive-mobile {
         display: block;
     }
-
     .responsive-desktop {
         display: none;
     }
@@ -176,7 +179,7 @@
     }
 
     .hero-section h1 {
-        font-size: 1.50rem;
+        font-size: 2.10rem;
     }
 
     .hero-section span {

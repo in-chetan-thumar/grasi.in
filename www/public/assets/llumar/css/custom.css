@@ -95,24 +95,31 @@ p {
 /* =============================================================== */
 
 .hero-section {
-    background-image: url(../images/slider-pattern.svg), url(../images/slider-car-new.webp);
     background-size: 100%, 100%;
     background-repeat: no-repeat, no-repeat;
     background-position: auto, 40px;
     padding-bottom: 18rem;
 }
-
-.hero-section-platinum {
-    background-image: url(../images/slider-pattern.svg), url(../images/platinum_ppf/cover.webp);
-   
+.hero-section-autotmotive {
+    background-image: url(../images/slider-pattern.svg), url(../images/slider-car-new.webp);
+  
 }
+.hero-section-platinum {
+    background-image: url(../images/slider-pattern.svg), url(../images/platinum_ppf/cover.webp); 
+}
+
 .hero-section-valor {
     background-image:  url(../images/valor_ppf/hero-cover.webp);
 }
 .hero-section-dyed {
     background-image: url("../images/dyed_window_film/web page 1.png");
 }
-
+.hero-section-ceramic {
+    background-image: url("../images/ceramic_window_film/Group 3.png");
+}
+.hero-section-metallized{
+    background-image: url(../images/slider-pattern.svg), url("../images/metallized_window_film/1.png");
+}
 .hero-section .title-section {
     margin: 0 auto;
     text-align: center;
@@ -135,6 +142,13 @@ p {
 
 .hero-section h6 {
     color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.35rem;
+    font-family: fontLR;
+}
+.hero-section-ceramic h6 {
+    
+    color:black;
     text-transform: uppercase;
     font-size: 1.35rem;
     font-family: fontLR;
@@ -187,9 +201,7 @@ p {
     bottom: -1.8rem;
     width: 21rem;
     position: absolute;
-   
-    height: 13rem;
-
+    height: 12rem;
 }
 
 /* why-choose */
@@ -221,6 +233,9 @@ p {
 .why-choose-points {
     margin-top: 5rem;
 }
+.why-choose-points h4 {
+    margin-top: 1rem;
+}
 
 /* features-section */
 .features-section {
@@ -241,10 +256,15 @@ p {
 .features-section-dyed{
     background-image: url("../images/dyed_window_film/web page 5.png");
 }
+.features-section-ceramic{
+    background-image: url("../images/ceramic_window_film/5.png");
+}
+.features-section-metallized{
+    background-image: url("../images/metallized_window_film/6.png");
+}
 .features-section .features-points h4 {
     color: var(--orange);
 }
-
 .features-section .features-points {
     padding-top: 2rem;
     padding-left: 1.5rem;
@@ -253,6 +273,7 @@ p {
     background-repeat: no-repeat;
     margin-bottom: 1.5rem;
 }
+
 
 .features-section .feature-one {
     background-image: url(../images/1.png);

@@ -382,7 +382,7 @@
                         <label class="title-label-text-size">Fill Out the Form Below!</label>
                     </div>
                     {!! Form::open([
-                        'url' => route('llumar.platinumPPF.send.message'),
+                        'url' => route('llumar.send.message'),
                         'method' => 'POST',
                         'id' => 'platinum-ppf-form',
                         'class' => 'platinum-ppf-form',

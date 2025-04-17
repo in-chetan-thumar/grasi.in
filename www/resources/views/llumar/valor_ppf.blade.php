@@ -379,7 +379,7 @@
                         <label class="title-label-text-size">Fill Out the Form Below!</label>
                     </div>
                     {!! Form::open([
-                        'url' => route('llumar.valorPPF.send.message'),
+                        'url' => route('llumar.send.message'),
                         'method' => 'POST',
                         'id' => 'valor-ppf-form',
                         'class' => 'valor-ppf-form',

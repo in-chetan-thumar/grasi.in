@@ -38,4 +38,12 @@ class LlumarController extends Controller
         return view('llumar.dyed_window_film');
     }
 
+    public function  ceramicWindowFilm(){
+        return view('llumar.ceramic_window_film');
+
+    }
+    public function metallizedWindowFilm(){
+        return view('llumar.metallized_window_film');
+
+    }
 }
