@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="index.html" >
                 <img src="{{ asset('assets/llumar/images/llamar-logo.png')}}" alt="Logo" class="llumar-logo">
             </a>

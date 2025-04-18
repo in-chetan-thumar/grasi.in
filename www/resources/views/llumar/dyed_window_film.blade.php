@@ -6,7 +6,7 @@
 @section('content')
     <!-- section hero-image -->
     <section class="hero-section  hero-section-dyed responsive-desktop">
-        <div class="title-section">
+        <div class="title-section title-section-dyed-window-film">
             <h1>GIVE YOUR CAR A DRAMATIC <br>MAKEOVER & SUN PROTECTION</h1>
             <h6>With Dyed Window Films</h6>
         </div>
@@ -290,7 +290,7 @@
     <section class="protection-section">
         <div class="container">
             <div class="row align-items-center reveal">
-                <div class="col-md-6 title-section-alignment">
+                <div class="col-md-4 title-section-alignment">
                     <div>
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
@@ -323,7 +323,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <img src="{{ asset('assets/llumar/images/dyed_window_film/web page 6.png')}}" class="w-100" alt="">
                 </div>
             </div>

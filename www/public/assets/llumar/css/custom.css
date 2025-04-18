@@ -95,24 +95,25 @@ p {
 /* =============================================================== */
 
 .hero-section {
-    background-size: 100%, 100%;
     background-repeat: no-repeat, no-repeat;
-    background-position: auto, 40px;
-    padding-bottom: 18rem;
+    padding-bottom: 22rem;
+    background-size: auto;
+    background-position: center;
+    height: 600px;
 }
 .hero-section-autotmotive {
     background-image: url(../images/slider-car-new.webp);
-  
+    background-position: auto, 40px;
 }
 .hero-section-platinum {
     background-image:  url(../images/platinum_ppf/cover.webp); 
 }
-
 .hero-section-valor {
-    background-image:  url(../images/valor_ppf/hero-cover.webp);
+    background-image:  url(../images/valor_ppf/hero-cover.webp);    
 }
 .hero-section-dyed {
     background-image: url("../images/dyed_window_film/web page 1.png");
+    height: 650px !important;
 }
 .hero-section-ceramic {
     background-image: url("../images/ceramic_window_film/Group 3.png");
@@ -120,10 +121,38 @@ p {
 .hero-section-metallized{
     background-image:  url("../images/metallized_window_film/1.png");
 }
+
+
 .hero-section .title-section {
     margin: 0 auto;
     text-align: center;
     width: 50%;
+    padding-top: 2rem;
+}
+
+
+.title-section-platinum{
+    text-align: start !important;
+    width: 100% !important;
+    padding-left: 40px;
+
+}
+
+.title-section-dyed-window-film{
+    width: auto !important;
+}
+
+.title-section-metallized{
+    text-align: start !important;
+    width: 100% !important;
+    padding-left: 40px;
+}
+
+.title-section-ceramic{
+    text-align: start !important;
+    width: 100% !important;
+    padding-left: 40px;
+
 }
 
 .hero-section h1 {
@@ -136,6 +165,26 @@ p {
     margin-bottom: 0;
 }
 
+.title-border {
+    height: 120px;
+    width: 7px;
+    margin-right: 15px;
+    background-color: var(--linear-color-1);
+    align-items: start;
+}
+
+.title-section-platinum h1 {
+    text-align: start;
+}
+
+.title-section-metallized h1{
+    text-align: start;
+}
+
+.title-section-ceramic h1 {
+    text-align: start;
+}
+
 .hero-section span {
     font-size: 3.9rem;
 }
@@ -146,6 +195,7 @@ p {
     font-size: 1.35rem;
     font-family: fontLR;
 }
+
 .hero-section-ceramic h6 {
     
     color:black;
@@ -183,7 +233,7 @@ p {
 /* section-ppf */
 .section-ppf {
     padding-top: 5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 7rem;
     color: var(--white);
 }
 
@@ -197,8 +247,8 @@ p {
 
 .ppf-image .film-img {
     position: absolute;
-    left: -7rem;
-    bottom: -1.8rem;
+    left: -4rem;
+    bottom: -4.5rem;
     width: 21rem;
     position: absolute;
     height: 12rem;

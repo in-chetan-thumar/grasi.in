@@ -7,9 +7,15 @@
     <!-- section hero-image -->
 
     <section class="hero-section hero-section-ceramic responsive-desktop">
-        <div class="title-section">
-            <h1>Style, Protection, <br> and Comfort in One</h1>
-            <h6>Ceramic Window Films</h6>
+        <div class="container">
+            <div class="title-section title-section-ceramic d-flex">
+                <div class="title-border"></div>
+                <div>
+                    <h1>Style, Protection, <br> and Comfort in One</h1>
+                    <h6>Ceramic Window Films</h6>
+                </div>
+                
+            </div>
         </div>
         <!-- <div>
                             <img src="{{ asset('assets/llumar/images/slider-car-new.jpg')}}" class="w-100" alt="">
@@ -73,7 +79,7 @@
                     <p> Helps your car cool down faster with its IR-blocking nano-ceramic particles.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/ceramic_window_film    /icons/2.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/2.png')}}" alt="">
                     <h4>UV Protection</h4>
                     <p>Blocks 99% of UV & IR rays, protecting interiors from fading and preventing skin damage.</p>
                     <!-- <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/2.png')}}" alt=""> -->
@@ -280,7 +286,7 @@
     <section class="protection-section">
         <div class="container">
             <div class="row align-items-center reveal">
-                <div class="col-md-6 title-section-alignment">
+                <div class="col-md-4 title-section-alignment">
                     <div>
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
@@ -313,7 +319,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <img src="{{ asset('assets/llumar/images/ceramic_window_film/6.png')}}" class="w-100" alt="">
                 </div>
             </div>

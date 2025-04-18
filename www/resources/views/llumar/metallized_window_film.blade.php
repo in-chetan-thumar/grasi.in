@@ -6,9 +6,11 @@
 @section('content')
     <!-- section hero-image -->
     <section class="hero-section  hero-section-metallized responsive-desktop">
-        <div class="title-section">
-            <h1>Shiny, Sun-Proof, <br>and Sleek</h1>
-            <h6>Metallized Window Films</h6>
+        <div class="container">
+            <div class="title-section title-section-metallized">
+                <h1>Shiny, Sun-Proof, <br>and Sleek</h1>
+                <h6>Metallized Window Films</h6>
+            </div>
         </div>
         <!-- <div>
                     <img src="{{ asset('assets/llumar/images/slider-car-new.jpg')}}" class="w-100" alt="">
@@ -289,7 +291,7 @@
     <section class="protection-section">
         <div class="container">
             <div class="row align-items-center reveal">
-                <div class="col-md-6 title-section-alignment">
+                <div class="col-md-4 title-section-alignment">
                     <div>
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
@@ -322,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <img src="{{ asset('assets/llumar/images/metallized_window_film/7.png')}}" class="w-100" alt="">
                 </div>
             </div>

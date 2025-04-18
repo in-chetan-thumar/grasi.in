@@ -9,7 +9,7 @@
     <!-- section hero-image -->
     <section class="hero-section  hero-section-autotmotive  responsive-desktop">
         <div class="title-section">
-            <h1>KEEP YOUR CAR <br><span>looking new</span></h1>
+            <h1>KEEP YOUR CAR <br>looking new</h1>
             <h6>with automotive paint protection film</h6>
         </div>
         {{-- <div>
@@ -20,7 +20,7 @@
     <!-- hero section mobile -->
     <section class="hero-section responsive-mobile">
         <div class="title-section">
-            <h1>KEEP YOUR CAR <br><span>looking new</span></h1>
+            <h1>KEEP YOUR CAR <br>looking new</h1>
             <h6>with automotive paint protection film</h6>
         </div>
         <div>
@@ -306,7 +306,7 @@
     <section class="protection-section">
         <div class="container">
             <div class="row align-items-center reveal">
-                <div class="col-md-6 title-section-alignment">
+                <div class="col-md-4 title-section-alignment">
                     <div>
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
@@ -339,7 +339,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <img src="{{ asset('assets/llumar/images/protection against.webp')}}" class="w-100" alt="">
                 </div>
             </div>

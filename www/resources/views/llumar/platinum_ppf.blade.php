@@ -6,10 +6,15 @@
 @section('content')
     <!-- section hero-image -->
     <section class="hero-section hero-section-platinum responsive-desktop">
-        <div class="title-section">
-            <h1>Protect & Preserve<br><span> Your Car’s Style</span></h1>
-            <h6>Platinum Paint Protection Film
-            </h6>
+        <div class="container">
+            <div class="title-section title-section-platinum d-flex">
+                <div class="title-border"></div>
+                <div>
+                    <h1>Protect & Preserve<br> Your Car’s Style</h1>
+                    <h6>Platinum Paint Protection Film</h6>
+                </div>
+                
+            </div>
         </div>
         <!-- <div>
             <img src="{{ asset('assets/llumar/images/slider-car-new.jpg')}}" class="w-100" alt="">
@@ -63,7 +68,7 @@
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="" height="60px">
                     <h4>Strong Protection</h4>
                     <p>Shields against rock chips, road debris, and scratches.
                     </p>
@@ -289,7 +294,7 @@
     <section class="protection-section">
         <div class="container">
             <div class="row align-items-center reveal">
-                <div class="col-md-6  title-section-alignment">
+                <div class="col-md-4  title-section-alignment">
                     <div>
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
@@ -321,7 +326,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 ">
+                <div class="col-md-8 ">
                     <img src="{{ asset('assets/llumar/images/platinum_ppf/protection-sec-photo.webp')}}" class="w-100" alt="">
                 </div>
             </div>

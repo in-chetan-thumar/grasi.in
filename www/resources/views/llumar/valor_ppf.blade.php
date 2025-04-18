@@ -7,8 +7,8 @@
 
     <!-- section hero-image -->
     <section class="hero-section  hero-section-valor responsive-desktop">
-        <div class="title-section">
-            <h1>Keep Your Car’s<br><span>Paint Flawless</span></h1>
+        <div class="title-section title-section-valor">
+            <h1>Keep Your Car’s<br>Paint Flawless</h1>
             <h6>With Valor Paint Protection Film</h6>
             {{-- <img src="{{ asset('assets/llumar/images/valor_ppf/hero-cover.webp')}}" class="w-100" alt=""> --}}
         </div>
@@ -17,7 +17,7 @@
     <!-- hero section mobile -->
     <section class="hero-section  hero-section-valor  responsive-mobile">
         <div class="title-section">
-            <h1>Keep Your Car’s<br><span>Paint Flawless</span></h1>
+            <h1>Keep Your Car’s<br>Paint Flawless</h1>
             <h6>With Valor Paint Protection Film</h6>
         </div>
         <div>
@@ -35,8 +35,7 @@
                     <div class="title-divider">
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                     </div>
-                    <p>Keep your car protected and as good as new with the Valor Paint Protection Film. This film combines the best of both worlds—the self-healing defense of premium PPF with the seamless maintenance of a ceramic-style coating. The highly durable PPF safeguards your car’s paint against chips, scratches, and environmental damage while retaining its shine. It promises superior stain resistance, hydrophobic technology, and a glossy finish that retains its aesthetic appeal.
-                        .</p>
+                    <p>Keep your car protected and as good as new with the Valor Paint Protection Film. This film combines the best of both worlds—the self-healing defense of premium PPF with the seamless maintenance of a ceramic-style coating. The highly durable PPF safeguards your car’s paint against chips, scratches, and environmental damage while retaining its shine. It promises superior stain resistance, hydrophobic technology, and a glossy finish that retains its aesthetic appeal.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="ppf-image">
@@ -289,7 +288,7 @@
     <section class="protection-section">
         <div class="container">
             <div class="row align-items-center reveal">
-                <div class="col-md-6 title-section-alignment">
+                <div class="col-md-4 title-section-alignment">
                     <div>
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
@@ -320,7 +319,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <img src="{{ asset('assets/llumar/images/platinum_ppf/about-side-photo-two.webp')}}" class="w-100" alt="">
                     
                 </div>
