@@ -21,7 +21,7 @@
         position: absolute;
         left: 0rem;
         bottom: 0rem;
-        width: 10rem;
+        /*width: 10rem;*/
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
@@ -179,6 +179,10 @@
         padding-bottom: 5rem;
         height: 250px;
     }
+    
+    .hero-section-dyed {
+        height: 300px !important;
+    }
    
     .hero-section .title-section {
         width: 18rem;
@@ -207,7 +211,7 @@
         position: absolute;
         left: 0rem;
         bottom: 0rem;
-        width: 10rem;
+        /*width: 10rem;*/
     }
 
     /* why-choose */
@@ -217,6 +221,18 @@
         background-size: cover;
         background-position: center;
         padding: 3rem;
+    }
+    
+    .why-choose-platinum {
+        background-image: url(../images/platinum_ppf/why-choose-cover.webp);
+    
+    }
+    .why-choose-valor {
+        background-image: url(../images/valor_ppf/why-choose-cover.webp);
+    
+    }
+    .why-choose-dyed {
+        background-image: url("../images/dyed_window_film/web page 4.png");
     }
 
     /* features-section */
@@ -228,6 +244,27 @@
         color: var(--white);
         padding: 5rem 2rem;
     }
+    .features-section-platinum {
+        background-image: url("../images/platinum_ppf/feature-cover.webp");
+        background-position: center;
+    }
+    .features-section-valor {
+        background-image: url("../images/valor_ppf/protection-cover.webp");
+        background-position: bottom;
+    }
+    .features-section-dyed{
+        background-image: url("../images/dyed_window_film/web page 5.png");
+        background-position: center;
+    }
+    .features-section-ceramic{
+        background-image: url("../images/ceramic_window_film/5.png");
+        background-position: bottom;
+    }
+    .features-section-metallized{
+        background-image: url("../images/metallized_window_film/6.png");
+        background-position: bottom;
+    }
+    
 
     /* vehicle-section */
     .vehicle-section {

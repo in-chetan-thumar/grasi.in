@@ -15,7 +15,7 @@
                 </div> -->
     </section>
     <!-- hero section mobile -->
-    <section class="hero-section responsive-mobile">
+    <section class="hero-section hero-section-dyed responsive-mobile">
         <div class="title-section">
             <h1>GIVE YOUR CAR A DRAMATIC <br><span> MAKEOVER & SUN PROTECTION</span></h1>
             <h6>With Dyed Window Films</h6>
@@ -67,12 +67,12 @@
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/1.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/1.png')}}" alt="" height="56px">
                     <h4>Sun Protection </h4>
                     <p>Blocks up to 99% of harmful UV rays to protect your skin and reduce interior fading.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/2.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/2.png')}}" alt="" height="56px">
                     <h4>Heat Rejection</h4>
                     <p>Regulates heat buildup inside the car for a cooler and more comfortable ride.</p>
                     <!-- <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/2.png')}}" alt=""> -->
@@ -80,27 +80,27 @@
 
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/3.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/3.png')}}" alt="" height="56px">
                     <h4>Enhanced Durability</h4>
                     <p>Designed to maintain its original colour and quality despite regular sun exposure.</p>
                 </div>
             </div>
             <div class="row mt-2  why-choose-points">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/4.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/4.png')}}" alt="" height="56px">
                     <h4>Customizable Look </h4>
                     <p>Choose a shade to match your preferences and your car’s aesthetics.</p>
                 </div>
                 <div class="col-md-4">
 
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/5.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/5.png')}}" alt="" height="56px">
                     <h4>Glare Reduction </h4>
                     <p>Minimizes harsh glare from the sun and headlights, improving driving visibility.</p>
                 </div>
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/6.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/6.png')}}" alt="" height="56px">
                     <h4>Visual Clarity</h4>
                     <p>These dyed films don’t block your view and instead offer clear vision.</p>
                 </div>
@@ -122,12 +122,12 @@
                 <div class="col-md-10 ps-4">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="features-points feature-two">
+                            <div class="features-points feature-one">
                                 <h4>Lasting Colour</h4>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features-points feature-three">
+                            <div class="features-points feature-two">
                                 <h4>UV Protection</h4>
 
                             </div>
@@ -135,12 +135,12 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="features-points feature-four">
+                            <div class="features-points feature-three">
                                 <h4>Clear View </h4>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features-points feature-one">
+                            <div class="features-points feature-four">
                                 <h4>Reduced Glare</h4>
 
                             </div>
@@ -241,50 +241,51 @@
 
     <!-- gallery -->
 
-    {{-- <section class="gallery-section bg-dark-gray">
+    <section class="gallery-section bg-dark-gray">
         <div class="container reveal">
             <div>
-                <h2>Dyed Window Films Gallary</h2>
+                <h2>Dyed Window Films Gallery</h2>
                 <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <div class="row mt-4 d-flex g-3">
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/1.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/gallery/1.png') }}" class="img-fluid gallery-img"
+                        alt="Dyed window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/2.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/gallery/2.png') }}" class="img-fluid gallery-img"
+                        alt="Dyed window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/3.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/gallery/3.png') }}" class="img-fluid gallery-img"
+                        alt="Dyed window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/4.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/gallery/4.png') }}" class="img-fluid gallery-img"
+                        alt="Dyed window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/gallery/5.png') }}" class="img-fluid gallery-img"
+                        alt="Dyed window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/gallery/6.png') }}" class="img-fluid gallery-img"
+                        alt="Dyed window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/gallery/7.png') }}" class="img-fluid gallery-img"
+                        alt="Dyed window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/gallery/8.png') }}" class="img-fluid gallery-img"
+                        alt="Dyed window films">
                 </div>
                 <!-- Continue other images similarly -->
             </div>
-            <div class="row mt-4 d-flex gap-3">
-                <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/5.png') }}" class="w-100 gallery-img"
-                        alt="Automotive PPF">
-                </div>
-            </div>
         </div>
     </section>
-    <!-- Image Modal -->
-    <div id="imageModal" class="image-modal">
-        <span class="close-modal">&times;</span>
-        <button class="nav-btn prev-btn">&lt;</button>
-        <div class="square-image-container">
-            <img class="modal-content" id="expandedImg">
-        </div>
-        <button class="nav-btn next-btn">&gt;</button>
-    </div> --}}
 
     <!-- protection -->
     <section class="protection-section">

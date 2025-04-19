@@ -274,7 +274,6 @@ p {
 }
 .why-choose-dyed {
     background-image: url("../images/dyed_window_film/web page 4.png");
-
 }
 .why-choose h4 {
     color: var(--orange);
@@ -298,10 +297,10 @@ p {
 }
 
 .features-section-platinum {
-    background-image: url(../images/platinum_ppf/feature-cover.webp);
+    background-image: url("../images/platinum_ppf/feature-cover.webp");
 }
 .features-section-valor {
-    background-image: url(../images/valor_ppf/protection-cover.webp);
+    background-image: url("../images/valor_ppf/protection-cover.webp");
 }
 .features-section-dyed{
     background-image: url("../images/dyed_window_film/web page 5.png");

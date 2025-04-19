@@ -68,19 +68,19 @@
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="" height="60px">
+                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="" height="56px">
                     <h4>Strong Protection</h4>
                     <p>Shields against rock chips, road debris, and scratches.
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Hydro.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Hydro.png')}}" alt="" height="56px">
                     <h4>Hydrophobic Topcoat </h4>
                     <p>Our patented top coat, Hydrogard offers strong durability and repels water, dirt, and grime for seamless and easier maintenance.</p> 
                 </div>
                 <div class="col-md-4">
                      <!-- <img src="{{ asset('assets/llumar/images/self-healing.svg')}}" alt=""> -->
-                     <img src="{{ asset('assets/llumar/images/self-healing.png')}}" alt="">
+                     <img src="{{ asset('assets/llumar/images/self-healing.png')}}" alt="" height="56px">
                      <h4>Self-Healing Surface </h4>
                      <p>Minor scratches disappear with sun or heat exposure.
                     </p> 
@@ -89,20 +89,20 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Durable.png')}}" alt=""> 
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Durable.png')}}" alt="" height="56px"> 
                     <h4>Long-Lasting Durability </h4>
                     <p>Designed to withstand extreme external conditions with a factory-backed warranty of upto 10 years.
                     </p>
                 </div>
                 <div class="col-md-4">
                     
-                     <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Stain.png')}}" alt="">
+                     <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Stain.png')}}" alt="" height="56px">
                     <h4>Stain Resistance</h4>
                     <p>Blocks staining from bird droppings, bug splatter, and pollutants.</p> 
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Crystal clear.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Crystal clear.png')}}" alt="" height="56px">
                     <h4>Crystal-Clear Transparency </h4>
                     <p>Virtually invisible with no texture and distortion, maintaining your car’s original finish</p> 
                 </div>

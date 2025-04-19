@@ -70,14 +70,14 @@
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="" height="56px">
                     <h4>Scratch & Impact Resistance</h4>
                     <p>Shields your car from minor abrasions,
                         rock chips, and road debris,
                         preventing scratches.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/UV-1.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/UV-1.png')}}" alt="" height="56px">
                     <h4>Hydrophobic Topcoat</h4>
                     <p>Designed to repel water, dirt,
                         and contaminants, making cleaning
@@ -87,7 +87,7 @@
                   
                 </div>
                 <div class="col-md-4">
-                     <img src="{{ asset('assets/llumar/images/self-healing.png')}}" alt="">
+                     <img src="{{ asset('assets/llumar/images/self-healing.png')}}" alt="" height="56px">
                      <h4>Self Healing Technology</h4>
                      <p>When exposed to the sun or warm water,
                          it automatically disappears minor
@@ -97,7 +97,7 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/durable.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/durable.png')}}" alt="" height="56px">
                     <h4>Customized Fit</h4>
                     <p>Made to fit your vehicle seamlessly
                         by adding a layer of invisible yet
@@ -108,7 +108,7 @@
                 <div class="col-md-4">
                     
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/UV.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/UV.png')}}" alt="" height="56px">
                     <h4>UV & Stain Resistance</h4>
                     <p>Prevents paint fading, yellowing,
                         and staining caused by UV rays,
@@ -116,7 +116,7 @@
                 </div>
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/glare.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/glare.png')}}" alt="" height="56px">
                     <h4>Multiple Finishes</h4>
                     <p>An array of options, from glossy,
                         matte, or specialty finishes,

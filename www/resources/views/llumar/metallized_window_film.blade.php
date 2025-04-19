@@ -1,7 +1,7 @@
 @extends('llumar.layouts.master')
 
 @section('title')
-    1. Metallized window film
+    Metallized window film
 @endsection
 @section('content')
     <!-- section hero-image -->
@@ -69,12 +69,12 @@
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/1.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/1.png')}}" alt="" height="56px">
                     <h4>UV Protection  </h4>
                     <p>Blocks 99% of harmful UV rays, protecting your skin and preventing interior fading.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/2.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/2.png')}}" alt="" height="56px">
                     <h4>Heat Reflection </h4>
                     <p>Reflects heat, keeping your car cooler and reducing AC usage for better fuel efficiency.</p>
                     <!-- <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/2.png')}}" alt=""> -->
@@ -82,27 +82,27 @@
 
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/3.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/3.png')}}" alt="" height="56px">
                     <h4>Enhanced Durability</h4>
                     <p>Designed to maintain its original colour and quality despite regular sun exposure.</p>
                 </div>
             </div>
             <div class="row mt-2  why-choose-points">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/4.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/4.png')}}" alt="" height="56px">
                     <h4>Aesthetic Shine  </h4>
                     <p>Offers a stylish mirror-like finish that contributes to the aesthetic appearance of your car.</p>
                 </div>
                 <div class="col-md-4">
 
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/5.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/5.png')}}" alt="" height="56px">
                     <h4>Glare Reduction  </h4>
                     <p>Reduces glare from the sun and headlights for better visibility and a smoother drive..</p>
                 </div>
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/6.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/icon/6.png')}}" alt="" height="56px">
                     <h4>Heat Reduction </h4>
                     <p>Offers protection against heat, keeping the interiors cool and comfortable.</p>
                 </div>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="features-points feature-threee">
+                            <div class="features-points feature-three">
                                 <h4>High Clarity & Visibility </h4>
                             </div>
                         </div>
@@ -242,38 +242,48 @@
 
     <!-- gallery -->
 
-    {{-- <section class="gallery-section bg-dark-gray">
+    <section class="gallery-section bg-dark-gray">
         <div class="container reveal">
             <div>
-                <h2>Dyed Window Films Gallary</h2>
+                <h2>Metallized Window Films Gallery</h2>
                 <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <div class="row mt-4 d-flex g-3">
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/1.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/1.png') }}" class="img-fluid gallery-img"
+                        alt="Metallized window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/2.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/2.png') }}" class="img-fluid gallery-img"
+                        alt="Metallized window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/3.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/3.png') }}" class="img-fluid gallery-img"
+                        alt="Metallized window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/4.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/4.png') }}" class="img-fluid gallery-img"
+                        alt="Metallized window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/5.png') }}" class="img-fluid gallery-img"
+                        alt="Metallized window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/6.png') }}" class="img-fluid gallery-img"
+                        alt="Metallized window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/7.png') }}" class="img-fluid gallery-img"
+                        alt="Metallized window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/8.png') }}" class="img-fluid gallery-img"
+                        alt="Metallized window films">
                 </div>
                 <!-- Continue other images similarly -->
-            </div>
-            <div class="row mt-4 d-flex gap-3">
-                <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/5.png') }}" class="w-100 gallery-img"
-                        alt="Automotive PPF">
-                </div>
             </div>
         </div>
     </section>
@@ -285,7 +295,7 @@
             <img class="modal-content" id="expandedImg">
         </div>
         <button class="nav-btn next-btn">&gt;</button>
-    </div> --}}
+    </div>
 
     <!-- protection -->
     <section class="protection-section">
@@ -324,7 +334,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8    ">
                     <img src="{{ asset('assets/llumar/images/metallized_window_film/7.png')}}" class="w-100" alt="">
                 </div>
             </div>
@@ -531,7 +541,7 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                     Where can I find an authorized LLumar dealer for metalized window film installation?
+                                     Where can I find an authorized LLumar dealer for metallized window film installation?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"

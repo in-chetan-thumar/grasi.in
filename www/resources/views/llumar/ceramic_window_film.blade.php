@@ -74,12 +74,12 @@
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/1.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/1.png')}}" alt="" height="56px">
                     <h4>Advanced Heat Rejection </h4>
                     <p> Helps your car cool down faster with its IR-blocking nano-ceramic particles.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/2.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/2.png')}}" alt="" height="56px">
                     <h4>UV Protection</h4>
                     <p>Blocks 99% of UV & IR rays, protecting interiors from fading and preventing skin damage.</p>
                     <!-- <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/2.png')}}" alt=""> -->
@@ -87,21 +87,21 @@
 
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/3.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/3.png')}}" alt="" height="56px">
                     <h4>Glare Reduction: </h4>
                     <p>Decreases harsh glare for better visibility and a safer driving experience.</p>
                 </div>
             </div>
             <div class="row mt-2 mt-3 justify-content-center text-center why-choose-points">
                 <div class="col-md-4 ">
-                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/4.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/4.png')}}" alt="" height="56px">
                     <h4>Non-Metallic Composition </h4>
                     <p>Allows smooth, seamless GPS, mobile, and radio connectivity.</p>
                 </div>
                 <div class="col-md-4  ">
 
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/5.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/icons/5.png')}}" alt="" height="56px">
                     <h4>Clear View</h4>
                     <p>Optimum clarity with superior heat rejection, allowing natural light in without blocking the view. </p>
                 </div>
@@ -237,38 +237,48 @@
 
     <!-- gallery -->
 
-    {{-- <section class="gallery-section bg-dark-gray">
+    <section class="gallery-section bg-dark-gray">
         <div class="container reveal">
             <div>
-                <h2>Dyed Window Films Gallary</h2>
+                <h2>Ceramic Window Films Gallery</h2>
                 <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <div class="row mt-4 d-flex g-3">
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/1.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/gallery/1.png') }}" class="img-fluid gallery-img"
+                        alt="Ceramic window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/2.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/gallery/2.png') }}" class="img-fluid gallery-img"
+                        alt="Ceramic window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/3.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/gallery/3.png') }}" class="img-fluid gallery-img"
+                        alt="Ceramic window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/4.png') }}" class="img-fluid gallery-img"
-                        alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/gallery/4.png') }}" class="img-fluid gallery-img"
+                        alt="Ceramic window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/gallery/5.png') }}" class="img-fluid gallery-img"
+                        alt="Ceramic window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/gallery/6.png') }}" class="img-fluid gallery-img"
+                        alt="Ceramic window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/gallery/7.png') }}" class="img-fluid gallery-img"
+                        alt="Ceramic window films">
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/llumar/images/ceramic_window_film/gallery/8.png') }}" class="img-fluid gallery-img"
+                        alt="Ceramic window films">
                 </div>
                 <!-- Continue other images similarly -->
-            </div>
-            <div class="row mt-4 d-flex gap-3">
-                <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/5.png') }}" class="w-100 gallery-img"
-                        alt="Automotive PPF">
-                </div>
             </div>
         </div>
     </section>
@@ -280,7 +290,7 @@
             <img class="modal-content" id="expandedImg">
         </div>
         <button class="nav-btn next-btn">&gt;</button>
-    </div> --}}
+    </div>
 
     <!-- protection -->
     <section class="protection-section">
@@ -527,7 +537,7 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Where can I find an authorized LLumar dealer for dyed window film installation?
+                                    Where can I find an authorized LLumar dealer for ceramic window film installation?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"

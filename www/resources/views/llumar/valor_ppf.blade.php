@@ -59,18 +59,18 @@
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/valor_ppf/easy-to-clean.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/valor_ppf/easy-to-clean.png')}}" alt="" height="56px">
                     <h4>Easy-to-Clean Surface</h4>
                     <p>Our patented Tetrashield technology enhances the film’s stain resistance and hydrophobicity, which repels dirt and water.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/valor_ppf/Crystal clear.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/valor_ppf/Crystal clear.png')}}" alt="" height="56px">
                     <h4>Ultra-Glossy Finish</h4>
                     <p> Enhances your car’s paint with an optically clear finish and smooth shine.
                         </p> 
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/valor_ppf/Self Healing-1.png')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/valor_ppf/Self Healing-1.png')}}" alt="" height="56px">
                     <h4>Advanced Durability </h4>
                     <p>Protects against rock chips, road debris, mud splatters, and tar marks, increasing its life upto 12 years.
                     </p> 
@@ -80,14 +80,14 @@
             <div class="row mt-2">
                 <div class="col-md-4">
                    <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
-                   <img src="{{ asset('assets/llumar/images/valor_ppf/Customized fir.png')}}" alt="">
+                   <img src="{{ asset('assets/llumar/images/valor_ppf/Customized fir.png')}}" alt="" height="56px">
                    <h4>Customized Fit</h4>
                    <p> Made to fit your vehicle seamlessly by adding a layer of invisible yet strong protection. 
                    </p>
                   
                 </div>
                 <div class="col-md-4">
-                      <img src="{{ asset('assets/llumar/images/valor_ppf/stain.png')}}" alt="">
+                      <img src="{{ asset('assets/llumar/images/valor_ppf/stain.png')}}" alt="" height="56px">
                     <h4>Stain & Fade Resistance </h4>
                     <p>Offers superior protection against acid rain, tree sap, and bird droppings.
                     </p> 
@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-md-4">
                       <!-- <img src="{{ asset('assets/llumar/images/self-healing.svg')}}" alt=""> -->
-                     <img src="{{ asset('assets/llumar/images/valor_ppf/Self Healing.png')}}" alt="">
+                     <img src="{{ asset('assets/llumar/images/valor_ppf/Self Healing.png')}}" alt="" height="56px">
                      <h4>Self Healing Technology</h4>
                      <p>Vanishes minor scratches and swirl marks when exposed to the sun or warm water.
                     </p>
