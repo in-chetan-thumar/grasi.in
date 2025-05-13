@@ -75,9 +75,9 @@
                                                                 <div class="row">
                                                                     <div class="col-xl-3 col-lg-3">
                                                                         <div class="megamenu_wrpr">
-                                                                            <a href="https://llumar.com/emea/en/automotive/window-tint/"
+                                                                            <a href="{{route('llumar.automotive.window.film')}}"
                                                                                 target="_blank">
-                                                                                <h4>Window Tint</h4>
+                                                                                <h4>Window Films</h4>
                                                                             </a>
                                                                             <ul>
                                                                                 <li><a href="{{route('llumar.ceramic.window.film')}}"
@@ -90,7 +90,7 @@
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/window-tint/clear/"
                                                                                     target="_blank"       >Clear</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/window-tint/benefits/"
-                                                                                    target="_blank">Window Tint
+                                                                                    target="_blank">Window Film
                                                                                         Benefits</a></li>
                                                                             </ul>
                                                                         </div>
@@ -99,7 +99,7 @@
                                                                         <div class="megamenu_wrpr">
                                                                             <a href="{{route('llumar.automotive.PPF')}}"
                                                                                >
-                                                                                <h4>Paint Protection Film</h4>
+                                                                                <h4>Paint Protection Films</h4>
                                                                             </a>
                                                                             <ul>
                                                                                 
@@ -107,6 +107,8 @@
                                                                                    >Valor</a></li>
                                                                                 <li><a href="{{route('llumar.platinum.PPF')}}"
                                                                                    >Platinum</a></li>
+                                                                                <li><a href="{{route('llumar.classeco')}}"
+                                                                                        target="_blank">Classeco</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/platinum-matte/"
                                                                                         target="_blank">Platinum
                                                                                         Matte</a></li>

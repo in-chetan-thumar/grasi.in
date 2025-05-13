@@ -80,7 +80,7 @@ button {
 
 .container {
     max-width: 1350px;
-    margin: 0 auto;
+    margin: 10px auto 0px auto;
     width: 100%;
 }
 

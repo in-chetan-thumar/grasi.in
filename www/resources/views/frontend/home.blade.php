@@ -39,6 +39,20 @@
         <div class="swiper_main_slide">
             <div class="swiper-container-banner">
                 <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <img srcset="{{ asset('assets/frontend/images/banner4.webp') }}"
+                            src="{{ asset('assets/frontend/images/banner4.webp') }}" alt="image" />
+                        <div class="banner_figcaption">
+                            <div class="container">
+                                <figcaption>
+                                    <h2>Safety Glazing: Superior Heat Rejection & Anti-Glare Clarity</h2>
+                                    <p>For a Cooler, Clearer Drive!</p>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="swiper-slide">
                         <img srcset="{{ asset('assets/frontend/images/banner1.webp') }}"
                             src="{{ asset('assets/frontend/images/banner1.webp') }}" alt="image" />
@@ -80,24 +94,17 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
-                        <img srcset="{{ asset('assets/frontend/images/banner4.webp') }}"
-                            src="{{ asset('assets/frontend/images/banner4.webp') }}" alt="image" />
-                        <div class="banner_figcaption">
-                            <div class="container">
-                                <figcaption>
-                                    <h2>Safety Glazing: Superior Heat Rejection & Anti-Glare Clarity</h2>
-                                    <p>For a Cooler, Clearer Drive!</p>
-                                </figcaption>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
                 <div class="swiper-pagination-banner"></div>
             </div>
         </div>
     </section>
+
+
+
+
+
+
     <section class="solution">
         <div class="container">
             <div class="row justify-content-center">
@@ -745,11 +752,11 @@
     </section>
 
     <!--
-                                                                                                                                                                                                                                                                                                                    <section class="instagram_story">
-                                                                                                                                                                                                                                                                                                                       <div class="container">
+                                            <section class="instagram_story">
+                                               <div class="container">
 
-                                                                                                                                                                                                                                                                                                                       </div>
-                                                                                                                                                                                                                                                                                                                    </section> -->
+                                               </div>
+                                            </section> -->
 
 
 
@@ -774,25 +781,14 @@
                     </div>
                 </div>
                 {{-- insta reels  --}}
-                {{-- 
-                    <div class="swiper-slide">
-                        <video class="insta-video" controls="" id="reel1"
-                            poster="{{ asset('assets/frontend/images/Reel_Covers/4.webp') }}">
-                            <source src="{{ asset('assets/frontend/images/videos/Checkout _this_video.mp4') }}"
-                                type="video/mp4">
-                            <source src="{{ asset('assets/frontend/images/videos/Checkout _this_video.mp4') }}"
-                                type="video/ogg">
-                        </video>
-                        <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reel1">
-                            <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
-                        </div>
-                    </div> --}}
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <video class="insta-video" controls="" id="reel1"
                             poster="{{ asset('assets/frontend/images/Reel_Covers/8.webp') }}">
-                            <source src="{{ asset('assets/frontend/images/videos/llumar-film.mp4') }}" type="video/mp4">
-                            <source src="{{ asset('assets/frontend/images/videos/llumar-film.mp4') }}" type="video/ogg">
+                            <source src="{{ asset('assets/frontend/images/videos/llumar-film.mp4') }}"
+                                type="video/mp4">
+                            <source src="{{ asset('assets/frontend/images/videos/llumar-film.mp4') }}"
+                                type="video/ogg">
                         </video>
                         <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reel1">
                             <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
@@ -833,16 +829,18 @@
                         </div>
                     </div>
                     {{-- <div class="swiper-slide">
-                    <video class="insta-video" controls="" id="reel3"
-                        poster="{{ asset('assets/frontend/images/Reel_Covers/7.webp') }}">
-                        <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp4') }}" type="video/mp4">
-                        <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp4') }}" type="video/ogg">
-                    </video>
-                    <div class="video-controls1 video-icon insta-play-icon reel3" data-reel="reel3">
-                        <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
+                        <video class="insta-video" controls="" id="reel3"
+                            poster="{{ asset('assets/frontend/images/Reel_Covers/7.webp') }}">
+                            <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp4') }}"
+                                type="video/mp4">
+                            <source src="{{ asset('assets/frontend/images/videos/FY_24_25_roadmap.mp4') }}"
+                                type="video/ogg">
+                        </video>
+                        <div class="video-controls1 video-icon insta-play-icon reel3" data-reel="reel3">
+                            <img src="{{ asset('assets/frontend/images/video-icon.webp') }}" alt="video-icon">
+                        </div>
                     </div>
-                </div> --}}
-                    {{-- <div class="swiper-slide">
+                    <div class="swiper-slide">
                         <video class="insta-video" controls="" id="reel2"
                             poster="{{ asset('assets/frontend/images/Reel_Covers/5.webp') }}">
                             <source src="{{ asset('assets/frontend/images/videos/Enjoy_the_best.mp4') }}"
@@ -919,7 +917,7 @@
 
 
 
-    <section class="faq pt0">
+      <section class="faq pt0">
         <div class="container">
             <div class="title_1">
                 <div class="title_main">FAQ’s</div>

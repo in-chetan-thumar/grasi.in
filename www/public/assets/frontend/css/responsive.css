@@ -444,8 +444,8 @@ footer .top_footer .footer_wrapper ul li+li {  margin-top: 10px;}
 }
 
 @media screen and (max-width:575px) {
-.header .top_header ul li .btn {  font-size: 10px;  min-width: 120px;  padding: 6px 10px 6px 10px;}
-.header .top_header ul li+li {  margin-left: 7px;}
+.header .top_header ul li .btn {  font-size: 10px;  min-width: 120px;  padding: 6px 0px 6px 0px;}
+.header .top_header ul li+li {  margin-left: 4px;}
 .header .main_header .logo_main img {   max-width: 140px;}
 .header .top_header { margin-bottom: 10px;}
 .header {padding-bottom: 15px;}

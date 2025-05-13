@@ -24,6 +24,7 @@ class Dealer extends Model
         'pincode',
         'contact_name',
         'contact_number',
+        'contact_number2',
         'contact_email',
         'latitude',
         'longitude',

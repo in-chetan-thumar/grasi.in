@@ -234,6 +234,9 @@
     .why-choose-dyed {
         background-image: url("../images/dyed_window_film/web page 4.png");
     }
+    .why-choose-automotive-window-film {
+        background-image: url("../images/automotive-window-film/why-choose.jpg");
+    }
 
     /* features-section */
     .features-section {
@@ -262,6 +265,14 @@
     }
     .features-section-metallized{
         background-image: url("../images/metallized_window_film/6.png");
+        background-position: bottom;
+    }
+    .features-section-classeco{
+        background-image: url("../images/classeco/feature-car-back.jpg");
+        background-position: bottom;
+    }
+    .features-section-automotive-window-film{
+        background-image: url("../images/automotive-window-film/feature-car-back.jpg");
         background-position: bottom;
     }
     

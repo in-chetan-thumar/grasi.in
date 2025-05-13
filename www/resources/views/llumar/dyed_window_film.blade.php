@@ -3,6 +3,12 @@
 @section('title')
      Dyed window film
 @endsection
+
+{{-- SEO  --}}
+@section('seo') 
+
+@endsection
+
 @section('content')
     <!-- section hero-image -->
     <section class="hero-section  hero-section-dyed responsive-desktop">
@@ -30,7 +36,7 @@
     <section class="section-ppf bg-dark-gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 p-0 pe-md-5">
                     <h1> Dyed Window Films</h1>
                     <div class="title-divider">
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">

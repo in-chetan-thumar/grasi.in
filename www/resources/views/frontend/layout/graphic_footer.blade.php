@@ -128,6 +128,8 @@
                                     <li><a href="#">Casestudies</a></li>
                                     <li><a href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/"
                                             target="_blank">Careers</a></li>
+                                    <li><a href="https://grasi.in/blog/" target="_blank">Blogs</a></li>  
+                                    <li><a href="{{ route('privacy-policy.index') }}">Privacy Policy</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -224,11 +226,11 @@
                         <a href="https://www.buzzmakers.in/" target="_blank"
                             style="color: white; text-decoration:underline;">Buzz Makers</a>
                     </p>
-                    {{-- <div class="wp-icon">
-                        <a href="https://wa.link/35uzb5" target="_blank" class="" style="">
-                            <img src="{{ asset('assets/frontend/images/whatsapp.svg') }}" alt="whatsapp">
-                        </a>
-                    </div> --}}
+                    <!--<div class="wp-icon">-->
+                    <!--    <a href="https://wa.link/35uzb5" target="_blank" class="" style="">-->
+                    <!--        <img src="{{ asset('assets/frontend/images/whatsapp.svg') }}" alt="whatsapp">-->
+                    <!--    </a>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>

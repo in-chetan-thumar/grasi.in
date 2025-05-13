@@ -46,4 +46,11 @@ class LlumarController extends Controller
         return view('llumar.metallized_window_film');
 
     }
+    
+    public function classeco(){
+        return view('llumar.classeco');
+    }
+    public function automotiveWindowFilm(){
+        return view('llumar.automotive_window_film');
+    }
 }

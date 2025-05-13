@@ -3,6 +3,32 @@
 @section('title')
    Automotive paint protection film
 @endsection
+
+{{-- SEO  --}}
+@section('seo') 
+ <title>Automotive Paint Protection Film | Car PPF in India – LLumar by Gras-i</title>
+    <meta name="description" content="Get LLumar automotive paint protection film from authorized dealers across major cities in India. Our high-performance car PPF in India shields your vehicle from scratches, chips, and UV damage - perfect for lasting protection." />
+
+    <meta name="keywords" content="automotive paint protection film, paint protection film in india, car paint protection film, automotive ppf, car ppf, llumar, grasi" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="Automotive Paint Protection Film | Car PPF in India – LLumar by Gras-i" />
+    <meta property="og:description" content="Get LLumar automotive paint protection film from authorized dealers across major cities in India. Our high-performance car PPF in India shields your vehicle from scratches, chips, and UV damage - perfect for lasting protection." />
+    <meta property="og:url" content="https://www.grasi.in/" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/about-car.webp" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Automotive Paint Protection Film | Car PPF in India – LLumar by Gras-i" />
+    <meta name="twitter:description" content="Get LLumar automotive paint protection film from authorized dealers across major cities in India. Our high-performance car PPF in India shields your vehicle from scratches, chips, and UV damage - perfect for lasting protection." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/about-car.webp" />
+    <meta name="twitter:url" content="https://www.grasi.in/automotive-ppf" />
+
+    <link rel="canonical" href="https://www.grasi.in/automotive-ppf" />
+@endsection
+
 @section('content')
 
 
@@ -13,7 +39,7 @@
             <h6>with automotive paint protection film</h6>
         </div>
         {{-- <div>
-            <img src="{{ asset('assets/llumar/images/slider-car-new.jpg')}}" class="w-100" alt="">
+            <img src="{{ asset('assets/llumar/images/slider-car-new.jpg')}}" class="w-100" alt="automotive paint protection film">
         </div>  --}}
     </section>
 
@@ -24,7 +50,7 @@
             <h6>with automotive paint protection film</h6>
         </div>
         <div>
-            <img src="{{ asset('assets/llumar/images/slider-car-new.webp')}}" class="w-100" alt="">
+            <img src="{{ asset('assets/llumar/images/slider-car-new.webp')}}" class="w-100" alt="automotive paint protection film">
         </div>
     </section>
     <!-- section hero-image end -->
@@ -33,23 +59,25 @@
     <section class="section-ppf bg-dark-gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 p-0 pe-md-5">
                     <h1>Automotive <br> Paint Protection Film(PPF)</h1>
                     <div class="title-divider">
-                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                     </div>
                     <p>Your car can radiate the same shine and pristine exterior for
                         years, despite all the external contaminants and road hazards
-                        with the transformative benefits of Automotive Paint Protection
-                        Film. It is a durable layer that protects your vehicle's exterior
+                        with the transformative benefits of automotive paint protection
+                        film. It is a durable layer that protects your vehicle's exterior
                         against rock chips, scratches, bird droppings, and road debris.
                         Designed with self-healing technology, it not only shields the car
                         but also helps maintain its aesthetic finish.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="ppf-image">
-                        <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
-                        <img src="{{ asset('assets/llumar/images/about-film.webp')}}" class="film-img" alt="">
+                        <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="automotive paint protection
+                        film">
+                        <img src="{{ asset('assets/llumar/images/about-film.webp')}}" class="film-img" alt="car paint protection
+                        film">
                     </div>
                 </div>
             </div>
@@ -63,21 +91,21 @@
                 <label class="title-label-text-size">Why Choose</label>
                 <h2>LLumar Automotive PPF</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <!-- ppf -->
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="Scratch & Impact Resistance icon" height="56px">
                     <h4>Scratch & Impact Resistance</h4>
                     <p>Shields your car from minor abrasions,
                         rock chips, and road debris,
                         preventing scratches.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/UV-1.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/UV-1.png')}}" alt="Hydrophobic Topcoat icon" height="56px">
                     <h4>Hydrophobic Topcoat</h4>
                     <p>Designed to repel water, dirt,
                         and contaminants, making cleaning
@@ -87,7 +115,7 @@
                   
                 </div>
                 <div class="col-md-4">
-                     <img src="{{ asset('assets/llumar/images/self-healing.png')}}" alt="" height="56px">
+                     <img src="{{ asset('assets/llumar/images/self-healing.png')}}" alt="Self Healing Technology PPF" height="56px">
                      <h4>Self Healing Technology</h4>
                      <p>When exposed to the sun or warm water,
                          it automatically disappears minor
@@ -97,7 +125,7 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/durable.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/durable.png')}}" alt="Customized Fit PPF" height="56px">
                     <h4>Customized Fit</h4>
                     <p>Made to fit your vehicle seamlessly
                         by adding a layer of invisible yet
@@ -108,7 +136,7 @@
                 <div class="col-md-4">
                     
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/UV.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/UV.png')}}" alt="car ppf for UV & Stain resistance" height="56px">
                     <h4>UV & Stain Resistance</h4>
                     <p>Prevents paint fading, yellowing,
                         and staining caused by UV rays,
@@ -116,7 +144,7 @@
                 </div>
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/glare.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/glare.png')}}" alt="Multiple Finishes icon" height="56px">
                     <h4>Multiple Finishes</h4>
                     <p>An array of options, from glossy,
                         matte, or specialty finishes,
@@ -133,7 +161,7 @@
                 <label class="title-label-text-size">Features of</label>
                 <h2>LLumar Automotive PPF</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <div class="row mt-5">
@@ -193,7 +221,7 @@
                 <div class="col-md-3">
                     <div>
                         <h4>Full Vehicle Coverage</h4>
-                        <img src="{{ asset('assets/llumar/images/full-car.webp')}}" alt="">
+                        <img src="{{ asset('assets/llumar/images/full-car.webp')}}" alt="car ppf for full vehicle coverage">
                         <p>Covers every painted surface of the vehicle</p>
                     </div>
                 </div>
@@ -202,27 +230,27 @@
             <h4>Partial Plus Protection</h4>
             <div class="vehicle-container mb-4">
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-full-bonnet.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-full-bonnet.webp')}}" alt="car ppf for FullBonnet">
                     <p>FullBonnet</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="automotive ppf for door cups">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="automotive ppf for side mirrors">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="car ppf for Rear & Front Bumpers">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="car ppf for Door Edges Guards">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -230,22 +258,22 @@
             <h4>Basic Partial Protection</h4>
             <div class="vehicle-container">
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="automotive ppf for door cups">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="automotive ppf for side mirrors">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="car ppf for Rear & Front Bumpers">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="car ppf for Door Edges Guards">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -267,7 +295,7 @@
             <div>
                 <h2>Automotive PPF Gallery</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <div class="row mt-4 d-flex g-3">
@@ -275,19 +303,19 @@
                     <img src="{{ asset('assets/llumar/images/automotive_ppf/1.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/2.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/automotive_ppf/2.png') }}" class="img-fluid gallery-img" alt="car PPF">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/3.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/automotive_ppf/3.png') }}" class="img-fluid gallery-img" alt="automotive paint protection film">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/4.png') }}" class="img-fluid gallery-img" alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/automotive_ppf/4.png') }}" class="img-fluid gallery-img" alt="paint protection film in india">
                 </div>
                 <!-- Continue other images similarly -->
             </div>
             <div class="row mt-4 d-flex gap-3">
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/automotive_ppf/5.png') }}" class="w-100 gallery-img" alt="Automotive PPF">
+                    <img src="{{ asset('assets/llumar/images/automotive_ppf/5.png') }}" class="w-100 gallery-img" alt="paint protection film in india">
                 </div>
             </div>
         </div>
@@ -311,36 +339,36 @@
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
                         <div class="title-divider">
-                            <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                            <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-6 ">
                             <!-- <img src="{{ asset('assets/llumar/images/weather.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/weather.png')}}" alt="">
+                            <img src="{{ asset('assets/llumar/images/weather.png')}}" alt="car ppf for harsh weather">
                             <p>Harsh <br> Weather</p>
                         </div>
                         <div class="col-6">
                             <!-- <img src="{{ asset('assets/llumar/images/rock-chips.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/rock-chips.png')}}" alt="">
+                            <img src="{{ asset('assets/llumar/images/rock-chips.png')}}" alt="our ppf protection from Rock Chips & Scratches">
                             <p>Rock Chips <br>& Scratches</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6">
                             <!-- <img src="{{ asset('assets/llumar/images/paint-fading-staining.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/paint-fading-staining.png')}}" alt="">
+                            <img src="{{ asset('assets/llumar/images/paint-fading-staining.png')}}" alt="protection from Paint Fading & Staining">
                             <p>Paint Fading <br> & Staining</p>
                         </div>
                         <div class="col-6">
                             <!-- <img src="{{ asset('assets/llumar/images/bird-dropping.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/bird-dropping.png')}}" alt="">
+                            <img src="{{ asset('assets/llumar/images/bird-dropping.png')}}" alt="protection from bird dropping">
                             <p>Bird <br> Droppings</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <img src="{{ asset('assets/llumar/images/protection against.webp')}}" class="w-100" alt="">
+                    <img src="{{ asset('assets/llumar/images/protection against.webp')}}" class="w-100" alt="get our car ppf for Complete protection ">
                 </div>
             </div>
         </div>
@@ -352,7 +380,7 @@
             <div class="text-center">
                 <h2>Related Products</h2>
                 <div class="title-divider mb-0">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <div class="button-view">
@@ -485,7 +513,7 @@
     <section class="section-faq bg-dark-gray">
         <div class="container">
             <div class="text-center  reveal">
-                <label class="title-label-text-size">Frequently Asked Questions</label>
+                <label class="title-label-text-size">Frequently Asked Questions (FAQ)</label>
                 <h2>About Automotive PPF</h2>
                 <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
@@ -504,7 +532,7 @@
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    LLumar PPF is designed to last up to 10 years with proper care and maintenance.
+                                    LLumar car PPF is designed to last up to 10 years with proper care and maintenance.
                                 </div>
                             </div>
                         </div>
@@ -513,13 +541,13 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Is LLumar PPF visible on my car's paint?
+                                    Is LLumar Automotive PPF visible on my car's paint?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    No, LLumar PPF is optically clear and matches your car’s finish.
+                                    No, LLumar car PPF is optically clear and matches your car’s finish.
                                 </div>
                             </div>
                         </div>
@@ -528,13 +556,13 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Can LLumar PPF be removed without damaging my paint?
+                                    Can LLumar automotive PPF be removed without damaging my paint?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Yes, LLumar PPF can be professionally removed without leaving residue or damaging the paint.
+                                    Yes, LLumar automotive paint protection film can be professionally removed without leaving residue or damaging the paint.
                                 </div>
                             </div>
                         </div>
@@ -549,7 +577,7 @@
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    The PPF’s self-healing topcoat disappears minor scratches and swirls with heat exposure from the sun or warm water.
+                                    The car PPF’s self-healing topcoat disappears minor scratches and swirls with heat exposure from the sun or warm water.
                                 </div>
                             </div>
                         </div>
@@ -558,13 +586,13 @@
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Does LLumar PPF affect my car's warranty?
+                                    Does LLumar automotive PPF affect my car's warranty?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    LLumar PPF is factory-backed and does not void your vehicle’s warranty.
+                                    LLumar car paint protection film is factory-backed and does not void your vehicle’s warranty.
 
                                 </div>
                             </div>
@@ -574,13 +602,13 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    What's the difference between gloss and matte PPF?
+                                    What's the difference between gloss and matte automotive paint protection film?
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    While a Gloss PPF enhances your car’s shine, the matte PPF gives it a satin-like, non-reflective look.
+                                    While a Gloss automotive PPF enhances your car’s shine, the matte car PPF gives it a satin-like, non-reflective look.
 
                                 </div>
                             </div>
@@ -590,7 +618,7 @@
                             <h2 class="accordion-header" id="headingSeven">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    How much does it cost to install LLumar Automotive PPF?
+                                    How much does it cost to install LLumar automotive paint protection film in India?
                                 </button>
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"

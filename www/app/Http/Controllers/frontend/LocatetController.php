@@ -34,7 +34,6 @@ class LocatetController extends Controller
 
         $states = $this->repository->getAllData('state');
         $cities = $this->repository->getAllData('city', $request->state_id);
-        // dd($cities);
         return view('frontend.locate', compact('states', 'llumarDealers', 'cities'));
     }
 

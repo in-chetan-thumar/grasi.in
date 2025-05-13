@@ -29,7 +29,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-    <link rel="shortcut icon" href="{{ asset('assets/images/landing_image/favicon.png') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ asset('assets/images/landing_image/favicon.webp') }}" type="image/x-icon" />
     <link href="{{ asset('assets/landing_css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/landing_css/animate.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/landing_css/font-awesome.css') }}" rel="stylesheet" type="text/css" />
@@ -96,7 +96,7 @@
         <header class="header">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="main_logo">
-                    <a href="{{ route('enquiry.index') }}"><img src="{{ asset('assets/images/light-logo.png') }}"
+                   <a href="{{ route('enquiry.index') }}"><img src="{{ asset('assets/images/light-logo.png') }}"
                             alt="" /></a>
                 </div>
                 <div class="header_info">

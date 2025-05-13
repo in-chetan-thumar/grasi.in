@@ -145,6 +145,8 @@
                                             'rows' => '10',
                                             'cols' => '30',
                                         ]) !!}
+
+
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-12 col-lg-12 col-md-12 col-sm-12">
@@ -163,7 +165,10 @@
                                     </div>
                                 </div>
                             </div>
+
                             {{ Form::close() }}
+
+
                         </div>
                     </div>
                 </div>

@@ -95,7 +95,7 @@
         }
 
         .link-for-web {
-            display: block !important;
+          /*  display: block !important;*/
         }
 
         @media screen and (max-width:480px) {
@@ -104,7 +104,7 @@
             }
 
             .link-for-web {
-                display: none !important;
+                /*display: none !important;*/
             }
         }
 
@@ -115,7 +115,7 @@
             }
 
             .link-for-web {
-                display: none !important;
+               /* display: none !important;*/
             }
         }
 
@@ -125,7 +125,7 @@
             }
 
             .link-for-web {
-                display: none !important;
+               /* display: none !important;*/
             }
         }
     </style>

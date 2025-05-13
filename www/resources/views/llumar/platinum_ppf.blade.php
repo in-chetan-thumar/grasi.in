@@ -3,6 +3,32 @@
 @section('title')
     Platinum paint protection film
 @endsection
+
+{{-- SEO  --}}
+@section('seo') 
+<title>LLumar Platinum PPF | Platinum Paint Protection Film – Grasi</title>
+    <meta name="description" content="LLumar platinum paint protection film from Grasi offers advanced defense against scratches, chips, and stains. LLumar platinum ppf for lasting gloss and strong durability. Available through dealers across India for lasting vehicle protection." />
+    <meta name="keywords" content="platinum paint protection film, llumar platinum ppf, llumar platinum, dealer, india, grasi" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="LLumar Platinum PPF | Platinum Paint Protection Film – Grasi" />
+    <meta property="og:description" content="LLumar platinum paint protection film from Grasi offers advanced defense against scratches, chips, and stains. LLumar platinum ppf for lasting gloss and strong durability. Available through dealers across India for lasting vehicle protection." />
+    <meta property="og:url" content="https://www.grasi.in/automotive-ppf/platinum" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/platinum_ppf/about-side-photo-two.webp" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LLumar Platinum PPF | Platinum Paint Protection Film – Grasi" />
+    <meta name="twitter:description" content="LLumar platinum paint protection film from Grasi offers advanced defense against scratches, chips, and stains. LLumar platinum ppf for lasting gloss and strong durability. Available through dealers across India for lasting vehicle protection." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/platinum_ppf/about-side-photo-two.webp" />
+    <meta name="twitter:url" content="https://www.grasi.in/automotive-ppf/platinum" />
+
+    <link rel="canonical" href="https://www.grasi.in/automotive-ppf/platinum" />
+@endsection
+
 @section('content')
     <!-- section hero-image -->
     <section class="hero-section hero-section-platinum responsive-desktop">
@@ -28,7 +54,7 @@
             <h6>Platinum Paint Protection Film
         </div>
         <div>
-            <img src="{{ asset('assets/llumar/images/platinum_ppf/cover.webp')}}" class="w-100" alt="">
+            <img src="{{ asset('assets/llumar/images/platinum_ppf/cover.webp')}}" class="w-100" alt="platinum paint protection film">
         </div>
     </section>
     <!-- section hero-image end -->
@@ -36,18 +62,18 @@
     <section class="section-ppf bg-dark-gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h1> Platinum  <br> Paint Protection Film(PPF)</h1>
+                <div class="col-md-6 p-0 pe-md-5">
+                    <h1> Platinum  <br> Paint Protection Film (PPF)</h1>
                     <div class="title-divider">
-                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                     </div>
-                    <p>Your vehicle is an investment—protect it with the best durability and defense. The Platinum Paint Protection Films offer a solid and stylish shield against road debris, scratches, and other environmental contaminants. Backed by self-healing technology, its hydrophobic topcoat, and superior stain resistance, it promises long-lasting protection with a clear layer that enhances your vehicle's aesthetic appeal.
+                    <p>Your vehicle is an investment - protect it with LLumar Platinum PPF, designed for unmatched durability and high-end defense. The Platinum paint protection film offers a solid and stylish shield against road debris, scratches, and environmental contaminants. Backed by advanced self-healing technology, a hydrophobic topcoat, and superior stain resistance, LLumar Platinum PPF ensures long-lasting protection with a crystal-clear layer that enhances your vehicle’s aesthetic appeal.
                     </p>
                 </div>
                 <div class="col-md-6">
                     <div class="ppf-image">
-                        <img src="{{ asset('assets/llumar/images/platinum_ppf/about-main-photo.webp')}}" class="w-100" alt="">
-                        <img src="{{ asset('assets/llumar/images/platinum_ppf/about-side-photo-two.webp')}}" class="film-img" alt="">
+                        <img src="{{ asset('assets/llumar/images/platinum_ppf/about-main-photo.webp')}}" class="w-100" alt="Platinum paint protection film">
+                        <img src="{{ asset('assets/llumar/images/platinum_ppf/about-side-photo-two.webp')}}" class="film-img" alt="Platinum paint protection film">
                     </div>
                 </div>
             </div>
@@ -61,26 +87,26 @@
                 <label class="title-label-text-size">Why Choose</label>
                 <h2>LLumar Platinum PPF</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <!-- ppf -->
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/protection.png')}}" alt="llumar platinum ppf" height="56px">
                     <h4>Strong Protection</h4>
                     <p>Shields against rock chips, road debris, and scratches.
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Hydro.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Hydro.png')}}" alt="Hydrophobic Topcoat" height="56px">
                     <h4>Hydrophobic Topcoat </h4>
                     <p>Our patented top coat, Hydrogard offers strong durability and repels water, dirt, and grime for seamless and easier maintenance.</p> 
                 </div>
                 <div class="col-md-4">
                      <!-- <img src="{{ asset('assets/llumar/images/self-healing.svg')}}" alt=""> -->
-                     <img src="{{ asset('assets/llumar/images/self-healing.png')}}" alt="" height="56px">
+                     <img src="{{ asset('assets/llumar/images/self-healing.png')}}" alt="llumar platinum ppf with Self-Healing Surface" height="56px">
                      <h4>Self-Healing Surface </h4>
                      <p>Minor scratches disappear with sun or heat exposure.
                     </p> 
@@ -89,20 +115,20 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Durable.png')}}" alt="" height="56px"> 
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Durable.png')}}" alt="llumar platinum ppf is know for Long-Lasting Durability" height="56px"> 
                     <h4>Long-Lasting Durability </h4>
                     <p>Designed to withstand extreme external conditions with a factory-backed warranty of upto 10 years.
                     </p>
                 </div>
                 <div class="col-md-4">
                     
-                     <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Stain.png')}}" alt="" height="56px">
+                     <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Stain.png')}}" alt="Stain Resistance" height="56px">
                     <h4>Stain Resistance</h4>
                     <p>Blocks staining from bird droppings, bug splatter, and pollutants.</p> 
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Crystal clear.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/why-choose-icons -Crystal clear.png')}}" alt="Crystal-Clear Transparency" height="56px">
                     <h4>Crystal-Clear Transparency </h4>
                     <p>Virtually invisible with no texture and distortion, maintaining your car’s original finish</p> 
                 </div>
@@ -117,7 +143,7 @@
                 <label class="title-label-text-size">Features of</label>
                 <h2>LLumar Platinum  PPF</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <div class="row mt-5">
@@ -178,7 +204,7 @@
                 <div class="col-md-3">
                     <div>
                         <h4>Full Vehicle Coverage</h4>
-                        <img src="{{ asset('assets/llumar/images/full-car.webp')}}" alt="">
+                        <img src="{{ asset('assets/llumar/images/full-car.webp')}}" alt="llumar platinum ppf">
                         <p>Covers every painted surface of the vehicle</p>
                     </div>
                 </div>
@@ -187,27 +213,27 @@
             <h4>Partial Plus Protection</h4>
             <div class="vehicle-container mb-4">
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-full-bonnet.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-full-bonnet.webp')}}" alt="llumar platinum ppf for full bonnet">
                     <p>FullBonnet</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="llumar platinum ppf for doo cups">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="llumar platinum ppf for side mirrors">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="llumar platinum ppf for rear & front bumpers">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="llumar platinum ppf for door edge guards">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -215,22 +241,22 @@
             <h4>Basic Partial Protection</h4>
             <div class="vehicle-container">
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="llumar platinum">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="llumar platinum ppf for side mirrors">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="llumar platinum ppf for rear & front bumpers">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="llumar platinum ppf for door edges guards">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -250,27 +276,27 @@
             <div>
                 <h2>Platinum PPF Gallery</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <div class="row  mt-4 d-flex g-3 "> 
                 <div class="col-md-3" >
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/1.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/1.png') }}" class="w-100 gallery-img" alt="llumar platinum ppf">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/2.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/2.png') }}" class="w-100 gallery-img" alt="platinum paint protection film">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/3.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/3.png') }}" class="w-100 gallery-img" alt="platinum paint protection film">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/4.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/4.png') }}" class="w-100 gallery-img" alt="platinum paint protection">
                 </div>
             </div>
         
             <div class="row  mt-4 d-flex g-3">
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/5.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/5.png') }}" class="w-100 gallery-img" alt="llumar platinum">
                 </div>
                 <div class="col-md-3">
                     <img src="{{ asset('assets/llumar/images/platinum_ppf/6.png') }}" class="w-100 gallery-img" alt="Platinum PPF">
@@ -299,35 +325,35 @@
                         <label class="title-label-text-size">Clear & Complete</label>
                         <h2>Protection Against</h2>
                         <div class="title-divider">
-                            <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                            <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class=" col-6">
-                            <img src="{{ asset('assets/llumar/images/rock-chips.png')}}" alt="">
+                            <img src="{{ asset('assets/llumar/images/rock-chips.png')}}" alt=" Scratches & Swirl Marks">
                            <p> Scratches &<br>Swirl Marks</p>                            
                             
                         </div>
                         <div class="col-6">
                        
-                            <img src="{{ asset('assets/llumar/images/platinum_ppf/protection-rock-chips.png')}}" alt="">
+                            <img src="{{ asset('assets/llumar/images/platinum_ppf/protection-rock-chips.png')}}" alt="platinum ppf for Rock Chips & Road Debris">
                             <p>Rock Chips &<br>  Road Debris</p> 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6">
-                            <img src="{{ asset('assets/llumar/images/paint-fading-staining.png')}}" alt="">
+                            <img src="{{ asset('assets/llumar/images/paint-fading-staining.png')}}" alt="Paint Damage & Staining">
                             <p>Paint Damage<br> & Staining</p>
                         </div>
                         <div class="col-6">
  
-                            <img src="{{ asset('assets/llumar/images/bird-dropping.png')}}" alt="">
+                            <img src="{{ asset('assets/llumar/images/bird-dropping.png')}}" alt="Bug Splatters & Bird Droppings">
                             <p>Bug Splatters<br> & Bird Droppings</p> 
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8 ">
-                    <img src="{{ asset('assets/llumar/images/platinum_ppf/protection-sec-photo.webp')}}" class="w-100" alt="">
+                    <img src="{{ asset('assets/llumar/images/platinum_ppf/protection-sec-photo.webp')}}" class="w-100" alt="llumar platinum ppf">
                 </div>
             </div>
         </div>
@@ -379,7 +405,7 @@
         <div class="container reveal">
             <div class="row bg-dark-gray rounded-5 p-3">
                 <div class="col-md-4 ps-0">
-                    <img src="{{ asset('assets/llumar/images/inquiry-car.webp')}}" class="w-100" alt="">
+                    <img src="{{ asset('assets/llumar/images/inquiry-car.webp')}}" class="w-100" alt="llumar platinum ppf">
                 </div>
                 <div class="col-md-8 form-section-alignment">
                     <div class="mb-3">
@@ -476,10 +502,10 @@
     <section class="section-faq bg-dark-gray">
         <div class="container">
             <div class="text-center  reveal">
-                <label class="title-label-text-size">Frequently Asked Questions</label>
+                <label class="title-label-text-size">Frequently Asked Questions (FAQ)</label>
                 <h2>About Platinum PPF</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
 
@@ -522,7 +548,7 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Can LLumar Platinum PPF be removed without damaging my paint?
+                                    Can LLumar platinum paint protection film be removed without damaging my paint?
 
                                 </button>
                             </h2>
@@ -539,7 +565,7 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    How does self-healing technology work?
+                                    How does self-healing technology work for LLumar platinum ppf?
 
                                 </button>
                             </h2>
@@ -556,7 +582,7 @@
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Does LLumar PPF affect my car’s warranty?
+                                    Does LLumar platinum ppf affect my car’s warranty?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"

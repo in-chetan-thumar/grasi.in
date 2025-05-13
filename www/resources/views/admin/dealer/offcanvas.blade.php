@@ -51,6 +51,13 @@
                     </div>
                 </div>
             </div>
+             <div class="col-6">
+                <div class="mb-3">
+                    <div class="form-group">
+                        {{ Form::bsText('Number', 'contact_number2', isset($dealer) ? $dealer->contact_number2 : old('contact_number2'), '', ['class' => ' only-number-allow', 'maxlength' => 10, 'placeholder' => 'Enter contact number2'], [], false) }}
+                    </div>
+                </div>
+            </div>
             <div class="col-6">
                 <div class="mb-3">
                     <div class="form-group">

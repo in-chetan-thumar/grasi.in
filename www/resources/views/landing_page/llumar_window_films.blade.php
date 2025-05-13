@@ -56,17 +56,14 @@
     <!-- Meta Pixel Code -->
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7WYHDH3H"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7WYHDH3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-BE7WYHDH3H');
-    </script>
+  gtag('config', 'G-BE7WYHDH3H');
+</script>
 
     <script>
         ! function(f, b, e, v, n, t, s) {
@@ -1344,7 +1341,7 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
     {!! JsValidator::formRequest('App\Http\Requests\LlumarWindowFilmRequest', '#form_enquiry') !!}
     <script type="text/javascript" src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js" id="aisensy-wa-widget"
-        widget-id="CKwKu7"></script>
+    widget-id="CKwKu7"></script>
     <script>
         $(document).ready(function() {
             $('#project_type').change(function() {

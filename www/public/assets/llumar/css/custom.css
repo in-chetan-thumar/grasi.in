@@ -121,6 +121,13 @@ p {
 .hero-section-metallized{
     background-image:  url("../images/metallized_window_film/1.png");
 }
+.hero-section-classeco{
+    background-image:  url("../images/classeco/slider-car-new.jpg");
+}
+.hero-section-automotive-window-film{
+    background-image:  url("../images/automotive-window-film/slider-car-new.jpg");
+    position: relative;
+}
 
 
 .hero-section .title-section {
@@ -155,15 +162,36 @@ p {
 
 }
 
+.title-section-classeco{
+    text-align: start !important;
+    width: 100% !important;
+    padding-left: 40px;
+}
+
+.title-section-automotive-window-film{
+    text-align: start !important;
+    width: 100% !important;
+    padding-left: 40px;
+}
+
 .hero-section h1 {
     background: -webkit-linear-gradient(0deg, var(--linear-color-1), var(--linear-color-2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     font-size: 3.5rem;
     margin-bottom: 0;
 }
+
+.hero-section-dyed h1 {
+    text-align: center;
+}
+
+.hero-section-valor h1 {
+    text-align: center;
+}
+
 
 .title-border {
     height: 120px;
@@ -241,6 +269,10 @@ p {
     margin-bottom: 0px;
 }
 
+.section-ppf p {
+    text-align: justify;
+}
+
 .ppf-image {
     position: relative;
 }
@@ -275,6 +307,14 @@ p {
 .why-choose-dyed {
     background-image: url("../images/dyed_window_film/web page 4.png");
 }
+.why-choose-classeco {
+    background-image: url("../images/classeco/why-choose.jpg");
+}
+.why-choose-automotive-window-film {
+    background-image: url("../images/automotive-window-film/why-choose.jpg");
+}
+
+
 .why-choose h4 {
     color: var(--orange);
 }
@@ -311,8 +351,17 @@ p {
 .features-section-metallized{
     background-image: url("../images/metallized_window_film/6.png");
 }
+.features-section-classeco{
+    background-image: url("../images/classeco/feature-car-back.jpg");
+}
+.features-section-automotive-window-film {
+    background-image: url("../images/automotive-window-film/feature-car-back.jpg");
+}
+
+
 .features-section .features-points h4 {
     color: var(--orange);
+    padding-left: 25px;
 }
 .features-section .features-points {
     padding-top: 2rem;

@@ -62,6 +62,7 @@ class DealerController extends Controller
             $params['city'] = $request->city;
             $params['contact_name'] = $request->contact_name;
             $params['contact_number'] = $request->contact_number;
+            $params['contact_number2'] = $request->contact_number2;
             $params['contact_email'] = $request->contact_email;
             $params['url'] = $request->url;
             $params['latitude'] = $request->latitude;
@@ -128,6 +129,7 @@ class DealerController extends Controller
             $params['city'] = $request->city;
             $params['contact_name'] = $request->contact_name;
             $params['contact_number'] = $request->contact_number;
+            $params['contact_number2'] = $request->contact_number2;
             $params['contact_email'] = $request->contact_email;
             $params['url'] = $request->url;
             $params['latitude'] = $request->latitude;

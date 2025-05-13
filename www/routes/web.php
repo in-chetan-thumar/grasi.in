@@ -28,20 +28,21 @@ Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 
 
 // LLumar pages grouped
-Route::prefix('llumar')->name('llumar.')->group(function () {
+Route::prefix('')->name('llumar.')->group(function () {
     Route::post('send.message', [App\Http\Controllers\llumar\LlumarController::class, 'sendMessage'])->name('send.message');
     
-    Route::get('automotive-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'automotivePPF'])->name('automotive.PPF');
+    Route::get('automotive-ppf', [App\Http\Controllers\llumar\LlumarController::class, 'automotivePPF'])->name('automotive.PPF');
 
-    Route::get('platinum-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'platinumPPF'])->name('platinum.PPF');
+    Route::get('automotive-ppf/platinum', [App\Http\Controllers\llumar\LlumarController::class, 'platinumPPF'])->name('platinum.PPF');
 
-    Route::get('valor-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'valorPPF'])->name('valor.PPF');
+    Route::get('automotive-ppf/valor', [App\Http\Controllers\llumar\LlumarController::class, 'valorPPF'])->name('valor.PPF');
+    Route::get('automotive-ppf/classeco', [App\Http\Controllers\llumar\LlumarController::class, 'classeco'])->name('classeco');
 
-    Route::get('dyed-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'dyedWindowFilm'])->name('dyed.window.film');
-
-    Route::get('ceramic-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'ceramicWindowFilm'])->name('ceramic.window.film');
+    Route::get('automotive-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'automotiveWindowFilm'])->name('automotive.window.film');
+    Route::get('automotive-window-film/dyed', [App\Http\Controllers\llumar\LlumarController::class, 'dyedWindowFilm'])->name('dyed.window.film');
+    Route::get('automotive-window-film/ceramic', [App\Http\Controllers\llumar\LlumarController::class, 'ceramicWindowFilm'])->name('ceramic.window.film');
+    Route::get('automotive-window-film/metallized', [App\Http\Controllers\llumar\LlumarController::class, 'metallizedWindowFilm'])->name('metallized.window.film');
     
-    Route::get('metallized-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'metallizedWindowFilm'])->name('metallized.window.film');
 
 });
 

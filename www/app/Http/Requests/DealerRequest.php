@@ -29,11 +29,12 @@ class DealerRequest extends FormRequest
             'state' => 'required|string|min:2|max:100',
             'city' => 'required|string|min:2|max:100',
             'contact_name' => 'required|string|min:3|max:255',
-            'contact_number' => 'required|digits:10',
+            'contact_number' => 'required',
+            'contact_number2' => 'nullable', 
             'contact_email' => 'required|email|max:255',
             'url' => 'required|string|min:3|max:1000',
-            'latitude' => 'required|numeric|min:1',
-            'longitude' => 'required|numeric|min:1',
+            'latitude' => 'nullable|numeric|min:1',
+            'longitude' => 'nullable|numeric|min:1',
         ];
     }
 }

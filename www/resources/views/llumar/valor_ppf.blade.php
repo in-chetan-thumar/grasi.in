@@ -3,6 +3,33 @@
 @section('title')
     Valor paint protection film
 @endsection
+
+{{-- SEO  --}}
+@section('seo')
+<title>LLumar Valor PPF | Valor Paint Protection Film by Gras-i</title>
+    <meta name="description" content="Protect your car with LLumar valor paint protection film — offered by Grasi in India. Get advanced self-healing valor PPF with ceramic-like shine and lasting durability. Available through dealers across India for lasting vehicle protection." />
+    <meta name="keywords" content="valor paint protection film, valor protection film, valor ppf, llumar valor ppf, dealer, india, grasi" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="LLumar Valor PPF | Valor Paint Protection Film by Gras-i" />
+    <meta property="og:description" content="Protect your car with LLumar valor paint protection film — offered by Grasi in India. Get advanced self-healing valor PPF with ceramic-like shine and lasting durability. Available through dealers across India for lasting vehicle protection." />
+    <meta property="og:url" content="https://www.grasi.in/automotive-ppf/valor" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/valor_ppf/about-photo-sec.webp" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LLumar Valor PPF | Valor Paint Protection Film by Gras-i" />
+    <meta name="twitter:description" content="Protect your car with LLumar valor paint protection film — offered by Grasi in India. Get advanced self-healing valor PPF with ceramic-like shine and lasting durability. Available through dealers across India for lasting vehicle protection." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/valor_ppf/about-photo-sec.webp" />
+    <meta name="twitter:url" content="https://www.grasi.in/automotive-ppf/valor" />
+
+    <link rel="canonical" href="https://www.grasi.in/automotive-ppf/valor" />
+
+@endsection
+
 @section('content')
 
     <!-- section hero-image -->
@@ -10,7 +37,7 @@
         <div class="title-section title-section-valor">
             <h1>Keep Your Car’s<br>Paint Flawless</h1>
             <h6>With Valor Paint Protection Film</h6>
-            {{-- <img src="{{ asset('assets/llumar/images/valor_ppf/hero-cover.webp')}}" class="w-100" alt=""> --}}
+            {{-- <img src="{{ asset('assets/llumar/images/valor_ppf/hero-cover.webp')}}" class="w-100" alt="valor paint protection film"> --}}
         </div>
     </section>
 
@@ -21,7 +48,7 @@
             <h6>With Valor Paint Protection Film</h6>
         </div>
         <div>
-            <img src="{{ asset('assets/llumar/images/valor_ppf/hero-cover.webp')}}" class="w-100" alt="">
+            <img src="{{ asset('assets/llumar/images/valor_ppf/hero-cover.webp')}}" class="w-100" alt="valor paint protection film">
         </div>
     </section>
     <!-- section hero-image end -->
@@ -30,17 +57,17 @@
     <section class="section-ppf bg-dark-gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 p-0 pe-md-5">
                     <h1>Valor  <br> Paint Protection Film</h1>
                     <div class="title-divider">
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                     </div>
-                    <p>Keep your car protected and as good as new with the Valor Paint Protection Film. This film combines the best of both worlds—the self-healing defense of premium PPF with the seamless maintenance of a ceramic-style coating. The highly durable PPF safeguards your car’s paint against chips, scratches, and environmental damage while retaining its shine. It promises superior stain resistance, hydrophobic technology, and a glossy finish that retains its aesthetic appeal.</p>
+                    <p>Keep your car protected and as good as new with the LLumar valor paint protection film. This LLumar valor ppf combines the best of both worlds—the self-healing defense of premium PPF with the seamless maintenance of a ceramic-style coating. The highly durable valor PPF safeguards your car’s paint against chips, scratches, and environmental damage while retaining its shine. It promises superior stain resistance, hydrophobic technology, and a glossy finish that retains its aesthetic appeal.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="ppf-image">
-                        <img src="{{ asset('assets/llumar/images/valor_ppf/about-photo.webp')}}" class="w-100" alt="">
-                        <img src="{{ asset('assets/llumar/images/valor_ppf/about-photo-sec.webp')}}" class="film-img" alt="">
+                        <img src="{{ asset('assets/llumar/images/valor_ppf/about-photo.webp')}}" class="w-100" alt="llumar valor ppf">
+                        <img src="{{ asset('assets/llumar/images/valor_ppf/about-photo-sec.webp')}}" class="film-img" alt="llumar valor ppf">
                     </div>
                 </div>
             </div>
@@ -52,25 +79,25 @@
         <div class="container">
             <div>
                 <label class="title-label-text-size">Why Choose</label>
-                <h2>LLumar Valor Paint Protection Film</h2>
+                <h2>LLumar Valor PPF</h2>
                 
             </div>
             <!-- ppf -->
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/valor_ppf/easy-to-clean.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/valor_ppf/easy-to-clean.png')}}" alt="llumar valor ppf with easy-to-clean surface" height="56px">
                     <h4>Easy-to-Clean Surface</h4>
                     <p>Our patented Tetrashield technology enhances the film’s stain resistance and hydrophobicity, which repels dirt and water.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/valor_ppf/Crystal clear.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/valor_ppf/Crystal clear.png')}}" alt="llumar valor ppf for ultra-glossy finish" height="56px">
                     <h4>Ultra-Glossy Finish</h4>
                     <p> Enhances your car’s paint with an optically clear finish and smooth shine.
                         </p> 
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/valor_ppf/Self Healing-1.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/valor_ppf/Self Healing-1.png')}}" alt="llumar valor ppf for advanced durability" height="56px">
                     <h4>Advanced Durability </h4>
                     <p>Protects against rock chips, road debris, mud splatters, and tar marks, increasing its life upto 12 years.
                     </p> 
@@ -80,14 +107,14 @@
             <div class="row mt-2">
                 <div class="col-md-4">
                    <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
-                   <img src="{{ asset('assets/llumar/images/valor_ppf/Customized fir.png')}}" alt="" height="56px">
+                   <img src="{{ asset('assets/llumar/images/valor_ppf/Customized fir.png')}}" alt="Customized Fit" height="56px">
                    <h4>Customized Fit</h4>
                    <p> Made to fit your vehicle seamlessly by adding a layer of invisible yet strong protection. 
                    </p>
                   
                 </div>
                 <div class="col-md-4">
-                      <img src="{{ asset('assets/llumar/images/valor_ppf/stain.png')}}" alt="" height="56px">
+                      <img src="{{ asset('assets/llumar/images/valor_ppf/stain.png')}}" alt="Stain & Fade Resistance" height="56px">
                     <h4>Stain & Fade Resistance </h4>
                     <p>Offers superior protection against acid rain, tree sap, and bird droppings.
                     </p> 
@@ -96,7 +123,7 @@
                 </div>
                 <div class="col-md-4">
                       <!-- <img src="{{ asset('assets/llumar/images/self-healing.svg')}}" alt=""> -->
-                     <img src="{{ asset('assets/llumar/images/valor_ppf/Self Healing.png')}}" alt="" height="56px">
+                     <img src="{{ asset('assets/llumar/images/valor_ppf/Self Healing.png')}}" alt="LLUmar valor ppf know for self healing technology" height="56px">
                      <h4>Self Healing Technology</h4>
                      <p>Vanishes minor scratches and swirl marks when exposed to the sun or warm water.
                     </p>
@@ -112,7 +139,7 @@
                 <label class="title-label-text-size">Features of</label>
                 <h2>LLumar Valor PPF</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <div class="row mt-5">
@@ -172,7 +199,7 @@
                 <div class="col-md-3">
                     <div>
                         <h4>Full Vehicle Coverage</h4>
-                        <img src="{{ asset('assets/llumar/images/full-car.webp')}}" alt="">
+                        <img src="{{ asset('assets/llumar/images/full-car.webp')}}" alt="get full vehicle Coverage with llumar valor ppf">
                         <p>Covers every painted surface of the vehicle</p>
                     </div>
                 </div>
@@ -181,27 +208,27 @@
             <h4>Partial Plus Protection</h4>
             <div class="vehicle-container mb-4">
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-full-bonnet.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-full-bonnet.webp')}}" alt="llumar valor ppf for fullBonnet">
                     <p>FullBonnet</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="llumar valor ppf for door cups">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="llumar valor ppf for side mirrors">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="llumar valor ppf for Rear & Front Bumpers">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="llumar valor ppf for Door Edges Guards">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -209,22 +236,22 @@
             <h4>Basic Partial Protection</h4>
             <div class="vehicle-container">
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="llumar valor ppf for Door Cups">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="llumar valor ppf for side mirrors">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="llumar valor ppf for rear 7 front bumpers">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="llumar valor ppf for door edges guards">
                     <p>Door Edges Guards</p>
                 </div>
             </div>

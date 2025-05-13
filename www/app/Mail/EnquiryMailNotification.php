@@ -11,7 +11,7 @@ use Spatie\MailTemplates\TemplateMailable;
 class EnquiryMailNotification extends TemplateMailable
 {
     use Queueable, SerializesModels;
-    public $PRACTICE_NAME, $NAME, $TO, $USER, $ENQUIRY_FULL_NAME, $ENQUIRY_BRAND, $ENQUIRY_STATE, $ENQUIRY_CITY, $ENQUIRY_PINCODE, $ENQUIRY_MOBILE, $ENQUIRY_EMAIL;
+    public $PRACTICE_NAME, $NAME, $TO, $USER, $ENQUIRY_FULL_NAME, $ENQUIRY_BRAND, $ENQUIRY_STATE, $ENQUIRY_CITY, $ENQUIRY_PINCODE, $ENQUIRY_MOBILE, $ENQUIRY_EMAIL, $ENQUIRY_PRODUCT_CATEGORY, $ENQUIRY_CUSTOMER_TYPE, $ENQUIRY_MODEL;
 
     /**
      * Create a new message instance.
@@ -22,6 +22,9 @@ class EnquiryMailNotification extends TemplateMailable
     {
         $this->NAME = 'Gras-i';
         $this->ENQUIRY_FULL_NAME = $params['first_name'] . ' ' . $params['last_name'];
+        $this->ENQUIRY_PRODUCT_CATEGORY = $params['product_category'];
+        $this->ENQUIRY_CUSTOMER_TYPE = $params['customer_type'];
+        $this->ENQUIRY_MODEL = $params['model'];
         $this->ENQUIRY_BRAND = $params['brand'];
         $this->ENQUIRY_STATE = $params['state'];
         $this->ENQUIRY_CITY = $params['city'];
