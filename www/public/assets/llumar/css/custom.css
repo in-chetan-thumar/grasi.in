@@ -969,4 +969,58 @@ footer .bi::before {
     to {transform: scale(1)}
 } 
 
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-gray);
+    width: 99.5vw;
+    margin-top: 1rem;
+    margin: 0 auto;
+    height: 30rem;
+    overflow-y: scroll;
+    right: -22.9rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 1.2rem;
+    color: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--black);
+}
+
+.dropdown-content .header {
+    color: var(--white);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+  .column a {
+    color: var(--ll-gray);
+    padding: 6px 0px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: all 0.3s;
+  }
+  
+  .column a:hover {
+    color: var(--orange);
+    padding-left: 7px;
+  }
+  /*  */
+  .column h6 a, .column h4 a{
+    color: var(--white);
+    padding: 6px 0px;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .column h6 a:hover, .column h4 a:hover {
+    color: var(--orange);
+    padding-left: 0px;
+  }
+  
 /* Responsive layout */

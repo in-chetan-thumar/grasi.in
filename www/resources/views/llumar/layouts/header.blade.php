@@ -20,6 +20,93 @@
                     <!--li class="nav-item">
                         <a class="nav-link" href="our-products.html">Our Solutions</a>
                     </li-->
+                    <li class="nav-item dropdown">
+                            <!-- <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" href="our-products.html"> -->
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" href="#">
+                                Our Solutions
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="row">
+                                    <div class="col-md-3 column">
+                                        <div class="header">
+                                            <h4><a href="#">Automotive</a></h4>
+                                        </div>
+                                        <img src="{{ asset('assets/llumar/images/menuimg1.webp')}}" class="w-100" alt="">
+                                    </div>
+
+                                    <div class="col-md-2 column">
+                                        <h6><a href="#">Window Films</a></h6>
+                                        <a href="#">Ceramic</a>
+                                        <a href="#">Metallized</a>
+                                        <a href="#">Dyed</a>
+                                        <a href="#">Clear</a>
+                                        <a href="#">Window Film Benefits</a>
+                                    </div>
+                                    <div class="col-md-2 column">
+                                        <h6><a href="#">Paint Protection Films</a></h6>
+                                        <a href="#">Valor</a>
+                                        <a href="#">Platinum</a>
+                                        <a href="#">Classeco</a>
+                                        <a href="#">Platinum Matte</a>
+                                        <a href="#">Platinum Extra</a>
+                                        <a href="#">Gloss & Matte</a>
+                                        <a href="#">Select Black</a>
+                                    </div>
+                                    <div class="col-md-3 column">
+                                        <h6><a href="#">Window Films & PPF Viewer</a></h6>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!--  -->
+                                <div class="row">
+                                    <div class="col-md-3 column">
+                                        <div class="header">
+                                            <h4><a href="#">Architectural</a></h4>
+                                        </div>
+                                        <img src="{{ asset('assets/llumar/images/menuimg2.webp')}}" class="w-100" alt="">
+                                    </div>
+
+                                    <div class="col-md-2 column">
+                                        <h6><a href="#">Residential</a></h6>
+                                        <a href="#">Solar Control</a>
+                                        <a href="#">Decorative</a>
+                                        <a href="#">Safety & Security</a>
+                                        <a href="#">Window Film Benefits</a>
+                                    </div>
+                                    <div class="col-md-2 column">
+                                        <h6><a href="#">Commercial</a></h6>
+                                        <a href="#">Solar Control</a>
+                                        <a href="#">Decorative</a>
+                                        <a href="#">Safety & Security</a>
+                                        <a href="#">Window Film Benefits</a>
+                                    </div>
+                                    <div class="col-md-3 column">
+                                        <h6><a href="#">Resources</a></h6>
+                                        <a href="#">Spec Sheets</a>
+                                        <a href="#">Product Comparison</a>
+                                        <a href="#">Energy Savings Calaculator</a>
+                                        <a href="#">Downloads Library</a>
+                                    </div>
+                                    <div class="col-md-2 column">
+                                        <h6><a href="#">Film Reviews</a></h6>
+                                        <a href="#">Commercial</a>
+                                        <a href="#">Residential</a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!--  -->
+                                <div class="row">
+                                    <div class="col-md-3 column">
+                                        <div class="header">
+                                            <h4><a href="#">Graphics</a></h4>
+                                        </div>
+                                        <img src="{{ asset('assets/llumar/images/menuimg3.webp')}}" class="w-100" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     <li class="nav-item">
                         {{-- <a class="nav-link" href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/" >Careers</a> --}}
                         <a class="nav-link" href="https://www.linkedin.com/company/gras-%E2%80%93i-intelligent-surface-solutions/" target="_blank">Careers</a>     

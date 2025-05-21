@@ -96,6 +96,22 @@
 
 @media only screen and (max-width: 600px) {
 
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--dark-gray);
+        width: 20rem;
+        height: 20rem;
+        overflow-y: scroll;
+        left: 1rem;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        padding: 1.2rem;
+        color: var(--white);
+        border-radius: 10px;
+        border: 1px solid var(--black);
+    }
+    
     .nav-pills {
         flex-direction: row;
     }
