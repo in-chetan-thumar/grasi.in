@@ -90,6 +90,86 @@ p {
     color: var(--blue) !important;
 }
 
+
+
+/* menu mobile drawer */
+.dropdown-menu-mob{
+    overflow-y: scroll;
+    padding: 20px;
+}
+/* Side drawer styles */
+.side-drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+    z-index: 10000;
+    color: var(--white);
+}
+
+.side-drawer a {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    display: block;
+    transition: 0.3s;
+}
+
+.side-drawer a:hover {
+    background-color:var(--white);
+    color: var(--black);
+}
+
+/* Toggle button */
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+/* Overlay to close drawer */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    z-index: 1;
+}
+
+/* Submenu styles */
+.submenu {
+    display: none;
+    background-color: #000;
+}
+
+.submenu a {
+    font-size: 16px;
+}
+
+.submenu-toggle::after {
+    content: " ▸";
+    float: right;
+}
+
+.submenu-open .submenu-toggle::after {
+    content: " ▾";
+}
+
+.column img {
+    border-radius: 18px;
+}
 /* =============================================================== */
 /* End Navbar Here */
 /* =============================================================== */
@@ -987,8 +1067,12 @@ footer .bi::before {
     padding: 2rem;
 }
 
-.dropdown-content .header {
+.dropdown-content .header a {
     color: var(--white);
+    text-decoration: none;
+}
+.dropdown-content .header a:hover {
+    color: var(--orange);
 }
 
 .dropdown:hover .dropdown-content {

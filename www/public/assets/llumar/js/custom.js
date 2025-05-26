@@ -7,6 +7,47 @@
 //         document.getElementById('exampleModal').classList.remove("custom");
 //     }
 // }
+
+function openDrawer() {
+
+    document.getElementById("drawer").style.width = "250px";
+
+    document.getElementById("overlay").style.width = "100%";
+
+  }
+
+
+
+  function closeDrawer() {
+
+    document.getElementById("drawer").style.width = "0";
+
+    document.getElementById("overlay").style.width = "0";
+
+    document.getElementById("submenu").style.display = "none";
+
+    document.getElementById("servicesMenu").classList.remove("submenu-open");
+
+  }
+
+
+
+  function toggleSubmenu() {
+
+    const submenu = document.getElementById("submenu");
+
+    const container = document.getElementById("servicesMenu");
+
+    const isVisible = submenu.style.display === "block";
+
+
+
+    submenu.style.display = isVisible ? "none" : "block";
+
+    container.classList.toggle("submenu-open", !isVisible);
+
+  }
+  
 function reveal() {
     for (var e = document.querySelectorAll(".reveal"), s = 0; s < e.length; s++) {
         var o,
