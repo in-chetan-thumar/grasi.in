@@ -15,18 +15,20 @@ class LlumarController extends Controller
     public function automotivePPF(){
         return view('llumar.automotive_ppf');
     }
-    public function sendMessage(SendMessageRequest $request){
-       
-        $params = [];
-        $params['first_name'] = $request->name;
-        $params['last_name'] = '';
-        $params['email'] = $request->email;
-        $params['message'] = $request->additional_info;
-        $params['subject'] = $request->subject;
-      
-        Mail::send(new LlumarContactNotification($params));
-    
-        toastr()->success('Your message has been send successfully!');
+    public function sendMessage(SendMessageRequest $request)
+    {
+        $params = [
+            'first_name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->additional_info,
+            'subject' => $request->subject,
+        ];
+
+        // Send mail only if all fields are filled (excluding last_name)
+        if (!empty($params['first_name']) && !empty($params['email']) && !empty($params['message']) && !empty($params['subject'])){
+            Mail::send(new LlumarContactNotification($params));
+        }
+
         return view('llumar.thank_you');
     }
 
