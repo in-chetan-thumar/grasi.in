@@ -29,7 +29,7 @@ Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 
 // LLumar pages grouped
 Route::prefix('')->name('llumar.')->group(function () {
-    Route::any('llumar/thank-you', [App\Http\Controllers\llumar\LlumarController::class, 'sendMessage'])->name('send.message');
+    Route::post('llumar/thank-you', [App\Http\Controllers\llumar\LlumarController::class, 'sendMessage'])->name('send.message');
     
     Route::get('automotive-ppf', [App\Http\Controllers\llumar\LlumarController::class, 'automotivePPF'])->name('automotive.PPF');
 

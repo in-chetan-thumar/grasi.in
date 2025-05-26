@@ -24,7 +24,7 @@ class LlumarController extends Controller
             'subject' => $request->subject,
         ];
 
-        // Send mail only if all fields are filled (excluding last_name)
+        // Send mail only if all fields are filled 
         if (!empty($params['first_name']) && !empty($params['email']) && !empty($params['message']) && !empty($params['subject'])){
             Mail::send(new LlumarContactNotification($params));
         }
