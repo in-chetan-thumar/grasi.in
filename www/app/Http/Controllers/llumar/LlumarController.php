@@ -4,6 +4,8 @@ namespace App\Http\Controllers\llumar;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SendMessageRequest;
 use App\Mail\ContactMailNotification;
+use App\Mail\LlumarContactNotification;
+use App\Mail\LlumarSendMailNotification;
 use Illuminate\Http\Request;
 use Mail;
 
@@ -14,15 +16,18 @@ class LlumarController extends Controller
         return view('llumar.automotive_ppf');
     }
     public function sendMessage(SendMessageRequest $request){
+       
         $params = [];
         $params['first_name'] = $request->name;
         $params['last_name'] = '';
         $params['email'] = $request->email;
         $params['message'] = $request->additional_info;
-
-        Mail::send(new ContactMailNotification($params));
+        $params['subject'] = $request->subject;
+      
+        Mail::send(new LlumarContactNotification($params));
+    
         toastr()->success('Your message has been send successfully!');
-        return redirect()->back();
+        return view('llumar.thank_you');
     }
 
     public function platinumPPF(){

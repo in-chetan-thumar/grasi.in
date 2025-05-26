@@ -438,6 +438,7 @@
                                             'placeholder' => 'Name',
                                             // 'id' => 'floatingInput',
                                         ]) !!}
+                                         {!! Form::hidden('subject', 'Automotive paint protection film') !!}
                                     {{-- <input type="text" class="form-control" id="floatingInput" placeholder="Name"> --}}
                                     <label for="floatingInput">Name</label>
                                 </div>

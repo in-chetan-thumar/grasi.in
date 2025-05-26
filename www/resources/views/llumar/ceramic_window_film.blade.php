@@ -408,6 +408,8 @@
                                     'placeholder' => 'Name',
                                     // 'id' => 'floatingInput',
                                 ]) !!}
+                                 {!! Form::hidden('subject', 'Ceramic window film') !!}
+
                                 {{-- <input type="text" class="form-control" id="floatingInput" placeholder="Name"> --}}
                                 <label for="floatingInput">Name</label>
                             </div>

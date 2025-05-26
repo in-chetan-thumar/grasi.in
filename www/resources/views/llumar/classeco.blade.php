@@ -345,6 +345,8 @@
                                             'class' => 'form-control',
                                             'placeholder' => 'Name',
                                         ]) !!}
+                                 {!! Form::hidden('subject', 'Classeco') !!}
+
                                     {{-- <input type="text" class="form-control" id="floatingInput" placeholder="Name"> --}}
                                     <label for="floatingInput">Name</label>
                                 </div>
