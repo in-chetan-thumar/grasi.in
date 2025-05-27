@@ -6,7 +6,27 @@
 
 {{-- SEO  --}}
 @section('seo') 
+<title>Metallized Window Tint | LLumar Metallic Window Film by Gras-i</title>
+    <meta name="description" content="Upgrade your car with LLumar metallized window tint for superior UV protection, glare reduction, and heat control. Installed by expert LLumar dealers across India, our metallic window film combines style with long-lasting performance." />
+    <meta name="keywords" content="metallized window tint, metalized window tint, metallized tint, llumar metallized tint, metallic window film, llumar india, grasi" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="Ceramic Window Film | LLumar Ceramic Window Tint by Gras-i" />
+    <meta property="og:description" content="Upgrade your car with LLumar metallized window tint for superior UV protection, glare reduction, and heat control. Installed by expert LLumar dealers across India, our metallic window film combines style with long-lasting performance." />
+    <meta property="og:url" content="https://www.grasi.in/automotive-window-film/metallized" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/metallized_window_film/2.png" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ceramic Window Film | LLumar Ceramic Window Tint by Gras-i" />
+    <meta name="twitter:description" content="Upgrade your car with LLumar metallized window tint for superior UV protection, glare reduction, and heat control. Installed by expert LLumar dealers across India, our metallic window film combines style with long-lasting performance." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/metallized_window_film/2.png" />
+    <meta name="twitter:url" content="https://www.grasi.in/automotive-window-film/metallized" />
 
+    <link rel="canonical" href="https://www.grasi.in/automotive-window-film/metallized" />
 @endsection
 
 @section('content')

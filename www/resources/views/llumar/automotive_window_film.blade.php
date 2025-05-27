@@ -1,6 +1,27 @@
 @extends('llumar.layouts.master')
 
 @section('seo')
+ <title>Automotive Window Film | LLumar Car Window Film by Gras-i</title>
+    <meta name="description" content="Get LLumar automotive window film installed at your nearest location across India. Our trusted LLumar car window film dealers offer expert installation service for lasting protection and comfort." />
+    <meta name="keywords" content="automotive window film, car window film, llumar window film, llumar automotive window film, llumar india, grasi" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="Automotive Window Film | LLumar Car Window Film by Gras-i" />
+    <meta property="og:description" content="Get LLumar automotive window film installed at your nearest location across India. Our trusted LLumar car window film dealers offer expert installation service for lasting protection and comfort." />
+    <meta property="og:url" content="https://www.grasi.in/automotive-window-film" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/automotive-window-film/about-car.jpg" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Automotive Window Film | LLumar Car Window Film by Gras-i" />
+    <meta name="twitter:description" content="Get LLumar automotive window film installed at your nearest location across India. Our trusted LLumar car window film dealers offer expert installation service for lasting protection and comfort." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/automotive-window-film/about-car.jpg" />
+    <meta name="twitter:url" content="https://www.grasi.in/automotive-window-film" />
+
+    <link rel="canonical" href="https://www.grasi.in/automotive-window-film" />
 
 @endsection
 

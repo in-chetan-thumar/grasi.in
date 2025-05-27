@@ -7,6 +7,28 @@
 {{-- SEO  --}}
 @section('seo') 
 
+<title>Ceramic Window Film | LLumar Ceramic Window Tint by Gras-i</title>
+    <meta name="description" content="Protect your car with LLumar ceramic window film - India’s trusted ceramic window tint for heat control, UV defence & stylish looks. Installed by certified professionals. Available at LLumar India dealers nationwide." />
+    <meta name="keywords" content="ceramic window film, ceramic window tint, llumar ceramic tint, llumar india, grasi" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="Ceramic Window Film | LLumar Ceramic Window Tint by Gras-i" />
+    <meta property="og:description" content="Protect your car with LLumar ceramic window film - India’s trusted ceramic window tint for heat control, UV defence & stylish looks. Installed by certified professionals. Available at LLumar India dealers nationwide." />
+    <meta property="og:url" content="https://www.grasi.in/automotive-window-film/ceramic" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/ceramic_window_film/2.png" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ceramic Window Film | LLumar Ceramic Window Tint by Gras-i" />
+    <meta name="twitter:description" content="Protect your car with LLumar ceramic window film - India’s trusted ceramic window tint for heat control, UV defence & stylish looks. Installed by certified professionals. Available at LLumar India dealers nationwide." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/ceramic_window_film/2.png" />
+    <meta name="twitter:url" content="https://www.grasi.in/automotive-window-film/ceramic" />
+
+    <link rel="canonical" href="https://www.grasi.in/automotive-window-film/ceramic" />
+
 @endsection
 
 @section('content')

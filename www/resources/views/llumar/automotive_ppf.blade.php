@@ -16,7 +16,7 @@
     <meta name="generator" content="N/A" />
     <meta property="og:title" content="Automotive Paint Protection Film | Car PPF in India – LLumar by Gras-i" />
     <meta property="og:description" content="Get LLumar automotive paint protection film from authorized dealers across major cities in India. Our high-performance car PPF in India shields your vehicle from scratches, chips, and UV damage - perfect for lasting protection." />
-    <meta property="og:url" content="https://www.grasi.in/" />
+    <meta property="og:url" content="https://www.grasi.in/automotive-ppf" />
     <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/about-car.webp" />
     <meta property="og:site_name" content="LLumar by Gras-i" />
     <meta property="og:type" content="website" />
