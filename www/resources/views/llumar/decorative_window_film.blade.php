@@ -1,7 +1,7 @@
 @extends('llumar.layouts.master')
 
 @section('title')
-    Dyed window film
+    Decorative window film
 @endsection
 
 {{-- SEO --}}
