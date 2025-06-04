@@ -390,3 +390,8 @@
         margin-left: 60px;
     }
 }
+@media (min-width: 992px) {
+    .benefits {
+        height: 100vh;
+    }
+}
