@@ -208,6 +208,20 @@ p {
     background-image:  url("../images/automotive-window-film/slider-car-new.jpg");
     position: relative;
 }
+.hero-section-decorative-window-film {
+    background-image: url("../images/decorative_window_film/LLumar_Decorative-Window-Film_Banner.jpg");
+    background-size: cover; /* full width and height */
+    background-repeat: no-repeat; /* prevent repeating */
+    position: relative;
+
+}
+.hero-section-solar-window-film {
+    background-image: url("../images/solar_window_film/LLumar_Solar-Window-Films_banner.jpg");
+    background-size: cover; /* full width and height */
+    background-repeat: no-repeat; /* prevent repeating */
+    position: relative;
+
+}
 
 
 .hero-section .title-section {
@@ -405,6 +419,48 @@ p {
 .why-choose-points h4 {
     margin-top: 1rem;
 }
+.benefits {
+    background-image: url('aapki-image-path'); /* Add if not already there */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* To center image properly */
+    /* height: 100vh !important; */
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    display: flex; /* Optional: to center content */
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Remove padding to avoid cut off */
+}
+.benefits-decorative{
+ background-image: url('../images/decorative_window_film/LLumar_Decorative-Window-Film_8.jpg');
+}
+.benefits-solar{
+ background-image: url('../images/solar_window_film/LLumar_Solar-Window-Films_banner_3.jpg');
+}
+
+.benefits .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.benefits .title-label-text-size {
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.benefits h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.benefits h4 {
+     color: var(--orange);
+}
 
 /* features-section */
 .features-section {
@@ -415,6 +471,7 @@ p {
     padding-top: 12rem;
     padding-bottom: 6rem;
 }
+
 
 .features-section-platinum {
     background-image: url("../images/platinum_ppf/feature-cover.webp");
@@ -460,6 +517,7 @@ p {
 .features-section .feature-two {
     /* background-image: url(../images/2.svg); */
     background-image: url(../images/2.png);
+    
 }
 
 .features-section .feature-three {
@@ -480,6 +538,75 @@ p {
 .features-section .feature-six {
     /* background-image: url(../images/6.svg); */
     background-image: url(../images/6.png);
+}
+.feature-section-decorative-solar .feature-section-container{
+    text-align: left;
+}
+.feature-section-decorative-solar{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: var(--white);
+    
+}
+ .feature-section-decorative-solar .feature-section-heading {
+    color: #ff5722;
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+ .feature-section-decorative-solar .feature-section-desc {
+    color: #ddd;
+    margin-top: 1rem;
+}
+
+ .feature-section-decorative-solar .feature-section-benefits {
+    padding-left: 1.2rem;
+    color: #fff;
+}
+
+ .feature-section-decorative-solar .feature-section-benefits li::marker {
+    color: #ff5722;
+}
+ .feature-section-decorative-solar .col-md-6 {
+     padding-left: 24px;
+        padding-right: 24px;
+}
+.feature-section-decorative-solar .feature-one {
+    background-image: url(../images/1.png);
+    z-index: 1;
+    padding: 5rem;
+    background-repeat: no-repeat;
+    background-size:  170px;
+}
+
+.feature-section-decorative-solar .feature-two {
+    /* background-image: url(../images/2.svg); */
+    background-image: url(../images/2.png);
+    z-index: 1;
+    padding: 5rem;
+    background-repeat: no-repeat;
+    background-size:  170px;
+}
+
+.feature-section-decorative-solar .feature-three {
+    /* background-image: url(../images/3.svg); */
+    background-image: url(../images/3.png);
+     z-index: 1;
+    padding: 5rem;
+    background-repeat: no-repeat;
+    background-size:  170px;
+}
+
+.feature-section-decorative-solar .feature-four {
+    /* background-image: url(../images/4.svg); */
+    background-image: url(../images/4.png);
+    z-index: 1;
+    padding: 5rem;
+    background-repeat: no-repeat;
+    background-size: 170px;
 }
 
 /* vehicle-section */

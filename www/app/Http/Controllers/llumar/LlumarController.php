@@ -60,4 +60,11 @@ class LlumarController extends Controller
     public function automotiveWindowFilm(){
         return view('llumar.automotive_window_film');
     }
+     public function decorativeWindowFilm(){
+        return view('llumar.decorative_window_film');
+    }
+    public function solarWindowFilm(){
+        return view('llumar.solar_window_film');
+    }
+    
 }
