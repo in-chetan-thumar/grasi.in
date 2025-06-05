@@ -1,7 +1,7 @@
 @extends('llumar.layouts.master')
 
 @section('title')
-    Dyed window film
+    Solar window film
 @endsection
 
 {{-- SEO --}}
@@ -31,41 +31,41 @@
     </section>
     <!-- section hero-image end -->
 
-    <!-- section PPF -->
-    <section class="section-ppf bg-dark-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 p-0 pe-md-5">
-
-                    <h1> LLumar <br> Solar Window Films</h1>
-                    <div class="title-divider">
-                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
-                    </div>
-                    <p> An effective and stylish way to improve energy efficiency, comfort, and aesthetics in both homes and
-                        commercial buildings. Solar Window Films block excessive solar heat, reduce harsh glare, and filter
-                        out harmful UV rays while allowing natural light in. These window films step in as a practical and
-                        stylish solution to help reduce energy costs, protect interiors from fading, and improve comfort
-                        indoors. They also enhance privacy and offer stylish protection for your windows to match all
-                        preferences and architectural needs.
-                    </p>
+   <!-- section PPF -->
+<section class="section-ppf bg-dark-gray">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 p-3 p-md-0 pe-md-5">
+                <h1>LLumar <br> Solar Window Films</h1>
+                <div class="title-divider mb-3">
+                    <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">
                 </div>
-                <div class="col-md-6">
-                    <div class="ppf-image">
-                        <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner_2.jpg')}}"
-                            class="w-100" alt="">
-                        class="w-100" alt="">
-                        <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner_1.jpg')}}"
-                            class="film-img" alt="">
-                    </div>
+                <p>
+                    An effective and stylish way to improve energy efficiency, comfort, and aesthetics in both homes and
+                    commercial buildings. Solar Window Films block excessive solar heat, reduce harsh glare, and filter
+                    out harmful UV rays while allowing natural light in. These window films step in as a practical and
+                    stylish solution to help reduce energy costs, protect interiors from fading, and improve comfort
+                    indoors. They also enhance privacy and offer stylish protection for your windows to match all
+                    preferences and architectural needs.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 mt-4 mt-md-5">
+                <div class="ppf-image  position-relative">
+                    <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner_2.jpg') }}"
+                         class="w-100 img-fluid" alt="">
+                    <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner_1.jpg') }}"
+                         class="film-img img-fluid" alt="">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <!-- why choose section -->
     <section class="benefits benefits-solar reveal">
         <div class="container">
             <div>
-                <label class="title-label-text-size">Benefits of </label>
+                <label class="title-label-text-size mt-4">Benefits of </label>
                 <h2>Solar Window Film</h2>
                 <div class="title-divider">
                     {{-- <img
@@ -141,9 +141,9 @@
                 <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
-                <div class="col-md-6 feature-one feature-section-container text-white">
+                <div class="col-md-6 mt-3 feature-one feature-section-container text-white">
 
-                    <h2 class="feature-section-heading mt-3">Reflective Films</h2>
+                    <h2 class="feature-section-heading ">Reflective Films</h2>
                     <div class="title-divider">
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                     </div>
@@ -172,9 +172,9 @@
             </div>
             <!-- Section 2: Pattern Film -->
             <div class="row align-items-center flex-row-reverse mb-5">
-                <div class="col-md-6 feature-two feature-section-container text-white">
+                <div class="col-md-6 mt-5 feature-two feature-section-container text-white">
 
-                    <h2 class="feature-section-heading mt-3">Dual-Reflective Films</h2>
+                    <h2 class="feature-section-heading ">Dual-Reflective Films</h2>
                     <div class="title-divider">
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                     </div>
@@ -205,7 +205,7 @@
             <div class="row  align-items-center">
                 <div class="col-md-6 feature-three feature-section-container matte-container text-white">
 
-                    <h2 class="feature-section-heading mt-3">Spectrally-Selective Films</h2>
+                    <h2 class="feature-section-heading">Spectrally-Selective Films</h2>
                     <div class="title-divider">
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                     </div>
@@ -238,9 +238,9 @@
 
             <!-- Section 4: Coloured Film -->
             <div class="row align-items-center flex-row-reverse">
-                <div class="col-md-6 feature-four  feature-section-container text-white">
+                <div class="col-md-6 mt-5 feature-four  feature-section-container text-white">
 
-                    <h2 class="feature-section-heading mt-3">Safety Clear Helios Series</h2>
+                    <h2 class="feature-section-heading ">Safety Clear Helios Series</h2>
                     <div class="title-divider">
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                     </div>
@@ -359,9 +359,9 @@
         <div class="container reveal">
             <div class="row bg-dark-gray rounded-5 p-3">
                 <div class="col-md-4 ps-0">
-                    {{-- <img
-                        src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_decorative-Window-Films_banner_2.jpg')}}"
-                        class="w-100" alt=""> --}}
+                    <img
+                        src="{{ asset('assets/llumar/images/solar_window_film/form_image.png')}}"
+                        class="w-100" alt=""> 
                 </div>
                 <div class="col-md-8 form-section-alignment">
                     <div class="mb-3">
