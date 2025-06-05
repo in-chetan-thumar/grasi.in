@@ -255,7 +255,7 @@
         <div class="container reveal">
             <div class="row bg-dark-gray rounded-5 p-3">
                 <div class="col-md-4 ps-0">
-                    {{-- <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_decorative-Window-Films_banner_2.jpg')}}" class="w-100" alt=""> --}}
+                    <img src="{{ asset('assets/llumar/images/decorative_window_film/form_image.png')}}" class="w-100" alt="">
                 </div>
                 <div class="col-md-8 form-section-alignment">
                     <div class="mb-3">
