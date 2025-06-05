@@ -32,38 +32,39 @@
     <!-- section hero-image end -->
 
     <!-- section PPF -->
-    <section class="section-ppf bg-dark-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 p-0 pe-md-5">
-
-                    <h1> LLumar <br> Decorative Window Film</h1>
-                    <div class="title-divider">
-                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
-                    </div>
-                    <p> Enhance the privacy level, look, or mood of any room with premium decorative window film for
-                        residential and commercial spaces. With a variety of styles, inspired by current design trends,
-                        these films can complement interiors ranging from traditional to contemporary. A stylish route to
-                        the protection of your interior space, the films add texture and a new dimension to your home or
-                        office, all while keeping harsh glare from the sun away. The film also preserves your privacy,
-                        contributing to the comfort of all occupants with an aesthetic touch.</p>
+ <section class="section-ppf bg-dark-gray">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 p-3 p-md-0 pe-md-5">
+                <h1>LLumar <br> Decorative Window Film</h1>
+                <div class="title-divider mb-3">
+                    <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">
                 </div>
-                <div class="col-md-6">
-                    <div class="ppf-image">
-                        <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window_banner_1.jpg')}}"
-                            class="w-100" alt="">
-                        <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window_banner_2.jpg')}}"
-                            class="film-img" alt="">
-                    </div>
+                <p>
+                      Enhance the privacy level, look, or mood of any room with premium decorative window film for
+                    residential and commercial spaces. With a variety of styles, inspired by current design trends,
+                    these films can complement interiors ranging from traditional to contemporary. A stylish route to
+                    the protection of your interior space, the films add texture and a new dimension to your home or
+                    office, all while keeping harsh glare from the sun away. The film also preserves your privacy,
+                    contributing to the comfort of all occupants with an aesthetic touch.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 mt-4 mt-md-5">
+                <div class="ppf-image  position-relative">
+                     <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window_banner_1.jpg')}}"
+                        class="w-100 img-fluid" alt="">
+                    <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window_banner_2.jpg')}}"
+                        class="film-img" alt="">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- why choose section -->
     <section class="benefits benefits-decorative reveal">
         <div class="container">
             <div>
-                <label class="title-label-text-size">Benefits of </label>
+                <label class="title-label-text-size mt-4 mb-3">Benefits of </label>
                 <h2>Decorative Window Film</h2>
                 <div class="title-divider">
                     {{-- <img
@@ -135,9 +136,9 @@
                 <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
-                <div class="col-md-6 feature-one feature-section-container text-white">
+                <div class="col-md-6 mt-3  feature-one feature-section-container text-white">
                    
-                    <h2 class="feature-section-heading mt-sm-3 mt-md-0 ">Matte Film</h2>
+                    <h2 class="feature-section-heading ">Matte Film</h2>
                       <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
@@ -161,10 +162,10 @@
                 </div>
             </div>
             <!-- Section 2: Pattern Film -->
-            <div class="row align-items-center flex-row-reverse mb-5">
-                <div class="col-md-6 feature-two feature-section-container text-white">
+            <div class="row align-items-center flex-row-reverse ">
+                <div class="col-md-6  mt-5  feature-two feature-section-container text-white">
                    
-                    <h2 class="feature-section-heading mt-sm-3 mt-md-0">Pattern Film</h2>
+                    <h2 class="feature-section-heading  ">Pattern Film</h2>
                       <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
@@ -189,9 +190,9 @@
 
             <!-- Section 3: Graphic Art Film -->
             <div class="row  align-items-center">
-                <div class="col-md-6 feature-three feature-section-container matte-container text-white">
+                <div class="col-md-6 mt-5  feature-three feature-section-container matte-container text-white">
                    
-                    <h2 class="feature-section-heading mt-sm-3 mt-md-0">Graphic Art Film</h2>
+                    <h2 class="feature-section-heading ">Graphic Art Film</h2>
                       <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
@@ -221,9 +222,9 @@
 
             <!-- Section 4: Coloured Film -->
             <div class="row align-items-center flex-row-reverse">
-                <div class="col-md-6 feature-four  feature-section-container text-white">
+                <div class="col-md-6 mt-5 feature-four  feature-section-container text-white mt-5">
                     
-                    <h2 class="feature-section-heading mt-sm-3 mt-md-0">Coloured Film</h2>
+                    <h2 class="feature-section-heading ">Coloured Film</h2>
                       <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
@@ -249,91 +250,7 @@
         </div>
     </section>
 
-    <!-- protection -->
-    {{-- <section class="protection-section">
-        <div class="container">
-            <div class="row align-items-center reveal">
-                <div class="col-md-4 title-section-alignment">
-                    <div>
-                        <label class="title-label-text-size">Clear & Complete</label>
-                        <h2>Protection Against</h2>
-                        <div class="title-divider">
-                            <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-6 com-md-4">
-                            <!-- <img src="{{ asset('assets/llumar/images/weather.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/7.png/')}}" alt="">
-                            <p class="mt-3">Harmful <br>UV Rays</p>
-                        </div>
-                        <div class="col-6 com-md-4">
-                            <!-- <img src="{{ asset('assets/llumar/images/rock-chips.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/8.png')}}" alt="">
-                            <p class="mt-3">Distracting <br>Glare </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 com-md-4">
-                            <!-- <img src="{{ asset('assets/llumar/images/paint-fading-staining.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/9.png')}}" alt="">
-                            <p class="mt-3">Excessive <br> Heat </p>
-                        </div>
-                        <div class="col-6 com-md-4">
-                            <!-- <img src="{{ asset('assets/llumar/images/bird-dropping.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/10.png')}}" alt="">
-                            <p class="mt-3">Interior <br>Fading </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <img src="{{ asset('assets/llumar/images/dyed_window_film/web page 6.png')}}" class="w-100" alt="">
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-    <!-- related products -->
-    {{-- <section class="products-section bg-dark-gray">
-        <div class="container reveal">
-            <div class="text-center">
-                <h2>Related Products</h2>
-                <div class="title-divider mb-0">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
-                </div>
-            </div>
-            <div class="button-view">
-                <a href="#" class="btn btn-outline-dark btn-llumar-second">VIEW ALL</a>
-            </div>
-            <div class="mt-4">
-                <div class="sliderproducts">
-                    <div>
-                        <a href="{{route('llumar.platinumPPF')}}">
-                            <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
-                            <div class="title-product">
-                                <label>Platinum paint protection film </label><br>
-                                {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against
-                                    scratches, road debris, and environmental damage. --}}
-                                    {{-- </label>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="{{route('llumar.valorPPF')}}">
-                            <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
-                            <div class="title-product">
-                                <label>Valor paint protection film </label><br>
-                                {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against
-                                    scratches, road debris, and environmental damage. --}}
-                                    {{-- </label>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- section form -->
+   
     <section class="form-section">
         <div class="container reveal">
             <div class="row bg-dark-gray rounded-5 p-3">

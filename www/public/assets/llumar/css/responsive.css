@@ -8,6 +8,14 @@
         bottom: 0rem;
         width: 16rem;
     }
+    .feature-section-decorative-solar .feature-one,
+    .feature-section-decorative-solar .feature-two,
+    .feature-section-decorative-solar .feature-three,
+    .feature-section-decorative-solar .feature-four {
+        padding: 2rem; /* Remove padding on small screens */
+        background-size: 150px; /* Optional: reduce image size on small screen */
+        background-position: top left; /* Optional: reposition if needed */
+    }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1280px) {
     /*.hero-section-dyed h1 {
@@ -16,7 +24,6 @@
 }
 @media only screen and (max-width: 992px) {
     
-    
     .ppf-image .film-img {
         position: absolute;
         left: 0rem;
@@ -24,7 +31,7 @@
         /*width: 10rem;*/
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
 
     .hero-section .title-section {
       width: 70%;
@@ -81,6 +88,7 @@
         left: 0rem;
         bottom: 0rem;
         width: 15rem;
+       height: 9rem;
     }
     .responsive-mobile {
         display: block;
@@ -227,6 +235,7 @@
         position: absolute;
         left: 0rem;
         bottom: 0rem;
+         height: 130px;
         /*width: 10rem;*/
     }
 
@@ -305,10 +314,8 @@
         align-items: center;
     }
 
-    /* gallery-section */
-    .gallery-section {
-        padding: 3rem;
-    }
+   
+} *
 
     /*  */
     /* mobile arrow css */
@@ -370,7 +377,7 @@
         gap: 1rem;
     }
 
-}
+
 @media  only screen and (max-width: 540px) {
     .llumar-logo{
         width: 50px !important;
@@ -394,4 +401,57 @@
     .benefits {
         height: 100vh;
     }
+}
+@media (max-width: 768.98px) {
+  .feature-section-decorative-solar .feature-one,
+  .feature-section-decorative-solar .feature-two,
+  .feature-section-decorative-solar .feature-three,
+  .feature-section-decorative-solar .feature-four {
+    background-size: 180px auto; /* Bigger size for clarity */
+    background-position: top left; /* Keep it at top-left */
+    background-repeat: no-repeat;
+    padding-top: 6rem; /* Push content down so it doesn't overlap the image */
+    padding-left: 2.5rem; /* Leave space so text doesn’t overlap bg image */
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+   .benefits .title-label-text-size {
+    font-size: 1 rem; /* ya use a smaller size like 1rem */
+  }
+
+  .benefits h2 {
+    font-size: 1.50rem; /* ya use 1.5rem or suitable size */
+  }
+.ppf-image .film-img {
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    width: 12rem;
+    height: 130px;
+}
+
+}
+@media (min-width: 768px) and (max-width: 1180px) {
+    .feature-section-decorative-solar .feature-one,
+  .feature-section-decorative-solar .feature-two,
+  .feature-section-decorative-solar .feature-three,
+  .feature-section-decorative-solar .feature-four {
+    background-size: 180px auto; /* Bigger size for clarity */
+    background-position: top left; /* Keep it at top-left */
+    background-repeat: no-repeat;
+    padding-top: 6rem; /* Push content down so it doesn't overlap the image */
+    padding-left: 2.5rem; /* Leave space so text doesn’t overlap bg image */
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+@media only screen and (device-width: 540px) and (device-height: 720px) and (orientation: portrait) {
+.ppf-image .film-img {
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    width: 13rem;
+    height: 150px;
+}
+
 }
