@@ -6,7 +6,27 @@
 
 {{-- SEO  --}}
 @section('seo') 
+<title>LLumar Dyed Window Film | Install Dye Tint by Grasi</title>
+    <meta name="description" content="LLumar dyed window tint film for superior heat rejection and glare control at a budget-friendly price. Our premium dyed tint film enhances privacy, protects interiors, and adds a sleek finish to your car. Installed by expert dealers pan India." />
+    <meta name="keywords" content="metallized window tint, metalized window tint, metallized tint, llumar metallized tint, metallic window film, llumar india, grasi" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="LLumar Dyed Window Film | Install Dye Tint by Grasi" />
+    <meta property="og:description" content="LLumar dyed window tint film for superior heat rejection and glare control at a budget-friendly price. Our premium dyed tint film enhances privacy, protects interiors, and adds a sleek finish to your car. Installed by expert dealers pan India." />
+    <meta property="og:url" content="https://www.grasi.in/automotive-window-film/dyed" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/dyed_window_film/web%20page%202.png" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LLumar Dyed Window Film | Install Dye Tint by Grasi" />
+    <meta name="twitter:description" content="LLumar dyed window tint film for superior heat rejection and glare control at a budget-friendly price. Our premium dyed tint film enhances privacy, protects interiors, and adds a sleek finish to your car. Installed by expert dealers pan India." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/dyed_window_film/web%20page%202.png" />
+    <meta name="twitter:url" content="https://www.grasi.in/automotive-window-film/dyed" />
 
+    <link rel="canonical" href="https://www.grasi.in/automotive-window-film/dyed" />
 @endsection
 
 @section('content')
