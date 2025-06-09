@@ -162,12 +162,12 @@
                                                                                 <h4>Residential</h4>
                                                                             </a>
                                                                             <ul>
-                                                                                <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/solar/"
-                                                                                        target="_blank">Solar
+                                                                                <li><a href="{{route('llumar.solar.control.window.film')}}"
+                                                                                       >Solar
                                                                                         Control</a>
                                                                                 </li>
-                                                                                <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/decorative/"
-                                                                                        target="_blank">Decorative</a>
+                                                                                <li><a href="{{route('llumar.decorative.window.film')}}"
+                                                                                       >Decorative</a>
                                                                                 </li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/safety-security/"
                                                                                         target="_blank">Safety &
