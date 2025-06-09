@@ -1,7 +1,8 @@
 @extends('llumar.layouts.master')
 
 @section('seo')
-    
+
+
 @endsection
 
 @section('content')
