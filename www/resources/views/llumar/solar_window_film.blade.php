@@ -106,7 +106,6 @@
                         height="56px">
                     <h4>Aesthetic Appeal</h4>
                     <p>Complement any architecture style, with films from barely visible to neutral to reflective.
-                        .
                     </p>
                 </div>
                 <div class="col-md-4">
