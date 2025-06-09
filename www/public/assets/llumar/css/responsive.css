@@ -445,7 +445,7 @@
     padding-bottom: 2rem;
   }
 }
-@media only screen and (device-width: 540px) and (device-height: 720px) and (orientation: portrait) {
+@media only screen and (device-width: 540px) and (device-height: 820px) and (orientation: portrait) {
 .ppf-image .film-img {
     position: absolute;
     left: 0rem;
