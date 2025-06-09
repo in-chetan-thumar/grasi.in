@@ -36,7 +36,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 p-3 p-md-0 pe-md-5">
-                <h1>LLumar <br> Solar Control  Window Films</h1>
+                <h1>Residential & Commercial <br> Solar Control  Window Films</h1>
                 <div class="title-divider mb-3">
                     <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">
                 </div>
