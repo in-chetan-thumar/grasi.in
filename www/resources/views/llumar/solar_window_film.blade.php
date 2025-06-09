@@ -16,8 +16,8 @@
 
         </div>
         <!-- <div>
-                            <img src="{{ asset('assets/llumar/images/slider-car-new.jpg')}}" class="w-100" alt="">
-                        </div> -->
+            <img src="{{ asset('assets/llumar/images/slider-car-new.jpg')}}" class="w-100" alt="">
+        </div> -->
     </section>
     <!-- hero section mobile -->
     <section class=".hero-section hero-section-solar-window-film  responsive-mobile">
@@ -36,13 +36,13 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 p-3 p-md-0 pe-md-5">
-                <h1>LLumar <br> Solar Window Films</h1>
+                <h1>LLumar <br> Solar Control  Window Films</h1>
                 <div class="title-divider mb-3">
                     <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">
                 </div>
                 <p>
                     An effective and stylish way to improve energy efficiency, comfort, and aesthetics in both homes and
-                    commercial buildings. Solar Window Films block excessive solar heat, reduce harsh glare, and filter
+                    commercial buildings. Solar Control  Window Film block excessive solar heat, reduces harsh glare, and filters 
                     out harmful UV rays while allowing natural light in. These window films step in as a practical and
                     stylish solution to help reduce energy costs, protect interiors from fading, and improve comfort
                     indoors. They also enhance privacy and offer stylish protection for your windows to match all
@@ -66,7 +66,7 @@
         <div class="container">
             <div>
                 <label class="title-label-text-size mt-4">Benefits of </label>
-                <h2>Solar Window Film</h2>
+                <h2>Solar Control Window Film</h2>
                 <div class="title-divider">
                     {{-- <img
                         src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window-Film_8.jpg ')}}"
@@ -95,7 +95,7 @@
                 <div class="col-md-4">
                     <img src="{{ asset('assets/llumar/images/solar_window_film/UV-Protection.png')}}" alt="" height="56px">
                     <h4>UV Protection</h4>
-                    <p>Block more than 99% of the UV rays that contribute to fading of interiors, artwork, and furnishings.
+                    <p>Block more than 99% of the UV rays that contribute to the fading  of interiors, artwork, and furnishings.
 
                     </p>
                 </div>
@@ -114,7 +114,7 @@
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
                     <img src="{{ asset('assets/llumar/images/solar_window_film/More-Privacy.png')}}" alt="" height="56px">
                     <h4>More Privacy</h4>
-                    <p> Choose reflective sun control film in a broad range of colors to disguise mismatched blinds,
+                    <p> Choose reflective  solar control window films in a broad range of colors to disguise mismatched blinds,
                         curtains, or clutter.
 
                     </p>
@@ -137,7 +137,7 @@
         <div class="container reveal">
             <div class="row  align-items-center">
                 <label class="title-label-text-size">Types of </label>
-                <h2>Solar Window Film</h2>
+                <h2>Solar Control Window Films</h2>
                 <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
@@ -148,7 +148,7 @@
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                     </div>
                     <p class="feature-section-desc">
-                        High-performance solar control films that offer a mirrored look, improving occupant comfort.
+                        High-performance Solar control window films  that offer a mirrored look, improving occupant comfort.
 
                     </p>
                     <h5 class="text-white font-weight-bold mt-4">Benefits</h5>
@@ -473,9 +473,7 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What are solar window films?
-
-
+                                    What are solar control window films?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -493,9 +491,7 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How do solar window films work?
-
-
+                                    How do solar control window films work?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -513,15 +509,14 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Can solar window films help with energy savings?
-
+                                    Can solar control window films help with energy savings?
 
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Yes, solar window films can help reduce the need for air conditioning by blocking excess
+                                    Yes, solar control window film  can help reduce the need for air conditioning by blocking excess
                                     solar heat, in turn, regulating indoor temperatures and reducing energy consumption.
 
                                 </div>
@@ -532,7 +527,7 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Are solar window films easy to install?
+                                    Are solar control window films easy to install?
 
 
                                 </button>
@@ -552,7 +547,7 @@
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Will solar window films affect the appearance of my windows?
+                                    Will solar control window film affect the appearance of my windows?
 
 
 
@@ -572,7 +567,7 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Are solar window films durable?
+                                    Are Solar control window films durable?
 
 
                                 </button>
@@ -592,7 +587,7 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSix">
-                                    Can solar window films be removed?
+                                    Can Solar control window film be removed?
 
 
 
@@ -634,7 +629,7 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseSix">
-                                    How much does LLumar Solar Window Film cost?
+                                    How much does LLumar  Solar control window film cost?
 
 
                                 </button>
