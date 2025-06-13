@@ -45,6 +45,7 @@ Route::prefix('')->name('llumar.')->group(function () {
     
     Route::get('decorative-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'decorativeWindowFilm'])->name('decorative.window.film');
     Route::get('solar-control-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'solarWindowFilm'])->name('solar.control.window.film');
+    Route::get('safety-and-security-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'safetyAndSecurityWindowFilm'])->name('safety.and.security.window.film');
 
 });
 

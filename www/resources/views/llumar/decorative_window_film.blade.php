@@ -129,7 +129,7 @@
 
     <!-- features -->
 
-    <section class="feature-section-decorative-solar bg-dark-gray py-5">
+    <section class="feature-section-architeural bg-dark-gray py-5">
         <div class="container reveal">
             <div class="row   align-items-center">
                  <label class="title-label-text-size">Types of </label><h2>Decorative Window Film</h2>
@@ -263,21 +263,21 @@
                         <label class="title-label-text-size">Fill Out the Form Below!</label>
                     </div>
                     {!! Form::open([
-        'url' => route('llumar.send.message'),
-        'method' => 'POST',
-        'id' => 'dyed-window-film',
-        'class' => 'dyed-window-film',
-    ]) !!}
+                            'url' => route('llumar.send.message'),
+                            'method' => 'POST',
+                            'id' => 'decorative-window-film',
+                            'class' => 'decorative-window-film',
+                        ]) !!}
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
                                 {!! Form::text('name', null, [
-        'class' => 'form-control',
-        'placeholder' => 'Name',
-        // 'id' => 'floatingInput',
-    ]) !!}
-                                {!! Form::hidden('subject', 'Dyed window film') !!}
-
+                                    'class' => 'form-control',
+                                    'placeholder' => 'Name',
+                                    // 'id' => 'floatingInput',
+                                ]) !!}
+                                {!! Form::hidden('subject', 'Decorative window film') !!}
+                                
                                 <label for="floatingInput">Name</label>
                             </div>
                         </div>
@@ -419,15 +419,12 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                      Can I use it in both homes and offices?
-
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                  Yes, these films are designed to work great for commercial and residential spaces.
-
-
                                 </div>
                             </div>
                         </div>
@@ -436,17 +433,13 @@
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                 Can I customize the film with my logo or design?
-
-
+                                     Can I customize the film with my logo or design?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                 
- Yes, Graphic Art Films can be fully customizable for branding and other requirements.
-
+                                    Yes, Graphic Art Films can be fully customizable for branding and other requirements.
                                 </div>
                             </div>
                         </div>
@@ -477,6 +470,6 @@
     </button>
 @endsection
 @section('js')
-    {!! JsValidator::formRequest('App\Http\Requests\SendMessageRequest', '#dyed-window-film') !!}
+    {!! JsValidator::formRequest('App\Http\Requests\SendMessageRequest', '#decorative-window-film') !!}
     <script src="{{ asset('assets/llumar/js/image_modal.js')}}"></script>
 @endsection

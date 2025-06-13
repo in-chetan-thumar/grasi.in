@@ -223,6 +223,13 @@ p {
 
 }
 
+.hero-section-safety-and-security {
+    background-image: url("../images/safety_and_security_film/LLumar_Safety-and-Security-Films_web-banner.jpg");
+    background-size: cover; /* full width and height */
+    background-repeat: no-repeat; /* prevent repeating */
+    position: relative;
+
+}
 
 .hero-section .title-section {
     margin: 0 auto;
@@ -367,16 +374,22 @@ p {
     text-align: justify;
 }
 
-.ppf-image {
+.ppf-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ppf-image  {
     position: relative;
 }
+
 
 .ppf-image .film-img {
     position: absolute;
     left: -4rem;
     bottom: -4.5rem;
     width: 21rem;
-    position: absolute;
     height: 12rem;
 }
 
@@ -439,7 +452,12 @@ p {
 .benefits-solar{
  background-image: url('../images/solar_window_film/LLumar_Solar-Window-Films_banner_3.jpg');
 }
-
+.benefits-safety-and-security{
+ background-image: url('../images/safety_and_security_film/LLumar_Safety-and-Security-Films_banner_3.jpg');
+}
+.benefits-safety-and-security h2{
+    margin-bottom: 10px !important;
+}
 .benefits .container {
     position: relative;
     z-index: 2;
@@ -456,7 +474,7 @@ p {
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .benefits h4 {
      color: var(--orange);
@@ -539,17 +557,17 @@ p {
     /* background-image: url(../images/6.svg); */
     background-image: url(../images/6.png);
 }
-.feature-section-decorative-solar .feature-section-container{
+.feature-section-architeural .feature-section-container{
     text-align: left;
 }
-.feature-section-decorative-solar{
+.feature-section-architeural{
     padding-top: 3rem;
     padding-bottom: 2rem;
     text-align: center;
     color: var(--white);
     
 }
- .feature-section-decorative-solar .feature-section-heading {
+ .feature-section-architeural .feature-section-heading {
     color: #ff5722;
     font-weight: 700;
     font-size: 2rem;
@@ -557,24 +575,24 @@ p {
     z-index: 1;
 }
 
- .feature-section-decorative-solar .feature-section-desc {
+ .feature-section-architeural .feature-section-desc {
     color: #ddd;
     margin-top: 1rem;
 }
 
- .feature-section-decorative-solar .feature-section-benefits {
+ .feature-section-architeural.feature-section-benefits {
     padding-left: 1.2rem;
     color: #fff;
 }
 
- .feature-section-decorative-solar .feature-section-benefits li::marker {
+ .feature-section-architeural.feature-section-benefits li::marker {
     color: #ff5722;
 }
- .feature-section-decorative-solar .col-md-6 {
+ .feature-section-architeural .col-md-6 {
      padding-left: 24px;
         padding-right: 24px;
 }
-.feature-section-decorative-solar .feature-one {
+.feature-section-architeural .feature-one {
     background-image: url(../images/1.png);
     z-index: 1;
     padding: 5rem;
@@ -582,7 +600,7 @@ p {
     background-size:  170px;
 }
 
-.feature-section-decorative-solar .feature-two {
+.feature-section-architeural .feature-two {
     /* background-image: url(../images/2.svg); */
     background-image: url(../images/2.png);
     z-index: 1;
@@ -591,7 +609,7 @@ p {
     background-size:  170px;
 }
 
-.feature-section-decorative-solar .feature-three {
+.feature-section-architeural .feature-three {
     /* background-image: url(../images/3.svg); */
     background-image: url(../images/3.png);
      z-index: 1;
@@ -600,7 +618,7 @@ p {
     background-size:  170px;
 }
 
-.feature-section-decorative-solar .feature-four {
+.feature-section-architeural .feature-four {
     /* background-image: url(../images/4.svg); */
     background-image: url(../images/4.png);
     z-index: 1;

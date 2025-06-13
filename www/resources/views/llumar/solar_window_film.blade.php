@@ -132,7 +132,7 @@
 
     <!-- features -->
 
-    <section class="feature-section-decorative-solar bg-dark-gray py-5">
+    <section class="feature-section-architeural bg-dark-gray py-5">
         <div class="container reveal">
             <div class="row  align-items-center">
                 <label class="title-label-text-size">Types of </label>
@@ -269,90 +269,7 @@
         </div>
     </section>
 
-    <!-- protection -->
-    {{-- <section class="protection-section">
-        <div class="container">
-            <div class="row align-items-center reveal">
-                <div class="col-md-4 title-section-alignment">
-                    <div>
-                        <label class="title-label-text-size">Clear & Complete</label>
-                        <h2>Protection Against</h2>
-                        <div class="title-divider">
-                            <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-6 com-md-4">
-                            <!-- <img src="{{ asset('assets/llumar/images/weather.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/7.png/')}}" alt="">
-                            <p class="mt-3">Harmful <br>UV Rays</p>
-                        </div>
-                        <div class="col-6 com-md-4">
-                            <!-- <img src="{{ asset('assets/llumar/images/rock-chips.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/8.png')}}" alt="">
-                            <p class="mt-3">Distracting <br>Glare </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 com-md-4">
-                            <!-- <img src="{{ asset('assets/llumar/images/paint-fading-staining.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/9.png')}}" alt="">
-                            <p class="mt-3">Excessive <br> Heat </p>
-                        </div>
-                        <div class="col-6 com-md-4">
-                            <!-- <img src="{{ asset('assets/llumar/images/bird-dropping.svg')}}" alt=""> -->
-                            <img src="{{ asset('assets/llumar/images/dyed_window_film/icon/10.png')}}" alt="">
-                            <p class="mt-3">Interior <br>Fading </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <img src="{{ asset('assets/llumar/images/dyed_window_film/web page 6.png')}}" class="w-100" alt="">
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-    <!-- related products -->
-    {{-- <section class="products-section bg-dark-gray">
-        <div class="container reveal">
-            <div class="text-center">
-                <h2>Related Products</h2>
-                <div class="title-divider mb-0">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
-                </div>
-            </div>
-            <div class="button-view">
-                <a href="#" class="btn btn-outline-dark btn-llumar-second">VIEW ALL</a>
-            </div>
-            <div class="mt-4">
-                <div class="sliderproducts">
-                    <div>
-                        <a href="{{route('llumar.platinumPPF')}}">
-                            <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
-                            <div class="title-product">
-                                <label>Platinum paint protection film </label><br>
-                                {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against
-                                    scratches, road debris, and environmental damage. --}}
-                                    {{-- </label>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="{{route('llumar.valorPPF')}}">
-                            <img src="{{ asset('assets/llumar/images/about-car.webp')}}" class="w-100" alt="">
-                            <div class="title-product">
-                                <label>Valor paint protection film </label><br>
-                                {{-- <label>A clear PPF that enhances your car’s aesthetics while protecting against
-                                    scratches, road debris, and environmental damage. --}}
-                                    {{-- </label>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
+   
     <!-- section form -->
     <section class="form-section">
         <div class="container reveal">
@@ -368,20 +285,20 @@
                         <label class="title-label-text-size">Fill Out the Form Below!</label>
                     </div>
                     {!! Form::open([
-        'url' => route('llumar.send.message'),
-        'method' => 'POST',
-        'id' => 'dyed-window-film',
-        'class' => 'dyed-window-film',
-    ]) !!}
+                            'url' => route('llumar.send.message'),
+                            'method' => 'POST',
+                            'id' => 'solar-window-film',
+                            'class' => 'solar-window-film',
+                        ]) !!}
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
                                 {!! Form::text('name', null, [
-        'class' => 'form-control',
-        'placeholder' => 'Name',
-        // 'id' => 'floatingInput',
-    ]) !!}
-                                {!! Form::hidden('subject', 'Dyed window film') !!}
+                                    'class' => 'form-control',
+                                    'placeholder' => 'Name',
+                                    // 'id' => 'floatingInput',
+                                ]) !!}
+                                {!! Form::hidden('subject', 'Solar window film') !!}
 
                                 <label for="floatingInput">Name</label>
                             </div>
@@ -389,10 +306,10 @@
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
                                 {!! Form::email('email', null, [
-        'class' => 'form-control  ',
-        'placeholder' => 'Email',
-        // 'floatingInput'
-    ]) !!}
+                                    'class' => 'form-control  ',
+                                    'placeholder' => 'Email',
+                                    // 'floatingInput'
+                                ]) !!}
                                 {{-- <input type="email" class="form-control" id="floatingInput" placeholder="Email"> --}}
                                 <label for="floatingInput">Email</label>
                             </div>
@@ -652,6 +569,6 @@
     </button>
 @endsection
 @section('js')
-    {!! JsValidator::formRequest('App\Http\Requests\SendMessageRequest', '#dyed-window-film') !!}
+    {!! JsValidator::formRequest('App\Http\Requests\SendMessageRequest', '#solar-window-film') !!}
     <script src="{{ asset('assets/llumar/js/image_modal.js')}}"></script>
 @endsection

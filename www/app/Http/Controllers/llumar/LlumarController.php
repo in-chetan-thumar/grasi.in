@@ -66,5 +66,8 @@ class LlumarController extends Controller
     public function solarWindowFilm(){
         return view('llumar.solar_window_film');
     }
-    
+    public function safetyAndSecurityWindowFilm(){
+        return view('llumar.safety_and_security_window_film');
+
+    }
 }
