@@ -156,7 +156,7 @@
                     <ul class="feature-section-benefits">
                         <li>Strengthens glass to help resist break-ins, accidents, and natural disasters
                         </li>
-                        <li>Anti-UV rays due to its polymeric scratch-resistant coating
+                        <li>Protection against Anti-UV rays due to its polymeric, scratch-resistant coating.
 
                         </li>
                         <li>Invisible finish that keeps your windows looking natural
