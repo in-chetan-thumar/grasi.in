@@ -169,7 +169,7 @@
                                                                                 <li><a href="{{route('llumar.decorative.window.film')}}"
                                                                                        >Decorative</a>
                                                                                 </li>
-                                                                                <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/safety-security/"
+                                                                                <li><a href="{{ route('safety-and-security-window-film') }}"
                                                                                         target="_blank">Safety &
                                                                                         Security</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/benefits/"
