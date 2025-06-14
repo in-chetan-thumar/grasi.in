@@ -1,12 +1,28 @@
 @extends('llumar.layouts.master')
 
-@section('title')
-    Solar window film
-@endsection
-
 {{-- SEO --}}
 @section('seo')
+<title>Solar Control Window Film | Residential & Commercial Solar Window Film - Grasi</title>
+    <meta name="description" content="Get high-performance solar window films at Grasi. Our solar control window film, including premium and commercial glass film options, reduces heat, glare, and UV rays—ideal for both residential and office use. Upgrade your comfort and energy efficiency today." />
+    <meta name="keywords" content="solar windows film, solar control window film, glass film, residential, home, commercial, llumar, grasi" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="Solar Control Window Film | Residential & Commercial Solar Window Film - Grasi" />
+    <meta property="og:description" content="Get high-performance solar window films at Grasi. Our solar control window film, including premium and commercial glass film options, reduces heat, glare, and UV rays—ideal for both residential and office use. Upgrade your comfort and energy efficiency today." />
+    <meta property="og:url" content="https://www.grasi.in/solar-control-window-film" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner.jpg" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Solar Control Window Film | Residential & Commercial Solar Window Film - Grasi" />
+    <meta name="twitter:description" content="Get high-performance solar window films at Grasi. Our solar control window film, including premium and commercial glass film options, reduces heat, glare, and UV rays—ideal for both residential and office use. Upgrade your comfort and energy efficiency today." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner.jpg" />
+    <meta name="twitter:url" content="https://www.grasi.in/solar-control-window-film" />
 
+    <link rel="canonical" href="https://www.grasi.in/solar-control-window-film" />
 @endsection
 
 @section('content')
@@ -26,7 +42,7 @@
         </div>
         <div>
             <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner.jpg')}}"
-                class="w-100" alt="">
+                class="w-100" alt="solar window film">
         </div>
     </section>
     <!-- section hero-image end -->
@@ -36,25 +52,25 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 p-3 p-md-0 pe-md-5">
-                <h1>Residential & Commercial <br> Solar Control  Window Films</h1>
+                <h1>Residential & Commercial <br> Solar Control Window Films</h1>
                 <div class="title-divider mb-3">
                     <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">
                 </div>
                 <p>
                     An effective and stylish way to improve energy efficiency, comfort, and aesthetics in both homes and
-                    commercial buildings. Solar Control  Window Film block excessive solar heat, reduces harsh glare, and filters 
+                    commercial buildings. Our solar control window film block excessive solar heat, reduces harsh glare, and filters 
                     out harmful UV rays while allowing natural light in. These window films step in as a practical and
                     stylish solution to help reduce energy costs, protect interiors from fading, and improve comfort
-                    indoors. They also enhance privacy and offer stylish protection for your windows to match all
+                    indoors. Our solar window film also enhance privacy and offer stylish protection for your windows to match all
                     preferences and architectural needs.
                 </p>
             </div>
             <div class="col-12 col-md-6 mt-4 mt-md-5">
                 <div class="ppf-image  position-relative">
                     <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner_2.jpg') }}"
-                         class="w-100 img-fluid" alt="">
+                         class="w-100 img-fluid" alt="solar control window film">
                     <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner_1.jpg') }}"
-                         class="film-img img-fluid" alt="">
+                         class="film-img img-fluid" alt="solar window film">
                 </div>
             </div>
         </div>
@@ -70,13 +86,13 @@
                 <div class="title-divider">
                     {{-- <img
                         src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window-Film_8.jpg ')}}"
-                        alt=""> --}}
+                        alt="solar control window film"> --}}
                 </div>
             </div>
             <!-- ppf -->
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/solar_window_film/Energy-Efficiency.png')}}" alt=""
+                    <img src="{{ asset('assets/llumar/images/solar_window_film/Energy-Efficiency.png')}}" alt="energy Efficiency with solar glass film"
                         height="56px">
                     <h4>Energy Efficiency</h4>
                     <p> Relieve heating and cooling systems, to help conserve energy and shrink bills.  
@@ -84,7 +100,7 @@
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/solar_window_film/Consistent-Comfort.png')}}" alt=""
+                    <img src="{{ asset('assets/llumar/images/solar_window_film/Consistent-Comfort.png')}}" alt="Consistent Comfort with solar window film"
                         height="56px">
                     <h4>Consistent Comfort</h4>
                     <p>Temper the sun’s harsh heat and glare to make commercial spaces and homes more pleasant and usable.  
@@ -93,16 +109,16 @@
 
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/solar_window_film/UV-Protection.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/solar_window_film/UV-Protection.png')}}" alt="uv protection with solar window film" height="56px">
                     <h4>UV Protection</h4>
-                    <p>Block more than 99% of the UV rays that contribute to the fading  of interiors, artwork, and furnishings.
+                    <p>Block more than 99% of the UV rays that contribute to the fading  of interiors, artwork, and furnishings.
 
                     </p>
                 </div>
             </div>
             <div class="row mt-2  why-choose-points">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/solar_window_film/Aesthetic-Appeal.png')}}" alt=""
+                    <img src="{{ asset('assets/llumar/images/solar_window_film/Aesthetic-Appeal.png')}}" alt="aesthetic appeal with solar window film"
                         height="56px">
                     <h4>Aesthetic Appeal</h4>
                     <p>Complement any architecture style, with films from barely visible to neutral to reflective.
@@ -111,16 +127,16 @@
                 <div class="col-md-4">
 
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/solar_window_film/More-Privacy.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/solar_window_film/More-Privacy.png')}}" alt="more privacy with solar window film" height="56px">
                     <h4>More Privacy</h4>
-                    <p> Choose reflective  solar control window films in a broad range of colors to disguise mismatched blinds,
+                    <p> Choose reflective solar window films in a broad range of colors to disguise mismatched blinds,
                         curtains, or clutter.
 
                     </p>
                 </div>
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/solar_window_film/Impressive-ROI.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/solar_window_film/Impressive-ROI.png')}}" alt="impressive roi with solar window film" height="56px">
                     <h4>Impressive ROI</h4>
                     <p>Expect a reliable payback on solar film installation.
 
@@ -138,16 +154,16 @@
                 <label class="title-label-text-size">Types of </label>
                 <h2>Solar Control Window Films</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
                 <div class="col-md-6 mt-3 feature-one feature-section-container text-white">
 
                     <h2 class="feature-section-heading ">Reflective Films</h2>
                     <div class="title-divider">
-                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                     </div>
                     <p class="feature-section-desc">
-                        High-performance Solar control window films  that offer a mirrored look, improving occupant comfort.
+                        High-performance solar window film that offer a mirrored look, improving occupant comfort.
 
                     </p>
                     <h5 class="text-white font-weight-bold mt-4">Benefits</h5>
@@ -166,7 +182,7 @@
                 <!-- Right: Image -->
                 <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner_4.jpg')}}"
-                        class="img-fluid rounded shadow" alt="Matte Film Example">
+                        class="img-fluid rounded shadow" alt="Reflective Solar Control Window Films">
                 </div>
             </div>
             <!-- Section 2: Pattern Film -->
@@ -175,7 +191,7 @@
 
                     <h2 class="feature-section-heading ">Dual-Reflective Films</h2>
                     <div class="title-divider">
-                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                     </div>
                     <p class="feature-section-desc">
                         An optically clear sputtered film with a reflective exterior and a neutral interior with advanced
@@ -196,7 +212,7 @@
                 </div>
                 <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner_5.jpg') }}"
-                        class="img-fluid rounded shadow" alt="Pattern Film">
+                        class="img-fluid rounded shadow" alt="Dual-Reflective Solar Control Window Films">
                 </div>
             </div>
 
@@ -206,10 +222,10 @@
 
                     <h2 class="feature-section-heading">Spectrally-Selective Films</h2>
                     <div class="title-divider">
-                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                     </div>
                     <p class="feature-section-desc">
-                        Advanced films that offer exceptional heat protection with a virtually clear surface.
+                        Advanced solar window film that offer exceptional heat protection with a virtually clear surface.
 
 
                     </p>
@@ -231,7 +247,7 @@
                 <!-- Right: Image -->
                 <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner_6.jpg')}}"
-                        class="img-fluid rounded shadow" alt="Matte Film Example">
+                        class="img-fluid rounded shadow" alt="Spectrally-Selective Solar Control Window Films">
                 </div>
             </div>
 
@@ -241,7 +257,7 @@
 
                     <h2 class="feature-section-heading ">Safety Clear Helios Series</h2>
                     <div class="title-divider">
-                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                        <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                     </div>
                     <p class="feature-section-desc">
                         A premium clear window film installed from the outside with exceptional exterior heat rejection.
@@ -261,7 +277,7 @@
                 </div>
                 <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/solar_window_film/LLumar_Solar-Window-Films_banner_7.jpg') }}"
-                        class="img-fluid rounded shadow" alt="Coloured Film">
+                        class="img-fluid rounded shadow" alt="Safety Clear Helios Series for Solar Control Window Films">
                 </div>
             </div>
 
@@ -277,7 +293,7 @@
                 <div class="col-md-4 ps-0">
                     <img
                         src="{{ asset('assets/llumar/images/solar_window_film/form_image.png')}}"
-                        class="w-100" alt=""> 
+                        class="w-100" alt="solar window films"> 
                 </div>
                 <div class="col-md-8 form-section-alignment">
                     <div class="mb-3">
@@ -379,7 +395,7 @@
                 <h2> About LLumar Solar Window Film
                 </h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -407,13 +423,13 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How do solar control window films work?
+                                    How do LLumar solar control window films work?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    They use advanced technology to block UV rays, reduce heat, and limit glare by
+                                    Our solar window films use advanced technology to block UV rays, reduce heat, and limit glare by
                                     reflecting or absorbing the sun’s energy, all while allowing natural light in.
 
 
@@ -425,14 +441,14 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Can solar control window films help with energy savings?
+                                    Can LLUmar solar control window films help with energy savings?
 
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Yes, solar control window film  can help reduce the need for air conditioning by blocking excess
+                                    Yes, our solar control window film is helping to reduce the need for air conditioning by blocking excess
                                     solar heat, in turn, regulating indoor temperatures and reducing energy consumption.
 
                                 </div>
@@ -443,7 +459,7 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Are solar control window films easy to install?
+                                    Are LLumar solar control window films easy to install?
 
 
                                 </button>
@@ -451,7 +467,7 @@
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    It is recommended to hire a professional for proper installation.
+                                    It is recommended to hire a LLumar professional team for proper installation.
 
 
 
@@ -463,7 +479,7 @@
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Will solar control window film affect the appearance of my windows?
+                                    Will LLumar solar control window film affect the appearance of my windows?
 
 
 
@@ -483,7 +499,7 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Are Solar control window films durable?
+                                    Are LLumar Solar control window films durable?
 
 
                                 </button>
@@ -503,7 +519,7 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSix">
-                                    Can Solar control window film be removed?
+                                    Can LLumar solar control window film be removed?
 
 
 
@@ -512,8 +528,8 @@
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Yes, solar window films can be removed if necessary, and it’s best to hire a
-                                    professional for the same.
+                                    Yes, solar window films can be removed if necessary, and it’s best to hire LLumar
+                                    professional team for the same.
 
 
 
@@ -524,7 +540,7 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseSix">
-                                    Will solar window films affect my view?
+                                    Will LLumar solar window films affect my view?
 
 
 
@@ -533,7 +549,7 @@
                             <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Solar window films are designed to reduce glare and heat without affecting your view.
+                                    Our solar window films are designed to reduce glare and heat without affecting your view.
                                     Some films may have a slight tint, but they still allow clear visibility.
 
 
@@ -545,7 +561,7 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseSix">
-                                    How much does LLumar  Solar control window film cost?
+                                    How much does LLumar Solar control window film cost?
 
 
                                 </button>
@@ -553,7 +569,7 @@
                             <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Pricing depends on the type of film and coverage area. Fill out our contact form for a
+                                    Pricing depends on the type of film and coverage area. Fill out our contact form for a best
                                     quote.
 
                                 </div>
