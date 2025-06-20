@@ -1,12 +1,28 @@
 @extends('llumar.layouts.master')
 
-@section('title')
-    Safety and security film
-@endsection
-
 {{-- SEO --}}
 @section('seo')
+<title>Safety & Security Window Film | For Residential & Commercial</title>
+    <meta name="description" content="Lumar offers high-performance safety and security window films for homes and office spaces. From residential safety glass film to commercial security window tinting, trust LLumar by Grasi for expert installation and lasting protection." />
 
+    <meta name="keywords" content="security window film, security glass film, home security window film, residential window security film, commercial security window tinting, commercial window security film, commercial security window film, llumar security film, safety window film, safety glass film, llumar safety film, llumar, grasi" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="Safety & Security Window Film | For Residential & Commercial" />
+    <meta property="og:description" content="Lumar offers high-performance safety and security window films for homes and office spaces. From residential safety glass film to commercial security window tinting, trust LLumar by Grasi for expert installation and lasting protection." />
+    <meta property="og:url" content="https://www.grasi.in/safety-and-security-window-film" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/safety_and_security_film/LLumar_Safety-and-Security-Films_web-banner.jpg" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Safety & Security Window Film | For Residential & Commercial" />
+    <meta name="twitter:description" content="Lumar offers high-performance safety and security window films for homes and office spaces. From residential safety glass film to commercial security window tinting, trust LLumar by Grasi for expert installation and lasting protection." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/safety_and_security_film/LLumar_Safety-and-Security-Films_web-banner.jpg" />
+    <meta name="twitter:url" content="https://www.grasi.in/safety-and-security-window-film" />
+
+    <link rel="canonical" href="https://www.grasi.in/safety-and-security-window-film" />
 @endsection
 
 @section('content')
@@ -38,9 +54,9 @@
                         <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">
                     </div>
                     <p>
-                        Safety and security film helps defend what’s most valuable against break-ins, vandalism, accidents,
+                        Safety and security window film helps defend what’s most valuable against break-ins, vandalism, accidents,
                         storms, seismic tremors, and blasts. They are engineered for strength, using a heavy-duty polyester
-                        film that bonds to glass with strong adhesives. Once installed, this film provides low-profile
+                        film that bonds to glass with strong adhesives. Once installed, safety and security glass film provides low-profile
                         defense for windows, glass doors, bathroom mirrors, elevator finishes, and other vulnerable hard
                         surfaces in commercial properties.
 
@@ -49,9 +65,9 @@
                 <div class="col-12 col-md-6 mt-md-5">
                     <div class="ppf-image  ppf-image ppf-image-safety-and-security position-relative">
                         <img src="{{ asset('assets/llumar/images/safety_and_security_film/LLumar_Safety-and-Security-Films_banner_2.jpg') }}"
-                            class="w-100 img-fluid" alt="">
+                            class="w-100 img-fluid" alt="security window film">
                         <img src="{{ asset('assets/llumar/images/safety_and_security_film/LLumar_Safety-and-Security-Films_banner_1.jpg') }}"
-                            class="film-img img-fluid" alt="">
+                            class="film-img img-fluid" alt="safety window film">
                     </div>
                 </div>
             </div>
@@ -135,7 +151,7 @@
         <div class="container reveal">
             <div class="row  align-items-center">
                 <label class="title-label-text-size">Types of </label>
-                <h2>Safety & Security window Film</h2>
+                <h2>Safety & Security Window Film</h2>
                 <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
@@ -327,7 +343,7 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What is safety and security film?
+                                    What is LLumar safety and security glass film?
 
 
                                 </button>
@@ -353,7 +369,7 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    The film makes glass harder to break, delaying intruders and often deterring them
+                                    Our security & safety glass film makes glass harder to break, delaying intruders and often deterring them
                                     altogether.
 
                                 </div>
@@ -373,7 +389,7 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    The film is shatter-resistant and holds shattered pieces together, reducing the risk of
+                                    Our security & safety glass film is shatter-resistant and holds shattered pieces together, reducing the risk of
                                     injury and damage.
 
                                 </div>
@@ -384,7 +400,7 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Where can I use safety film?
+                                    Where can I use LLumar safety glass film?
 
                                 </button>
                             </h2>
@@ -401,7 +417,7 @@
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Does it protect against natural disasters?
+                                    Does LLumar security & safety glass film protect against natural disasters?
 
 
 
@@ -483,7 +499,7 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseSix">
-                                    Are safety and security window films durable?
+                                    Are LLumar safety and security window films durable?
 
 
 
