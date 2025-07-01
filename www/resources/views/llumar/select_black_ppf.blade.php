@@ -7,7 +7,7 @@
 @section('content')
     <!-- section hero-image -->
     <section class="hero-section hero-section-selct-black-ppf responsive-desktop">
-        <div class="container">
+        <div class="container ">
             <div class="title-section title-select-black-ppf">
                 <h1>Unmistakable<br>Shine & Style</h1>
                 <h6>With Select Black Paint Protection Film</h6>
@@ -16,7 +16,8 @@
     </section>
     <!-- hero section mobile -->
     <section class="hero-section hero-section-selct-black-ppf-mobile responsive-mobile">
-        <div class="title-section">
+        <div class="title-section title-select-black-ppf-mobile">
+
             <h1>Unmistakable<br>Shine & Style</h1>
             <h6>With Select Black Paint Protection Film</h6>
         </div>

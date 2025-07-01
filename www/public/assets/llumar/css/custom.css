@@ -285,14 +285,11 @@ p {
     padding-top: 2rem;
 }
 
-.hero-section-selct-black-ppf.title-section {
-    margin: 0 auto;
+.title-select-black-ppf {
     text-align: start !important;
-    width: 50%;
-    padding-top: 2rem;
 }
 .hero-section-selct-black-ppf-mobile .title-section {
-  margin: 0 auto;
+    margin: 0 auto;
     text-align: start !important;
     width: 50%;
     padding-top: 2rem;
@@ -302,7 +299,6 @@ p {
     width: 100% !important;
     padding-left: 40px;
 }
-
 .title-section-dyed-window-film{
     width: auto !important;
 }
