@@ -29,10 +29,10 @@
     </section>
     <!-- section hero-image end -->
     <!-- section PPF -->
-    <section class="section-ppf section-ppf-gloss-ppf bg-dark-gray">
+    <section class="section-ppf  bg-dark-gray">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 p-3 p-md-0 pe-md-5 ">
+                <div class="col-md-6 ">
                     <h1>LLumar<br> Gloss Paint Protection Film</h1>
                     <div class="title-divider">
                         <img src="{{ asset(path: 'assets/llumar/images/dash.svg')}}" alt="">
@@ -44,8 +44,8 @@
                         newer for longer, this protective film also features a crystal-clear gloss and shine.
                     </p>
                 </div>
-                <div class="col-12 col-md-6 mt-sm-5">
-                    <div class="ppf-image ppf-image-gloss-ppf">
+                <div class="col-md-6 ">
+                    <div class="ppf-image ">
                         <img src="{{ asset('assets/llumar/images/gloss_ppf/LLumar_Gloss-PPF_2.jpg')}}" class="w-100" alt="">
                         <img src="{{ asset('assets/llumar/images/gloss_ppf/LLumar_Gloss-PPF_1.jpg')}}" class="film-img"
                          class="w-100 img-fluid"   alt="">
@@ -87,20 +87,18 @@
                     <p> Protects your car’s exterior from rock chips, road debris, and everyday scuffs.</p>
                 </div>
             </div>
-            <div class="row mt-2  why-choose-points">
-                <div class="col-md-6">
+            <div class="row mt-2 justify-content-center  why-choose-points">
+                <div class="col-md-4">
                     <img src="{{ asset('assets/llumar/images/gloss_ppf/Fade-Resistant.png')}}" alt="" height="56px">
                     <h4>Discolouration & Fade-Resistant </h4>
                     <p>Promises long-lasting clarity and shine without discolouration over time.</p>
                 </div>
-                <div class="col-md-6">
-
+                <div class="col-md-5">
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
                     <img src="{{ asset('assets/llumar/images/gloss_ppf/Warranty.png')}}" alt="" height="56px">
                     <h4>Manufacturer’s Limited 5-Year Warranty</h4>
-                    <p>A guaranteed confidence in the PPF’s long-term performance.</p>
+                    <p>A guaranteed confidence in the PPF’s <br>long-term performance.</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -157,7 +155,7 @@
     </section>
 
     <!-- vehicles -->
-    {{-- <section class="vehicle-section reveal">
+  <section class="vehicle-section reveal">
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-md-3">
@@ -228,7 +226,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section> 
 
     <!-- gallery -->
 

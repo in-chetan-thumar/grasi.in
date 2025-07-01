@@ -27,10 +27,10 @@
     <!-- section hero-image end -->
 
     <!-- section PPF -->
-    <section class="section-ppf section-ppf-platinum-matte-ppf bg-dark-gray">
+    <section class="section-ppf bg-dark-gray">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 p-3 p-md-0 pe-md-5">
+                <div class="col-md-6 p-0 pe-md-5">
                     <h1>LLumar<br>Platinum Matte<br> Paint Protection Film </h1>
                     <div class="title-divider">
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
@@ -42,8 +42,8 @@
                         come.
                     </p>
                 </div>
-                <div class="col-12 col-md-6 mt-md-5">
-                    <div class="ppf-image ppf-image-platinum-matte-ppf">
+                <div class="col-md-6">
+                    <div class="ppf-image ">
                         <img src="{{ asset('assets/llumar/images/platinum_matte_ppf/LLumar_Matte-PPF_2.jpg')}}"
                             class="w-100" alt="">
                         <img src="{{ asset('assets/llumar/images/platinum_matte_ppf/LLumar_Matte-PPF_1.jpg')}}"
@@ -53,6 +53,7 @@
             </div>
         </div>
     </section>
+       
     <!-- why choose section -->
     <section class="why-choose why-choose-platinum-matte-ppf reveal">
         <div class="container">
@@ -169,7 +170,7 @@
     </section>
 
     <!-- vehicles -->
-    {{-- <section class="vehicle-section reveal">
+  <section class="vehicle-section reveal">
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-md-3">
@@ -240,7 +241,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section> 
 
     <!-- gallery -->
 

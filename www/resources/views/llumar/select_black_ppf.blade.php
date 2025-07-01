@@ -27,25 +27,22 @@
         </div>
     </section>
     <!-- section hero-image end -->
-
-    <!-- section PPF -->
-    <section class="section-ppf section-ppf-select-black-ppf bg-dark-gray">
+    <section class="section-ppf bg-dark-gray">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6 p-3 p-md-0 pe-md-5">
+            <div class="row">
+                <div class="col-md-6 p-0 pe-md-5">
                     <h1>LLumar<br>Select Black <br>Paint Protection Film</h1>
                     <div class="title-divider">
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                     </div>
-                    <p>Give your car an unmatched upgrade with a sleek, high-gloss black finish that fuels it with
+                    <p> Give your car an unmatched upgrade with a sleek, high-gloss black finish that fuels it with
                         sophistication. The Select Black Paint Protection Film offers a deep, mirror-like shine while
                         protecting against scratches, rock chips, and environmental damage. Its self-healing technology and
                         hydrophobic topcoat ensure your car stays showroom-ready while being protected from daily wear and
-                        tear.
-                    </p>
+                        tear.</p>
                 </div>
-                <div class="col-12 col-md-6 mt-md-5">
-                    <div class="ppf-image ppf-image-select-black-ppf  position-relative">
+                <div class="col-md-6">
+                    <div class="ppf-image">
                         <img src="{{ asset('assets/llumar/images/select_black_ppf/LLumar_Select-Black-PPF-Webpage_2.jpg')}}"
                             class="w-100 img-fluid" alt="">
                         <img src="{{ asset('assets/llumar/images/select_black_ppf/LLumar_Select-Black-PPF-Webpage_1.jpg')}}"class="film-img img-fluid" alt="">
@@ -54,6 +51,7 @@
             </div>
         </div>
     </section>
+    
     <!-- why choose section -->
     <section class="why-choose why-choose-select-black-ppf reveal">
         <div class="container">
@@ -170,7 +168,7 @@
     </section>
 
     <!-- vehicles -->
-    {{-- <section class="vehicle-section reveal">
+     <section class="vehicle-section reveal">
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-md-3">
@@ -241,7 +239,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section> 
 
     <!-- gallery -->
 
