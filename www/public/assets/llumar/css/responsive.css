@@ -589,7 +589,7 @@
     }
 
     .hero-section.hero-section-selct-black-ppf.responsive-desktop .title-section {
-        margin-left: 150px;
+        margin-left: 0px !important;
         text-align: left;
         width: 45% !important;
         padding-top: 100px;
