@@ -230,6 +230,53 @@ p {
     position: relative;
 
 }
+.hero-section-gloss {
+  display: flex;
+  align-items: center;
+  padding: 100px 0;              /* vertical padding */
+  background-image: url("../images/gloss_ppf/LLumar_Gloss-PPF_Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-section-gloss .container {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  /* optional: give it a dark overlay for contrast */
+ 
+  padding: 40px;
+}
+.hero-section-gloss::after {
+  content: "";
+  flex: 1;            /* takes up the remaining 50% */
+  /* nothing else needed—background is on the section itself */
+}
+.hero-section-gloss .title-section-gloss-ppf h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #FF3C00;
+  margin: 0;
+}
+.hero-section-gloss .title-section-gloss-ppf h6 {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.hero-section-matte-ppf{
+    background-image: url("../images/platinum_matte_ppf/LLumar_Matte-PPF_Banner.jpg");
+    background-size: cover; /* full width and height */
+    background-repeat: no-repeat; /* prevent repeating */
+    position: relative;
+}
+.hero-section-selct-black-ppf{
+    background-image: url("../images/select_black_ppf/LLumar_Select-Black-PPF-Webpage_Banner.jpg");
+    background-size: cover; /* full width and height */
+    background-repeat: no-repeat; /* prevent repeating */
+    position: relative;
+}
 
 .hero-section .title-section {
     margin: 0 auto;
@@ -238,12 +285,22 @@ p {
     padding-top: 2rem;
 }
 
-
+.hero-section-selct-black-ppf.title-section {
+    margin: 0 auto;
+    text-align: start !important;
+    width: 50%;
+    padding-top: 2rem;
+}
+.hero-section-selct-black-ppf-mobile .title-section {
+  margin: 0 auto;
+    text-align: start !important;
+    width: 50%;
+    padding-top: 2rem;
+}
 .title-section-platinum{
     text-align: start !important;
     width: 100% !important;
     padding-left: 40px;
-
 }
 
 .title-section-dyed-window-film{
@@ -255,7 +312,11 @@ p {
     width: 100% !important;
     padding-left: 40px;
 }
-
+.title-section-gloss-ppf{
+    text-align: start !important;
+    width: 100% !important;
+    padding-left: 40px;
+}
 .title-section-ceramic{
     text-align: start !important;
     width: 100% !important;
@@ -288,6 +349,9 @@ p {
 .hero-section-dyed h1 {
     text-align: center;
 }
+.hero-section-matte-ppf h1 {
+    text-align: center;
+}
 
 .hero-section-valor h1 {
     text-align: center;
@@ -309,7 +373,10 @@ p {
 .title-section-metallized h1{
     text-align: start;
 }
+.title-section-gloss-ppf{
+    text-align: start;
 
+}
 .title-section-ceramic h1 {
     text-align: start;
 }
@@ -420,8 +487,15 @@ p {
 .why-choose-automotive-window-film {
     background-image: url("../images/automotive-window-film/why-choose.jpg");
 }
-
-
+.why-choose-gloss-ppf {
+    background-image: url("../images/gloss_ppf/LLumar_Gloss-PPF_3.jpg");
+}
+.why-choose-platinum-matte-ppf{
+    background-image: url("../images/platinum_matte_ppf/LLumar_Matte-PPF_3.jpg");
+}
+.why-choose-select-black-ppf{
+    background-image: url("../images/select_black_ppf/LLumar_Select-Black-PPF-Webpage_3.jpg");
+}
 .why-choose h4 {
     color: var(--orange);
 }
@@ -512,7 +586,15 @@ p {
 .features-section-automotive-window-film {
     background-image: url("../images/automotive-window-film/feature-car-back.jpg");
 }
-
+.features-section-gloss-ppf{
+    background-image: url("../images/gloss_ppf/LLumar_Gloss-PPF_4.jpg");
+}
+.features-section-platinum-matte-ppf{
+    background-image: url("../images/platinum_matte_ppf/LLumar_Matte-PPF_4.jpg");
+}
+.features-section-select-black-ppf{
+    background-image: url("../images/select_black_ppf/LLumar_Select-Black-PPF-Webpage_4.jpg");
+}
 
 .features-section .features-points h4 {
     color: var(--orange);

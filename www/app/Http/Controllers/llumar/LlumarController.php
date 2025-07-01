@@ -70,4 +70,16 @@ class LlumarController extends Controller
         return view('llumar.safety_and_security_window_film');
 
     }
+
+    public function glossPPF(){
+        return view('llumar.gloss_ppf');
+    }
+    public function platinumMattePPF(){
+        return view('llumar.platinum_matte_ppf');
+    }
+
+    public function slectBlackPPF(){
+        return view('llumar.select_black_ppf');
+
+    }
 }

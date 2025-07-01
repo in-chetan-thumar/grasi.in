@@ -47,6 +47,11 @@ Route::prefix('')->name('llumar.')->group(function () {
     Route::get('solar-control-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'solarWindowFilm'])->name('solar.control.window.film');
     Route::get('safety-and-security-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'safetyAndSecurityWindowFilm'])->name('safety.and.security.window.film');
 
+    Route::get('gloss-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'glossPPF'])->name('gloss.ppf');
+    Route::get('platinum-matte-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'platinumMattePPF'])->name('platinum.matte.ppf');
+    Route::get('select-black-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'slectBlackPPF'])->name('select.black.ppf');
+    
+    
 });
 
 //Our Story page route
