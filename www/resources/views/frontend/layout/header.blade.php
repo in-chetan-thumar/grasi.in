@@ -169,7 +169,7 @@
                                                                                 <li><a href="{{route('llumar.decorative.window.film')}}"
                                                                                        >Decorative</a>
                                                                                 </li>
-                                                                                <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/safety-security/"
+                                                                                <li><a href="{{ route('llumar.safety.and.security.window.film') }}"
                                                                                         target="_blank">Safety &
                                                                                         Security</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/residential-window-film/benefits/"
@@ -185,13 +185,14 @@
                                                                                 <h4>Commercial</h4>
                                                                             </a>
                                                                             <ul>
-                                                                                <li><a href="https://llumar.com/emea/en/architectural/commercial-window-film/solar/"
-                                                                                        target="_blank">Solar
-                                                                                        Control</a></li>
-                                                                                <li><a href="https://llumar.com/emea/en/architectural/commercial-window-film/decorative/"
-                                                                                        target="_blank">Decorative</a>
+                                                                                <li><a href="{{route('llumar.solar.control.window.film')}}"
+                                                                                       >Solar
+                                                                                        Control</a>
                                                                                 </li>
-                                                                                <li><a href="https://llumar.com/emea/en/architectural/commercial-window-film/safety-security/"
+                                                                                <li><a href="{{route('llumar.decorative.window.film')}}"
+                                                                                       >Decorative</a>
+                                                                                </li>
+                                                                                <li><a href="{{ route('llumar.safety.and.security.window.film') }}"
                                                                                         target="_blank">Safety &
                                                                                         Security</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/architectural/commercial-window-film/benefits/"

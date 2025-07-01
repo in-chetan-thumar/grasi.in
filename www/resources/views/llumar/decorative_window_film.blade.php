@@ -1,12 +1,28 @@
 @extends('llumar.layouts.master')
 
-@section('title')
-    Decorative window film
-@endsection
-
 {{-- SEO --}}
 @section('seo')
+<title>Decorative Window Film for Residential & Commercial Spaces | Grasi</title>
+    <meta name="description" content="Enhance privacy and style with premium decorative window film from Grasi. Choose from a wide range of decorative glass film for commercial and residential spaces. Get expert decorative film installation across India." />
+    <meta name="keywords" content="decorative windows film, decorative glass film, decorative films, residential, home, commercial, india, llumar, grasi" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="Decorative Window Film for Residential & Commercial | Grasi" />
+    <meta property="og:description" content="Enhance privacy and style with premium decorative window film from Grasi. Choose from a wide range of decorative glass film for commercial and residential spaces. Get expert decorative film installation across India." />
+    <meta property="og:url" content="https://www.grasi.in/decorative-window-film" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/decorative_window_film/LLumar_Decorative-Window-Film_Banner.jpg" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Decorative Window Film for Residential & Commercial | Grasi" />
+    <meta name="twitter:description" content="Enhance privacy and style with premium decorative window film from Grasi. Choose from a wide range of decorative glass film for commercial and residential spaces. Get expert decorative film installation across India." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/decorative_window_film/LLumar_Decorative-Window-Film_Banner.jpg" />
+    <meta name="twitter:url" content="https://www.grasi.in/decorative-window-film" />
 
+    <link rel="canonical" href="https://www.grasi.in/decorative-window-film" />
 @endsection
 
 @section('content')
@@ -26,7 +42,7 @@
         </div>
         <div>
             <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window-Film_Banner.jpg')}}"
-                class="w-100" alt="">
+                class="w-100" alt="decorative window film">
         </div>
     </section>
     <!-- section hero-image end -->
@@ -41,20 +57,20 @@
                     <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">
                 </div>
                 <p>
-                      Enhance the privacy level, look, or mood of any room with premium decorative window film for
+                    Enhance the privacy level, look, or mood of any room with premium LLumar decorative window film for
                     residential and commercial spaces. With a variety of styles, inspired by current design trends,
                     these films can complement interiors ranging from traditional to contemporary. A stylish route to
                     the protection of your interior space, the films add texture and a new dimension to your home or
-                    office, all while keeping harsh glare from the sun away. The film also preserves your privacy,
+                    office, all while keeping harsh glare from the sun away. Our decorative glass film also preserves your privacy,
                     contributing to the comfort of all occupants with an aesthetic touch.
                 </p>
             </div>
             <div class="col-12 col-md-6 mt-4 mt-md-5">
                 <div class="ppf-image  position-relative">
                      <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window_banner_1.jpg')}}"
-                        class="w-100 img-fluid" alt="">
+                        class="w-100 img-fluid" alt="decorative glass film">
                     <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window_banner_2.jpg')}}"
-                        class="film-img" alt="">
+                        class="film-img" alt="decorative glass film">
                 </div>
             </div>
         </div>
@@ -69,20 +85,20 @@
                 <div class="title-divider">
                     {{-- <img
                         src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window-Film_8.jpg ')}}"
-                        alt=""> --}}
+                        alt="decorative glass film"> --}}
                 </div>
             </div>
             <!-- ppf -->
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Designer-Style.png')}}" alt=""
+                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Designer-Style.png')}}" alt="designer style for decorative glass film"
                         height="56px">
                     <h4>Designer Style</h4>
                     <p> Express yourself, create a mood, or update the look of a room with a subtle or dramatic film.
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Added-Privacy.png')}}" alt=""
+                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Added-Privacy.png')}}" alt="added privancy with decorative glass film"
                         height="56px">
                     <h4>Added Privacy</h4>
                     <p>Completely shield or partially obscure views with a range of privacy levels.
@@ -91,7 +107,7 @@
 
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Hidden-Views.png')}}" alt=""
+                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Hidden-Views.png')}}" alt="hiden views with decorative window film"
                         height="56px">
                     <h4>Hidden Views</h4>
                     <p> If you can’t change an unsightly outdoor view, you can conceal it without sacrificing sunlight.
@@ -100,7 +116,7 @@
             </div>
             <div class="row mt-2  why-choose-points">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Specialty-Effects.png')}}" alt=""
+                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Specialty-Effects.png')}}" alt="specialty effects with decorative glass film"
                         height="56px">
                     <h4>Specialty Effects </h4>
                     <p> Get the look of etched, textured or fluted glass, minus the hassle and expense of replacement.
@@ -109,7 +125,7 @@
                 <div class="col-md-4">
 
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Light-Filtering.png')}}" alt=""
+                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Light-Filtering.png')}}" alt="ligt filtering with decorative window film"
                         height="56px">
                     <h4>Light Filtering</h4>
                     <p>Soften bright, direct light for better aesthetics and a more eye-friendly environment.
@@ -117,7 +133,7 @@
                 </div>
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Easy-Updates.png')}}" alt=""
+                    <img src="{{ asset('assets/llumar/images/decorative_window_film/Easy-Updates.png')}}" alt="wasy upates with decorative glass film"
                         height="56px">
                     <h4>Easy Updates</h4>
                     <p>Keep decorative film until you’re ready for a change – it’s durable and easy to add or remove.
@@ -132,15 +148,15 @@
     <section class="feature-section-architeural bg-dark-gray py-5">
         <div class="container reveal">
             <div class="row   align-items-center">
-                 <label class="title-label-text-size">Types of </label><h2>Decorative Window Film</h2>
+                 <label class="title-label-text-size">Types of </label><h2>Decorative Glass Film</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
                 <div class="col-md-6 mt-3  feature-one feature-section-container text-white">
                    
                     <h2 class="feature-section-heading ">Matte Film</h2>
                       <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
                     <p class="feature-section-desc">
                         Our collection of understated, premium-look frost variations can harmonize with homes
@@ -158,7 +174,7 @@
                 <!-- Right: Image -->
                 <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window-Film_4.jpg')}}"
-                        class="img-fluid rounded shadow" alt="Matte Film Example">
+                        class="img-fluid rounded shadow" alt="mattle decorative window film">
                 </div>
             </div>
             <!-- Section 2: Pattern Film -->
@@ -172,7 +188,7 @@
                     <p class="feature-section-desc">
                         Our striking geometric patterns offer a variety of coverage levels and styles, from playful dots to
                         soothing stripes. Attract attention, distract from clutter, or create privacy with your favorite
-                        pattern.
+                        pattern in decorative glass film.
                     </p>
                     <h5 class="text-white font-weight-bold mt-4">Benefits</h5>
                     <ul class="feature-section-benefits">
@@ -184,7 +200,7 @@
                 </div>
                 <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window-Film_6.jpg') }}"
-                        class="img-fluid rounded shadow" alt="Pattern Film">
+                        class="img-fluid rounded shadow" alt="Pattern decorative glass film">
                 </div>
             </div>
 
@@ -197,8 +213,8 @@
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
                     <p class="feature-section-desc">
-                        Graphic Art Film: Graphic Art Film transforms plain glass into a creative canvas with custom
-                        designs, logos, or imagery—perfect for making a bold visual statement in any space.
+                        Graphic Art Film transforms plain glass into a creative canvas with custom
+                        designs, logos, or imagery—perfect for making a bold visual statement in home & office space.
 
                     </p>
                     <h5 class="text-white font-weight-bold mt-4">Benefits</h5>
@@ -216,7 +232,7 @@
                 <!-- Right: Image -->
                 <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window-Film_5.jpg')}}"
-                        class="img-fluid rounded shadow" alt="Matte Film Example">
+                        class="img-fluid rounded shadow" alt="graphic art decorative window film">
                 </div>
             </div>
 
@@ -229,7 +245,7 @@
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
                     <p class="feature-section-desc">
-                        Create an architectural feature, enhance privacy, or even hide unsightly clutter with this film
+                        Create an architectural feature, enhance privacy, or even hide unsightly clutter with coloured decorative glass film
                         series. We offer a range of warm and cool frosted tones to enhance your home.
                     </p>
                     <h5 class="text-white font-weight-bold mt-4">Benefits</h5>
@@ -242,7 +258,7 @@
                 </div>
                 <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/decorative_window_film/LLumar_Decorative-Window-Film_7.jpg') }}"
-                        class="img-fluid rounded shadow" alt="Coloured Film">
+                        class="img-fluid rounded shadow" alt="coloured decorative window film">
                 </div>
             </div>
 
@@ -255,7 +271,7 @@
         <div class="container reveal">
             <div class="row bg-dark-gray rounded-5 p-3">
                 <div class="col-md-4 ps-0">
-                    <img src="{{ asset('assets/llumar/images/decorative_window_film/form_image.png')}}" class="w-100" alt="">
+                    <img src="{{ asset('assets/llumar/images/decorative_window_film/form_image.png')}}" class="w-100" alt="decorative window film">
                 </div>
                 <div class="col-md-8 form-section-alignment">
                     <div class="mb-3">
@@ -354,7 +370,7 @@
         <div class="container">
             <div class="text-center  reveal">
                 <label class="title-label-text-size">Frequently Asked Questions</label>
-                <h2> About LLumar Decorative Window Film
+                <h2> About LLumar Decorative Glass Film
 </h2>
                 <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
@@ -384,14 +400,14 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Does it offer privacy?
+                                    Does LLumar decorative glass film offer privacy?
 
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                   Yes, they are designed to offer privacy with an aesthetic value.
+                                   Yes, Lumar decorative films are designed to offer privacy with an aesthetic value.
 
                                 </div>
                             </div>
@@ -401,14 +417,14 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                   Will it block natural light?
+                                   Will Lumar decorative films block natural light?
 
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  No, our films are made to diffuse light while maintaining a bright and pleasant atmosphere indoors.
+                                  No, our window films are made to diffuse light while maintaining a bright and pleasant atmosphere indoors.
 
                                 </div>
                             </div>
@@ -418,13 +434,13 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                     Can I use it in both homes and offices?
+                                     Can I use Lumar decorative glass film in both homes and offices?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                 Yes, these films are designed to work great for commercial and residential spaces.
+                                 Yes, Lumar decorative glass films are designed to work great for commercial and residential spaces.
                                 </div>
                             </div>
                         </div>
@@ -433,13 +449,13 @@
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                     Can I customize the film with my logo or design?
+                                     Can I customize the LLumar window films with my logo or design?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Yes, Graphic Art Films can be fully customizable for branding and other requirements.
+                                    Yes, Our graphic art window films can be fully customizable for branding and other requirements.
                                 </div>
                             </div>
                         </div>
@@ -448,7 +464,7 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Does decorative film reduce UV exposure?
+                                    Does Lumar decorative window film decorative film reduce UV exposure?
 
                                 </button>
                             </h2>
