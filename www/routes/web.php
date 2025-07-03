@@ -49,7 +49,7 @@ Route::prefix('')->name('llumar.')->group(function () {
 
     Route::get('gloss-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'glossPPF'])->name('gloss.ppf');
     Route::get('platinum-matte-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'platinumMattePPF'])->name('platinum.matte.ppf');
-    Route::get('select-black-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'slectBlackPPF'])->name('select.black.ppf');
+    Route::get('select-black-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'slectBlackPPF'])->name('select.black.ppf'); 
     
     
 });

@@ -109,16 +109,15 @@
                                                                                    >Platinum</a></li>
                                                                                 <li><a href="{{route('llumar.classeco')}}"
                                                                                         target="_blank">Classeco</a></li>
-                                                                                <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/platinum-matte/"
+                                                                                <li><a href="{{route('platinum.matte.ppf')}}"
                                                                                         target="_blank">Platinum
                                                                                         Matte</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/platinum-extra/"
                                                                                         target="_blank">Platinum
                                                                                         Extra</a></li>
-                                                                                <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/gloss-matte/"
-                                                                                        target="_blank">Gloss and
-                                                                                        Matte</a></li>
-                                                                                <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/select-black/"
+                                                                                <li><a href="{{route('gloss.ppf')}}"
+                                                                                        target="_blank">Gloss PPF</a></li>
+                                                                                <li><a href="{{route('select.black.ppf')}}"
                                                                                         target="_blank">Select Black</a>
                                                                                 </li>
                                                                             </ul>

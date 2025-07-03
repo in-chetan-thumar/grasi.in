@@ -54,13 +54,13 @@
                                             <a href="{{route('llumar.valor.PPF')}}">Valor</a>
                                             <a href="{{route('llumar.platinum.PPF')}}">Platinum</a>
                                             <a href="{{route('llumar.classeco')}}">Classeco</a>
-                                            <a href="https://llumar.com/emea/en/automotive/paint-protection-film/platinum-matte/"
+                                            <a href="{{route('platinum.matte.ppf')}}"
                                                                                         target="_blank">Platinum Matte</a>
                                             <a href="https://llumar.com/emea/en/automotive/paint-protection-film/platinum-extra/"
                                                                                         target="_blank">Platinum Extra</a>
-                                            <a href="https://llumar.com/emea/en/automotive/paint-protection-film/gloss-matte/"
+                                            <a href="{{route('gloss.ppf')}}"
                                                                                         target="_blank">Gloss & Matte</a>
-                                            <a href="https://llumar.com/emea/en/automotive/paint-protection-film/select-black/"
+                                            <a href="{{route('select.black.ppf')}}"
                                                                                         target="_blank">Select Black</a>
                                         </div>
                                         <div class="col-md-3 column">
