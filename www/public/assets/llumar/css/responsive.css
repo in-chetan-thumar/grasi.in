@@ -603,6 +603,7 @@
 
 @media (min-width: 1200px) {
    .why-choose-select-black-ppf h4 {
-        background-color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+        background-color: rgb(15 14 14 / 34%);
     }
 }
