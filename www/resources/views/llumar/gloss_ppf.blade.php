@@ -230,60 +230,44 @@
 
     <!-- gallery -->
 
-    {{-- <section class="gallery-section bg-dark-gray">
+    <section class="gallery-section bg-dark-gray">
         <div class="container reveal">
             <div>
-                <h2>Metallized Window Films Gallery</h2>
+                <h2>Gloss PPF Gallery</h2>
                 <div class="title-divider">
                     <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
                 </div>
             </div>
             <div class="row mt-4 d-flex g-3">
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/1.png') }}"
+                    <img src="{{ asset('assets/llumar/images/gloss_ppf/gallery/1.png') }}"
                         class="img-fluid gallery-img" alt="Metallized window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/2.png') }}"
+                    <img src="{{ asset('assets/llumar/images/gloss_ppf/gallery/2.png') }}"
                         class="img-fluid gallery-img" alt="Metallized window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/3.png') }}"
+                    <img src="{{ asset('assets/llumar/images/gloss_ppf/gallery/3.png') }}"
                         class="img-fluid gallery-img" alt="Metallized window films">
                 </div>
                 <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/4.png') }}"
+                    <img src="{{ asset('assets/llumar/images/gloss_ppf/gallery/4.png') }}"
                         class="img-fluid gallery-img" alt="Metallized window films">
-                </div>
-                <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/5.png') }}"
-                        class="img-fluid gallery-img" alt="Metallized window films">
-                </div>
-                <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/6.png') }}"
-                        class="img-fluid gallery-img" alt="Metallized window films">
-                </div>
-                <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/7.png') }}"
-                        class="img-fluid gallery-img" alt="Metallized window films">
-                </div>
-                <div class="col-md-3">
-                    <img src="{{ asset('assets/llumar/images/metallized_window_film/gallery/8.png') }}"
-                        class="img-fluid gallery-img" alt="Metallized window films">
-                </div>
+                </div> 
                 <!-- Continue other images similarly -->
             </div>
         </div>
-    </section> --}}
+    </section> 
     <!-- Image Modal -->
-    {{-- <div id="imageModal" class="image-modal">
+     <div id="imageModal" class="image-modal">
         <span class="close-modal">&times;</span>
         <button class="nav-btn prev-btn">&lt;</button>
         <div class="square-image-container">
             <img class="modal-content" id="expandedImg">
         </div>
         <button class="nav-btn next-btn">&gt;</button>
-    </div> --}}
+    </div> 
 
     <!-- protection -->
     <section class="protection-section">

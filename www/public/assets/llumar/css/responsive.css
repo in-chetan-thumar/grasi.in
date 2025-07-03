@@ -601,3 +601,8 @@
   
 }
 
+@media (min-width: 1200px) {
+   .why-choose-select-black-ppf h4 {
+        background-color: #000;
+    }
+}
