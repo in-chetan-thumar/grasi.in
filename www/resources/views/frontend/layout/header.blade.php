@@ -109,15 +109,15 @@
                                                                                    >Platinum</a></li>
                                                                                 <li><a href="{{route('llumar.classeco')}}"
                                                                                         target="_blank">Classeco</a></li>
-                                                                                <li><a href="{{route('platinum.matte.ppf')}}"
+                                                                                <li><a href="{{route('llumar.platinum.matte.ppf')}}"
                                                                                         target="_blank">Platinum
                                                                                         Matte</a></li>
                                                                                 <li><a href="https://llumar.com/emea/en/automotive/paint-protection-film/platinum-extra/"
                                                                                         target="_blank">Platinum
                                                                                         Extra</a></li>
-                                                                                <li><a href="{{route('gloss.ppf')}}"
+                                                                                <li><a href="{{route('llumar.gloss.ppf')}}"
                                                                                         target="_blank">Gloss PPF</a></li>
-                                                                                <li><a href="{{route('select.black.ppf')}}"
+                                                                                <li><a href="{{route('llumar.select.black.ppf')}}"
                                                                                         target="_blank">Select Black</a>
                                                                                 </li>
                                                                             </ul>
