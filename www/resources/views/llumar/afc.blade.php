@@ -253,7 +253,7 @@
             </div>
         </div>
     </section> --}}
-    <section class="gallery-section bg-dark-gray py-5 position-relative ">
+    <section class="gallery-section gallery-section-afc bg-dark-gray py-5 position-relative ">
         <div class="container reveal text-center">
             <div class="title-divider mb-2">
                 <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">

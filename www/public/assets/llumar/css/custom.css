@@ -806,6 +806,10 @@ p {
     text-align: center;
     color: var(--white);
 }
+.gallery-section-afc{
+    padding-bottom: 4rem !important;
+    
+}
 .afc-text-section    {
     padding: 9rem 9rem 4rem;
     color: var(--white);
@@ -971,7 +975,7 @@ p {
 
 /* form-section */
 .form-section {
-    padding: 7rem 0;
+    padding: 4rem 0;
     color: var(--white);
 }
 
