@@ -369,7 +369,7 @@
     </section>
 
     <!-- Image Modal -->
-    <div class="row">
+    {{-- <div class="row">
         <div id="imageModal" class="image-modal col-6">
             <span class="close-modal">&times;</span>
             <button class="nav-btn prev-btn">&lt;</button>
@@ -378,7 +378,7 @@
             </div>
             <button class="nav-btn next-btn">&gt;</button>
         </div>
-    </div>
+    </div> --}}
 
    <section class="afc-text-section">
         <div class="container">
