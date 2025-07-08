@@ -51,6 +51,7 @@ Route::prefix('')->name('llumar.')->group(function () {
     Route::get('platinum-matte-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'platinumMattePPF'])->name('platinum.matte.ppf');
     Route::get('select-black-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'slectBlackPPF'])->name('select.black.ppf'); 
     
+    Route::get('authorize-fitment-center', [App\Http\Controllers\llumar\LlumarController::class, 'afc'])->name('select.black.ppf'); 
     
 });
 

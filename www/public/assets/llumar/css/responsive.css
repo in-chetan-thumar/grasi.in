@@ -1,34 +1,42 @@
-@media only screen and (max-width: 1150px) { 
+@media only screen and (max-width: 1150px) {
     .hero-section .title-section {
         width: 70%;
-      }
+    }
+
     .ppf-image .film-img {
         position: absolute;
         left: 0rem;
         bottom: 0rem;
         width: 16rem;
     }
+
     .feature-section-architeural .feature-one,
     .feature-section-architeural .feature-two,
     .feature-section-architeural .feature-three,
     .feature-section-architeural .feature-four {
-        padding: 2rem; /* Remove padding on small screens */
-        background-size: 150px; /* Optional: reduce image size on small screen */
-        background-position: top left; /* Optional: reposition if needed */
+        padding: 2rem;
+        /* Remove padding on small screens */
+        background-size: 150px;
+        /* Optional: reduce image size on small screen */
+        background-position: top left;
+        /* Optional: reposition if needed */
     }
 }
+
 @media only screen and (min-width: 1280px) and (max-width: 1280px) {
     /*.hero-section-dyed h1 {
         font-size: 2rem;
     }*/
 }
+
 @media only screen and (max-width: 1280px) {
-    .hero-section-selct-black-ppf{
+    .hero-section-selct-black-ppf {
         height: 474px;
     }
 }
+
 @media only screen and (max-width: 992px) {
-    
+
     .ppf-image .film-img {
         position: absolute;
         left: 0rem;
@@ -36,68 +44,79 @@
         width: 10rem;
     }
 }
+
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
 
     .hero-section .title-section {
-      width: 70%;
+        width: 70%;
     }
-    
-     /* hero section */
-    .hero-section {   
+
+    /* hero section */
+    .hero-section {
         padding-bottom: 5rem;
-        background-size: 110%, 110%;         /* Increase size */
-        background-position: center top 60px; 
+        background-size: 110%, 110%;
+        /* Increase size */
+        background-position: center top 60px;
         height: 400px;
-     }   
+    }
+
     .hero-section h1 {
         font-size: 2rem;
     }
-   
+
     .hero-section span {
         font-size: 2rem;
     }
-    
+
     .hero-section h6 {
         color: var(--white);
         text-transform: uppercase;
         font-size: 0.95rem;
         font-family: fontLR;
     }
-    .hero-section-platinum {   
+
+    .hero-section-platinum {
         padding-bottom: 11rem;
-        background-size: 90%, 90%;         /* Increase size */
-        background-position: center top 50px; /* Push it down from the top */  
+        background-size: 90%, 90%;
+        /* Increase size */
+        background-position: center top 50px;
+        /* Push it down from the top */
     }
+
     .hero-section-platinum h1 {
         font-size: 2rem;
     }
-   
+
     .hero-section-platinum span {
         font-size: 2rem;
     }
-    
+
     .hero-section-platinum h6 {
         color: var(--white);
         text-transform: uppercase;
         font-size: 0.95rem;
         font-family: fontLR;
     }
+
     .vehicle-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
+
     .ppf-image .film-img {
         position: absolute;
         left: 0rem;
         bottom: 0rem;
         width: 15rem;
-       height: 9rem;
+        height: 9rem;
     }
+
     .responsive-mobile {
         display: block;
     }
+
     .responsive-desktop {
         display: none;
     }
@@ -124,7 +143,7 @@
         border-radius: 10px;
         border: 1px solid var(--black);
     }
-    
+
     .nav-pills {
         flex-direction: row;
     }
@@ -208,11 +227,11 @@
         padding-bottom: 5rem;
         height: 250px;
     }
-    
+
     .hero-section-dyed {
         height: 300px !important;
     }
-    
+
     .hero-section .title-section {
         width: 18rem;
     }
@@ -231,13 +250,14 @@
         font-size: 0.95rem;
         font-family: fontLR;
     }
+
     /* section-ppf */
-  
+
     .ppf-image .film-img {
         position: absolute;
         left: 0rem;
         bottom: 0rem;
-         height: 130px;
+        height: 130px;
     }
 
     /* why-choose */
@@ -248,18 +268,21 @@
         background-position: center;
         padding: 3rem;
     }
-    
+
     .why-choose-platinum {
         background-image: url(../images/platinum_ppf/why-choose-cover.webp);
-    
+
     }
+
     .why-choose-valor {
         background-image: url(../images/valor_ppf/why-choose-cover.webp);
-    
+
     }
+
     .why-choose-dyed {
         background-image: url("../images/dyed_window_film/web page 4.png");
     }
+
     .why-choose-automotive-window-film {
         background-image: url("../images/automotive-window-film/why-choose.jpg");
     }
@@ -273,35 +296,42 @@
         color: var(--white);
         padding: 5rem 2rem;
     }
+
     .features-section-platinum {
         background-image: url("../images/platinum_ppf/feature-cover.webp");
         background-position: center;
     }
+
     .features-section-valor {
         background-image: url("../images/valor_ppf/protection-cover.webp");
         background-position: bottom;
     }
-    .features-section-dyed{
+
+    .features-section-dyed {
         background-image: url("../images/dyed_window_film/web page 5.png");
         background-position: center;
     }
-    .features-section-ceramic{
+
+    .features-section-ceramic {
         background-image: url("../images/ceramic_window_film/5.png");
         background-position: bottom;
     }
-    .features-section-metallized{
+
+    .features-section-metallized {
         background-image: url("../images/metallized_window_film/6.png");
         background-position: bottom;
     }
-    .features-section-classeco{
+
+    .features-section-classeco {
         background-image: url("../images/classeco/feature-car-back.jpg");
         background-position: bottom;
     }
-    .features-section-automotive-window-film{
+
+    .features-section-automotive-window-film {
         background-image: url("../images/automotive-window-film/feature-car-back.jpg");
         background-position: bottom;
     }
-    
+
 
     /* vehicle-section */
     .vehicle-section {
@@ -315,79 +345,81 @@
         align-items: center;
     }
 
-   
-} *
 
-    /*  */
-    /* mobile arrow css */
-    .nav-next-testimonial-next-mob {
-        position: absolute;
-        top: 5rem;
-        right: -2rem;
-        z-index: 100;
-    }
+}
 
-    .nav-next-testimonial-prev-mob {
-        position: absolute;
-        top: 5rem;
-        left: -2rem;
-        z-index: 100;
-    }
+*
 
-    /* protection-section */
-    .protection-section {
-        padding: 3rem;
-    }
+/*  */
+/* mobile arrow css */
+.nav-next-testimonial-next-mob {
+    position: absolute;
+    top: 5rem;
+    right: -2rem;
+    z-index: 100;
+}
 
-    /* products-section */
-    .products-section {
-        padding: 3rem;
-    }
+.nav-next-testimonial-prev-mob {
+    position: absolute;
+    top: 5rem;
+    left: -2rem;
+    z-index: 100;
+}
 
-    .sliderproducts div {
-        margin-right: 0px;
-        margin-left: 0px;
-    }
+/* protection-section */
+.protection-section {
+    padding: 3rem;
+}
 
-    .products-section .button-view {
-        text-align: center;
-    }
+/* products-section */
+.products-section {
+    padding: 3rem;
+}
 
-    /* footer section */
-    footer {
-        text-align: center;
-        justify-content: center;
-    }
+.sliderproducts div {
+    margin-right: 0px;
+    margin-left: 0px;
+}
 
-    footer .footer-nav {
-        padding: 2rem 0;
-        justify-content: center;
-    }
+.products-section .button-view {
+    text-align: center;
+}
 
-    footer .footer-nav ul {
-        text-align: start;
-    }
+/* footer section */
+footer {
+    text-align: center;
+    justify-content: center;
+}
 
-    footer .social {
-        justify-content: center;
-    }
+footer .footer-nav {
+    padding: 2rem 0;
+    justify-content: center;
+}
 
-    .credit-line {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+footer .footer-nav ul {
+    text-align: start;
+}
+
+footer .social {
+    justify-content: center;
+}
+
+.credit-line {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 
-@media  only screen and (max-width: 540px) {
-    .llumar-logo{
+@media only screen and (max-width: 540px) {
+    .llumar-logo {
         width: 50px !important;
     }
-  }
+}
 
 
 @media only screen and (width: 540px) {
-  
+
     .ppf-image .film-img {
         position: absolute;
         left: 0rem;
@@ -395,175 +427,238 @@
         width: 16rem;
         height: 13rem;
     }
-    .margin-left-50{
+
+    .margin-left-50 {
         margin-left: 60px;
     }
 }
+
 @media (min-width: 992px) {
     .benefits {
         height: 100vh;
     }
 }
+
 @media (max-width: 768.98px) {
-  .feature-section-architeural .feature-one,
-  .feature-section-architeural .feature-two,
-  .feature-section-architeural .feature-three,
-  .feature-section-architeural .feature-four {
-    background-size: 180px auto; /* Bigger size for clarity */
-    background-position: top left; /* Keep it at top-left */
-    background-repeat: no-repeat;
-    padding-top: 6rem; /* Push content down so it doesn't overlap the image */
-    padding-left: 2.5rem; /* Leave space so text doesn’t overlap bg image */
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-  }
-   .benefits .title-label-text-size {
-    font-size: 1 rem; /* ya use a smaller size like 1rem */
-  }
 
-  .benefits h2 {
-    font-size: 1.50rem; /* ya use 1.5rem or suitable size */
-  }
-  .section-ppf{
-    padding: 3rem;
-  }
+    .feature-section-architeural .feature-one,
+    .feature-section-architeural .feature-two,
+    .feature-section-architeural .feature-three,
+    .feature-section-architeural .feature-four {
+        background-size: 180px auto;
+        /* Bigger size for clarity */
+        background-position: top left;
+        /* Keep it at top-left */
+        background-repeat: no-repeat;
+        padding-top: 6rem;
+        /* Push content down so it doesn't overlap the image */
+        padding-left: 2.5rem;
+        /* Leave space so text doesn’t overlap bg image */
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
 
+    .benefits .title-label-text-size {
+        font-size: 1 rem;
+        /* ya use a smaller size like 1rem */
+    }
+
+    .benefits h2 {
+        font-size: 1.50rem;
+        /* ya use 1.5rem or suitable size */
+    }
+
+    .section-ppf {
+        padding: 3rem;
+    }
+    .afc-text-section p{
+        font-size: 16px;  
+
+
+    }
+    .afc-text-section h3{
+        font-size: 16px;
+    }
+
+    .afc-text-section{
+        padding: 9rem 4rem 10rem;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1180px) {
+
     .feature-section-architeural .feature-one,
-  .feature-section-architeural .feature-two,
-  .feature-section-architeural .feature-three,
-  .feature-section-architeural .feature-four {
-    background-size: 180px auto; /* Bigger size for clarity */
-    background-position: top left; /* Keep it at top-left */
-    background-repeat: no-repeat;
-    padding-top: 6rem; /* Push content down so it doesn't overlap the image */
-    padding-left: 2.5rem; /* Leave space so text doesn’t overlap bg image */
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-  }
+    .feature-section-architeural .feature-two,
+    .feature-section-architeural .feature-three,
+    .feature-section-architeural .feature-four {
+        background-size: 180px auto;
+        /* Bigger size for clarity */
+        background-position: top left;
+        /* Keep it at top-left */
+        background-repeat: no-repeat;
+        padding-top: 6rem;
+        /* Push content down so it doesn't overlap the image */
+        padding-left: 2.5rem;
+        /* Leave space so text doesn’t overlap bg image */
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+
     .section-ppf {
         padding-top: 5rem;
         padding-bottom: 4rem;
-       
+
     }
-    .section-ppf h1{
+
+    .section-ppf h1 {
         font-size: 17px;
         line-height: 20px;
     }
+
     .section-ppf p {
         font-size: 15px;
         font-family: fontLR;
         line-height: 22px;
-    }   
+    }
+
+    .features-section-afc {
+        padding-top: 4rem !important;
+        padding-bottom: 17rem !important;
+    }
+
+    .afc-custom-arrow {
+        bottom: 51px;
+    }
+    
 }
+
 @media only screen and (device-width: 540px) and (device-height: 820px) and (orientation: portrait) {
-.ppf-image .film-img {
-    position: absolute;
-    left: 0rem;
-    bottom: 0rem;
-    width: 13rem;
-    height: 150px;
+    .ppf-image .film-img {
+        position: absolute;
+        left: 0rem;
+        bottom: 0rem;
+        width: 13rem;
+        height: 150px;
+    }
+
 }
- 
-}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
     .section-ppf .ppf-image-safety-and-security {
-        margin-top: 80px ;
+        margin-top: 80px;
     }
-    
+
     .section-ppf-safety-security h1 {
         font-size: 1.5rem;
     }
-    
-    .section-ppf .ppf-image-gloss-ppf{
-          margin-top: 60px !important;
+
+    .section-ppf .ppf-image-gloss-ppf {
+        margin-top: 60px !important;
     }
-    .section-ppf-gloss-ppf  h1{
-          font-size: 1.5rem;
-    }   
-    .section-ppf .ppf-image-platinum-matte-ppf{
-          margin-top: 80px !important;
+
+    .section-ppf-gloss-ppf h1 {
+        font-size: 1.5rem;
     }
-    .section-ppf-platinum-matte-ppf  h1{
-          font-size: 1.5rem;
-    } 
-    
+
+    .section-ppf .ppf-image-platinum-matte-ppf {
+        margin-top: 80px !important;
+    }
+
+    .section-ppf-platinum-matte-ppf h1 {
+        font-size: 1.5rem;
+    }
+
     .section-ppf .ppf-image-select-black-ppf {
-          margin-top: 80px !important;
+        margin-top: 80px !important;
     }
-    .section-ppf-select-black-ppf  h1{
-          font-size: 1.5rem;
-    } 
+
+    .section-ppf-select-black-ppf h1 {
+        font-size: 1.5rem;
+    }
+
     section.hero-section.hero-section-gloss-ppf.responsive-mobile .title-section {
         text-align: start;
     }
+
     section.hero-section.hero-section-selct-black-ppf.responsive-mobile .title-section {
         text-align: start;
     }
+
     .hero-section-selct-black-ppf .title-section {
         margin: 0 auto;
-   
-    margin-top: 100px;
-    text-align: left;
-    width: 50%;
-    padding-top: 2rem;
+
+        margin-top: 100px;
+        text-align: left;
+        width: 50%;
+        padding-top: 2rem;
+    }
+
+
 }
-}
+
 @media (max-width: 767px) {
-  /* 1) Remove side padding & set up layout for mobile gloss hero */
-  section.hero-section.hero-section-gloss-ppf.responsive-mobile {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    background: #000; /* fallback color if image fails */
-  }
 
-  /* 2) Make the image inside gloss hero section full width and height */
-  section.hero-section.hero-section-gloss-ppf.responsive-mobile > div:nth-child(2) img.w-100 {
-    width: 100vw;
-    max-width: 100vw;
-    height: auto;
-    display: block;
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-    object-fit: cover;
-  }
+    /* 1) Remove side padding & set up layout for mobile gloss hero */
+    section.hero-section.hero-section-gloss-ppf.responsive-mobile {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        background: #000;
+        /* fallback color if image fails */
+    }
 
-  /* 3) Adjust heading spacing above image */
-  section.hero-section.hero-section-gloss-ppf.responsive-mobile .title-section {
-    margin-bottom: 0;
-    padding: 1rem 0;
-    text-align: start;
-  }
-  section.hero-section.hero-section-selct-black-ppf.responsive-mobile .title-section {
-    margin-bottom: 0;
-    padding: 1rem 0;
-    text-align: start;
-  }
+    /* 2) Make the image inside gloss hero section full width and height */
+    section.hero-section.hero-section-gloss-ppf.responsive-mobile>div:nth-child(2) img.w-100 {
+        width: 100vw;
+        max-width: 100vw;
+        height: auto;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        object-fit: cover;
+    }
+
+    /* 3) Adjust heading spacing above image */
+    section.hero-section.hero-section-gloss-ppf.responsive-mobile .title-section {
+        margin-bottom: 0;
+        padding: 1rem 0;
+        text-align: start;
+    }
+
+    section.hero-section.hero-section-selct-black-ppf.responsive-mobile .title-section {
+        margin-bottom: 0;
+        padding: 1rem 0;
+        text-align: start;
+    }
+
     section.hero-section.hero-section-gloss-ppf.responsive-mobile .title-section {
         text-align: start;
     }
-    section.hero-section.hero-section-selct-black-ppf.responsive-mobile .title-section {
-    align-items: start;
-  }
-.hero-section-selct-black-ppf .title-section {
-    margin: 0 auto;
-    margin-top: 100px;
-    text-align: left;
-    width: 50%;
-    padding-top: 2rem;
-}
 
+    section.hero-section.hero-section-selct-black-ppf.responsive-mobile .title-section {
+        align-items: start;
+    }
+
+    .hero-section-selct-black-ppf .title-section {
+        margin: 0 auto;
+        margin-top: 100px;
+        text-align: left;
+        width: 50%;
+        padding-top: 2rem;
+    }
+
+    .afc-custom-arrow {
+        bottom: 0px;
+    }
 }
 
 @media (min-width: 1025px) {
-     .responsive-mobile {
+    .responsive-mobile {
         display: none;
     }
+
     .hero-section-selct-black-ppf.responsive-desktop {
         background-image: url("../images/select_black_ppf/LLumar_Select-Black-PPF-Webpage_Banner.jpg");
         background-size: cover;
@@ -575,7 +670,7 @@
         padding-left: 6vw;
         padding-right: 6vw;
         box-sizing: border-box;
-        
+
     }
 
     .hero-section-selct-black-ppf .title-section {
@@ -598,12 +693,42 @@
     .hero-section.hero-section-selct-black-ppf.responsive-desktop .title-section h6 {
         font-size: 1rem;
     }
-  
-}
 
+    
+}
+  
 @media (min-width: 1200px) {
-   .why-choose-select-black-ppf h4 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    .why-choose-select-black-ppf h4 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
         background-color: rgb(15 14 14 / 34%);
+    }
+}
+@media screen and (max-height: 1000px) {
+    .features-section-afc {
+        padding-top: 3rem !important;
+        padding-bottom: 26rem  !important;
+    }
+}
+@media screen and (min-height: 1500px) {
+    .features-section-afc {
+        padding-top: 5rem !important;
+        padding-bottom: 25rem !important;
+    }
+}
+ 
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .section-ppf {
+        padding: 3rem;
+    }
+    .afc-text-section p{
+        font-size: 25;  
+    }
+    .afc-text-section h3{
+        font-size: 20;
+    }
+    .afc-text-section{
+        padding: 9rem 4rem 10rem;
     }
 }

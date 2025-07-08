@@ -82,4 +82,8 @@ class LlumarController extends Controller
         return view('llumar.select_black_ppf');
 
     }
+    public function afc(){
+        return view('llumar.afc');
+        
+    }
 }

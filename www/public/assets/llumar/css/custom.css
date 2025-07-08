@@ -278,6 +278,12 @@ p {
     position: relative;
 }
 
+.hero-section-afc{
+    background-image: url("../images/afc/LLumar_LLumar-AFC_Banner.jpg");
+    background-size: cover; /* full width and height */
+    background-repeat: no-repeat; /* prevent repeating */
+    position: relative;
+}
 .hero-section .title-section {
     margin: 0 auto;
     text-align: center;
@@ -492,10 +498,18 @@ p {
 .why-choose-select-black-ppf{
     background-image: url("../images/select_black_ppf/LLumar_Select-Black-PPF-Webpage_3.jpg");
 }
-.why-choose h4 {
+.why-choose-afc{
+    background-image: url("../images/afc/LLumar_LLumar-AFC_2.jpg");
+    padding-top: 5px;
+    background-size: cover !important;
+}
+.why-choose h5 {
     color: var(--orange);
 }
+.why-choose-afc .why-choose-points{
+    margin-top: 4rem;
 
+}
 .why-choose-points {
     margin-top: 5rem;
 }
@@ -591,10 +605,43 @@ p {
 .features-section-select-black-ppf{
     background-image: url("../images/select_black_ppf/LLumar_Select-Black-PPF-Webpage_4.jpg");
 }
+.features-section-afc {
+    padding-top: 4rem !important;
+    padding-bottom: 29rem !important; /* reserve space for background image */
+    background-image: url("../images/afc/LLumar_LLumar-AFC_3.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;/* or cover, depending on image */
+    align-items: center;
+}
+
+.features-section-afc .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;   /* adjust for desired spacing inside */
+    padding-right: 30px;
+    max-width: 1140px;    /* or whatever suits your design */
+    box-sizing: border-box;
+}
 
 .features-section .features-points h4 {
     color: var(--orange);
     padding-left: 25px;
+}
+.features-section .features-points h4 {
+    padding-left: 0 !important;
+}
+
+.features-section-afc .features-points {
+    padding-top: 2.5rem !important; /* Adjusted spacing */
+    padding-left: 3rem !important;
+    background-size: 86px !important;
+
+    /* Use both X and Y for fine control */
+    background-position: left 10px !important;
+
+    background-repeat: no-repeat !important;
+    margin-bottom: 1.5rem !important;
 }
 .features-section .features-points {
     padding-top: 2rem;
@@ -704,7 +751,9 @@ p {
     background-repeat: no-repeat;
     background-size: 170px;
 }
-
+.features-section-afc .feature{
+    background-image: url(../images/afc/Point.png);
+}
 /* vehicle-section */
 .vehicle-section {
     padding-top: 4rem;
@@ -757,7 +806,22 @@ p {
     text-align: center;
     color: var(--white);
 }
+.afc-text-section    {
+    padding: 9rem 9rem 4rem;
+    color: var(--white);
+    background-image: url(../images/faq-pattern.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: var(--white);
+    background-position: center;
+    height: 500px;
+}
+.afc-text-section .with-orange-bg{
+    color: #c04d27;
+}
+.afc-from-section{
 
+}
 /*  */
 
 .playButton {
@@ -952,13 +1016,14 @@ p {
 
 /* section-faq */
 .section-faq {
-    padding: 4rem 0;
+    padding: 14rem 0;
     color: var(--white);
     background-image: url(../images/faq-pattern.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
+   
 .accordion {
     --bs-accordion-bg: var(--dark-gray) !important;
     --bs-accordion-border-color: none !important;
@@ -1327,7 +1392,55 @@ footer .bi::before {
     color: var(--orange);
     padding-left: 0px;
   }
-  
+
+  .section-ppf-afc ul li::marker {
+        color: #FF8A00; /* orange bullet only */
+    }
+    .afc-slider .afc-card {
+        padding: 0 15px;
+    }
+
+    .afc-slider .gallery-img {
+        border-radius: 8px;
+        width: 100%;
+    }
+
+.afc-custom-arrow {
+    position: absolute;
+    bottom: 55px;
+    width: 100%;
+    pointer-events: none; /* Prevent container from blocking clicks */
+    z-index: 9999;
+    position: relative; 
+}
+
+.afc-custom-arrow button {
+    background-color: var(--dark-gray);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: absolute;
+    pointer-events: auto; /* Allow buttons to be clickable */
+}
+
+/* Left arrow */
+.afc-prev {
+    left: 15px;
+}
+
+/* Right arrow fixed to bottom-right of slider */
+.afc-next {
+    right: 15px;
+}
+
+.afc-custom-arrow img {
+    width: 104px;
+    height: 42px;
+    display: block;
+    pointer-events: none; /* Allow button to catch the click */
+}
 /* Responsive layout */
 
 
