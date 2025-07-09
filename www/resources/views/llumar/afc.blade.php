@@ -96,30 +96,24 @@
                     <p>Enjoy expert application by trained installers using<br> cutting-edge techniques and tools.
                     </p>
                 </div>
-              
-           
-
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/afc/Genuine-Product-Guarantee.png')}}" alt="Customized Fit"
-                        height="56px">
-                    <h4>Genuine Product Guarantee</h4>
-                    <p>  Each install is backed by a digital e-warranty that can<br> be verified directly with LLumar India.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img src="{{ asset('assets/llumar/images/afc/Customer-First-Experience.png')}}" alt="Stain & Fade Resistance"
-                        height="56px">
-                    <h4>Customer-First experience</h4>
-                    <p> A polished, premium buying experience from<br> start to finish — just as it should be.
-                    </p>
-
-                    <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
-                </div>
-               
-            </div>
-            
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
+                        <img src="{{ asset('assets/llumar/images/afc/Genuine-Product-Guarantee.png')}}" alt="Customized Fit"
+                            height="56px">
+                        <h4>Genuine Product Guarantee</h4>
+                        <p>  Each install is backed by a digital e-warranty that can<br> be verified directly with LLumar India.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{{ asset('assets/llumar/images/afc/Customer-First-Experience.png')}}" alt="Stain & Fade Resistance"
+                            height="56px">
+                        <h4>Customer-First experience</h4>
+                        <p> A polished, premium buying experience from<br> start to finish — just as it should be.
+                        </p>
+                        <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
+                    </div>
+                </div>           
         </div>
     </section>
 
@@ -142,19 +136,21 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="features-points feature">
-                                <h4>Authentic Products</h4>
-                                <p>Direct supply from brand-authorised dealers — no middlemen,no risk of tampering, only 100% genuine LLumar films.
-                                </p>
+                             <div class="features-points feature">
+                                <h4>Verified Digital E-Warranty
+                                </h4>
+                                <p>Your warranty is registered digitally and verified through LLumar India — no paperwork, no doubt.</p>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="features-points feature">
-                                <h4>Verified Digital E-Warranty
-                                </h4>
-                                <p>Your warranty is registered digitally and verified through LLumar India — no paperwork, no doubt.</p>
+                           <div class="features-points feature">
+                                
+                                <h4>Authentic Products</h4>
+                                <p>Direct supply from brand-authorised dealers — no middlemen,no risk of tampering, only 100% genuine LLumar films.
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-6">
