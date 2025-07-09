@@ -255,7 +255,7 @@
                 <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">
             </div>
             <h4>LLumar AFCs span across india,</h4>
-            <p>bringing authentic car care experience closer to you.</p>
+            <p>bringing authentic car care experiences closer to you.</p>
             <div class="afc-slider mt-4 ">
                 <div class="afc-card">
                     <img src="{{ asset('assets/llumar/images/afc/profiles/AFC_Profile_New_Detailing-Dada.jpg') }}" class="img-fluid gallery-img" alt="Detailing Dada">
@@ -498,7 +498,7 @@
 @endsection
 @section('js')
     {!! JsValidator::formRequest('App\Http\Requests\SendMessageRequest', '#authorised-fitment-centres') !!}
-    <script src="{{ asset('assets/llumar/js/image_modal.js')}}"></script>
+    {{-- <script src="{{ asset('assets/llumar/js/image_modal.js')}}"></script> --}}
     <script src="{{ asset('assets/llumar/js/llumar.js')}}"></script>
      <!-- Slick CSS -->
 
