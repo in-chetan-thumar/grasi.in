@@ -70,14 +70,14 @@
     <!-- why choose section -->
     <section class="why-choose why-choose-afc reveal">
         <div class="container">
-            <div>
+            <div class="why-chhoose-heading ">
                 <label class="title-label-text-size">Why Choose</label>
-                <h2> LLumar AFC in India?</h2>
+                <h2> LLumar AFC's in India?</h2>
                  <div class="title-divider">
                         <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
-                    </div>
-                <p class="mt-4" >
-                    When it comes to protecting your vehicle, not all options are created equal.<br> Choosing a LLumar AFC means choosing peace of mind, quality, and transparency at every step of your journey:
+                </div>
+                <p class="mt-4 p-heading" >
+                    When it comes to protecting your vehicle, not all options are created equal.<br> Choosing a LLumar AFC means choosing peace of mind, quality, and transparency at every step of your journey.
                 </p>
             </div>
             <!-- ppf -->
@@ -86,39 +86,40 @@
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
                     <img src="{{ asset('assets/llumar/images/afc/Product-Education-&-Transparency.png')}}"
                         alt="llumar valor ppf with easy-to-clean surface" height="56px">
-                    <h5>Product Education & Transparency</h5>
+                    <h4>Product Education & Transparency</h4>
                     <p>Clear, honest, and complete product information <br>— no misleading claims, no grey market risks.</p>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/afc/Certified-Installation.png')}}"
                         alt="llumar valor ppf for ultra-glossy finish" height="56px">
-                    <h5>Certified Installation</h5>
+                    <h4>Certified Installation</h4>
                     <p>Enjoy expert application by trained installers using<br> cutting-edge techniques and tools.
                     </p>
                 </div>
               
-            </div>
+           
 
-            <div class="row mt-2">
+            <div class="row mt-4">
                 <div class="col-md-6">
                     <!-- <img src="{{ asset('assets/llumar/images/glare.svg')}}" alt=""> -->
                     <img src="{{ asset('assets/llumar/images/afc/Genuine-Product-Guarantee.png')}}" alt="Customized Fit"
                         height="56px">
-                    <h5>Genuine Product Guarantee</h5>
+                    <h4>Genuine Product Guarantee</h4>
                     <p>  Each install is backed by a digital e-warranty that can<br> be verified directly with LLumar India.
                     </p>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ asset('assets/llumar/images/afc/Customer-First-Experience.png')}}" alt="Stain & Fade Resistance"
                         height="56px">
-                    <h5>Customer-First Experienc</h5>
-                    <p> A polished, premium buying experience from<br> start to finish — just as it should be..
+                    <h4>Customer-First experience</h4>
+                    <p> A polished, premium buying experience from<br> start to finish — just as it should be.
                     </p>
 
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
                 </div>
                
             </div>
+            
         </div>
     </section>
 
@@ -171,7 +172,6 @@
             </div>
         </div>
     </section>
-
     <!-- vehicles -->
     {{-- <section class="vehicle-section reveal">
         <div class="container">
@@ -253,13 +253,13 @@
             </div>
         </div>
     </section> --}}
-    <section class="gallery-section gallery-section-afc bg-dark-gray py-5 position-relative ">
+    <section class="gallery-section gallery-section-afc bg-dark-gray  position-relative ">
         <div class="container reveal text-center">
             <div class="title-divider mb-2">
                 <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">
             </div>
             <h4>LLumar AFCs span across india,</h4>
-            <p>bringing authentic car care experiences closer to you.</p>
+            <p>bringing authentic car care experience closer to you.</p>
             <div class="afc-slider mt-4 ">
                 <div class="afc-card">
                     <img src="{{ asset('assets/llumar/images/afc/profiles/AFC_Profile_New_Detailing-Dada.jpg') }}" class="img-fluid gallery-img" alt="Detailing Dada">
@@ -365,7 +365,7 @@
         </div>
         </div>
        
-           
+    
     </section>
 
     <!-- Image Modal -->
@@ -386,11 +386,11 @@
             
             <div class="container reveal text-center">   
                 <p>LLumar AFCs aren't just fitment centers</p>
-                <h3>They're premium destinations for car protection<br>-designed for car lovers, by car experts</h3>
+                <h3 class="mb-5">They're premium destinations for car protection<br>-designed for car lovers, by car experts</h3>
                 <div class="title-divider mb-2">
                     <img src="{{ asset('assets/llumar/images/dash.svg') }}" alt="">
                 </div>
-                <p class="mt-3 with-orange-bg">LLumar. Trusted worldwide.Delivered with Excellence in india</p>
+                <p class="mt-5 with-orange-bg">LLumar. Trusted worldwide.Delivered with Excellence in india</p>
             </div>
             </div>
         </div>
@@ -418,9 +418,9 @@
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
                                 {!! Form::text('name', null, [
-        'class' => 'form-control',
-        'placeholder' => 'Name',
-    ]) !!}
+                                    'class' => 'form-control',
+                                    'placeholder' => 'Name',
+                                ]) !!}
                                 {!! Form::hidden('subject', 'Authorized fitment centres') !!}
                                 {{-- <input type="text" class="form-control" id="floatingInput" placeholder="Name"> --}}
                                 <label for="floatingInput">Name</label>
@@ -429,10 +429,10 @@
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
                                 {!! Form::email('email', null, [
-        'class' => 'form-control  ',
-        'placeholder' => 'Email',
+                                    'class' => 'form-control  ',
+                                    'placeholder' => 'Email',
 
-    ]) !!}
+                                ]) !!}
                                 {{-- <input type="email" class="form-control" id="floatingInput" placeholder="Email"> --}}
                                 <label for="floatingInput">Email</label>
                             </div>
@@ -440,10 +440,10 @@
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
                                 {!! Form::tel('contact_no', null, [
-        'class' => 'form-control ',
-        'placeholder' => 'Contact Number',
+                                    'class' => 'form-control ',
+                                    'placeholder' => 'Contact Number',
 
-    ]) !!}
+                                ]) !!}
                                 {{-- <input type="tel" class="form-control" id="floatingInput" placeholder="Contact Number">
                                 --}}
                                 <label for="floatingInput">Contact number</label>
@@ -452,15 +452,15 @@
                         <div class="col-md-6">
                             <div class="form-floating">
                                 {!! Form::select('service', [
-        '' => 'Choose your service',
-        '1' => 'Paint Protection Film',
-        '2' => 'Automotive Window Film',
-        '3' => 'Architectural Window Film',
-    ], null, [
-        'class' => 'form-select custom-select  ',
-        'id' => 'floatingSelect',
-        'aria-label' => 'Floating label select example',
-    ]) !!}
+                                        '' => 'Choose your service',
+                                        '1' => 'Paint Protection Film',
+                                        '2' => 'Automotive Window Film',
+                                        '3' => 'Architectural Window Film',
+                                    ], null, [
+                                        'class' => 'form-select custom-select  ',
+                                        'id' => 'floatingSelect',
+                                        'aria-label' => 'Floating label select example',
+                                    ]) !!}
                                 <label for="floatingSelect">Choose your service</label>
                             </div>
                         </div>
@@ -492,7 +492,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- section faq -->
    

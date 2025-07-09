@@ -33,6 +33,22 @@
     .hero-section-selct-black-ppf {
         height: 474px;
     }
+        .why-choose-afc {
+        padding-left: 0px !important;
+        height: 800px;
+       
+    }
+    .why-chhoose-heading{
+        padding-top: 83px;
+    }
+    .why-choose-afc .why-choose-points {
+    margin-top: 2rem;
+    margin-left: 13rem;
+    }
+    .why-choose-afc .why-choose-points {
+        margin-top: 2rem;
+        margin-left: 0rem;
+    } 
 }
 
 @media only screen and (max-width: 992px) {
@@ -333,7 +349,9 @@
         background-image: url("../images/automotive-window-film/feature-car-back.jpg");
         background-position: bottom;
     }
-
+    .features-section-afc{
+        padding: 13rem 1rem;
+    }
 
     /* vehicle-section */
     .vehicle-section {
@@ -474,19 +492,32 @@ footer .social {
         padding: 3rem;
     }
     .afc-text-section p{
-        font-size: 16px;  
+        font-size: 14px;  
 
 
     }
     .afc-text-section h3{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .afc-text-section{
         padding: 9rem 4rem 10rem;
     }
-}
+    .afc-text-section .with-orange-bg {
+        font-size: 17px;
+    }
+    .gallery-section-afc{
+        padding-top: 2rem;
+    }
+    .why-choose-afc .p-heading {
+        font-size: 15px;
+    }
+    .why-choose-afc {
+        padding: 0px;
+        height: 1300px
+    }
 
+}
 @media (min-width: 768px) and (max-width: 1180px) {
 
     .feature-section-architeural .feature-one,
@@ -531,7 +562,10 @@ footer .social {
     .afc-custom-arrow {
         bottom: 51px;
     }
-    
+     .why-choose-afc {
+        padding: 0px;
+        height: 800px
+    }
 }
 
 @media only screen and (device-width: 540px) and (device-height: 820px) and (orientation: portrait) {
@@ -595,7 +629,7 @@ footer .social {
         width: 50%;
         padding-top: 2rem;
     }
-
+    
 
 }
 
@@ -654,6 +688,8 @@ footer .social {
     .afc-custom-arrow {
         bottom: 0px;
     }
+
+    
 }
 
 @media (min-width: 1025px) {
@@ -696,7 +732,6 @@ footer .social {
         font-size: 1rem;
     }
 
-    
 }
   
 @media (min-width: 1200px) {
@@ -716,6 +751,7 @@ footer .social {
         padding-top: 5rem !important;
         padding-bottom: 25rem !important;
     }
+    
 }
  
 
@@ -725,12 +761,14 @@ footer .social {
         padding: 3rem;
     }
     .afc-text-section p{
-        font-size: 25;  
+        font-size: 25px;  
     }
     .afc-text-section h3{
-        font-size: 20;
+        font-size: 20px;
     }
     .afc-text-section{
         padding: 9rem 4rem 10rem;
     }
+
+   
 }

@@ -502,13 +502,20 @@ p {
     background-image: url("../images/afc/LLumar_LLumar-AFC_2.jpg");
     padding-top: 5px;
     background-size: cover !important;
+    height:1063px;
 }
-.why-choose h5 {
+.why-choose-afc .p-heading {
+font-size: 25px
+}
+.why-chhoose-heading{
+    padding-top:51px;
+}
+.why-choose h4 {
     color: var(--orange);
 }
 .why-choose-afc .why-choose-points{
-    margin-top: 4rem;
-
+      margin-top: 11rem;
+    margin-left: 1rem;
 }
 .why-choose-points {
     margin-top: 5rem;
@@ -613,6 +620,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;/* or cover, depending on image */
     align-items: center;
+    height: 1127px;
 }
 
 .features-section-afc .container {
@@ -822,6 +830,7 @@ p {
 }
 .afc-text-section .with-orange-bg{
     color: #c04d27;
+    font-size: 27px;
 }
 .afc-from-section{
 
