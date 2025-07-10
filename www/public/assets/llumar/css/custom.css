@@ -718,7 +718,7 @@ font-size: 25px
     color: #fff;
 }
 
- .feature-section-architeural.feature-section-benefits li::marker {
+ .feature-section-architeural li::marker {
     color: #ff5722;
 }
  .feature-section-architeural .col-md-6 {
