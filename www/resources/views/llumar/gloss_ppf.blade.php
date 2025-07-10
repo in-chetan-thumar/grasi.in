@@ -1,7 +1,29 @@
 @extends('llumar.layouts.master')
 
-@section('title')
-    Gloss paint protection film
+{{-- SEO  --}}
+@section('seo')
+<title>Gloss Paint Protection Film | LLumar Glossy PPF by Gras-i</title>
+    <meta name="description" content="Protect your car’s shine with LLumar gloss paint protection film from Grasi. Available pan-India, our glossy PPF offers a crystal-clear finish, scratch resistance, and self-healing technology - installed in-store at our certified AFC centers." />
+    <meta name="keywords" content="valor paint protection film, valor protection film, valor ppf, llumar valor ppf, dealer, india, grasi" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="N/A" />
+    <meta property="og:title" content="Gloss Paint Protection Film | LLumar Glossy PPF by Gras-i" />
+    <meta property="og:description" content="Protect your car’s shine with LLumar gloss paint protection film from Grasi. Available pan-India, our glossy PPF offers a crystal-clear finish, scratch resistance, and self-healing technology - installed in-store at our certified AFC centers." />
+    <meta property="og:url" content="https://www.grasi.in/automotive-ppf/gloss" />
+    <meta property="og:image" content="https://www.grasi.in/assets/llumar/images/gloss_ppf/LLumar_Gloss-PPF_Banner.jpg" />
+    <meta property="og:site_name" content="LLumar by Gras-i" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gloss Paint Protection Film | LLumar Glossy PPF by Gras-i" />
+    <meta name="twitter:description" content="Protect your car’s shine with LLumar gloss paint protection film from Grasi. Available pan-India, our glossy PPF offers a crystal-clear finish, scratch resistance, and self-healing technology - installed in-store at our certified AFC centers." />
+    <meta name="twitter:image" content="https://www.grasi.in/assets/llumar/images/gloss_ppf/LLumar_Gloss-PPF_Banner.jpg" />
+    <meta name="twitter:url" content="https://www.grasi.in/automotive-ppf/gloss" />
+
+    <link rel="canonical" href="https://www.grasi.in/automotive-ppf/gloss" />
+
 @endsection
 
 @section('content')
@@ -24,7 +46,7 @@
             <h6>with gloss paint protection film</h6>
         </div>
         <div>
-            <img src="{{ asset('assets/llumar/images/gloss_ppf/LLumar_Gloss-PPF_Banner.jpg')}}" class="w-100" alt="">
+            <img src="{{ asset('assets/llumar/images/gloss_ppf/LLumar_Gloss-PPF_Banner.jpg')}}" class="w-100" alt="gloss paint protection film">
         </div>
     </section>
     <!-- section hero-image end -->
@@ -35,20 +57,20 @@
                 <div class="col-md-6 ">
                     <h1>LLumar<br> Gloss Paint Protection Film</h1>
                     <div class="title-divider">
-                        <img src="{{ asset(path: 'assets/llumar/images/dash.svg')}}" alt="">
+                        <img src="{{ asset(path: 'assets/llumar/images/dash.svg')}}" alt="line icon">
                     </div>
-                    <p> Your vehicle’s glossy finish deserves the best defense against everyday wear and tear. The Gloss
-                        Paint Protection Film, made in the US and Germany, steps to the forefront with its sleek, showroom
-                        finish and self-healing surface. The paint-protecting film enhances your car’s natural shine while
+                    <p>Your vehicle’s glossy finish deserves the best defense against everyday wear and tear. Our LLumar gloss
+                        paint protection film, made in the US and Germany, steps to the forefront with its sleek, showroom
+                        finish and self-healing surface. Our gloss paint-protecting film enhances your car’s natural shine while
                         safeguarding it from scratches, chips, and environmental damage. Designed to keep your paint looking
                         newer for longer, this protective film also features a crystal-clear gloss and shine.
                     </p>
                 </div>
                 <div class="col-md-6 ">
                     <div class="ppf-image ">
-                        <img src="{{ asset('assets/llumar/images/gloss_ppf/LLumar_Gloss-PPF_2.jpg')}}" class="w-100" alt="">
+                        <img src="{{ asset('assets/llumar/images/gloss_ppf/LLumar_Gloss-PPF_2.jpg')}}" class="w-100" alt="gloss paint protecting film">
                         <img src="{{ asset('assets/llumar/images/gloss_ppf/LLumar_Gloss-PPF_1.jpg')}}" class="film-img"
-                         class="w-100 img-fluid"   alt="">
+                         class="w-100 img-fluid"   alt="glossy ppf">
                     </div>
                 </div>
             </div>
@@ -61,19 +83,19 @@
                 <label class="title-label-text-size">Why Choose</label>
                 <h2> LLumar Gloss Paint Protection Film</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <!-- ppf -->
             <div class="row why-choose-points">
                 <div class="col-md-4">
                     <!-- <img src="{{ asset('assets/llumar/images/protection.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/gloss_ppf/Self-Healing.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/gloss_ppf/Self-Healing.png')}}" alt="Self-Healing Technology" height="56px">
                     <h4>Self-Healing Technology </h4>
                     <p> Surface scratches disappear when exposed to the sun or warm water.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/gloss_ppf/Stain-&-Chemical-Resistant.png')}}" alt=""
+                    <img src="{{ asset('assets/llumar/images/gloss_ppf/Stain-&-Chemical-Resistant.png')}}" alt="Stain & Chemical Resistant"
                         height="56px">
                     <h4>Stain & Chemical Resistant</h4>
                     <p> Shields your car against bird droppings, tree sap, acid rain, and stains.</p>
@@ -82,20 +104,20 @@
 
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/gloss_ppf/Durable.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/gloss_ppf/Durable.png')}}" alt="Durable Paint Protection" height="56px">
                     <h4>Durable Paint Protection</h4>
                     <p> Protects your car’s exterior from rock chips, road debris, and everyday scuffs.</p>
                 </div>
             </div>
             <div class="row mt-2 justify-content-center  why-choose-points">
                 <div class="col-md-4">
-                    <img src="{{ asset('assets/llumar/images/gloss_ppf/Fade-Resistant.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/gloss_ppf/Fade-Resistant.png')}}" alt="Discolouration & Fade-Resistant" height="56px">
                     <h4>Discolouration & Fade-Resistant </h4>
                     <p>Promises long-lasting clarity and shine without discolouration over time.</p>
                 </div>
                 <div class="col-md-5">
                     <!-- <img src="{{ asset('assets/llumar/images/durable.svg')}}" alt=""> -->
-                    <img src="{{ asset('assets/llumar/images/gloss_ppf/Warranty.png')}}" alt="" height="56px">
+                    <img src="{{ asset('assets/llumar/images/gloss_ppf/Warranty.png')}}" alt="Manufacturer’s Limited 5-Year Warranty" height="56px">
                     <h4>Manufacturer’s Limited 5-Year Warranty</h4>
                     <p>A guaranteed confidence in the PPF’s <br>long-term performance.</p>
                 </div>
@@ -110,7 +132,7 @@
                 <label class="title-label-text-size">Features of</label>
                 <h2>LLumar Gloss Paint Protection Film</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <div class="row mt-5">
@@ -161,7 +183,7 @@
                 <div class="col-md-3">
                     <div>
                         <h4>Full Vehicle Coverage</h4>
-                        <img src="{{ asset('assets/llumar/images/full-car.webp')}}" alt="">
+                        <img src="{{ asset('assets/llumar/images/full-car.webp')}}" alt="glossy ppf for full Vehicle Coverage">
                         <p>Covers every painted surface of the vehicle</p>
                     </div>
                 </div>
@@ -170,27 +192,27 @@
             <h4>Partial Plus Protection</h4>
             <div class="vehicle-container mb-4">
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-full-bonnet.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-full-bonnet.webp')}}" alt="glossy ppf for full bannet Coverage">
                     <p>FullBonnet</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="glossy ppf for car dooe cups Coverage">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="glossy ppf for side mirrors Coverage">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="glossy ppf for rear & front bumpers Coverage">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="glossy ppf for door edges guards Coverage">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -198,22 +220,22 @@
             <h4>Basic Partial Protection</h4>
             <div class="vehicle-container">
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-cups.webp')}}" alt="glossy ppf for door cups Coverage">
                     <p>Door Cups</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-side-mirrors.webp')}}" alt="glossy ppf for side mirros Coverage">
                     <p>Side Mirrors</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-rear-front-bumper.webp')}}" alt="glossy ppf for rear & front bumpers Coverage">
                     <p>Rear & Front Bumpers</p>
                 </div>
                 <h5>+</h5>
                 <div>
-                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/cars-door-edge.webp')}}" alt="glossy ppf for door edges guards Coverage">
                     <p>Door Edges Guards</p>
                 </div>
             </div>
@@ -235,25 +257,25 @@
             <div>
                 <h2>Gloss PPF Gallery</h2>
                 <div class="title-divider">
-                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="">
+                    <img src="{{ asset('assets/llumar/images/dash.svg')}}" alt="line icon">
                 </div>
             </div>
             <div class="row mt-4 d-flex g-3">
                 <div class="col-md-3">
                     <img src="{{ asset('assets/llumar/images/gloss_ppf/gallery/1.png') }}"
-                        class="img-fluid gallery-img" alt="Metallized window films">
+                        class="img-fluid gallery-img" alt="glossy ppf">
                 </div>
                 <div class="col-md-3">
                     <img src="{{ asset('assets/llumar/images/gloss_ppf/gallery/2.png') }}"
-                        class="img-fluid gallery-img" alt="Metallized window films">
+                        class="img-fluid gallery-img" alt="glossy ppf">
                 </div>
                 <div class="col-md-3">
                     <img src="{{ asset('assets/llumar/images/gloss_ppf/gallery/3.png') }}"
-                        class="img-fluid gallery-img" alt="Metallized window films">
+                        class="img-fluid gallery-img" alt="llumar gloss ppf">
                 </div>
                 <div class="col-md-3">
                     <img src="{{ asset('assets/llumar/images/gloss_ppf/gallery/4.png') }}"
-                        class="img-fluid gallery-img" alt="Metallized window films">
+                        class="img-fluid gallery-img" alt="glossy ppf">
                 </div> 
                 <!-- Continue other images similarly -->
             </div>
@@ -466,14 +488,14 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How long does LLumar Gloss Paint protection film last?
+                                    How long does LLumar gloss paint protection film last?
 
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    A Llumar Gloss Paint protection film can last for up to 5 years.
+                                    A Llumar gloss paint protection film can last for up to 5 years.
 
                                 </div>
                             </div>
@@ -490,7 +512,7 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    No. LLumar Gloss Paint protection film enhances your car’s paint while keeping it free
+                                    No. LLumar gloss paint protection film enhances your car’s paint while keeping it free
                                     of any distortion or texture.
 
                                 </div>
@@ -518,7 +540,7 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Is ceramic coating necessary with a Gloss Paint protection film?
+                                    Is ceramic coating necessary with a LLumar gloss paint protection film?
 
                                 </button>
                             </h2>
@@ -553,14 +575,14 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Will this film affect my car’s warranty?
+                                    Will LLumar gloss PPF film affect my car’s warranty?
 
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    LLumar PPF can be applied on OEM (factory finish) car paint without any issues. However,
+                                    LLumar gloss PPF can be applied on OEM (factory finish) car paint without any issues. However,
                                     the warranty does not cover any LLumar PPF applied on re-painted surfaces.
                                 </div>
                             </div>
@@ -569,7 +591,7 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSeven">
-                                    How much does LLumar Gloss Paint protection film cost?
+                                    How much does LLumar gloss PPF cost?
                                 </button>
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSix"
