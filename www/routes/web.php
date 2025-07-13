@@ -47,11 +47,11 @@ Route::prefix('')->name('llumar.')->group(function () {
     Route::get('solar-control-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'solarWindowFilm'])->name('solar.control.window.film');
     Route::get('safety-and-security-window-film', [App\Http\Controllers\llumar\LlumarController::class, 'safetyAndSecurityWindowFilm'])->name('safety.and.security.window.film');
 
-    Route::get('gloss-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'glossPPF'])->name('gloss.ppf');
-    Route::get('platinum-matte-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'platinumMattePPF'])->name('platinum.matte.ppf');
-    Route::get('select-black-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'slectBlackPPF'])->name('select.black.ppf'); 
+    Route::get('automotive-ppf/gloss', [App\Http\Controllers\llumar\LlumarController::class, 'glossPPF'])->name('gloss.ppf');
+    Route::get('automotive-ppf/platinum-matte', [App\Http\Controllers\llumar\LlumarController::class, 'platinumMattePPF'])->name('platinum.matte.ppf');
+    Route::get('automotive-ppf/select-black', [App\Http\Controllers\llumar\LlumarController::class, 'slectBlackPPF'])->name('select.black.ppf'); 
     
-    Route::get('authorize-fitment-center', [App\Http\Controllers\llumar\LlumarController::class, 'afc'])->name('select.black.ppf'); 
+    Route::get('authorize-fitment-center', [App\Http\Controllers\llumar\LlumarController::class, 'afc'])->name('authorize.fitment.center'); 
     
 });
 
