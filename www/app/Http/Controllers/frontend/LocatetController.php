@@ -27,11 +27,8 @@ class LocatetController extends Controller
 
     public function index(Request $request)
     {
-
-
-        $llumarDealers = resolve('dealer-repo')->renderHtmlDealers($this->getParamsForFilter($request));
+        $llumarDealers = resolve('dealer-repo')->renderHtmlDealers_old($this->getParamsForFilter($request));
         //$llumarDealerData = $this->repository->getAllData('all','1');
-
         $states = $this->repository->getAllData('state');
         $cities = $this->repository->getAllData('city', $request->state_id);
         return view('frontend.locate', compact('states', 'llumarDealers', 'cities'));
