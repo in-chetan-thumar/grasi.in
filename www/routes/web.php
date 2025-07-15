@@ -51,8 +51,12 @@ Route::prefix('')->name('llumar.')->group(function () {
     Route::get('platinum-matte-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'platinumMattePPF'])->name('platinum.matte.ppf');
     Route::get('select-black-paint-protection-film', [App\Http\Controllers\llumar\LlumarController::class, 'slectBlackPPF'])->name('select.black.ppf'); 
     
-    Route::get('authorize-fitment-center', [App\Http\Controllers\llumar\LlumarController::class, 'afc'])->name('select.black.ppf'); 
-    
+    Route::get('authorize-fitment-center', [App\Http\Controllers\llumar\LlumarController::class, 'afc'])->name('select.black.ppf');
+
+    Route::get('locate-llumar-dealer', [App\Http\Controllers\llumar\LocateDealerControler::class, 'index'])->name('locate.llumar.dealer'); 
+    Route::get('/dealer-state/{state}', [App\Http\Controllers\llumar\LocateDealerControler::class, 'getCities'])->name('dealer.locate.city');
+    Route::post( '/dealer-locate-store', [App\Http\Controllers\llumar\LocateDealerControler::class, 'sendEmail'])->name('dealer.locate.send-email');
+
 });
 
 //Our Story page route

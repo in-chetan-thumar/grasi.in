@@ -41,6 +41,7 @@ class DealerRepository
         }
 
         if ($param == 'city') {
+          
             if (!empty($state)) {
                 return $this->model->select('city')->where('is_active', 'Y')->where('state', $state)->groupBy('city')->pluck('city', 'city');
 
@@ -48,8 +49,7 @@ class DealerRepository
 
                 return $this->model->select('city')->where('is_active', 'Y')->groupBy('city')->pluck('city', 'city');
             }
-        }
-
+        }   
         if ($param == 'all') {
             return $this->model->where('is_active', 'Y')->get();
         }
@@ -99,16 +99,21 @@ class DealerRepository
         $tableData = $this->filter($params);
         return view('admin.dealer.table', compact('tableData'))->render();
     }
-    public function renderHtmlDealers($params)
+    public function renderHtmlDealers_old($params)
     {
         //        $DealersData = $this->model->where('city',$filter)->get();
         $params['is_active'] = 'Y';
         $DealersData = $this->filter($params);
 
         return view('frontend.llumarDealers', compact('DealersData'))->render();
-
     }
 
+    public function renderHtmlDealers($params)
+    {
+        $params['is_active'] = 'Y';
+        $DealersData = $this->filter($params);
+        return view('llumar.locate_dealers.table', compact('DealersData'))->render();
+    }
     public function changeStatus($id)
     {
         $user = $this->findByID($id);

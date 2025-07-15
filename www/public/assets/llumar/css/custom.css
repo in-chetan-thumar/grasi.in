@@ -1456,5 +1456,130 @@ footer .bi::before {
 }
 /* Responsive layout */
 
+/* Dropdown (select) styles */
+.custom-select-dealer-locate {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #777; /* Light border for visibility */
+    padding: 10px 14px;
+    border-radius: 6px;
+    appearance: none;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+
+/* Dropdown arrow removal for consistency (optional if using custom arrow) */
+.custom-select-dealer-locate::-ms-expand {
+    display: none;
+}
+.custom-select-dealer-locate:focus {
+  background-color: #000;
+    color: #fff;
+    border: 1px solid #777; /* Light border for visibility */
+    padding: 10px 14px;
+    border-radius: 6px;
+    appearance: none;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+/* Ensure the wrapper allows for spacing */
+.custom-select-wrapper-dealer-locate {
+    position: relative;
+}
+
+/* Optional: if you want to add a custom down arrow manually, use this */
+.custom-select-wrapper-dealer-locate::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+}
+
+/* Label style */
+label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #aaa;
+}
+
+/* Optional hover effect */
+.custom-select-dealer-locate:hover {
+    border-color: #aaa;
+}
+
+        /* Gradient buttons */
+      .gradient-btn {
+        background: linear-gradient(90deg, #dd3b24, #fcb045);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-weight: 500;
+        border-radius: 6px;
+    }
+
+    .gradient-btn:hover {
+        opacity: 0.85;
+        color: white;
+    }
+
+
+    .dealer-pagination .pagination {
+    background-color: #000;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: flex;
+    gap: 4px;
+}
+
+.dealer-pagination .page-link {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #de5625;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.dealer-pagination .page-link:hover {
+    background-color: #de5625;
+    color: #fff;
+}
+
+.dealer-pagination .page-item.active .page-link {
+    background-color: #de5625;
+    color: #fff;
+    border-color: #de5625;
+}
+
+.dealer-header {
+    background-color: #000;
+    padding: 16px 20px;
+    border-left: 4px solid #de5625;
+    border-radius: 8px;
+}
+
+.dealer-title {
+    margin: 0;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.dealer-title span {
+    color: #de5625;
+    font-weight: bold;
+    margin: 0 4px;
+}
+      
 
 
