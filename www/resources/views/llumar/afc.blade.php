@@ -349,7 +349,7 @@
                 {{-- Add more slides here --}}
             </div>
             <div class="mt-4 ">
-                <a href="{{route('locate.llumar.dealer')}}"target="_blank" class="btn btn-danger px-4">CLICK HERE TO LOCATE YOUR NEAREST DEALER</a>
+                <a href="{{route('llumar.locate.llumar.dealer')}}"target="_blank" class="btn btn-danger px-4">CLICK HERE TO LOCATE YOUR NEAREST DEALER</a>
             </div>
             <div class="afc-custom-arrow">
              <button class=" afc-prev d-none">

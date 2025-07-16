@@ -5,7 +5,7 @@
             <div class="col-md-4 mr-5"> 
                 <img src="{{ asset($row->profile_image) }}"    
                         style="width: 348px; height: 350px; object-fit: cover;" 
-                        alt="Dealer Image">
+                        alt="{{$row->dealership_name}}">
             </div>
            
             {{-- Dealer Info Column --}}
@@ -23,22 +23,33 @@
                     <li class="mb-2">
                         <img src="{{ asset('assets/llumar/images/locate_llumar_dealer/icons/Locate-Dealer_Icons_Call.png') }}" height="20px">
                         <a href="tel:{{ $row->contact_number }}" class="text-white">{{ $row->contact_number }}</a>
-                        <button class="copy-button btn btn-sm btn-outline-light ms-2">Copy</button>
+                          <button class="copy-button-locate-dealer"> <img src="{{asset('assets/frontend/images/copy.svg')}}" /></button>
                     </li>
                     @if (!empty($row->contact_email))
                         <li class="mb-2">
                             <img src="{{ asset('assets/llumar/images/locate_llumar_dealer/icons/Locate-Dealer_Icons_Email.png') }}" height="20px">
                             <a href="mailto:{{ $row->contact_email }}" class="text-white">{{ $row->contact_email }}</a>
-                            <button class="copy-button btn btn-sm btn-outline-light ms-2">Copy</button>
+                             <button class="copy-button-locate-dealer"> <img src="{{asset('assets/frontend/images/copy.svg')}}" /></button>
                         </li>
                     @endif
-                     @if (!empty($row->ig_handler))
-                        <li class="mb-2">
-                            <img src="{{ asset('assets/llumar/images/locate_llumar_dealer/icons/Locate-Dealer_Icons_Insta.png') }}" height="20px">
-                            <a href="mailto:{{ $row->contact_email }}" class="text-white">{{ $row->contact_email }}</a>
-                            <button class="copy-button btn btn-sm btn-outline-light ms-2">Copy</button>
-                        </li>
-                    @endif
+                   @if (!empty($row->ig_handler))
+                    <li class="mb-2 d-flex align-items-center gap-1">
+                        @php
+                            $isInstagram = Str::contains($row->ig_handler, 'instagram.com');
+                            $displayText = $isInstagram ? '@' . basename($row->ig_handler) : $row->ig_handler;
+                            $href = $isInstagram ? $row->ig_handler : 'mailto:' . $row->ig_handler;
+                            $icon = $isInstagram
+                                ? asset('assets/llumar/images/locate_llumar_dealer/icons/Locate-Dealer_Icons_Insta.png')
+                                : asset('assets/llumar/images/locate_llumar_dealer/icons/email.png'); // replace with correct email icon path
+                        @endphp
+
+                        <img src="{{ $icon }}" height="20px" alt="icon">
+                        <a href="{{ $href }}" target="_blank" class="text-white text-decoration-underline">{{ $displayText }}</a>
+                        <button class="copy-button-locate-dealer ms-1">
+                            <img src="{{ asset('assets/frontend/images/copy.svg') }}" alt="copy" />
+                        </button>
+                    </li>
+                @endif
                 </ul>
             </div>
             {{-- Google Map Column --}}

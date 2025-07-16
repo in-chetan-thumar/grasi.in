@@ -28,14 +28,12 @@
             color: #fff;
             text-decoration: underline;
         }
-
-        .copy-button {
+        .copy-button-locate-dealer{
             background: transparent;
-            border: 1px solid #fff;
-            color: #fff;
+            border: 1px solid #070707;
+            color: #070707;
             font-size: 12px;
         }
-
         /* Gradient Button */
         .
 
@@ -298,29 +296,31 @@
         // });
     </script>
    <script>
-    $(document).ready(function () {
-        $(".copy-button").click(function (e) {
-            e.preventDefault();
-            const button = $(this);
-            const textToCopy = this.previousElementSibling.textContent.trim();
+$(document).ready(function () {
+    $(".copy-button-locate-dealer").click(function (e) {
+        e.preventDefault();
+        const button = $(this);
+        const textToCopy = this.previousElementSibling.textContent.trim();
 
-            // Create and use temporary textarea to copy text
-            const tempTextArea = $("<textarea>");
-            $("body").append(tempTextArea);
-            tempTextArea.val(textToCopy).select();
-            document.execCommand("copy");
-            tempTextArea.remove();
+        // Copy to clipboard
+        const tempTextArea = $("<textarea>");
+        $("body").append(tempTextArea);
+        tempTextArea.val(textToCopy).select();
+        document.execCommand("copy");
+        tempTextArea.remove();
 
-            // Change button text to "Copied"
-            const originalText = button.text();
-            button.text("Copied");
+        // Save original icon HTML
+        const originalHTML = button.html();
 
-            // Revert after 2 seconds
-            setTimeout(function () {
-                button.text(originalText);
-            }, 2000);
-        });
+        // Show "Copied" with white text
+        button.html('<span style="color: white;">Copied</span>');
+
+        // Revert after 2 seconds
+        setTimeout(function () {
+            button.html(originalHTML);
+        }, 2000);
     });
+});
 </script>
 
 
