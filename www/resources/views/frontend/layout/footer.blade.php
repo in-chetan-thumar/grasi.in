@@ -87,7 +87,7 @@
                         <!--</div>-->
                     @else
                         <div class=" dealer-bg">
-                            <a href="{{ route('llumar.locate-llumar-dealer')}}"  class="dealer-icon"  >
+                            <a href="{{ route('llumar.locate.llumar.dealer')}}"  class="dealer-icon"  >
                                 <img src="{{ asset('assets/frontend/images/location.svg')}}" class="dealer-location float-start" alt="whatsapp">
                                 <span class="dealer-text float-end">Locate Nearest AFC</span>
                             </a>

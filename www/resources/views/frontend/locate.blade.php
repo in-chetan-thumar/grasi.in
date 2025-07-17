@@ -131,7 +131,7 @@
 							<div class="form-group input-box popup_head">
 							    <div class="d-flex align-items-center justify-content-between">
 								    <div><h3>Become a dealer</h3></div>
-								    <div><a href="{{ route('llumar.locate-llumar-dealer')}}" class="btn btn-primary">Locate Nearest AFC</a></div>
+								    <div><a href="{{ route('llumar.locate.llumar.dealer')}}" class="btn btn-primary">Locate Nearest AFC</a></div>
 							    </div>
 							</div>
 						</div>

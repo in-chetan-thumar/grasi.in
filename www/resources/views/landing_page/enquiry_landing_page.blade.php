@@ -1071,7 +1071,7 @@
             <p>Handcrafted with ❤ by <a href="https://www.buzzmakers.in/" target="_blank">Buzz Makers.</a></p>
         </div>
         <div class=" dealer-bg">
-            <a href="{{ route('llumar.locate-llumar-dealer')}}" class="dealer-icon" target="_blank">
+            <a href="{{ route('llumar.locate.llumar.dealer')}}" class="dealer-icon" target="_blank">
                 <img src="{{ asset('assets/images/landing_image/location.svg') }}"
                     class="dealer-location float-start" alt="whatsapp">
                 <span class="dealer-text float-end">Locate Nearest AFC</span></a>
