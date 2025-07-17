@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="d-flex align-items-center justify-content-end">
                     <ul>
-                         <li><a href="{{ route('llumar.authorize.fitment.center') }}" class="btn btn-primary">Locate LLumar Dealer</a>
+                         <li><a href="{{ route('llumar.authorize.fitment.center') }}" class="btn btn-primary">LLumar AFC's</a>
                         </li>
                         <li><a href="https://www.llumarppf.in/Ewar/Dealer/login.php" target="_blank"
                                 class="btn btn-primary">LLumar E-warranty</a></li>
