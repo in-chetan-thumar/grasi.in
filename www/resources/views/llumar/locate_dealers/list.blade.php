@@ -84,12 +84,12 @@
                             <label class="text-white mb-1">State</label>
                             <div class="custom-select-wrapper-dealer-locate">
                                <select name="state_id"  id="state_id" class=" form-control custom-select-dealer-locate">
-                                        <option value="">Select State</option>
+                                        <option value="">Select state</option>
 
                                         @foreach ($states as $state)
                                             <option value="{{$state}}" {{request()->query('state_id') == $state ? 'selected' : ''}}>{{ $state }}</option>
                                         @endforeach
-                                    </select>
+                                </select>
                             </div>
                         </div>
                        
@@ -130,10 +130,7 @@
         <div class="container" id="filteredData">
             {!!$llumarDealers!!}
         </div>
-
     </section>
-
-
 </section>
 
 
@@ -255,9 +252,7 @@
     {!! JsValidator::formRequest('App\Http\Requests\LocateContactRequest', '#locate-form') !!}
 
     <script>
-
-        $("#state_id").on('change', function (e) {
-           
+        $("#state_id").on('change', function (e) {       
             e.preventDefault();
             $('#status').show();
             $('#preloader').show();

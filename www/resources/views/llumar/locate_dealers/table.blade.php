@@ -13,18 +13,21 @@
               
                 <h4 class="color-orange">{{ $row->dealership_name }}</h4>
                   <p>{{$row->bio}}</p>
-                <p class="mb-1">Address:<br> {{ $row->address }} - {{ $row->pincode }}</p>
-                
+                  @if(!empty($row->address))
+                    <p class="mb-1">Address:<br> {{ $row->address }} </p>
+                    @endif
                 <div class="mb-3 mt-3">                
                     <p class="color-orange" > {{ $row->contact_name }}</p>
                 </div>
 
                 <ul class="list-unstyled mb-0">
+                     @if (!empty($row->contact_number))
                     <li class="mb-2">
                         <img src="{{ asset('assets/llumar/images/locate_llumar_dealer/icons/Locate-Dealer_Icons_Call.png') }}" height="20px">
                         <a href="tel:{{ $row->contact_number }}" class="text-white">{{ $row->contact_number }}</a>
                           <button class="copy-button-locate-dealer"> <img src="{{asset('assets/frontend/images/copy.svg')}}" /></button>
                     </li>
+                    @endif
                     @if (!empty($row->contact_email))
                         <li class="mb-2">
                             <img src="{{ asset('assets/llumar/images/locate_llumar_dealer/icons/Locate-Dealer_Icons_Email.png') }}" height="20px">

@@ -20,34 +20,31 @@ class LocateDealerControler
 
 
     public function index(Request $request)
-    {
-        $llumarDealers = resolve('dealer-repo')->renderHtmlDealers($this->getParamsForFilter($request));  
-        $states = resolve('dealer-repo')->getAllData('state');
-        $cities = resolve('dealer-repo')->getAllData('city', $request->state_id);
+    { 
+       
+        $llumarDealers = resolve('dealer-repo')->renderHtmlDealers($this->getParamsForFilter($request));    
+        $states = $this->repository->getAllData('state');
+        $cities = $this->repository->getAllData('city', $request->state_id);
+       
         return view('llumar.locate_dealers.list', compact('states', 'llumarDealers', 'cities'));
     }
 
     public function getParamsForFilter(Request $request)
     {
-        
+         $previousUrl = parse_url(url()->previous());
         $params = [];
-       
-        if ($request->routeIs('llumar.locate.llumar.dealer')) {
-            $params['path'] = $request->fullUrl();
-            $params['city'] = $request->input('city_id');
-            $params['state'] = $request->input('state_id');
+        if (request()->routeIs('llumar.locate.llumar.dealer')) {
+            $params['path'] = \Illuminate\Support\Facades\Request::fullUrl();
+            $params['city'] = $request->city_id ?? null;
+            $params['state'] = $request->state_id ?? null;
+
+
         } else {
-            $previousUrl = url()->previous();
-            $parsedUrl = parse_url($previousUrl);
-
-            // Parse query only if it exists
-            if (isset($parsedUrl['query'])) {
-                parse_str($parsedUrl['query'], $params);
-            }
-
-            $params['path'] = $previousUrl;
+            parse_str($previousUrl['query'], $params);
+            $params['path'] = url()->previous();
         }
         return $params;
+        
     }
     public function getCities($state)
     {
