@@ -45,7 +45,7 @@ class JsValidatorFactory
     }
 
     /**
-     * @param $options
+     * @param  $options
      * @return void
      */
     protected function setOptions($options)
@@ -121,7 +121,7 @@ class JsValidatorFactory
     /**
      * Creates JsValidator instance based on FormRequest.
      *
-     * @param $formRequest
+     * @param  $formRequest
      * @param  null|string  $selector
      * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator
      *
@@ -152,7 +152,7 @@ class JsValidatorFactory
         // Replace all rules with Noop rules which are checked client-side and always valid to true.
         // This is important because jquery-validation expects fields under validation to have rules present. For
         // example, if you mark a field as invalid without a defined rule, then unhighlight won't be called.
-        $rules = method_exists($formRequest, 'rules') ? $formRequest->rules() : [];
+        $rules = method_exists($formRequest, 'rules') ? $this->app->call([$formRequest, 'rules']) : [];
         foreach ($rules as $key => $value) {
             $rules[$key] = 'proengsoft_noop';
         }
@@ -221,7 +221,7 @@ class JsValidatorFactory
         $request = $this->app->__get('request');
         $formRequest = $this->app->build($class, $params);
 
-        if ($session = $request->getSession()) {
+        if ($request->hasSession() && $session = $request->session()) {
             $formRequest->setLaravelSession($session);
         }
         $formRequest->setUserResolver($request->getUserResolver());

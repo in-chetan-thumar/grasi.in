@@ -16,12 +16,14 @@ namespace League\Uri;
 use League\Uri\Exceptions\SyntaxError;
 use League\Uri\KeyValuePair\Converter;
 use Stringable;
+
 use function array_key_exists;
 use function array_keys;
 use function is_array;
 use function rawurldecode;
 use function strpos;
 use function substr;
+
 use const PHP_QUERY_RFC3986;
 
 /**
@@ -49,7 +51,6 @@ final class QueryString
      *
      * @param iterable<array{0:string, 1:string|float|int|bool|null}> $pairs
      * @param non-empty-string $separator
-     * @param PHP_QUERY_RFC3986|PHP_QUERY_RFC1738 $encType
      *
      * @throws SyntaxError If the encoding type is invalid
      * @throws SyntaxError If a pair is invalid
@@ -78,16 +79,16 @@ final class QueryString
      * @throws SyntaxError If the encoding type is invalid
      * @throws SyntaxError If a pair is invalid
      */
-    public static function buildFromPairs(iterable $pairs, Converter $converter = null): ?string
+    public static function buildFromPairs(iterable $pairs, ?Converter $converter = null): ?string
     {
         $keyValuePairs = [];
         foreach ($pairs as $pair) {
-            if ([0, 1] !== array_keys($pair)) {
+            if (!is_array($pair) || [0, 1] !== array_keys($pair)) {
                 throw new SyntaxError('A pair must be a sequential array starting at `0` and containing two elements.');
             }
 
-            $keyValuePairs[] = [(string) Encoder::encodeQueryKeyValue($pair[0]), match(true) {
-                null === $pair[1] => null,
+            $keyValuePairs[] = [(string) Encoder::encodeQueryKeyValue($pair[0]), match(null) {
+                $pair[1] => null,
                 default => Encoder::encodeQueryKeyValue($pair[1]),
             }];
         }
@@ -103,7 +104,6 @@ final class QueryString
      * @see https://wiki.php.net/rfc/on_demand_name_mangling
      *
      * @param non-empty-string $separator
-     * @param PHP_QUERY_RFC3986|PHP_QUERY_RFC1738 $encType
      *
      * @throws SyntaxError
      */
@@ -124,7 +124,7 @@ final class QueryString
      *
      * @throws SyntaxError
      */
-    public static function extractFromValue(Stringable|string|bool|null $query, Converter $converter = null): array
+    public static function extractFromValue(Stringable|string|bool|null $query, ?Converter $converter = null): array
     {
         return self::convert(self::decodePairs(
             ($converter ?? Converter::fromRFC3986())->toPairs($query),
@@ -136,7 +136,6 @@ final class QueryString
      * Parses a query string into a collection of key/value pairs.
      *
      * @param non-empty-string $separator
-     * @param PHP_QUERY_RFC3986|PHP_QUERY_RFC1738 $encType
      *
      * @throws SyntaxError
      *
@@ -154,7 +153,7 @@ final class QueryString
      *
      * @return array<int, array{0:string, 1:string|null}>
      */
-    public static function parseFromValue(Stringable|string|bool|null $query, Converter $converter = null): array
+    public static function parseFromValue(Stringable|string|bool|null $query, ?Converter $converter = null): array
     {
         return self::decodePairs(
             ($converter ?? Converter::fromRFC3986())->toPairs($query),
@@ -250,23 +249,27 @@ final class QueryString
         }
 
         $key = substr($name, 0, $leftBracketPosition);
+        if ('' === $key) {
+            $key = '0';
+        }
+
         if (!array_key_exists($key, $data) || !is_array($data[$key])) {
             $data[$key] = [];
         }
 
-        $index = substr($name, $leftBracketPosition + 1, $rightBracketPosition - $leftBracketPosition - 1);
-        if ('' === $index) {
+        $remaining = substr($name, $rightBracketPosition + 1);
+        if (!str_starts_with($remaining, '[') || !str_contains($remaining, ']')) {
+            $remaining = '';
+        }
+
+        $name = substr($name, $leftBracketPosition + 1, $rightBracketPosition - $leftBracketPosition - 1).$remaining;
+        if ('' === $name) {
             $data[$key][] = $value;
 
             return $data;
         }
 
-        $remaining = substr($name, $rightBracketPosition + 1);
-        if (!str_starts_with($remaining, '[') || false === strpos($remaining, ']', 1)) {
-            $remaining = '';
-        }
-
-        $data[$key] = self::extractPhpVariable($data[$key], $index.$remaining, $value);
+        $data[$key] = self::extractPhpVariable($data[$key], $name, $value);
 
         return $data;
     }

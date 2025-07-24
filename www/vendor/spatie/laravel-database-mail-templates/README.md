@@ -1,11 +1,8 @@
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
-
 # Render Laravel mailables based on a mail template stored in the database
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-database-mail-templates.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-database-mail-templates)
-![Test Status](https://img.shields.io/github/workflow/status/spatie/laravel-database-mail-templates/run-tests?label=tests&style=flat-square)
-![PHP CS Fixer Status](https://img.shields.io/github/workflow/status/spatie/laravel-database-mail-templates/Check%20&%20fix%20styling?label=code%20style&style=flat-square)
+![Test Status](https://img.shields.io/github/actions/workflow/status/spatie/laravel-database-mail-templates/run-tests.yml?label=tests&style=flat-square)
+![PHP CS Fixer Status](https://img.shields.io/github/actions/workflow/status/spatie/laravel-database-mail-templates/php-cs-fixer.yml?label=code%20style&style=flat-square)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-database-mail-templates.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-database-mail-templates)
 
 Render Laravel mailables using a template stored in the database.
@@ -23,6 +20,8 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 The following example will send a `WelcomeMail` using a template stored in the database and wrapped in an HTML layout.
 
 ```php
+namespace App\Mail;
+
 use Spatie\MailTemplates\TemplateMailable;
 
 class WelcomeMail extends TemplateMailable
@@ -44,7 +43,7 @@ class WelcomeMail extends TemplateMailable
 }
 
 MailTemplate::create([
-    'mailable' => WelcomeMail::class,
+    'mailable' => \App\Mail\WelcomeMail::class,
     'subject' => 'Welcome, {{ name }}',
     'html_template' => '<p>Hello, {{ name }}.</p>',
     'text_template' => 'Hello, {{ name }}.'
@@ -95,7 +94,7 @@ class MailTemplatesSeeder extends Seeder
     public function run()
     {
         MailTemplate::create([
-            'mailable' => \App\Mails\WelcomeMail::class,
+            'mailable' => \App\Mail\WelcomeMail::class,
             'subject' => 'Welcome, {{ name }}',
             'html_template' => '<h1>Hello, {{ name }}!</h1>',
             'text_template' => 'Hello, {{ name }}!',
@@ -109,6 +108,8 @@ As you can see in the above example, you can use mustache template tags in both 
 Let's have a look at the corresponding mailable:
 
 ```php
+namespace App\Mail;
+
 use TemplateMailable;
 
 class WelcomeMail extends TemplateMailable
@@ -128,6 +129,26 @@ class WelcomeMail extends TemplateMailable
 ```
 
 By extending the `\Spatie\MailTemplates\TemplateMailable` class this mailable will be rendered using the corresponding `MailTemplate`. All public properties on the `WelcomeMail` will be available in the template.
+
+If you need to use properties within your template that are initially defined within your `WelcomeMail` (for example, data that comes from another source). You can call `$this->setAdditionalData()` and pass it an array of you additional key => value pairs.
+
+An example of this would be:
+```php
+namespace App\Mail;
+
+use TemplateMailable;
+
+class WelcomeMail extends TemplateMailable
+{
+
+    public function __construct(User $user)
+    {
+        $this->setAdditionalData([
+            'name' => 'Joe Bloggs'
+        ]);
+    }
+}
+```
 
 ### Customizing the `MailTemplate` model
 
@@ -220,6 +241,8 @@ You can extend the `getHtmlLayout()` method on either a template mailable or a m
 
 When sending a `TemplateMailable` the compiled template will be rendered inside of the `{{{ body }}}` placeholder in the layout before being sent.
 
+If using a Blade view, the placeholder will need to be `@{{{ body }}}`.
+
 The following example will send a `WelcomeMail` using a template wrapped in a layout.
 
 ```php
@@ -268,7 +291,7 @@ You might for example want to use a different layout based on a mail template mo
 The following example uses a different layout based on what `EventMailTemplate` is being used. As you can see, in this case the layout is stored in the database on a related `Event` model.
 
 ```php
-use Spatie\MailTemplates\MailTemplate;
+use Spatie\MailTemplates\Models\MailTemplate;
 
 class EventMailTemplate extends MailTemplate
 {

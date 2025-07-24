@@ -16,7 +16,9 @@ namespace League\Uri;
 use Closure;
 use League\Uri\Contracts\UriComponentInterface;
 use League\Uri\Exceptions\SyntaxError;
+use SensitiveParameter;
 use Stringable;
+
 use function preg_match;
 use function preg_replace_callback;
 use function rawurldecode;
@@ -56,7 +58,7 @@ final class Encoder
      *
      * Generic delimiters ":" MUST NOT be encoded
      */
-    public static function encodePassword(Stringable|string|null $component): ?string
+    public static function encodePassword(#[SensitiveParameter] Stringable|string|null $component): ?string
     {
         static $pattern = '/[^'.self::REGEXP_PART_UNRESERVED.self::REGEXP_PART_SUBDELIM.':]+|'.self::REGEXP_PART_ENCODED.'/';
 
@@ -91,8 +93,8 @@ final class Encoder
     {
         static $pattern = '/[^'.self::REGEXP_PART_UNRESERVED.']+|'.self::REGEXP_PART_ENCODED.'/';
 
-        $encodeMatches = static fn (array $matches): string => match (true) {
-            1 === preg_match('/[^'.self::REGEXP_PART_UNRESERVED.']/', rawurldecode($matches[0])) => rawurlencode($matches[0]),
+        $encodeMatches = static fn (array $matches): string => match (1) {
+            preg_match('/[^'.self::REGEXP_PART_UNRESERVED.']/', rawurldecode($matches[0])) => rawurlencode($matches[0]),
             default => $matches[0],
         };
 
@@ -111,8 +113,8 @@ final class Encoder
      */
     public static function decodePartial(Stringable|string|int|null $component): ?string
     {
-        $decodeMatches = static fn (array $matches): string => match (true) {
-            1 === preg_match(self::REGEXP_CHARS_PREVENTS_DECODING, $matches[0]) => strtoupper($matches[0]),
+        $decodeMatches = static fn (array $matches): string => match (1) {
+            preg_match(self::REGEXP_CHARS_PREVENTS_DECODING, $matches[0]) => strtoupper($matches[0]),
             default => rawurldecode($matches[0]),
         };
 
@@ -145,8 +147,8 @@ final class Encoder
     private static function encode(Stringable|string|int|bool|null $component, string $pattern): ?string
     {
         $component = self::filterComponent($component);
-        $encodeMatches = static fn (array $matches): string => match (true) {
-            1 === preg_match('/[^'.self::REGEXP_PART_UNRESERVED.']/', rawurldecode($matches[0])) => rawurlencode($matches[0]),
+        $encodeMatches = static fn (array $matches): string => match (1) {
+            preg_match('/[^'.self::REGEXP_PART_UNRESERVED.']/', rawurldecode($matches[0])) => rawurlencode($matches[0]),
             default => $matches[0],
         };
 

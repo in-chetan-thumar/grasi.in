@@ -21,6 +21,10 @@ use Stringable;
 
 /**
  * @phpstan-import-type ComponentMap from UriString
+ *
+ * @method string|null getUsername() returns the user component of the URI.
+ * @method string|null getPassword() returns the scheme-specific information about how to gain authorization to access the resource.
+ * @method array toComponents() returns an associative array containing all the URI components.
  */
 interface UriInterface extends JsonSerializable, Stringable
 {
@@ -234,8 +238,8 @@ interface UriInterface extends JsonSerializable, Stringable
      * A null value provided for the host is equivalent to removing the host
      * information.
      *
-     * @throws SyntaxError    for invalid component or transformations
-     *                        that would result in an object in invalid state.
+     * @throws SyntaxError for invalid component or transformations
+     *                     that would result in an object in invalid state.
      * @throws MissingFeature for component or transformations
      *                        requiring IDN support when IDN support is not present
      *                        or misconfigured.
