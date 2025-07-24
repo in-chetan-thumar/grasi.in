@@ -40,7 +40,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-3 column">
-                                            <h6><a href="{{route('llumar.automotive.window.film')}}"target="_blank">Window Films</a></h6>
+                                            <h6><a href="{{route('llumar.automotive.window.film')}}">Window Films</a></h6>
                                             <a href="{{route('llumar.ceramic.window.film')}}">Ceramic</a>
                                             <a href="{{route('llumar.metallized.window.film')}}">Metallized</a>
                                             <a href="{{route('llumar.dyed.window.film')}}">Dyed</a>
@@ -54,14 +54,11 @@
                                             <a href="{{route('llumar.valor.PPF')}}">Valor</a>
                                             <a href="{{route('llumar.platinum.PPF')}}">Platinum</a>
                                             <a href="{{route('llumar.classeco')}}">Classeco</a>
-                                            <a href="{{route('llumar.platinum.matte.ppf')}}"
-                                                                                        target="_blank">Platinum Matte</a>
+                                            <a href="{{route('llumar.platinum.matte.ppf')}}">Platinum Matte</a>
                                             <a href="https://llumar.com/emea/en/automotive/paint-protection-film/platinum-extra/"
                                                                                         target="_blank">Platinum Extra</a>
-                                            <a href="{{route('llumar.gloss.ppf')}}"
-                                                                                        target="_blank">Gloss PPF</a>
-                                            <a href="{{route('llumar.select.black.ppf')}}"
-                                                                                        target="_blank">Select Black</a>
+                                            <a href="{{route('llumar.gloss.ppf')}}">Gloss PPF</a>
+                                            <a href="{{route('llumar.select.black.ppf')}}">Select Black</a>
                                         </div>
                                         <div class="col-md-3 column">
                                             <h6><a href="https://llumar.com/emea/en/automotive/window-film-ppf-viewer/"
@@ -81,8 +78,7 @@
                                 </div>
                                 <div class="col-md-9">
                                     <div class="header">
-                                        <h4><a href="{{ route('llumar.window.films.index') }}"
-                                                                    target="_blank">Architectural</a></h4>
+                                        <h4><a href="{{ route('llumar.window.films.index') }}">Architectural</a></h4>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-2 column">
@@ -92,8 +88,7 @@
                                                                                         >Solar Control</a>
                                             <a href="{{route('llumar.decorative.window.film')}}"
                                                                                         >Decorative</a>
-                                            <a href="{{ route('llumar.safety.and.security.window.film') }}" 
-                                                                                        target="_blank">Safety & Security</a>
+                                            <a href="{{ route('llumar.safety.and.security.window.film') }}">Safety & Security</a>
                                             <a href="https://llumar.com/emea/en/architectural/residential-window-film/benefits/"
                                                                                         target="_blank">Window Film Benefits</a>
                                         </div>
@@ -104,8 +99,7 @@
                                                                                         >Solar Control</a>
                                             <a href="{{route('llumar.decorative.window.film')}}"
                                                                                         >Decorative</a>
-                                            <a href="{{ route('llumar.safety.and.security.window.film') }}" 
-                                                                                        target="_blank">Safety & Security</a>
+                                            <a href="{{ route('llumar.safety.and.security.window.film') }}">Safety & Security</a>
                                             <a href="https://llumar.com/emea/en/architectural/commercial-window-film/benefits/"
                                                                                         target="_blank">Commercial
                                                                                         Benefits</a></>
