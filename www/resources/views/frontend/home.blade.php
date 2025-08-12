@@ -113,7 +113,7 @@
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center">
                             <div class="title_1 text-left mb-0">
                                 <div class="title_main">Solutions<br> We Offer</div>
-                                <p>Premium smart surface solutions that<br> create a lasting impact.</p>
+                                <p>Premium surface protective film in India that<br> create a lasting impact.</p>
                             </div>
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
